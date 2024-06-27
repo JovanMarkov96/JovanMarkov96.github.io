@@ -6,7 +6,7 @@ excerpt: 'Our method enables quantum simulations of programmable spin-Hamiltonia
 date: 2023-08-30
 venue: 'Journal'
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
-paperurl: #'http://academicpages.github.io/files/paper1.pdf'
+paperurl: 'http://academicpages.github.io/files/global_sim.pdf'
 citation: 'Coming soon...'
 ---
 
