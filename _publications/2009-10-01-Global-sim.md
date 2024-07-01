@@ -1,7 +1,7 @@
 ---
 title: "Programmable quantum simulations on a trapped-ions quantum computer with a global drive"
 collection: publications
-permalink: /publication/2023-08-30/Global-Sim
+permalink: /publication/2023-08-30-Global-Sim
 excerpt: 'Our method enables quantum simulations of programmable spin-Hamiltonians, using only simple global fields, driving all qubits homogeneously and simultaneously.'
 date: 2023-08-30
 venue: 'Journal'
