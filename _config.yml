@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Trapped ion and free thoughts"
+title                    : "Trapped ions and free thoughts"
 title_separator          : "-"
 name                     : &name "Jovan Markov"
 description              : &description "personal description"
