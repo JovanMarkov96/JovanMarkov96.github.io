@@ -5,8 +5,6 @@ permalink: /resources/
 author_profile: true
 ---
 
-# Resources
-
 ## Online Seminars
 
 - [Virtual Seminar on Precision Physics and Fundamental Symmetries](LINK) – an initiative for the precision physics and quantum information community, every Thursday
