@@ -21,7 +21,7 @@ Skills
 * LaTeX, Lyx
 * Linux command line
 * Mathematica
-* Python
+* Python, Jupyter Notebook
 * ROOT (used for projects during internships at Weizmann Institute of Science and CERN Summer School)
 
 Publications
@@ -111,6 +111,3 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
