@@ -20,6 +20,15 @@ author_profile: true
 - [Quantum Matter Seminars NU](https://sites.google.com/view/quantum-matter-seminar/contact-us)
 - [Quantum Information Seminar (Fields Institute)](http://www.fields.utoronto.ca/activities/seminars/quantum-information-seminar)
 
+## News
+
+- [Phys.org - Quantum Physics](https://phys.org/physics-news/quantum-physics/)
+- [The Quantum Insider - Daily](https://thequantuminsider.com/category/daily/)
+- [Quantum Computing Report - News](https://quantumcomputingreport.com/news/)
+- [Nature Physics](https://www.nature.com/nphys/)
+- [Quanta Magazine - Physics](https://www.quantamagazine.org/physics/)
+- [Physical Review Letters - Highlights](https://journals.aps.org/prl/highlights)
+
 ## Israel Quantum Seminars
 
 - [HUJI](https://phys.huji.ac.il/calendar/upcoming/events/quantum-center-seminar)
