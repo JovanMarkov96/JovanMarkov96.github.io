@@ -22,9 +22,10 @@ author_profile: true
 
 ## News
 
-- [Phys.org - Quantum Physics](https://phys.org/physics-news/quantum-physics/)
+- [Inside Quantum Technology](https://www.insidequantumtechnology.com/)
 - [The Quantum Insider - Daily](https://thequantuminsider.com/category/daily/)
 - [Quantum Computing Report - News](https://quantumcomputingreport.com/news/)
+- [Phys.org - Quantum Physics](https://phys.org/physics-news/quantum-physics/)
 - [Nature Physics](https://www.nature.com/nphys/)
 - [Quanta Magazine - Physics](https://www.quantamagazine.org/physics/)
 - [Physical Review Letters - Highlights](https://journals.aps.org/prl/highlights)
