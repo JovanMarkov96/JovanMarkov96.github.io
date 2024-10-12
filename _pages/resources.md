@@ -54,6 +54,7 @@ A curated list of resources can be found here:
 - [Open Course by Keio University](https://www.futurelearn.com/courses/intro-to-quantum-computing)
 - [Professor Ryan O'Donnell Lectures on Quantum Computation and Information](https://www.youtube.com/@RyanODonnellTeaching/playlists)
 - [Introduction to Quantum Information Science - Artur Ekert](https://www.arturekert.org/iqis) - [Qubit Guide](https://qubit.guide/index)
+- [Nathan Wiebe - Quantum Computing Lectures](https://www.youtube.com/@nathanwiebe5305/videos)
 
 ## Books
 
@@ -63,3 +64,27 @@ A curated list of resources can be found here:
 - **Bellac, Michel.** *A Short Introduction to Quantum Information and Quantum Computation.*
 - **Chuang, Isaac, and Michael Nielsen.** *Quantum Computation and Quantum Information.*
 - **Kaye, P., R. Laflamme, and M. Mosca.** *An Introduction to Quantum Computing.* Oxford University Press, 2007.
+
+## Quantum Blogs
+
+- [Quantum Country](https://quantum.country/)
+- [John Preskill's Blog](https://quantumfrontiers.com/author/preskill/)
+- [Vlatko Vedral's Blog](https://www.vlatkovedral.com/blog/)
+- [Preposterous Universe](https://www.preposterousuniverse.com/blog/)
+- [Shtetl-Optimized by Scott Aaronson](https://scottaaronson.blog/)
+- [Backreaction](https://backreaction.blogspot.com/)
+- [Quantum Frontiers](https://quantumfrontiers.com/)
+
+### Quantum Industry Blogs
+
+- [IBM Quantum](https://www.ibm.com/quantum/blog)
+- [QuEra](https://www.quera.com/blog)
+- [Quantum Machines](https://www.quantum-machines.co/blog/)
+- [AWS Quantum Computing](https://aws.amazon.com/blogs/quantum-computing/)
+- [Azure Quantum](https://azure.microsoft.com/en-us/blog/quantum/)
+- [IonQ](https://ionq.com/blog)
+- [Q-CTRL](https://q-ctrl.com/blog)
+- [Zapata Computing](https://zapata.ai/blog/)
+
+## Why Quantum Computing?
+<img src="../images/whyqc_aaronson.jpg" alt="Why Quantum Computing" style="float: left; margin-right: 10px;">
