@@ -17,7 +17,7 @@ Education
   
 Skills
 ======
-* C, C/C++
+* C#
 * LaTeX, Lyx
 * Linux command line
 * Mathematica
