@@ -17,12 +17,30 @@ Education
   
 Skills
 ======
-* C#
-* LaTeX, Lyx
-* Linux command line
-* Mathematica
-* Python, Jupyter Notebook
-* ROOT (used for projects during internships at Weizmann Institute of Science and CERN Summer School)
+<div style="display: flex; justify-content: space-between;">
+  <div>
+    <ul>
+      <li>Git</li>
+      <li>Jupyter Notebook</li>
+      <li>LaTeX</li>
+      <li>Linux command line</li>
+      <li>Mathematica</li>
+      <li>Matlab</li>
+      <li>Python</li>
+      <li>ROOT</li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li>Event Planning</li>
+      <li>Outreach</li>
+      <li>Public Speaking</li>
+      <li>Presenting</li>
+      <li>Project Management</li>
+      <li>Seminar Organization</li>
+    </ul>
+  </div>
+</div>
 
 Publications
 ======
