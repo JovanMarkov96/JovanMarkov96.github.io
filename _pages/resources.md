@@ -88,5 +88,9 @@ A curated list of resources can be found here:
 - [Q-CTRL](https://q-ctrl.com/blog)
 - [Zapata Computing](https://zapata.ai/blog/)
 
+## Quantum Coding
+
+- [Quantum Error Correction: Shor Code in Qiskit](https://quantumcomputinguk.org/tutorials/quantum-error-correction-shor-code-in-qiskit)
+
 ## Why Quantum Computing?
 <img src="../images/whyqc_aaronson.jpg" alt="Why Quantum Computing" style="float: left; margin-right: 10px;">
