@@ -91,6 +91,8 @@ A curated list of resources can be found here:
 ## Quantum Coding
 
 - [Quantum Error Correction: Shor Code in Qiskit](https://quantumcomputinguk.org/tutorials/quantum-error-correction-shor-code-in-qiskit)
+- [Quantum Error Correction: Phase Flip Code in Qiskit](https://quantumcomputinguk.org/tutorials/quantum-error-correction-phase-flip-code-in-qiskit)
+
 
 ## Why Quantum Computing?
 <img src="../images/whyqc_aaronson.jpg" alt="Why Quantum Computing" style="float: left; margin-right: 10px;">
