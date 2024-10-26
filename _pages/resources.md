@@ -51,6 +51,7 @@ A curated list of resources can be found here:
 - [Joseph Avron - Quantum Information](https://phsites.technion.ac.il/avron/wp-content/uploads/sites/3/2021/07/Quantum_information_116031.pdf)
 - [J. Preskill - Ph219/CS219 Lecture Notes](http://theory.caltech.edu/~preskill/ph219/index.html#lecture)
 - [S. Aaronson - Quantum Computing since Democritus](https://www.scottaaronson.com/democritus/) (Cambridge University Press, 2013)
+- [Lecture notes! Intro to Quantum Information Science](https://scottaaronson.blog/?p=3943)
 - [Open Course by MIT](https://ocw.mit.edu/courses/mas-865j-quantum-information-science-spring-2006/pages/lecture-notes/)
 - [Open Course by Keio University](https://www.futurelearn.com/courses/intro-to-quantum-computing)
 - [Professor Ryan O'Donnell Lectures on Quantum Computation and Information](https://www.youtube.com/@RyanODonnellTeaching/playlists)
@@ -76,6 +77,7 @@ A curated list of resources can be found here:
 - [Shtetl-Optimized by Scott Aaronson](https://scottaaronson.blog/)
 - [Backreaction](https://backreaction.blogspot.com/)
 - [Quantum Frontiers](https://quantumfrontiers.com/)
+- [Scott Aaronson on American Scientist](https://www.americanscientist.org/author/scott_aaronson)
 
 ### Quantum Industry Blogs
 
