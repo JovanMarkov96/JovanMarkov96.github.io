@@ -48,6 +48,7 @@ A curated list of resources can be found here:
 ## Lecture Notes and Courses
 
 - [Preskill's Lecture Notes](http://theory.caltech.edu/~preskill/ph219/index.html#lecture)
+- [Quantum Computing: Lecture Notes by Ronald de Wolf](https://arxiv.org/pdf/1907.09415)
 - [Joseph Avron - Quantum Information](https://phsites.technion.ac.il/avron/wp-content/uploads/sites/3/2021/07/Quantum_information_116031.pdf)
 - [J. Preskill - Ph219/CS219 Lecture Notes](http://theory.caltech.edu/~preskill/ph219/index.html#lecture)
 - [S. Aaronson - Quantum Computing since Democritus](https://www.scottaaronson.com/democritus/) (Cambridge University Press, 2013)
