@@ -79,6 +79,7 @@ A curated list of resources can be found here:
 - [Backreaction](https://backreaction.blogspot.com/)
 - [Quantum Frontiers](https://quantumfrontiers.com/)
 - [Scott Aaronson on American Scientist](https://www.americanscientist.org/author/scott_aaronson)
+- [QuBytes - paper summaries by strudents](https://qubytes.org/)
 
 ### Quantum Industry Blogs
 
@@ -95,6 +96,7 @@ A curated list of resources can be found here:
 
 - [Quantum Error Correction: Shor Code in Qiskit](https://quantumcomputinguk.org/tutorials/quantum-error-correction-shor-code-in-qiskit)
 - [Quantum Error Correction: Phase Flip Code in Qiskit](https://quantumcomputinguk.org/tutorials/quantum-error-correction-phase-flip-code-in-qiskit)
+- [Trapped ion simulator](https://www.ionsim.org/)
 
 ## Open Source Quantum
 - [Open Quantum](https://docs.open-quantum.org/)
