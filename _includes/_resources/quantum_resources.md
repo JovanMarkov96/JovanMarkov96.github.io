@@ -1,7 +1,8 @@
 ---
 layout: single
+collection: resources
 title: "Quantum resources"
-permalink: /quantum_resources
+permalink: /resources/quantum_resources
 author_profile: true
 ---
 
