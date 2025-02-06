@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: archive
 title: "Resources"
 permalink: /resources/
 author_profile: true
@@ -9,6 +9,11 @@ author_profile: true
 
 Here are some useful resources:
 
-- [Self-Study Resources for Physics](/resources/physics-resources/)
-- [Self-Study Resources for Mathematics](/resources/math-resources/)
-- [Quantum Computing Resources](/resources/quantum-resources/)
+{% if site.pages %}
+    {% for page in site.pages %}
+        {% if page.path contains '_resources' and page.ext == '.md' %}
+            - [{{ page.title }}]({{ page.url }})
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
