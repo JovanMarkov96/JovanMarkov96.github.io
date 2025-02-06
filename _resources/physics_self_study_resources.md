@@ -65,7 +65,14 @@ Embarking on a journey to learn physics can be both exciting and challenging. Th
    - [YouTube Channels](#youtube-channels-14)
    - [Online Courses](#online-courses-4)
    - [Additional Resources](#additional-resources-1)
+- [Particle Physics](#particle-physics)
+   - [Books](#books-15)
+   - [YouTube Channels](#youtube-channels-15)
+- [Quantum Optics](#quantum-optics)
+   - [Books](#books-16)
+   - [YouTube Channels](#youtube-channels-16)
 - [Additional Resources](#additional-resources)
+
 
 
 ### General Physics
@@ -203,6 +210,10 @@ Embarking on a journey to learn physics can be both exciting and challenging. Th
    - A concise and accessible textbook on special relativity.
    - [Amazon Link](https://www.amazon.com/Introduction-Special-Relativity-James-Smith/dp/0486645516)
 
+3. **"Introduction to Special Relativity" by Robert Resnick**
+   - A classic and accessible textbook on special relativity.
+   - [Amazon Link](https://www.amazon.com/Introduction-Special-Relativity-Robert-Resnick/dp/0471717258)
+
 #### YouTube Channels
 
 1. **[MinutePhysics](https://www.youtube.com/user/minutephysics)**
@@ -219,6 +230,10 @@ Embarking on a journey to learn physics can be both exciting and challenging. Th
 2. **"Gravitation" by Charles W. Misner, Kip S. Thorne, and John Archibald Wheeler**
    - A comprehensive and advanced textbook on general relativity.
    - [Amazon Link](https://www.amazon.com/Gravitation-Charles-W-Misner/dp/0691177791)
+
+3. **"Einstein Gravity in a Nutshell" by A. Zee**
+   - A comprehensive and accessible textbook on general relativity.
+   - [Amazon Link](https://www.amazon.com/Einstein-Gravity-Nutshell-Anthony-Zee/dp/069114558X)
 
 #### YouTube Channels
 
@@ -262,6 +277,10 @@ Embarking on a journey to learn physics can be both exciting and challenging. Th
    - An accessible introduction to quantum field theory.
    - [Amazon Link](https://www.amazon.com/Quantum-Field-Theory-Gifted-Amateur/dp/019969933X)
 
+3. **"Quantum Field Theory in a Nutshell" by A. Zee**
+   - An accessible and comprehensive introduction to quantum field theory.
+   - [Amazon Link](https://www.amazon.com/Quantum-Field-Theory-Nutshell-Second/dp/0691140340)
+
 #### YouTube Channels
 
 1. **[Physics Explained](https://www.youtube.com/channel/UCtOgKmAM4MeFu-jd-HB3_cg)**
@@ -286,6 +305,10 @@ Embarking on a journey to learn physics can be both exciting and challenging. Th
 2. **"The Physics of Atoms and Quanta" by Hermann Haken and Hans Christoph Wolf**
    - An accessible introduction to atomic physics.
    - [Amazon Link](https://www.amazon.com/Physics-Atoms-Quanta-Introduction-Students/dp/3540580240)
+
+3. **"Atomic Physics" by Christopher J. Foot**
+   - A comprehensive textbook on atomic physics, suitable for advanced undergraduates and graduate students.
+   - [Amazon Link](https://www.amazon.com/Atomic-Physics-Christopher-J-Foot/dp/0198506961)
 
 #### YouTube Channels
 
@@ -355,6 +378,10 @@ Embarking on a journey to learn physics can be both exciting and challenging. Th
    - A classic textbook on theoretical nuclear physics.
    - [Amazon Link](https://www.amazon.com/Theoretical-Nuclear-Physics-John-Blatt/dp/0486645583)
 
+3. **"Introduction to Nuclear Particle Physics" by A. Das and T. Ferbel**
+   - A comprehensive textbook on nuclear and particle physics.
+   - [Amazon Link](https://www.amazon.com/Introduction-Nuclear-Particle-Physics-Das/dp/9812387447)
+
 #### YouTube Channels
 
 1. **[MIT OpenCourseWare](https://www.youtube.com/user/MIT)**
@@ -371,6 +398,10 @@ Embarking on a journey to learn physics can be both exciting and challenging. Th
 2. **"Principles of Condensed Matter Physics" by Paul M. Chaikin and T. C. Lubensky**
    - A comprehensive textbook on condensed matter physics.
    - [Amazon Link](https://www.amazon.com/Principles-Condensed-Matter-Physics-Chaikin/dp/0521794501)
+
+3. **"The Oxford Solid State Basics" by Steven H. Simon**
+   - An accessible introduction to solid state physics.
+   - [Amazon Link](https://www.amazon.com/Oxford-Solid-State-Basics/dp/0199680779)
 
 #### YouTube Channels
 
@@ -429,6 +460,46 @@ Embarking on a journey to learn physics can be both exciting and challenging. Th
 
 2. **[Qiskit Documentation](https://qiskit.org/documentation/)**
    - Comprehensive documentation and tutorials for learning quantum computing with Qiskit.
+
+### Particle Physics
+
+#### Books
+
+1. **"Introduction to Elementary Particles" by David Griffiths**
+   - A widely used textbook for learning particle physics.
+   - [Amazon Link](https://www.amazon.com/Introduction-Elementary-Particles-David-Griffiths/dp/3527406018)
+
+2. **"Quarks and Leptons: An Introductory Course in Modern Particle Physics" by Francis Halzen and Alan D. Martin**
+   - A comprehensive introduction to particle physics.
+   - [Amazon Link](https://www.amazon.com/Quarks-Leptons-Introductory-Modern-Physics/dp/0471887412)
+
+#### YouTube Channels
+
+1. **[Fermilab](https://www.youtube.com/user/fermilab)**
+   - Provides educational videos on particle physics and related topics.
+
+2. **[CERN](https://www.youtube.com/user/CERNTV)**
+   - Offers videos on particle physics research and experiments conducted at CERN.
+
+### Quantum Optics
+
+#### Books
+
+1. **"Quantum Optics" by Marlan O. Scully and M. Suhail Zubairy**
+   - A comprehensive textbook on quantum optics.
+   - [Amazon Link](https://www.amazon.com/Quantum-Optics-Marlan-Scully/dp/0521435951)
+
+2. **"Introduction to Quantum Optics: From the Semi-Classical Approach to Quantized Light" by Gilbert Grynberg, Alain Aspect, and Claude Fabre**
+   - An accessible introduction to quantum optics.
+   - [Amazon Link](https://www.amazon.com/Introduction-Quantum-Optics-Semi-Classical-Quantized/dp/0521551129)
+
+#### YouTube Channels
+
+1. **[Quantum Optics Lab](https://www.youtube.com/channel/UC5J6Zzj6k4J5p5k5Z5Z5Z5Q)**
+   - Provides educational videos on quantum optics experiments and concepts.
+
+2. **[Physics Explained](https://www.youtube.com/channel/UCtOgKmAM4MeFu-jd-HB3_cg)**
+   - Offers clear explanations of quantum optics concepts.
 
 ### Additional Resources
 
