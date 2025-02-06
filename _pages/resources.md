@@ -1,5 +1,5 @@
 ---
-layout: resources-archive
+layout: archive
 title: "Resources"
 permalink: /resources/
 author_profile: true
@@ -9,7 +9,7 @@ author_profile: true
 
 Here are some useful resources:
 
-{% for resource in site.resources %}
+{% for post in site.resources %}
     {% include archive-single.html %}
 {% endfor %}
 
