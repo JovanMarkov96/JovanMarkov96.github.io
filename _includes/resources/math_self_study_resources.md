@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Self-Study Resources for Mathematics"
-permalink: /resources/math_resources
+permalink: /math_resources
 author_profile: true
 ---
 
