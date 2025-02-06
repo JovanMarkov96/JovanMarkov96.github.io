@@ -2,7 +2,7 @@
 layout: single
 collection: resources
 title: "Self-Study Resources for Physics"
-permalink: /resources/physics_resources/
+permalink: /resources/physics-resources/
 author_profile: true
 ---
 
