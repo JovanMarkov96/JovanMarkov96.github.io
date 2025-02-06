@@ -59,12 +59,9 @@ Languages
 * English, Fluent, TOEFL iBT Score:110/120 (Nov 2018).
 * Hebrew, Elementary.
 
-Conferences, Seminars, Talks
-
-<ul>{% for post in site.talks reversed %}
-  {% include archive-single-talk-cv.html %}
-{% endfor %}</ul>
+Conferences, Seminars, Talks, Posters
 ======
+
 * 2023: Annual New Year Seminar, Faculty of Physics, University of Belgrade, Serbia. Talk: Quantum computers and what to do with them. (in Serbian)
 * 2023: 54th Annual Meeting of the APS Division of Atomic, Molecular and Optical Physics, Spokane, Washington. Talk: Digital predistortion of optical field of a fast and high-fidelity entangling gate for trapped ions qubits. Authors: **JM**, Yotam Shapira, Nitzan Akerman, Roee Ozeri.
 * 2023: 25th Annual SQuInT Workshop, Albuquerque, New Mexico. Poster: Programmable quantum simulations on a trapped-ions quantum computer with a global drive. Authors: **JM**, Yotam Shapira, Nitzan Akerman, Ady Stern, Roee Ozeri.
@@ -138,9 +135,10 @@ Talks
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
   
+<!--
 Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+-->
