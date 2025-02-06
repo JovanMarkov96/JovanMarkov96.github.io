@@ -9,6 +9,6 @@ author_profile: true
 
 Here are some useful resources:
 
-- [Self-Study Resources for Physics](resources/physics_self_study_resources.md)
-- [Self-Study Resources for Mathematics](resources/math_self_study_resources.md)
-- [Quantum Computing Resources](resources/quantum-_resources.md)
+- [Self-Study Resources for Physics](/resources/physics_resources/)
+- [Self-Study Resources for Mathematics](/resources/math_resources/)
+- [Quantum Computing Resources](/resources/quantum_resources/)

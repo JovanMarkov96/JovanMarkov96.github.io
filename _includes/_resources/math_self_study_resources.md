@@ -2,7 +2,7 @@
 layout: single
 collection: resources
 title: "Self-Study Resources for Mathematics"
-permalink: /resources/math_resources
+permalink: /resources/math_resources/
 author_profile: true
 ---
 
