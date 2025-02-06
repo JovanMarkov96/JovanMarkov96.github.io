@@ -9,11 +9,7 @@ author_profile: true
 
 Here are some useful resources:
 
-{% if site.pages %}
-    {% for page in site.pages %}
-        {% if page.path contains '_resources' and page.ext == '.md' %}
-            - [{{ page.title }}]({{ page.url }})
-        {% endif %}
-    {% endfor %}
-{% endif %}
+{% for resource in site.resources %}
+    {% include archive-single.html %}
+{% endfor %}
 
