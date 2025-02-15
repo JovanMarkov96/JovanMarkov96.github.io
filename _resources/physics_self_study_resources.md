@@ -81,11 +81,15 @@ Embarking on a journey to learn physics can be both exciting and challenging. Th
 
 1. **"The Feynman Lectures on Physics" by Richard P. Feynman, Robert B. Leighton, and Matthew Sands**
    - A comprehensive and engaging introduction to physics, covering a wide range of topics.
-   - [Amazon Link](https://www.amazon.com/Feynman-Lectures-Physics-boxed-set/dp/0465023827)
+   - [Caltech website](https://www.feynmanlectures.caltech.edu/)
 
-2. **"Conceptual Physics" by Paul G. Hewitt**
-   - A great book for beginners that focuses on understanding the concepts of physics without heavy mathematics.
-   - [Amazon Link](https://www.amazon.com/Conceptual-Physics-12th-Paul-Hewitt/dp/0321909100)
+2. **"Fundamentals of Physics" by David Halliday, Robert Resnick, and Jearl Walker**
+   - A widely used introductory textbook that covers a broad range of physics topics with clear explanations and examples.
+   - [Amazon Link](https://www.amazon.com/Fundamentals-Physics-10th-David-Halliday/dp/111823071X)
+
+3. **"University Physics with Modern Physics" by Hugh D. Young and Roger A. Freedman**
+   - A comprehensive textbook that provides a thorough introduction to physics, including modern physics topics.
+   - [Amazon Link](https://www.amazon.com/University-Physics-Modern-14th-Edition/dp/0321973615)
 
 #### YouTube Channels
 
@@ -184,6 +188,10 @@ Embarking on a journey to learn physics can be both exciting and challenging. Th
 2. **"Introduction to Quantum Mechanics" by David J. Griffiths**
    - A widely used textbook for learning quantum mechanics, suitable for beginners.
    - [Amazon Link](https://www.amazon.com/Introduction-Quantum-Mechanics-David-Griffiths/dp/1107189632)
+
+3. **"Quantum Mechanics" by Claude Cohen-Tannoudji, Bernard Diu, and Frank Laloë**
+   - A comprehensive and detailed textbook on quantum mechanics, suitable for advanced undergraduates and graduate students.
+   - [Amazon Link](https://www.amazon.com/Quantum-Mechanics-Vol-2-Claude-Cohen-Tannoudji/dp/047116433X)
 
 #### YouTube Channels
 
