@@ -1,3 +1,9 @@
+/* Academic emoji/icon color fix for dark mode */
+html.dark-mode .fa-building-columns,
+html.dark-mode .ai-google-scholar,
+html.dark-mode .ai-arxiv {
+  color: #fff !important;
+}
 /* ==========================================================================
    BASE ELEMENTS
    ========================================================================== */
@@ -10,7 +16,38 @@ html {
 
 html.dark-mode {
   background: #181818;
-  color: #e0e0e0;
+  color: #f5f5f5;
+}
+html.dark-mode body,
+html.dark-mode p,
+html.dark-mode .page__content,
+html.dark-mode .archive__item-title,
+html.dark-mode .archive__item,
+html.dark-mode .author__bio,
+html.dark-mode .author__content,
+html.dark-mode .author__name,
+html.dark-mode .list__item,
+html.dark-mode .main,
+html.dark-mode main {
+  color: #fff !important;
+}
+html.dark-mode .masthead,
+html.dark-mode .page__footer,
+html.dark-mode .sidebar,
+html.dark-mode .btn,
+html.dark-mode pre,
+html.dark-mode code,
+html.dark-mode table,
+html.dark-mode .greedy-nav,
+html.dark-mode .masthead__menu,
+html.dark-mode .masthead__menu-item,
+html.dark-mode .archive__item,
+html.dark-mode .archive__item-teaser,
+html.dark-mode .author-profile,
+html.dark-mode .comments,
+html.dark-mode blockquote {
+  background: #181818 !important;
+  color: #fff !important;
 }
 
 body {
