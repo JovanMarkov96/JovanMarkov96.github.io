@@ -14,7 +14,7 @@ name                     : &name "Jovan Markov"
 description              : &description "personal description"
 url                      : https://jovanmarkov96.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "jovanmarkov96/jovanmarkov96.github.io/"
+repository               : "JovanMarkov96/JovanMarkov96.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -215,6 +215,9 @@ collections:
   resources:
     output: true
     permalink: /:collection/:path/
+  conferences:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -278,6 +281,15 @@ defaults:
       type: resources
     values:
       layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _conferences
+  - scope:
+      path: ""
+      type: conferences
+    values:
+      layout: conference
       author_profile: true
       share: true
       comments: true

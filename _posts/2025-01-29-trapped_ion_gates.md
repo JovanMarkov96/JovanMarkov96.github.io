@@ -22,7 +22,18 @@ The Cirac-Zoller gate [2] is one of the earliest proposals for implementing quan
 The Mølmer-Sørensen gate is a widely used entangling gate in trapped ion systems. It employs bichromatic laser fields to create entanglement between the internal states of ions without requiring precise control over their motion.
 
 ### Single motional-mode gates
-We can use a single mode of motion to execute a gate, like teh COM mode in the MS gate, but with additional tones to the bi-chromatic drive which would give the MS gate robustness properties. Such gates are Cardioid gates, Antioid gates, CarNu gates, and the Sapiroid gate.
+We can use a single mode of motion to execute a gate, like teh COM mode in the MS gate, but with additional tones to the bi-chromatic drive which would give the MS gate robustness properties. Such gates are Cardioid gates, Antioid gates, CarNu gates, and the Sapiroid gate. All these gates focus on adding robustness to the MS gate, for two ions (Sapiroid), or more (the others)??? The controlability stays the same since we use the COM mode and couple the ions equally all-to-all. We could use some other mode and take its specific ion-ion coupling to our advantage, but this should not be considered as a tunable-coupling gate.
+
+#### Cardioid gate
+
+#### Antioid gate
+
+#### CarNu gate
+
+#### Sapiroid gate
+
+### Multi-mode gates
+The motivation behind such gates is multi-fold. They can enable tunable couplings between different pairs of ions. They can be faster than a MS gate since all modes are active, as opposed to the MS gate which suffers from unwanted off-resonance coupling to other modes when the Rabi frequency is too high. Finally, the 
 
 
 ### References
