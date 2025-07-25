@@ -5,6 +5,12 @@ html {
   /* sticky footer fix */
   position: relative;
   min-height: 100%;
+  background: #fff;
+}
+
+html.dark-mode {
+  background: #181818;
+  color: #e0e0e0;
 }
 
 body {
@@ -76,18 +82,155 @@ del a {
 
 /* reduce orphans and widows when printing */
 
-p, pre, blockquote, ul, ol, dl, figure, table, fieldset {
-  orphans: 3;
-  widows: 3;
+/* Dark mode styles */
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode h4,
+html.dark-mode h5,
+html.dark-mode h6 {
+  color: #fff;
+}
+html.dark-mode a {
+  color: #80bfff;
+}
+html.dark-mode .masthead,
+html.dark-mode .page__footer,
+html.dark-mode .sidebar {
+  background: #222;
+  color: #e0e0e0;
+}
+html.dark-mode .btn {
+  background: #333;
+  color: #fff !important;
+}
+html.dark-mode pre,
+html.dark-mode code {
+  background: #222;
+  color: #e0e0e0;
+}
+html.dark-mode table {
+  background: #222;
+  color: #e0e0e0;
+}
+html.dark-mode .greedy-nav,
+html.dark-mode .masthead__menu,
+html.dark-mode .masthead__menu-item {
+  background: #222;
+  color: #e0e0e0;
+}
+html.dark-mode .masthead__menu-item a {
+  color: #e0e0e0;
+}
+html.dark-mode .masthead__menu-item a:hover,
+html.dark-mode .masthead__menu-item--active a {
+  color: #80bfff;
+  background: #333;
+}
+html.dark-mode .author-profile a,
+html.dark-mode .sidebar a {
+  color: #80bfff;
+}
+html.dark-mode .author-profile a:hover,
+html.dark-mode .sidebar a:hover {
+  color: #fff;
+}
+html.dark-mode .page__footer {
+  background: #222;
+  color: #e0e0e0;
+}
+html.dark-mode .page__footer a {
+  color: #80bfff;
+}
+html.dark-mode .archive__item,
+html.dark-mode .archive__item-teaser {
+  background: #222;
+  color: #e0e0e0;
+}
+html.dark-mode .archive__item-title a {
+  color: #80bfff;
+}
+html.dark-mode .btn,
+html.dark-mode button,
+html.dark-mode input[type='submit'] {
+  background: #333;
+  color: #fff !important;
+  border: 1px solid #444;
+}
+html.dark-mode .btn:hover,
+html.dark-mode button:hover,
+html.dark-mode input[type='submit']:hover {
+  background: #444;
+  color: #80bfff !important;
+}
+html.dark-mode table th,
+html.dark-mode table td {
+  background: #222;
+  color: #e0e0e0;
+  border-color: #444;
+}
+html.dark-mode input,
+html.dark-mode textarea,
+html.dark-mode select {
+  background: #222;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+html.dark-mode blockquote cite {
+  color: #80bfff;
+}
+html.dark-mode blockquote {
+  background: #222;
+  color: #e0e0e0;
+  border-left: 4px solid #444;
+}
+html.dark-mode img, html.dark-mode svg {
+  filter: brightness(0.85) contrast(1.1);
+}
+html.dark-mode .archive__item-teaser {
+  background: #222;
+}
+html.dark-mode .author-profile {
+  background: #222;
+  color: #e0e0e0;
+}
+html.dark-mode .comments {
+  background: #222;
+  color: #e0e0e0;
+}
+@media print {
+  html.dark-mode {
+    background: #fff !important;
+    color: #000 !important;
+  }
 }
 
-/* abbreviations */
-
-abbr[title],
-abbr[data-original-title] {
-  text-decoration: none;
-  cursor: help;
-  border-bottom: 1px dotted $text-color;
+/* Toggle button styling */
+/* Default: moon icon, light mode */
+#dark-mode-toggle {
+  position: absolute;
+  top: 16px;
+  right: 32px;
+  z-index: 1000;
+  background: #f5f5f5;
+  color: #222;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#dark-mode-toggle:hover {
+  background: #e0e0e0;
+}
+html.dark-mode #dark-mode-toggle {
+  background: #222;
+  color: #fff;
+}
+html.dark-mode #dark-mode-toggle:hover {
+  background: #444;
 }
 
 /* blockquotes */

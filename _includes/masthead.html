@@ -2,6 +2,7 @@
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
+    <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
@@ -19,5 +20,32 @@
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const btn = document.getElementById('dark-mode-toggle');
+        function updateIcon() {
+          if (document.documentElement.classList.contains('dark-mode')) {
+            btn.textContent = '☀️';
+            btn.setAttribute('aria-label', 'Switch to light mode');
+          } else {
+            btn.textContent = '🌙';
+            btn.setAttribute('aria-label', 'Switch to dark mode');
+          }
+        }
+        btn.onclick = function() {
+          document.documentElement.classList.toggle('dark-mode');
+          localStorage.setItem('darkMode', document.documentElement.classList.contains('dark-mode'));
+          updateIcon();
+        };
+        if (localStorage.getItem('darkMode') === 'true') {
+          document.documentElement.classList.add('dark-mode');
+        }
+        // System preference detection
+        if (localStorage.getItem('darkMode') === null && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.classList.add('dark-mode');
+        }
+        updateIcon();
+      });
+    </script>
   </div>
 </div>
