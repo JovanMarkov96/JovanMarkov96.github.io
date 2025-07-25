@@ -23,37 +23,5 @@
       </button>
       <div class="theme-label" id="theme-label">Light mode active</div>
     </div>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const btn = document.getElementById('theme-toggle');
-        const capsule = btn.querySelector('.highlight-capsule');
-        const label = document.getElementById('theme-label');
-        function setMode(dark) {
-          document.documentElement.classList.toggle('dark-mode', dark);
-          btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
-          label.textContent = dark ? 'Dark mode active' : 'Light mode active';
-          capsule.style.transform = dark ? 'translateX(2.5rem)' : 'translateX(0)';
-        }
-        // Initial state
-        let darkMode = localStorage.getItem('darkMode');
-        if (darkMode === null) {
-          darkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'true' : 'false';
-        }
-        setMode(darkMode === 'true');
-        // Toggle handler
-        btn.addEventListener('click', function() {
-          const isDark = !document.documentElement.classList.contains('dark-mode');
-          setMode(isDark);
-          localStorage.setItem('darkMode', isDark);
-        });
-        // Keyboard accessibility (Enter/Space)
-        btn.addEventListener('keydown', function(e) {
-          if (e.key === ' ' || e.key === 'Enter') {
-            e.preventDefault();
-            btn.click();
-          }
-        });
-      });
-    </script>
   </div>
 </div>
