@@ -1,5 +1,5 @@
 ---
-title: "Programmable Global Ising Dynamics and Predistorted Gate Control in Trapped Ions (Poster)"
+title: "Programmable Global Ising Dynamics and Predistorted Gate Control in Trapped Ions"
 conference: "70th Annual Meeting of the Israel Physical Society (IPS)"
 organizer: "Israel Physical Society"
 location: "Technion - Israel Institute of Technology, Haifa, Israel"
