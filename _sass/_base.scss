@@ -1,3 +1,8 @@
+/* Email icon color fix for dark mode */
+html.dark-mode .fa-envelope,
+html.dark-mode .fa-envelope-open {
+  color: #fff !important;
+}
 /* Header row for nav and toggle alignment */
 .header-row {
   display: flex;
