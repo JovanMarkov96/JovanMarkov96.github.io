@@ -5,6 +5,6 @@ permalink: /conferences/
 author_profile: true
 ---
 
-{% for post in site.conferences %}
+{% for post in site.conferences reversed %}
     {% include archive-single-conference.html post=post %}
 {% endfor %}
