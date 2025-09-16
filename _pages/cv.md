@@ -9,8 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-You can find a PDF version of my CV [here](https://drive.google.com/file/d/1zsnKmqqlr3Gwb4Id9U
-
 Education
 ======
 * 2022 – present: Weizmann Institute of Science, Physics, PhD, Quantum computing and quantum simulation, Advisor: Prof. Roee Ozeri.
