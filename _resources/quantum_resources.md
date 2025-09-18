@@ -45,6 +45,7 @@ author_profile: true
 A curated list of resources can be found here:
 - [Awesome Quantum Computing](https://github.com/desireevl/awesome-quantum-computing)
 - [Quantum Open Source Foundation - Learning Resources on Quantum Computing](https://www.qosf.org/learn_quantum/)
+- [IonQ Quantum Resources](https://ionq.com/resources)
 
 ## Lecture Notes and Courses
 
