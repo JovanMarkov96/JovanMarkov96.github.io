@@ -7,6 +7,8 @@ redirect_from:
   - /resume
 ---
 
+<!-- [Download PDF version of my CV](/files/Jovan_Markov_CV.pdf) -->
+
 {% include base_path %}
 
 Education
