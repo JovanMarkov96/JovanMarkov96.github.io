@@ -20,6 +20,7 @@ author_profile: true
 - [Quantum Theory Seminar (Cornell)](https://quantumtheory.physics.cornell.edu/)
 - [Quantum Matter Seminars NU](https://sites.google.com/view/quantum-matter-seminar/contact-us)
 - [Quantum Information Seminar (Fields Institute)](http://www.fields.utoronto.ca/activities/seminars/quantum-information-seminar)
+- [Quantum Meets @ IIIT](https://github.com/quantum-iiit/quantum-iiit.github.io/blob/main/content.md#quantum-meets--iiit) ([YouTube channel](https://www.youtube.com/@Quantum-Seminars/videos))
 
 ## News
 
