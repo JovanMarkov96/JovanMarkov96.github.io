@@ -1,8 +1,0 @@
-/* Dark-mode fixes for social icons */
-
-/* Ensure GitHub icon is visible in dark mode (white like other icons) */
-.dark-mode .social-icons .fa-github,
-.dark-mode .social-icons .fa-github-alt,
-.dark-mode .social-icons .fa-github-square {
-  color: #fff !important;
-}

@@ -232,6 +232,16 @@ body:hover .visually-hidden button {
     color: $github-color;
   }
 
+  // Force GitHub icon to be visible in dark mode; scoped with .social-icons for specificity
+  html.dark-mode & {
+    .fa-github,
+    .fa-github-alt,
+    .fa-github-square {
+      color: #fff !important;
+      fill: #fff !important;
+    }
+  }
+
   .fa-google-plus,
   .fa-google-plus-square {
     color: $google-plus-color;
