@@ -62,6 +62,8 @@ A curated list of resources can be found here:
 - [Introduction to Quantum Information Science - Artur Ekert](https://www.arturekert.org/iqis) - [Qubit Guide](https://qubit.guide/index)
 - [Nathan Wiebe - Quantum Computing Lectures](https://www.youtube.com/@nathanwiebe5305/videos)
 - [Center for Quantum Information and Control - Courses](https://cquic.unm.edu/courses/index.html)
+- [John Watrous — Understanding Quantum Information and Computation: A Course on the Theory of Quantum Computing (arXiv:2507.11536)](https://arxiv.org/abs/2507.11536) — [PDF](https://arxiv.org/pdf/2507.11536)
+- [John Watrous — The Theory of Quantum Information](https://cs.uwaterloo.ca/~watrous/TQI/)
 
 ## Books
 
