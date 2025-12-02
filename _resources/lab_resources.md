@@ -112,10 +112,12 @@ Open-source resources for laboratory setup and automation. New researchers can l
 ### Vendor SDKs and APIs
 
 Many equipment vendors offer free software development kits:
-- **Thorlabs Kinesis/APT** – .NET and C APIs with Python wrappers for motors and stages
-- **Newport** – APIs for motion controllers and power meters
-- **PyDAQmx** – Open-source alternative to LabVIEW for National Instruments DAQ devices
-- **thorlabs_apt** – Python package for Thorlabs hardware
+
+- **[Thorlabs Kinesis](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=10285)** – Comprehensive motion-control software with .NET Controls for creating custom applications in C#, Visual Basic, LabVIEW™, or any .NET-compatible language. Supports Kinesis® and legacy controllers via a unified GUI and programming API, provides USB plug-and-play connectivity for multi-unit/multi-axis setups, and ships reusable .NET Controls that offer complete graphical instrument panels (e.g., KDC101) along with full programmatic access. Includes C# and LabVIEW example projects and Quick Start guides (requires an IDE such as Microsoft Visual Studio).
+ - **[Thorlabs APT™ Suite](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=9019)** – APT Suite of controllers (stepper and DC motor controllers, closed- and open-loop piezo controllers, strain gauge readers, solenoid drivers, and NanoTrak® feedback) with unified PC-based user and programming APIs. USB connectivity makes multi-unit, multi-axis motion control easy. LabVIEW can communicate with APT controllers via ActiveX; Thorlabs provides LabVIEW VI examples and a comprehensive guide to using LabVIEW with APT (downloadable from the APT page).
+
+- **[thorlabs_apt](https://github.com/qpit/thorlabs_apt)** – Python package for Thorlabs hardware
+ - **[PyDAQmx](https://github.com/clade/PyDAQmx)** – Open-source alternative to LabVIEW for National Instruments DAQ devices
 
 ---
 
