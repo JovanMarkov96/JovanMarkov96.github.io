@@ -43,26 +43,13 @@ Open-source resources for laboratory setup and automation. New researchers can l
 
 - [OpenLabTools (University of Cambridge)](https://openlabtools.eng.cam.ac.uk/) – Low-cost, open-access scientific instrumentation. Publishes modular designs and tutorials for data acquisition systems, sensors, actuators, and 3D-printed mechanics. Includes an open-source automated microscope and mechanical tester.
 - [Open-Labware.net (Baden Lab & TReND in Africa)](https://open-labware.net/) – Designs for 3D-printable lab instruments including FlyPi (open fluorescence microscope), OpenSpritzer (microfluidic injector), Spikeling (neuron simulator), and low-cost micromanipulators.
-- [NIH 3D Print Exchange](https://reprap.org/wiki/Open_Source_Lab) – Free 3D-printable designs for lab equipment, from simple tube racks to sophisticated microscope parts.
 - [RepRap Open-Source Lab Wiki](https://reprap.org/wiki/Open_Source_Lab) – Aggregator for open scientific hardware, linking to Cambridge's OpenLabTools, Berkeley's Tekla Labs, Open-Neuroscience, and many specific device projects.
 
 ### Open-Source Electronics and Control Hardware
 
-- [Arduino](https://reprap.org/wiki/Open_Source_Lab) – Microcontroller platform with a huge ecosystem of community-contributed circuits and code for automating equipment.
-- [Raspberry Pi](https://reprap.org/wiki/Open_Source_Lab) – Single-board computers used for microscope cameras to experiment controllers.
-- [Red Pitaya](https://reprap.org/wiki/Open_Source_Lab) – Open-source FPGA-based multifunction instrument (configurable oscilloscope/DAQ/PID controller).
 - [Implementing PDH Locking with Red Pitaya](https://content.redpitaya.com/blog/pound-drever-hall-locking-opo-red-pitaya) – Example of achieving a full digital Pound-Drever-Hall laser lock using Red Pitaya STEMlab 125-14.
-
-### Notable Open Instruments
-
-- [OpenFlexure Microscope](https://reprap.org/wiki/Open_Source_Lab) – Fully 3D-printed high-resolution microscope with motorized focus.
-- [OpenSPIM](https://reprap.org/wiki/Open_Source_Lab) – Open Selective Plane Illumination Microscope.
-- [Open-source syringe pumps](https://reprap.org/wiki/Open_Source_Lab)
-- [Open spectrometers](https://reprap.org/wiki/Open_Source_Lab)
-- [Sensorica](https://reprap.org/wiki/Open_Source_Lab) – Canadian open-hardware network for sensing and automation.
-- [Labrigger](https://reprap.org/wiki/Open_Source_Lab) – Independent site sharing "open solutions for research" to reduce duplication of effort.
-
----
+- [Linien](https://github.com/linien-org/linien) – User-friendly locking of lasers using RedPitaya (STEMlab 125-14) that just works. Linien follows the UNIX philosophy of doing one thing (locking) very well; it was developed for locking spectroscopy signals but also supports PDH or other lock-in techniques and simple PID operation. Built with Python and Migen and based on `red_pid`.
+ - [RedPitaya Lockbox (TU Darmstadt APQ)](https://github.com/TU-Darmstadt-APQ/RedPitaya-Lockbox) – Digital controller for laser frequency stabilization based on the RedPitaya STEMlab 125-14 board. The repository contains schematics and PCB layouts for an analog interface suitable for 19-inch rack units. Recommended to use with the 'lockbox' feature of the PyRPL software package.
 
 ## Software for Experiment Control, Automation, and Data Acquisition
 
@@ -92,12 +79,6 @@ Open-source resources for laboratory setup and automation. New researchers can l
 ---
 
 ## Additional Resources and Communities
-
-### Resource Aggregators
-
-- [Liao Lab Resource Page (EPFL)](https://sites.google.com/view/chentingliao/resource) – Comprehensive list of guides and tools.
-- [Open-Neuroscience](https://reprap.org/wiki/Open_Source_Lab) – Platforms with open-source lab devices relevant to microscopy-heavy optics labs.
-- [Hackteria](https://reprap.org/wiki/Open_Source_Lab) – Open-source biology and art projects.
 
 ### Scientific Maker Networks
 
