@@ -30,6 +30,8 @@ Open-source resources for laboratory setup and automation. New researchers can l
 - [MOGLabs Application Note: PDH Locking](https://www.moglabs.com/support/appnotes/AN002-PDH-R2b.pdf) – Setting up a Pound-Drever-Hall lock.
 - [PDH Locking Step-by-Step (YouTube - Liquid Instruments)](https://www.youtube.com/watch?v=MjEKF1VKMPM) – Video demonstration of PDH locking setup.
 
+- [PDH servo v2](https://github.com/vuthalab/pdh_servo_v2) – `pdh_servo_v2` is a servo controller for locking lasers to high-finesse optical cavities using the Pound–Drever–Hall technique.
+
 ### Reference Books
 
 - **Building Electro-Optical Systems: Making It All Work** by P. Hobbs – A pragmatic guide full of real-world insight.
@@ -50,6 +52,7 @@ Open-source resources for laboratory setup and automation. New researchers can l
 - [Implementing PDH Locking with Red Pitaya](https://content.redpitaya.com/blog/pound-drever-hall-locking-opo-red-pitaya) – Example of achieving a full digital Pound-Drever-Hall laser lock using Red Pitaya STEMlab 125-14.
 - [Linien](https://github.com/linien-org/linien) – User-friendly locking of lasers using RedPitaya (STEMlab 125-14) that just works. Linien follows the UNIX philosophy of doing one thing (locking) very well; it was developed for locking spectroscopy signals but also supports PDH or other lock-in techniques and simple PID operation. Built with Python and Migen and based on `red_pid`.
  - [RedPitaya Lockbox (TU Darmstadt APQ)](https://github.com/TU-Darmstadt-APQ/RedPitaya-Lockbox) – Digital controller for laser frequency stabilization based on the RedPitaya STEMlab 125-14 board. The repository contains schematics and PCB layouts for an analog interface suitable for 19-inch rack units. Recommended to use with the 'lockbox' feature of the PyRPL software package.
+ - [PDH photodiode (TU Darmstadt APQ)](https://github.com/TU-Darmstadt-APQ/PDH_photodiode) – Wideband photodetector based on a Si-PIN photodiode (Hamamatsu S9055-01) and a transimpedance amplifier (TIA). The detector features an additional non-inverting (voltage) amplifier stage AC-coupled to the TIA designed for Pound–Drever–Hall (PDH) laser locking.
 
 ## Software for Experiment Control, Automation, and Data Acquisition
 
@@ -80,9 +83,12 @@ Open-source resources for laboratory setup and automation. New researchers can l
 
 ## Additional Resources and Communities
 
-### Scientific Maker Networks
+### Trapped Ion lab controll systems software
 
-- [Open Lab Starter Kit (OLSK)](https://github.com/Open-Lab-Starter-Kit) – Open-source designs for lab infrastructure including 3D printers, laser cutters, CNC mills.
+- [Oxford Ion Trap Group (University of Oxford)](https://github.com/OxfordIonTrapGroupOxford) – Open-source projects from the Ion Trap Quantum Computing group in the Department of Physics, University of Oxford.
+ - [Haeffner Lab (Berkeley Ions)](https://github.com/HaeffnerLab) – We are the Haeffner Lab at UC Berkeley; we trap ions to investigate various aspects of quantum physics and quantum information.
+ - [Quantum Information with Trapped Ions (QITI)](https://github.com/QITI) – Resources and projects related to quantum information with trapped ions.
+ - [IonTrap-WIPM (MangFeng Ion Trap Group, WIPM, CAS)](https://github.com/Hanros94/IonTrap-WIPM) – Control system for quantum information processing in ion traps. Updated Sep 03, 2020. Features spin-echo operations (CPMG, UDD), GUI for single-qubit operations, Rabi/Zeeman scans and pulse-shaping for DDS/AWG. Research group: MangFeng Ion Trap Group, WIPM, CAS. Homepage: http://english.wipm.cas.cn/rh/rd/yzfzsys/bsqip/bsqipr/ — contributors include Guanqun Mu (contact: guanqun_mu@whu.edu.cn).
 
 ### Forums and Q&A
 
