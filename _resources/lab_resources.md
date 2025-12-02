@@ -13,8 +13,7 @@ Open-source resources for laboratory setup and automation. New researchers can l
 
 ## Practical Guides and Tutorials (Optics & Lab Skills)
 
-- [Laboratory Optics (Peter Beyersdorf)](https://sites.google.com/view/chentingliao/resource) – A free e-book covering the basics of working in an optics lab: how to align beams, characterize beams, use photodiodes and oscilloscopes, balanced detectors, lock-in amplifiers, etc. This is a great pedagogical starting point for newcomers.
-- [Ultrafast Lasers & Optics for Experimentalists (James Pickering)](https://sites.google.com/view/chentingliao/resource) – An open textbook (originally *Ultrafast Optics for Chemists*) focusing on ultrafast laser systems and techniques. It's the non-commercial version of a published book, offering practical training for handling femtosecond lasers and ultrafast optics in the lab.
+- [Laboratory Optics (Peter Beyersdorf)](http://www.laboratoryoptics.com/About.html) – A free e-book covering the basics of working in an optics lab: how to align beams, characterize beams, use photodiodes and oscilloscopes, balanced detectors, lock-in amplifiers, etc. This is a great pedagogical starting point for newcomers.
 - [Alignment of Optical Systems Using Lasers – A Guide for the Uninitiated (David M. Benton, 2021)](https://sites.google.com/view/chentingliao/resource) – A tutorial guide (available via ResearchGate) that provides step-by-step advice on aligning laser-based optical setups. It covers laser safety, basic alignment pitfalls, and tricks for new researchers.
 - [Basics of Optical Alignment (Florian Ströhl)](https://www.youtube.com/playlist?list=PLh5cDpn282vaCtqzjg6laUaR-CtzghltB) – A series of short YouTube tutorial videos walking through fundamental alignment techniques. These videos (supported by an EU education grant) visually demonstrate how to align optical components and are very beginner-friendly.
 - [Liao Lab Resource Page (EPFL)](https://sites.google.com/view/chentingliao/resource) – A comprehensive list of optics notes, vendor links, books, calculators, and more.
@@ -23,7 +22,7 @@ Open-source resources for laboratory setup and automation. New researchers can l
 
 - [Thorlabs Photonics Lab How-To Videos](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=14062) – Practical topics like aligning a laser beam parallel to the table, aligning optical isolators, fiber coupling, polarizer orientation, using waveplates, etc.
 - [Newport Tutorials](https://www.newport.com/resourceListing/tutorials) – Fundamental concepts including fiber optic basics, intro to polarizers/waveplates, vibration isolation, opto-mechanical design, positioning equipment.
-- [Edmund Optics: Simplifying Laser Alignment](https://www.edmundoptics.com/knowledge-center/application-notes/lasers/simplifying-laser-alignment/) – Application notes on Z-fold vs. figure-4 mirror configurations and laser beam alignment best practices.
+- [Edmund Optics Knowledge Center](https://www.edmundoptics.com/knowledge-center/?Query=&CategoryId=&) – Vendor website with tutorials and application notes across topics such as imaging, laser optics, microscopy, optomechanics, testing & detection (including mirror configurations and beam alignment best practices).
 
 ### Laser Locking & Control
 
