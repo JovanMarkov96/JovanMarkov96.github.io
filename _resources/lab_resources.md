@@ -76,8 +76,8 @@ Open-source resources for laboratory setup and automation. New researchers can l
 
 ### Instrument Communication Libraries
 
-- [PyVISA](https://github.com/joamatab/awesome_photonics) – Go-to library for controlling instruments via GPIB, USB, serial (Python wrapper for VISA protocol).
-- [PySerial](https://github.com/joamatab/awesome_photonics) – Simple library for serial/USB communication.
+- [PyVISA](https://pyvisa.readthedocs.io/en/latest/) – Go-to library for controlling instruments via GPIB, USB, serial (Python wrapper for VISA protocol).
+- [PySerial](https://github.com/pyserial/pyserial) – Simple library for serial/USB communication.
 - [Awesome Photonics (GitHub)](https://github.com/joamatab/awesome_photonics) – Curated list of open source photonics projects including communication libraries.
 
 ### Distributed Control and Lab Management
