@@ -14,9 +14,9 @@ Open-source resources for laboratory setup and automation. New researchers can l
 ## Practical Guides and Tutorials (Optics & Lab Skills)
 
 - [Laboratory Optics (Peter Beyersdorf)](http://www.laboratoryoptics.com/About.html) – A free e-book covering the basics of working in an optics lab: how to align beams, characterize beams, use photodiodes and oscilloscopes, balanced detectors, lock-in amplifiers, etc. This is a great pedagogical starting point for newcomers.
-- [Alignment of Optical Systems Using Lasers – A Guide for the Uninitiated (David M. Benton, 2021)](https://sites.google.com/view/chentingliao/resource) – A tutorial guide (available via ResearchGate) that provides step-by-step advice on aligning laser-based optical setups. It covers laser safety, basic alignment pitfalls, and tricks for new researchers.
+- [Alignment of Optical Systems Using Lasers – A Guide for the Uninitiated (David M. Benton, 2021)](https://spie.org/samples/SL61.pdf) – A tutorial guide (available via ResearchGate) that provides step-by-step advice on aligning laser-based optical setups. It covers laser safety, basic alignment pitfalls, and tricks for new researchers.
 - [Basics of Optical Alignment (Florian Ströhl)](https://www.youtube.com/playlist?list=PLh5cDpn282vaCtqzjg6laUaR-CtzghltB) – A series of short YouTube tutorial videos walking through fundamental alignment techniques. These videos (supported by an EU education grant) visually demonstrate how to align optical components and are very beginner-friendly.
-- [Liao Lab Resource Page (EPFL)](https://sites.google.com/view/chentingliao/resource) – A comprehensive list of optics notes, vendor links, books, calculators, and more.
+- [Liao Lab Resource Page](https://sites.google.com/view/chentingliao/resource) – A comprehensive list of optics notes, vendor links, books, calculators, and more.
 
 ### Vendor Tutorials
 
@@ -42,7 +42,6 @@ Open-source resources for laboratory setup and automation. New researchers can l
 ### Major Initiatives
 
 - [OpenLabTools (University of Cambridge)](https://openlabtools.eng.cam.ac.uk/) – Low-cost, open-access scientific instrumentation. Publishes modular designs and tutorials for data acquisition systems, sensors, actuators, and 3D-printed mechanics. Includes an open-source automated microscope and mechanical tester.
-- [Tekla Labs (UC Berkeley)](https://reprap.org/wiki/Open_Source_Lab) – A library of open-source DIY documents for building common lab equipment like microscopes, shakers, centrifuges, incubators, etc.
 - [Open-Labware.net (Baden Lab & TReND in Africa)](https://open-labware.net/) – Designs for 3D-printable lab instruments including FlyPi (open fluorescence microscope), OpenSpritzer (microfluidic injector), Spikeling (neuron simulator), and low-cost micromanipulators.
 - [NIH 3D Print Exchange](https://reprap.org/wiki/Open_Source_Lab) – Free 3D-printable designs for lab equipment, from simple tube racks to sophisticated microscope parts.
 - [RepRap Open-Source Lab Wiki](https://reprap.org/wiki/Open_Source_Lab) – Aggregator for open scientific hardware, linking to Cambridge's OpenLabTools, Berkeley's Tekla Labs, Open-Neuroscience, and many specific device projects.
@@ -115,18 +114,6 @@ Many equipment vendors offer free software development kits:
 
 - **[Thorlabs Kinesis](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=10285)** – Comprehensive motion-control software with .NET Controls for creating custom applications in C#, Visual Basic, LabVIEW™, or any .NET-compatible language. Supports Kinesis® and legacy controllers via a unified GUI and programming API, provides USB plug-and-play connectivity for multi-unit/multi-axis setups, and ships reusable .NET Controls that offer complete graphical instrument panels (e.g., KDC101) along with full programmatic access. Includes C# and LabVIEW example projects and Quick Start guides (requires an IDE such as Microsoft Visual Studio).
  - **[Thorlabs APT™ Suite](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=9019)** – APT Suite of controllers (stepper and DC motor controllers, closed- and open-loop piezo controllers, strain gauge readers, solenoid drivers, and NanoTrak® feedback) with unified PC-based user and programming APIs. USB connectivity makes multi-unit, multi-axis motion control easy. LabVIEW can communicate with APT controllers via ActiveX; Thorlabs provides LabVIEW VI examples and a comprehensive guide to using LabVIEW with APT (downloadable from the APT page).
-
 - **[thorlabs_apt](https://github.com/qpit/thorlabs_apt)** – Python package for Thorlabs hardware
  - **[PyDAQmx](https://github.com/clade/PyDAQmx)** – Open-source alternative to LabVIEW for National Instruments DAQ devices
 
----
-
-## Summary
-
-A new lab founder or student has unprecedented resources available:
-
-1. **Beginner-friendly tutorials** (textbooks to YouTube) for optical alignment, laser locking, and control theory
-2. **Open-source hardware projects** to jump-start building experimental apparatus
-3. **Open software frameworks** for professional-grade experiment control and automation
-
-By utilizing these resources—and contributing back improvements—you can significantly lower the barrier to setting up a sophisticated research lab while joining a community that values sharing and collaboration in science.
