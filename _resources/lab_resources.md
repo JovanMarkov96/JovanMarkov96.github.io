@@ -37,6 +37,8 @@ Open-source resources for laboratory setup and automation. New researchers can l
 - **Building Electro-Optical Systems: Making It All Work** by P. Hobbs – A pragmatic guide full of real-world insight.
 - **Building Scientific Apparatus** by Moore, Davis, & Coplan – Covers design of optical, mechanical, and electronic aspects of lab instruments.
 
+- **Optical Measurements for Scientists and Engineers: A Practical Guide** — Arthur McClelland & Max Mankin. A compact, practical crash-course for newcomers to optics labs that introduces common optical measurement techniques (e.g., spectroscopy and microscopy), explains typical components, and shows how to build and collect data from simple setups. Filled with hands-on tips and tricks drawn from lab experience to help researchers get comfortable aligning, characterizing, and troubleshooting optical experiments.
+
 ---
 
 ## Open-Source Hardware Projects and DIY Lab Equipment
