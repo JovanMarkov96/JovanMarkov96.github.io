@@ -57,7 +57,7 @@ A curated list of resources can be found here:
 - [S. Aaronson - Quantum Computing since Democritus](https://www.scottaaronson.com/democritus/) (Cambridge University Press, 2013)
 - [Andrew Childs — Lecture Notes on Quantum Algorithms](https://www.cs.umd.edu/~amchilds/qa/) — comprehensive graduate-level notes on quantum algorithms (quantum walks, phase estimation, Hamiltonian simulation, HHL, and more)
 - [Lecture notes! Intro to Quantum Information Science](https://scottaaronson.blog/?p=3943)
- - [Umesh Vazirani — Quantum Computing (Berkeley)](https://people.eecs.berkeley.edu/~vazirani/quantum.html) — course page with lecture notes and materials covering foundations of quantum computation, algorithms, and complexity
+- [Umesh Vazirani — Quantum Computing (Berkeley)](https://people.eecs.berkeley.edu/~vazirani/quantum.html) — course page with lecture notes and materials covering foundations of quantum computation, algorithms, and complexity
 - [Open Course by MIT](https://ocw.mit.edu/courses/mas-865j-quantum-information-science-spring-2006/pages/lecture-notes/)
 - [Open Course by Keio University](https://www.futurelearn.com/courses/intro-to-quantum-computing)
 - [Professor Ryan O'Donnell Lectures on Quantum Computation and Information](https://www.youtube.com/@RyanODonnellTeaching/playlists)
