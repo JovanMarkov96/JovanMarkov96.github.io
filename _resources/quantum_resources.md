@@ -49,22 +49,22 @@ A curated list of resources can be found here:
 - [IonQ Quantum Resources](https://ionq.com/resources)
 
 ## Lecture Notes and Courses
-
-- [Preskill's Lecture Notes](http://theory.caltech.edu/~preskill/ph219/index.html#lecture)
-- [Quantum Computing: Lecture Notes by Ronald de Wolf](https://arxiv.org/pdf/1907.09415)
+- [John Watrous — Understanding Quantum Information and Computation: A Course on the Theory of Quantum Computing (arXiv:2507.11536)](https://arxiv.org/abs/2507.11536) — [PDF](https://arxiv.org/pdf/2507.11536) — [YouTube lecture series (follows this book)](https://youtube.com/playlist?list=PLOFEBzvs-VvqKKMXX4vbi4EB1uaErFMSO&si=OunACJUdcOOu6MTz)
+- [John Watrous — The Theory of Quantum Information](https://cs.uwaterloo.ca/~watrous/TQI/)
+- [Quantum Computing: Lecture Notes by Ronald de Wolf](https://arxiv.org/abs/1907.09415) — Master's-level lecture notes covering quantum computation, main algorithms, complexity, and error correction.
 - [Joseph Avron - Quantum Information](https://phsites.technion.ac.il/avron/wp-content/uploads/sites/3/2021/07/Quantum_information_116031.pdf)
 - [J. Preskill - Ph219/CS219 Lecture Notes](http://theory.caltech.edu/~preskill/ph219/index.html#lecture)
 - [S. Aaronson - Quantum Computing since Democritus](https://www.scottaaronson.com/democritus/) (Cambridge University Press, 2013)
+- [Andrew Childs — Lecture Notes on Quantum Algorithms](https://www.cs.umd.edu/~amchilds/qa/) — comprehensive graduate-level notes on quantum algorithms (quantum walks, phase estimation, Hamiltonian simulation, HHL, and more)
 - [Lecture notes! Intro to Quantum Information Science](https://scottaaronson.blog/?p=3943)
+ - [Umesh Vazirani — Quantum Computing (Berkeley)](https://people.eecs.berkeley.edu/~vazirani/quantum.html) — course page with lecture notes and materials covering foundations of quantum computation, algorithms, and complexity
 - [Open Course by MIT](https://ocw.mit.edu/courses/mas-865j-quantum-information-science-spring-2006/pages/lecture-notes/)
 - [Open Course by Keio University](https://www.futurelearn.com/courses/intro-to-quantum-computing)
 - [Professor Ryan O'Donnell Lectures on Quantum Computation and Information](https://www.youtube.com/@RyanODonnellTeaching/playlists)
 - [Introduction to Quantum Information Science - Artur Ekert](https://www.arturekert.org/iqis) - [Qubit Guide](https://qubit.guide/index)
 - [Nathan Wiebe - Quantum Computing Lectures](https://www.youtube.com/@nathanwiebe5305/videos)
 - [Center for Quantum Information and Control - Courses](https://cquic.unm.edu/courses/index.html)
-- [John Watrous — Understanding Quantum Information and Computation: A Course on the Theory of Quantum Computing (arXiv:2507.11536)](https://arxiv.org/abs/2507.11536) — [PDF](https://arxiv.org/pdf/2507.11536)
- - [John Watrous — Understanding Quantum Information and Computation: A Course on the Theory of Quantum Computing (arXiv:2507.11536)](https://arxiv.org/abs/2507.11536) — [PDF](https://arxiv.org/pdf/2507.11536) — [YouTube lecture series (follows this book)](https://youtube.com/playlist?list=PLOFEBzvs-VvqKKMXX4vbi4EB1uaErFMSO&si=OunACJUdcOOu6MTz)
-- [John Watrous — The Theory of Quantum Information](https://cs.uwaterloo.ca/~watrous/TQI/)
+
 
 ## Books
 
