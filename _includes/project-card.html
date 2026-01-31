@@ -1,0 +1,33 @@
+<div class="project-card">
+    <div class="project-card__header">
+        {% if post.header.teaser %}
+        <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}" class="project-card__image">
+        {% else %}
+        <div class="project-card__image-placeholder"></div>
+        {% endif %}
+    </div>
+
+    <div class="project-card__body">
+        <h3 class="project-card__title">{{ post.title }}</h3>
+        <p class="project-card__excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+    </div>
+
+    <div class="project-card__footer">
+        {% if post.link %}
+        <a href="{{ post.link }}" class="btn btn--primary btn--small"><i class="fas fa-globe"></i> Website</a>
+        {% endif %}
+
+        {% if post.github %}
+        <a href="{{ post.github }}" class="btn btn--inverse btn--small"><i class="fab fa-github"></i> Code</a>
+        {% endif %}
+
+        {% if post.paperurl %}
+        <a href="{{ post.paperurl }}" class="btn btn--info btn--small"><i class="fas fa-file-alt"></i> Paper</a>
+        {% endif %}
+
+        {% if post.slidesurl %}
+        <a href="{{ post.slidesurl }}" class="btn btn--success btn--small"><i class="fas fa-file-powerpoint"></i>
+            Slides</a>
+        {% endif %}
+    </div>
+</div>

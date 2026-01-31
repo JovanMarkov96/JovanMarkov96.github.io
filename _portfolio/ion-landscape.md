@@ -1,6 +1,10 @@
 ---
 title: "Ion Landscape"
-excerpt: "A world map of trapped ion researchers.<br/><br/> Check it out here: <a href='https://jovanmarkov96.github.io/ionlandscape/'>Ion Landscape</a>"
+excerpt: "A world map of trapped ion researchers."
+header:
+  teaser: images/ion-landscape-preview.jpg
+link: "https://jovanmarkov96.github.io/ionlandscape/"
+github: "https://github.com/JovanMarkov96/ionlandscape"
 collection: portfolio
 ---
 
