@@ -5,16 +5,14 @@
   grid-template-columns: 1fr;
   gap: 2rem;
   margin-top: 3rem;
-  /* Added top spacing */
   margin-bottom: 3rem;
-
-  @include breakpoint($medium) {
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 columns */
-  }
-
-  /* Ensure card height is consistent */
   align-items: start;
+}
+
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Project Card Styling */
@@ -22,85 +20,76 @@
   display: flex;
   flex-direction: column;
   background: transparent;
-  /* Transparent to respect theme bg */
   border: 1px solid #000;
-  /* Pitch black border */
   border-radius: 4px;
-  /* Slightly rounded, closer to square */
   overflow: hidden;
   transition: all 0.3s ease;
   height: 100%;
   color: #000;
-  /* Pitch black text */
+}
 
-  &:hover {
-    box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
-    /* Hard shadow for high contrast style */
-    transform: translate(-3px, -3px);
-  }
+.project-card:hover {
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+  transform: translate(-3px, -3px);
+}
 
-  &__header {
-    height: 200px;
-    overflow: hidden;
-    border-top: 1px solid #000;
-    /* Separator lines */
-    border-bottom: 1px solid #000;
-  }
+.project-card__header {
+  height: 200px;
+  overflow: hidden;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
 
-  &__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
+.project-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
 
-  &:hover &__image {
-    transform: scale(1.02);
-  }
+.project-card:hover .project-card__image {
+  transform: scale(1.02);
+}
 
-  &__image-placeholder {
-    width: 100%;
-    height: 100%;
-    background-color: #eee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000;
-  }
+.project-card__image-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
 
-  &__title {
-    margin: 0;
-    padding: 1rem;
-    font-size: 1.25rem;
-    font-weight: 700;
-    text-align: center;
-    /* Centered Title */
-    color: inherit;
-    background: transparent;
-  }
+.project-card__title {
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  color: inherit;
+  background: transparent;
+}
 
-  &__body {
-    padding: 1rem;
-    flex-grow: 1;
-    color: inherit;
-  }
+.project-card__body {
+  padding: 1rem;
+  flex-grow: 1;
+  color: inherit;
+}
 
-  &__excerpt {
-    font-size: 0.95rem;
-    color: inherit;
-    /* Inherit black */
-    margin: 0;
-    line-height: 1.5;
-  }
+.project-card__excerpt {
+  font-size: 0.95rem;
+  color: inherit;
+  margin: 0;
+  line-height: 1.5;
+}
 
-  &__footer {
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    border-top: 1px solid #000;
-    /* Footer separator */
-  }
+.project-card__footer {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  border-top: 1px solid #000;
 }
 
 /* Button "Box" Styling */
@@ -113,50 +102,48 @@
   font-weight: 600;
   text-decoration: none !important;
   border: 1px solid #000;
-  /* Text color border */
   color: #000 !important;
   background: transparent;
   border-radius: 4px;
   transition: all 0.2s ease;
   line-height: 1;
-
-  &:hover {
-    background: #000;
-    color: #fff !important;
-  }
-
-  i {
-    font-size: 0.9em;
-  }
 }
 
+.project-card__btn:hover {
+  background: #000;
+  color: #fff !important;
+}
+
+.project-card__btn i {
+  font-size: 0.9em;
+}
 
 /* Dark Mode Overrides */
 @media (prefers-color-scheme: dark) {
   .project-card {
     border-color: #fff;
     color: #fff;
+  }
 
-    &:hover {
-      box-shadow: 5px 5px 0px rgba(255, 255, 255, 0.8);
-    }
+  .project-card:hover {
+    box-shadow: 5px 5px 0px rgba(255, 255, 255, 0.8);
+  }
 
-    &__header {
-      border-color: #fff;
-    }
+  .project-card__header {
+    border-color: #fff;
+  }
 
-    &__footer {
-      border-color: #fff;
-    }
+  .project-card__footer {
+    border-color: #fff;
   }
 
   .project-card__btn {
     border-color: #fff;
     color: #fff !important;
+  }
 
-    &:hover {
-      background: #fff;
-      color: #000 !important;
-    }
+  .project-card__btn:hover {
+    background: #fff;
+    color: #000 !important;
   }
 }

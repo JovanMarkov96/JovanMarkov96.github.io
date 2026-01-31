@@ -2,7 +2,7 @@
 title: "Ion Landscape"
 excerpt: "A world map of trapped ion researchers."
 header:
-  teaser: images/ion-landscape-preview.jpg
+  teaser: images/ion-landscape-preview.png
 link: "https://jovanmarkov96.github.io/ionlandscape/"
 github: "https://github.com/JovanMarkov96/ionlandscape"
 collection: portfolio
