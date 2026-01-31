@@ -6,21 +6,26 @@
   position: fixed;
   background: white;
   border-bottom: 1px solid $border-color;
-  height: $masthead-height;
+  height: auto;
+  min-height: $masthead-height;
   top: 0;
   width: 100%;
 
   -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
+  animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
+  animation-delay: 0.15s;
   z-index: 20;
 
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: 1em 1em 1em;
+    padding: 0.75em 1em;
     font-family: $sans-serif-narrow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -28,6 +33,9 @@
 
     nav {
       z-index: 10;
+      display: flex;
+      align-items: center;
+      flex: 1;
     }
 
     a {
@@ -36,8 +44,13 @@
   }
 }
 
-.masthead__menu {
+/* Dark mode masthead */
+html.dark-mode .masthead {
+  background: #181818;
+  border-bottom-color: #333;
+}
 
+.masthead__menu {
   ul {
     margin: 0;
     padding: 0;
@@ -54,5 +67,211 @@
   &--lg {
     padding-right: 3em;
     font-weight: 700;
+  }
+}
+
+/* ========================================
+   Hamburger Menu Button
+   ======================================== */
+
+.nav-toggle {
+  display: block;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  z-index: 100;
+
+  @include breakpoint($medium) {
+    display: none;
+  }
+
+  .navicon {
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    background: $masthead-link-color;
+    position: relative;
+    transition: background 0.2s ease-out;
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: $masthead-link-color;
+      position: absolute;
+      transition: all 0.2s ease-out;
+    }
+
+    &:before {
+      top: -6px;
+    }
+
+    &:after {
+      top: 6px;
+    }
+  }
+
+  /* Animate to X when active */
+  &.is-active .navicon {
+    background: transparent;
+
+    &:before {
+      transform: rotate(-45deg);
+      top: 0;
+    }
+
+    &:after {
+      transform: rotate(45deg);
+      top: 0;
+    }
+  }
+}
+
+html.dark-mode .nav-toggle .navicon,
+html.dark-mode .nav-toggle .navicon:before,
+html.dark-mode .nav-toggle .navicon:after {
+  background: #fff;
+}
+
+html.dark-mode .nav-toggle.is-active .navicon {
+  background: transparent;
+}
+
+/* ========================================
+   Site Title
+   ======================================== */
+
+.site-title {
+  font-weight: 700;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px;
+
+  @include breakpoint($medium) {
+    max-width: none;
+    font-size: 1.1rem;
+  }
+}
+
+/* ========================================
+   Navigation Links
+   ======================================== */
+
+.visible-links {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-bottom: 1px solid $border-color;
+  padding: 0.5rem 0;
+  margin: 0;
+  list-style: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  @include breakpoint($medium) {
+    display: flex;
+    position: static;
+    background: transparent;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    margin-left: 1rem;
+  }
+
+  &.is-visible {
+    display: block;
+  }
+
+  .masthead__menu-item {
+    a {
+      display: block;
+      padding: 0.75rem 1.5rem;
+      color: $masthead-link-color;
+
+      &:hover {
+        background: mix(#fff, $gray, 90%);
+      }
+
+      @include breakpoint($medium) {
+        padding: 0.5rem 0.75rem;
+
+        &:hover {
+          background: transparent;
+          color: $masthead-link-color-hover;
+        }
+      }
+    }
+  }
+}
+
+html.dark-mode .visible-links {
+  background: #1a1a1a;
+  border-color: #333;
+
+  @include breakpoint($medium) {
+    background: transparent;
+    border: none;
+  }
+
+  .masthead__menu-item a {
+    color: #fff;
+
+    &:hover {
+      background: #333;
+
+      @include breakpoint($medium) {
+        background: transparent;
+        color: $link-color;
+      }
+    }
+  }
+}
+
+/* ========================================
+   Theme Toggle Button
+   ======================================== */
+
+.theme-toggle-btn {
+  background: transparent;
+  border: 1px solid $border-color;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+
+  &:hover {
+    background: mix(#fff, $gray, 90%);
+    transform: scale(1.1);
+  }
+
+  &:focus {
+    outline: 2px solid $link-color;
+    outline-offset: 2px;
+  }
+
+  .theme-icon {
+    line-height: 1;
+  }
+}
+
+html.dark-mode .theme-toggle-btn {
+  border-color: #555;
+
+  &:hover {
+    background: #333;
   }
 }
