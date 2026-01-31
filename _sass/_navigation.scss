@@ -218,7 +218,7 @@
     z-index: 50;
 
     /* Show as horizontal nav on larger screens */
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       display: table;
       position: static;
       background: transparent;
@@ -236,12 +236,11 @@
       display: block;
       vertical-align: middle;
 
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         display: table-cell;
       }
 
       &:first-child {
-        font-weight: bold;
         text-wrap: wrap;
 
         a {
@@ -261,7 +260,7 @@
       display: block;
       padding: 0.75rem 1.5rem;
 
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         padding: 0.5rem 0;
       }
 
@@ -354,7 +353,7 @@ html.dark-mode .greedy-nav .visible-links {
   background: #1a1a1a;
   border-color: #333;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     background: transparent;
     border: none;
   }
@@ -365,7 +364,7 @@ html.dark-mode .greedy-nav .visible-links {
     &:hover {
       background: #333;
 
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         background: transparent;
       }
     }

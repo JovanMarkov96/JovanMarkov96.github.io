@@ -3,11 +3,13 @@ html.dark-mode .fa-envelope,
 html.dark-mode .fa-envelope-open {
   color: #fff !important;
 }
+
 /* Header row for nav and toggle alignment */
 .header-row {
   display: flex;
   align-items: center;
 }
+
 /* --- Dark Mode Toggle Button --- */
 .theme-toggle-container.nav-align {
   display: flex;
@@ -17,6 +19,7 @@ html.dark-mode .fa-envelope-open {
   margin-right: -10rem;
   min-width: 6.5rem;
 }
+
 .theme-toggle {
   position: relative;
   display: flex;
@@ -31,11 +34,14 @@ html.dark-mode .fa-envelope-open {
   outline: none;
   transition: background 0.2s;
   font-size: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  z-index: 200;
 }
+
 .theme-toggle:focus {
   box-shadow: 0 0 0 2px #80bfff;
 }
+
 .theme-toggle .icon {
   z-index: 2;
   width: 2.5rem;
@@ -45,12 +51,15 @@ html.dark-mode .fa-envelope-open {
   font-size: 1.5rem;
   transition: color 0.2s;
 }
+
 .theme-toggle .sun {
   color: #f5c542;
 }
+
 .theme-toggle .moon {
   color: #222;
 }
+
 .theme-toggle .highlight-capsule {
   position: absolute;
   top: 8%;
@@ -59,11 +68,12 @@ html.dark-mode .fa-envelope-open {
   height: 2.1rem;
   background: #fff;
   border-radius: 1.2rem 1.2rem 1.2rem 1.2rem / 1.5rem 1.5rem 1.2rem 1.2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   z-index: 1;
   transform: translateY(-50%);
-  transition: transform 0.35s cubic-bezier(.4,2,.6,1), background 0.2s;
+  transition: transform 0.35s cubic-bezier(.4, 2, .6, 1), background 0.2s;
 }
+
 .theme-label {
   font-size: 0.85rem;
   color: #888;
@@ -72,21 +82,27 @@ html.dark-mode .fa-envelope-open {
   letter-spacing: 0.01em;
   padding-left: 0.5rem; // Move text slightly to the right
 }
+
 html.dark-mode .theme-toggle {
   background: #222;
 }
+
 html.dark-mode .theme-toggle .sun {
   color: #888;
 }
+
 html.dark-mode .theme-toggle .moon {
   color: #fff;
 }
+
 html.dark-mode .theme-toggle .highlight-capsule {
   background: #181818;
 }
+
 html.dark-mode .theme-label {
   color: #ccc;
 }
+
 /* Academic emoji/icon color fix for dark mode */
 html.dark-mode .fa-building-columns,
 html.dark-mode .ai-google-scholar,
@@ -96,6 +112,7 @@ html.dark-mode .fa-github-alt,
 html.dark-mode .fa-github-square {
   color: #fff !important;
 }
+
 /* ==========================================================================
    BASE ELEMENTS
    ========================================================================== */
@@ -110,6 +127,7 @@ html.dark-mode {
   background: #181818;
   color: #f5f5f5;
 }
+
 html.dark-mode body,
 html.dark-mode p,
 html.dark-mode .page__content,
@@ -123,6 +141,7 @@ html.dark-mode .main,
 html.dark-mode main {
   color: #fff !important;
 }
+
 html.dark-mode .masthead,
 html.dark-mode .page__footer,
 html.dark-mode .sidebar,
@@ -156,7 +175,12 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 2em 0 0.5em;
   line-height: 1.2;
   font-family: $header-font-family;
@@ -188,7 +212,8 @@ h6 {
   font-size: $type-size-6;
 }
 
-small, .small {
+small,
+.small {
   font-size: $type-size-6;
 }
 
@@ -200,6 +225,7 @@ u,
 ins {
   text-decoration: none;
   border-bottom: 1px solid $text-color;
+
   a {
     color: inherit;
   }
@@ -220,65 +246,80 @@ html.dark-mode h5,
 html.dark-mode h6 {
   color: #fff;
 }
+
 html.dark-mode a {
   color: #80bfff;
 }
+
 html.dark-mode .masthead,
 html.dark-mode .page__footer,
 html.dark-mode .sidebar {
   background: #222;
   color: #e0e0e0;
 }
+
 html.dark-mode .btn {
   background: #333;
   color: #fff !important;
 }
+
 html.dark-mode pre,
 html.dark-mode code {
   background: #222;
   color: #e0e0e0;
 }
+
 html.dark-mode table {
   background: #222;
   color: #e0e0e0;
 }
+
 html.dark-mode .greedy-nav,
 html.dark-mode .masthead__menu,
 html.dark-mode .masthead__menu-item {
   background: #222;
   color: #e0e0e0;
 }
+
 html.dark-mode .masthead__menu-item a {
   color: #e0e0e0;
 }
+
 html.dark-mode .masthead__menu-item a:hover,
 html.dark-mode .masthead__menu-item--active a {
   color: #80bfff;
   background: #333;
 }
+
 html.dark-mode .author-profile a,
 html.dark-mode .sidebar a {
   color: #80bfff;
 }
+
 html.dark-mode .author-profile a:hover,
 html.dark-mode .sidebar a:hover {
   color: #fff;
 }
+
 html.dark-mode .page__footer {
   background: #222;
   color: #e0e0e0;
 }
+
 html.dark-mode .page__footer a {
   color: #80bfff;
 }
+
 html.dark-mode .archive__item,
 html.dark-mode .archive__item-teaser {
   background: #222;
   color: #e0e0e0;
 }
+
 html.dark-mode .archive__item-title a {
   color: #80bfff;
 }
+
 html.dark-mode .btn,
 html.dark-mode button,
 html.dark-mode input[type='submit'] {
@@ -286,18 +327,21 @@ html.dark-mode input[type='submit'] {
   color: #fff !important;
   border: 1px solid #444;
 }
+
 html.dark-mode .btn:hover,
 html.dark-mode button:hover,
 html.dark-mode input[type='submit']:hover {
   background: #444;
   color: #80bfff !important;
 }
+
 html.dark-mode table th,
 html.dark-mode table td {
   background: #222;
   color: #e0e0e0;
   border-color: #444;
 }
+
 html.dark-mode input,
 html.dark-mode textarea,
 html.dark-mode select {
@@ -305,28 +349,36 @@ html.dark-mode select {
   color: #e0e0e0;
   border: 1px solid #444;
 }
+
 html.dark-mode blockquote cite {
   color: #80bfff;
 }
+
 html.dark-mode blockquote {
   background: #222;
   color: #e0e0e0;
   border-left: 4px solid #444;
 }
-html.dark-mode img, html.dark-mode svg {
+
+html.dark-mode img,
+html.dark-mode svg {
   filter: brightness(0.85) contrast(1.1);
 }
+
 html.dark-mode .archive__item-teaser {
   background: #222;
 }
+
 html.dark-mode .author-profile {
   background: #222;
   color: #e0e0e0;
 }
+
 html.dark-mode .comments {
   background: #222;
   color: #e0e0e0;
 }
+
 @media print {
   html.dark-mode {
     background: #fff !important;
@@ -351,13 +403,16 @@ html.dark-mode .comments {
   cursor: pointer;
   transition: background 0.2s;
 }
+
 #dark-mode-toggle:hover {
   background: #e0e0e0;
 }
+
 html.dark-mode #dark-mode-toggle {
   background: #222;
   color: #fff;
 }
+
 html.dark-mode #dark-mode-toggle:hover {
   background: #444;
 }
@@ -396,19 +451,24 @@ a {
 
 /* code */
 
-tt, code, kbd, samp, pre {
+tt,
+code,
+kbd,
+samp,
+pre {
   font-family: $monospace;
 }
 
 pre {
-  overflow-x: auto; /* add scrollbars to wide code blocks*/
+  overflow-x: auto;
+  /* add scrollbars to wide code blocks*/
 }
 
-p > code,
-a > code,
-li > code,
-figcaption > code,
-td > code {
+p>code,
+a>code,
+li>code,
+figcaption>code,
+td>code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
   font-size: $type-size-6;
@@ -417,9 +477,11 @@ td > code {
   border-radius: $border-radius;
   box-shadow: $box-shadow;
 
-  &:before, &:after {
+  &:before,
+  &:after {
     letter-spacing: -0.2em;
-    content: "\00a0"; /* non-breaking space*/
+    content: "\00a0";
+    /* non-breaking space*/
   }
 }
 
@@ -454,9 +516,9 @@ figure {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   -webkit-box-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin: 2em 0;
 
@@ -473,13 +535,14 @@ figure {
     transition: $global-transition;
   }
 
-  > a {
+  >a {
     display: block;
   }
 
   &.half {
-    > a,
-    > img {
+
+    >a,
+    >img {
       @include breakpoint($small) {
         width: calc(50% - 0.5em);
       }
@@ -491,8 +554,9 @@ figure {
   }
 
   &.third {
-    > a,
-    > img {
+
+    >a,
+    >img {
       @include breakpoint($small) {
         width: calc(33.3333% - 0.5em);
       }
@@ -581,7 +645,28 @@ nav {
    Global animation transition
    ========================================================================== */
 
-b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item-teaser {
+b,
+i,
+strong,
+em,
+blockquote,
+p,
+q,
+span,
+figure,
+img,
+h1,
+h2,
+header,
+input,
+a,
+tr,
+td,
+form button,
+input[type="submit"],
+.btn,
+.highlight,
+.archive__item-teaser {
   -webkit-transition: $global-transition;
   transition: $global-transition;
 }
