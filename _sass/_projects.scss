@@ -118,42 +118,45 @@
   font-size: 0.9em;
 }
 
-/* Dark Mode Overrides */
-@media (prefers-color-scheme: dark) {
+/* Dark Mode Overrides - using html.dark-mode class toggle */
+html.dark-mode {
   .project-card {
-    border-color: #fff;
+    border-color: #555;
     color: #fff;
+    background-color: #1a1a1a;
+    /* Darker than page background #181818 */
   }
 
   .project-card:hover {
-    box-shadow: 5px 5px 0px rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 5px 0px rgba(255, 255, 255, 0.6);
   }
 
   .project-card__header {
-    border-color: #fff;
+    border-color: #555;
   }
 
   .project-card__footer {
-    border-color: #fff;
+    border-color: #555;
   }
 
   .project-card__btn {
-    border-color: #fff;
+    background-color: #000;
+    /* Pitch black background */
+    border-color: #444;
     color: #fff !important;
+  }
+
+  .project-card__btn i {
+    color: #fff !important;
+    /* White icons */
   }
 
   .project-card__btn:hover {
     background: #fff;
     color: #000 !important;
   }
-}
 
-/* Specific override for button background in dark mode */
-@media (prefers-color-scheme: dark) {
-  .project-card__btn {
-    background-color: #333;
-    /* Distinct background */
-    border-color: #555;
-    color: #fff !important;
+  .project-card__btn:hover i {
+    color: #000 !important;
   }
 }
