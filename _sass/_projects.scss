@@ -147,3 +147,13 @@
     color: #000 !important;
   }
 }
+
+/* Specific override for button background in dark mode */
+@media (prefers-color-scheme: dark) {
+  .project-card__btn {
+    background-color: #333;
+    /* Distinct background */
+    border-color: #555;
+    color: #fff !important;
+  }
+}
