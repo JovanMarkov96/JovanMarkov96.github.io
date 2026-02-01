@@ -20,12 +20,12 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: 0.75em 1em;
+    padding: 0.5em 1em;
     font-family: $sans-serif-narrow;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start; // Align rows to left
+    justify-content: center;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -145,18 +145,48 @@ html.dark-mode .nav-toggle.is-active .navicon {
    Site Title
    ======================================== */
 
+/* ========================================
+   Masthead Layout Rows
+   ======================================== */
+
+.masthead__row-top {
+  width: 100%;
+  padding-bottom: 0.25rem;
+}
+
+.masthead__row-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+/* ========================================
+   Site Title
+   ======================================== */
+
 .site-title {
+  display: block;
+  width: 100%;
+  max-width: none;
+  text-align: left;
+  margin: 0;
+  padding: 0.25rem 0;
   font-weight: 700;
-  font-size: 1rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 180px;
+  font-size: 1.1rem;
+  white-space: normal !important;
+  /* Allow wrapping */
+  word-wrap: break-word;
+  line-height: 1.2;
 
   @media (min-width: 1024px) {
-    max-width: none;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
+}
+
+html.dark-mode .site-title {
+  color: #fff !important;
 }
 
 /* ========================================

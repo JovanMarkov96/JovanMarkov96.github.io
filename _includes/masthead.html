@@ -1,33 +1,41 @@
 {% include base_path %}
 
 <div class="masthead">
-  <div class="masthead__inner-wrap header-row">
-    <!-- Hamburger button for mobile -->
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span class="navicon"></span>
-    </button>
+  <div class="masthead__inner-wrap">
 
-    <nav id="site-nav" class="greedy-nav">
-      <!-- Site title - always visible -->
+    <!-- Row 1: Site Title -->
+    <div class="masthead__row-top">
       <a class="site-title" href="{{ base_path }}/">{{ site.title }}</a>
+    </div>
 
-      <!-- Navigation links - hidden on mobile, shown in dropdown -->
-      <ul class="visible-links" id="nav-links">
-        {% for link in site.data.navigation.main %}
-        {% if link.url contains 'http' %}
-        {% assign domain = '' %}
-        {% else %}
-        {% assign domain = base_path %}
-        {% endif %}
-        <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
+    <!-- Row 2: Navigation & Actions -->
+    <div class="masthead__row-bottom header-row">
+      <!-- Hamburger button for mobile -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="navicon"></span>
+      </button>
 
-    <!-- Simplified theme toggle - single button with 3 modes -->
-    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme"
-      title="Toggle theme (Light/Dark/System)">
-      <span class="theme-icon" aria-hidden="true">&#x1F31E;</span>
-    </button>
+      <nav id="site-nav" class="greedy-nav">
+        <!-- Site title removed from here -->
+
+        <!-- Navigation links - hidden on mobile, shown in dropdown -->
+        <ul class="visible-links" id="nav-links">
+          {% for link in site.data.navigation.main %}
+          {% if link.url contains 'http' %}
+          {% assign domain = '' %}
+          {% else %}
+          {% assign domain = base_path %}
+          {% endif %}
+          <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+
+      <!-- Simplified theme toggle - single button with 3 modes -->
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme"
+        title="Toggle theme (Light/Dark/System)">
+        <span class="theme-icon" aria-hidden="true">&#x1F31E;</span>
+      </button>
+    </div>
   </div>
 </div>
