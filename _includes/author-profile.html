@@ -10,7 +10,7 @@
             {% if author.avatar contains "://" %}
             <img src="{{ author.avatar }}" alt="{{ author.name }}">
             {% else %}
-            <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar"
+            <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path | strip }}" class="author__avatar"
                   alt="{{ author.name }}">
             {% endif %}
       </div>
@@ -31,14 +31,10 @@
                         author.location }}</li>
                   {% endif %}
                   {% if author.employer %}
-                  <li class="author__desktop"><i class="fa fa-solid fa-building-columns icon-pad-right"
-                              aria-hidden="true"></i>
-                        {% if author.weizmann_profile %}
-                        <a href="{{ author.weizmann_profile }}">{{ author.employer }}</a>
-                        {% else %}
-                        {{ author.employer }}
-                        {% endif %}
-                  </li>
+                  <li class="author__desktop">{% if author.weizmann_profile %}<a href="{{ author.weizmann_profile }}"><i
+                                    class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>{{
+                              author.employer }}</a>{% else %}<i class="fa fa-solid fa-building-columns icon-pad-right"
+                              aria-hidden="true"></i>{{ author.employer }}{% endif %}</li>
                   {% endif %}
                   {% if author.uri %}
                   <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{
