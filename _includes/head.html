@@ -14,17 +14,6 @@
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-
-  // Inline dark mode check to prevent flash of light mode
-  (function () {
-    var theme = null;
-    try { theme = localStorage.getItem('themeMode'); } catch (e) { }
-    var supportDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    var isDark = theme === 'dark' || (!theme && supportDarkMode);
-    if (isDark) {
-      document.documentElement.classList.add('dark-mode');
-    }
-  })();
 </script>
 
 <!-- Fonts -->
