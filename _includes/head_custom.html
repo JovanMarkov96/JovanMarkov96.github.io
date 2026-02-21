@@ -392,45 +392,89 @@
         background: transparent !important;
         border: none !important;
         padding: 0 !important;
-        margin-top: 1em !important;
+        margin-top: 1.5em !important;
         box-shadow: none !important;
         z-index: auto !important;
     }
 
     .sidebar .author__urls li {
         white-space: normal !important;
+        background: transparent !important;
+    }
+
+    /* Enforce transparency on text containers to fix "black box" issue */
+    .sidebar .author__content,
+    .sidebar .author__bio,
+    .sidebar .author__name,
+    .sidebar .author__urls-wrapper {
+        background: transparent !important;
     }
 
     /* The floating glass card around the entire sidebar content */
     .sidebar>div[itemscope] {
-        background: var(--ion-surface-2) !important;
+        background: rgba(4, 13, 33, 0.4) !important;
+        /* Cool dark blue base */
         backdrop-filter: blur(25px) saturate(180%) !important;
         -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
-        border: 1px solid var(--ion-border) !important;
+        border: 1px solid rgba(129, 140, 248, 0.15) !important;
         border-radius: var(--ion-radius) !important;
-        padding: 1.5em !important;
-        box-shadow: var(--ion-shadow-md) !important;
+        padding: 2em !important;
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25) !important;
+    }
+
+    html.dark-mode .sidebar>div[itemscope] {
+        background: linear-gradient(145deg, rgba(8, 20, 50, 0.6), rgba(4, 10, 25, 0.8)) !important;
+        border: 1px solid rgba(129, 140, 248, 0.25) !important;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4) !important;
     }
 
     .author__avatar img {
         border-radius: 50% !important;
-        margin-bottom: 1em;
-        border: 2px solid var(--ion-border);
+        margin-bottom: 1.2em;
+        border: 2px solid rgba(129, 140, 248, 0.3);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 120px !important;
+        height: 120px !important;
     }
 
+    /* Modern Sleek Hover Effect */
     .author__urls li a {
         color: var(--ion-text) !important;
-        transition: color 0.2s ease;
+        text-decoration: none !important;
+        display: inline-flex !important;
+        align-items: center;
+        padding: 8px 12px !important;
+        margin-bottom: 4px;
+        border-radius: 8px !important;
+        width: calc(100% - 24px);
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+        background: transparent !important;
     }
 
     .author__urls li a:hover {
+        background: rgba(129, 140, 248, 0.15) !important;
+        transform: translateX(6px) scale(1.02) !important;
         color: var(--ion-accent) !important;
+        text-shadow: 0 0 8px rgba(129, 140, 248, 0.3);
+        box-shadow: 0 4px 12px rgba(129, 140, 248, 0.1) !important;
     }
 
     /* Hide the "Follow" button on desktop since all links are visible */
     @media (min-width: 1024px) {
         .sidebar .author__urls-wrapper button {
             display: none !important;
+        }
+
+        /* Stretch the panel in the X-direction */
+        .sidebar {
+            width: 360px !important;
+        }
+
+        /* Adjust main content width to prevent layout breaking from wider sidebar */
+        .page,
+        .archive {
+            width: calc(100% - 390px) !important;
+            float: right !important;
         }
     }
 
