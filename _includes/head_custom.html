@@ -11,7 +11,7 @@
         }
 
         // Attach toggle logic once DOM is loaded
-        document.addEventListener('DOMContentLoaded', function () {
+        function initThemeToggle() {
             var toggleBtn = document.getElementById('ion-theme-toggle');
             if (!toggleBtn) return;
             var svgIcon = document.getElementById('theme-icon-svg');
@@ -53,7 +53,14 @@
                 if (e.matches) document.documentElement.classList.add('dark-mode');
                 else document.documentElement.classList.remove('dark-mode');
             });
-        });
+        }
+
+        // Guard against DOMContentLoaded already having fired
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initThemeToggle);
+        } else {
+            initThemeToggle();
+        }
     })();
 </script>
 
