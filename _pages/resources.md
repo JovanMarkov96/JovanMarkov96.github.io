@@ -9,7 +9,7 @@ author_profile: true
 
 Here are some useful resources:
 
-<div class="home-grid">
+<div class="resources-grid">
 {% for post in site.resources %}
     {% include archive-single.html type="grid" %}
 {% endfor %}

@@ -146,6 +146,7 @@
         letter-spacing: -0.03em;
         background: linear-gradient(135deg, var(--ion-accent), #8b5cf6);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
@@ -197,6 +198,33 @@
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 1.5rem;
         margin-top: 2rem;
+    }
+
+    .resources-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .resources-grid .grid__item {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        float: none !important;
+    }
+
+    .resources-grid .archive__item {
+        margin-bottom: 0 !important;
+        height: 100% !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (max-width: 768px) {
+        .resources-grid {
+            grid-template-columns: 1fr;
+        }
     }
 
     .home-glass-card {
