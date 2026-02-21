@@ -7,16 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-<div class="home-hero">
-  <h1>Jovan Markov</h1>
-  <p class="home-hero-subtitle">Trapped ion quantum computing at the Weizmann Institute</p>
-  <div class="home-quick-links">
-    <a href="/publications/" class="home-btn">Publications</a>
-    <a href="/talks/" class="home-btn">Talks</a>
-    <a href="/cv/" class="home-btn btn-outline">CV</a>
-  </div>
-</div>
-
 <div class="home-content">
   <div class="archive__item home-glass-panel">
     <h2>About Me</h2>

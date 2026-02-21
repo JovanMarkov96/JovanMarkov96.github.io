@@ -358,10 +358,51 @@
         margin-top: 100px;
         /* Spacing below the fixed masthead */
         z-index: 10;
-        position: relative;
+        position: relative !important;
+        height: auto !important;
+        overflow: visible !important;
+        overflow-y: visible !important;
+        overflow-x: visible !important;
     }
 
-    .author__profile {
+    .sidebar .author__avatar,
+    .sidebar .author__content,
+    .sidebar .author__urls-wrapper {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .sidebar .author__avatar {
+        text-align: center;
+    }
+
+    .sidebar .author__content {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        text-align: center;
+    }
+
+    .sidebar .author__urls-wrapper {
+        display: block !important;
+    }
+
+    .sidebar .author__urls {
+        display: block !important;
+        position: relative !important;
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
+        margin-top: 1em !important;
+        box-shadow: none !important;
+        z-index: auto !important;
+    }
+
+    .sidebar .author__urls li {
+        white-space: normal !important;
+    }
+
+    /* The floating glass card around the entire sidebar content */
+    .sidebar>div[itemscope] {
         background: var(--ion-surface-2) !important;
         backdrop-filter: blur(25px) saturate(180%) !important;
         -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
@@ -377,14 +418,6 @@
         border: 2px solid var(--ion-border);
     }
 
-    .author__urls-wrapper .author__urls {
-        background: transparent !important;
-        border: none !important;
-        padding: 0 !important;
-        margin-top: 1em !important;
-        box-shadow: none !important;
-    }
-
     .author__urls li a {
         color: var(--ion-text) !important;
         transition: color 0.2s ease;
@@ -392,6 +425,13 @@
 
     .author__urls li a:hover {
         color: var(--ion-accent) !important;
+    }
+
+    /* Hide the "Follow" button on desktop since all links are visible */
+    @media (min-width: 1024px) {
+        .sidebar .author__urls-wrapper button {
+            display: none !important;
+        }
     }
 
     @media (max-width: 1024px) {
