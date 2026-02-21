@@ -13,35 +13,77 @@ redirect_from:
 
 Education
 ======
-* 2022 – present: Weizmann Institute of Science, Physics, PhD, Quantum computing and quantum simulation, Advisor: Prof. Roee Ozeri.
-* 2019 – 2021: Weizmann Institute of Science, Physics, MSc, Advisor: Prof. Kfir Blum.
-* 2015 – 2019: Faculty of Physics, University of Belgrade, Theoretical and Experimental Physics, BSc. GPA – 9.79/10
-  
+<div class="cv-timeline">
+
+  <div class="cv-timeline-item">
+    <div class="cv-logo">WIS</div>
+    <div class="cv-content">
+      <h3>Weizmann Institute of Science</h3>
+      <div class="meta">2022 – present • PhD in Physics</div>
+      <details>
+        <summary>Details & Advisor</summary>
+        <ul>
+          <li><strong>Focus:</strong> Quantum computing and quantum simulation</li>
+          <li><strong>Advisor:</strong> Prof. Roee Ozeri</li>
+        </ul>
+      </details>
+    </div>
+  </div>
+
+  <div class="cv-timeline-item">
+    <div class="cv-logo">WIS</div>
+    <div class="cv-content">
+      <h3>Weizmann Institute of Science</h3>
+      <div class="meta">2019 – 2021 • MSc in Physics</div>
+      <details>
+        <summary>Details & Advisor</summary>
+        <ul>
+          <li><strong>Advisor:</strong> Prof. Kfir Blum</li>
+        </ul>
+      </details>
+    </div>
+  </div>
+
+  <div class="cv-timeline-item">
+    <div class="cv-logo">UoB</div>
+    <div class="cv-content">
+      <h3>University of Belgrade</h3>
+      <div class="meta">2015 – 2019 • BSc in Theoretical and Experimental Physics</div>
+      <details>
+        <summary>Details & Honors</summary>
+        <ul>
+          <li><strong>GPA:</strong> 9.79/10</li>
+          <li>Faculty of Physics</li>
+        </ul>
+      </details>
+    </div>
+  </div>
+
+</div>
+
 Skills
 ======
-<div style="display: flex; justify-content: space-between;">
-  <div>
-    <ul>
-      <li>Git</li>
-      <li>Jupyter Notebook</li>
-      <li>LaTeX</li>
-      <li>Linux command line</li>
-      <li>Mathematica</li>
-      <li>Matlab</li>
-      <li>Python</li>
-      <li>ROOT</li>
-    </ul>
-  </div>
-  <div>
-    <ul>
-      <li>Event Planning</li>
-      <li>Outreach</li>
-      <li>Public Speaking</li>
-      <li>Presenting</li>
-      <li>Project Management</li>
-      <li>Seminar Organization</li>
-    </ul>
-  </div>
+
+<h3>Technical Skills</h3>
+<div style="margin-bottom: 1.5rem;">
+  <span class="cv-badge tech-badge"><i class="fab fa-git-alt" style="color: #f14e32"></i> Git</span>
+  <span class="cv-badge tech-badge"><i class="fas fa-book" style="color: #f37626"></i> Jupyter Notebook</span>
+  <span class="cv-badge tech-badge"><i class="fas fa-superscript"></i> LaTeX</span>
+  <span class="cv-badge tech-badge"><i class="fab fa-linux"></i> Linux</span>
+  <span class="cv-badge tech-badge"><i class="fas fa-square-root-alt"></i> Mathematica</span>
+  <span class="cv-badge tech-badge"><i class="fas fa-chart-line"></i> Matlab</span>
+  <span class="cv-badge tech-badge"><i class="fab fa-python" style="color: #3776ab"></i> Python</span>
+  <span class="cv-badge tech-badge"><i class="fas fa-chart-bar" style="color: #0b8043"></i> ROOT</span>
+</div>
+
+<h3>Soft Skills</h3>
+<div style="margin-bottom: 1.5rem;">
+  <span class="cv-badge"><i class="fas fa-users"></i> Event Planning</span>
+  <span class="cv-badge"><i class="fas fa-hands-helping"></i> Outreach</span>
+  <span class="cv-badge"><i class="fas fa-microphone"></i> Public Speaking</span>
+  <span class="cv-badge"><i class="fas fa-chalkboard-teacher"></i> Presenting</span>
+  <span class="cv-badge"><i class="fas fa-tasks"></i> Project Management</span>
+  <span class="cv-badge"><i class="fas fa-calendar-check"></i> Seminar Organization</span>
 </div>
 
 Publications

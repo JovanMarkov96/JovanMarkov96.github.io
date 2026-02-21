@@ -5,8 +5,6 @@ permalink: /resources/
 author_profile: true
 ---
 
-## Resources
-
 Here are some useful resources:
 
 <div class="resources-grid">

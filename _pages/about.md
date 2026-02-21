@@ -28,29 +28,25 @@ redirect_from:
   </div>
 
   <div class="home-grid">
-    <div class="archive__item home-glass-card">
+    <a href="/publications/" class="archive__item home-glass-card">
       <h3><i class="fas fa-file-alt"></i> Selected Publications</h3>
       <p>Explore recent research in trapped ion quantum computing and robust gate engineering.</p>
-      <a href="/publications/">View publications &rarr;</a>
-    </div>
+    </a>
 
-    <div class="archive__item home-glass-card">
+    <a href="/talks/" class="archive__item home-glass-card">
       <h3><i class="fas fa-microphone"></i> Recent Talks</h3>
       <p>Presentations on quantum simulations and AMO physics at various conferences.</p>
-      <a href="/talks/">View talks &rarr;</a>
-    </div>
+    </a>
 
-    <div class="archive__item home-glass-card">
+    <a href="/portfolio/" class="archive__item home-glass-card">
       <h3><i class="fas fa-project-diagram"></i> Open Source</h3>
       <p>Data visualization tools like <b>IonLandscape</b> and other research software.</p>
-      <a href="/portfolio/">View projects &rarr;</a>
-    </div>
+    </a>
 
-    <div class="archive__item home-glass-card">
+    <a href="/resources/" class="archive__item home-glass-card">
       <h3><i class="fas fa-book"></i> Resources</h3>
       <p>Notes, guides, and tools useful for the atomic physics community.</p>
-      <a href="/resources/">View resources &rarr;</a>
-    </div>
+    </a>
   </div>
 </div>
 

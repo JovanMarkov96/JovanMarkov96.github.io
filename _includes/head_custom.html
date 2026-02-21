@@ -1,3 +1,62 @@
+<!-- Early Theme Intialization to prevent FOUC -->
+<script>
+    (function () {
+        var savedTheme = localStorage.getItem('theme');
+        var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = savedTheme ? savedTheme : (systemDark ? 'dark' : 'light');
+        if (theme === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        } else {
+            document.documentElement.classList.remove('dark-mode');
+        }
+
+        // Attach toggle logic once DOM is loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            var toggleBtn = document.getElementById('ion-theme-toggle');
+            if (!toggleBtn) return;
+            var svgIcon = document.getElementById('theme-icon-svg');
+
+            var SVGS = {
+                light: '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>',
+                dark: '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>',
+                system: '<rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line>'
+            };
+
+            var currentMode = localStorage.getItem('theme') || 'system';
+            svgIcon.innerHTML = SVGS[currentMode];
+            toggleBtn.title = currentMode.charAt(0).toUpperCase() + currentMode.slice(1);
+
+            toggleBtn.addEventListener('click', function () {
+                var newMode = 'system';
+                if (currentMode === 'system') newMode = 'light';
+                else if (currentMode === 'light') newMode = 'dark';
+
+                currentMode = newMode;
+                svgIcon.innerHTML = SVGS[currentMode];
+                toggleBtn.title = currentMode.charAt(0).toUpperCase() + currentMode.slice(1);
+
+                if (currentMode === 'system') {
+                    localStorage.removeItem('theme');
+                    var isSysDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                    if (isSysDark) document.documentElement.classList.add('dark-mode');
+                    else document.documentElement.classList.remove('dark-mode');
+                } else {
+                    localStorage.setItem('theme', currentMode);
+                    if (currentMode === 'dark') document.documentElement.classList.add('dark-mode');
+                    else document.documentElement.classList.remove('dark-mode');
+                }
+            });
+
+            // Listen for OS theme changes if on system mode
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+                if (localStorage.getItem('theme')) return; // ignore if user set a preference
+                if (e.matches) document.documentElement.classList.add('dark-mode');
+                else document.documentElement.classList.remove('dark-mode');
+            });
+        });
+    })();
+</script>
+
 <style>
     /*
  * Ion Landscape Design System
@@ -6,14 +65,17 @@
 
     :root,
     html {
-        --ion-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        /* Core Palette (Light Mode defaults) */
+        --ion-bg: #ffffff;
+        --ion-surface: #f8fafc;
+        --ion-surface-2: rgba(255, 255, 255, 0.65);
+        --ion-border: rgba(226, 232, 240, 0.8);
+        --ion-text: #1e293b;
+        --ion-muted: #64748b;
         --ion-accent: #4f46e5;
         --ion-accent-hover: #4338ca;
-        --ion-surface: #f8fafc;
-        --ion-surface-dark: #1e1e32;
-        --ion-border: #e2e8f0;
-        --ion-border-dark: #2d2d44;
-        --ion-text-muted: #64748b;
+
+        --ion-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         --ion-radius: 12px;
 
         /* Shadows mapped from ionlandscape */
@@ -24,6 +86,22 @@
         /* Re-map Minimal Mistakes base fonts */
         --global-font-family: var(--ion-font-family);
         --heading-font-family: var(--ion-font-family);
+    }
+
+    /* Deep-Blue Dark Mode overrides */
+    html.dark-mode {
+        --ion-bg: #0b1220;
+        --ion-surface: #121a2b;
+        --ion-surface-2: rgba(18, 26, 43, 0.65);
+        --ion-border: rgba(255, 255, 255, 0.08);
+        --ion-text: #f1f5f9;
+        --ion-muted: #94a3b8;
+        --ion-accent: #818cf8;
+        --ion-accent-hover: #6366f1;
+
+        --ion-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+        --ion-shadow-md: 0 6px 16px rgba(0, 0, 0, 0.3);
+        --ion-shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.4);
     }
 
     /* 2. Global Typography Overrides */
@@ -52,11 +130,12 @@
         border-radius: 24px !important;
 
         /* Liquid Glass Effect */
-        background: rgba(255, 255, 255, 0.65) !important;
+        background: var(--ion-surface-2) !important;
         backdrop-filter: blur(20px) saturate(180%) !important;
         -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
-        border: 1px solid rgba(255, 255, 255, 0.3) !important;
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15) !important;
+        border: 1px solid var(--ion-border) !important;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15) !important;
+        /* Keep a static dark alpha for navbar shadow */
         transition: all 0.3s ease !important;
         z-index: 1000 !important;
         border-bottom: none !important;
@@ -75,6 +154,9 @@
     .masthead__menu-item a {
         font-weight: 500 !important;
         transition: color 0.15s ease, opacity 0.15s ease !important;
+        text-decoration: none !important;
+        /* Remove cheap underlines */
+        color: var(--ion-text) !important;
     }
 
     .masthead__menu-item a:hover {
@@ -82,17 +164,43 @@
         color: var(--ion-accent) !important;
     }
 
+    /* Glass Theme Toggle UI */
+    .glass-toggle {
+        background: var(--ion-surface-2);
+        backdrop-filter: blur(10px) saturate(180%);
+        -webkit-backdrop-filter: blur(10px) saturate(180%);
+        border: 1px solid var(--ion-border);
+        border-radius: var(--ion-radius);
+        padding: 0.4em 0.6em;
+        margin-left: 0.5em;
+        box-shadow: var(--ion-shadow-sm);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--ion-text);
+        transition: all 0.2s ease;
+    }
+
+    .glass-toggle:hover {
+        background: var(--ion-bg);
+        transform: translateY(-1px);
+        box-shadow: var(--ion-shadow-md);
+        color: var(--ion-accent);
+    }
+
     /* 4. Glass Cards Overrides */
     .archive__item {
-        background: rgba(255, 255, 255, 0.65) !important;
+        background: var(--ion-surface-2) !important;
         backdrop-filter: blur(30px) saturate(180%) !important;
         -webkit-backdrop-filter: blur(30px) saturate(180%) !important;
-        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        border: 1px solid var(--ion-border) !important;
         border-radius: var(--ion-radius) !important;
         padding: 1.5em !important;
         margin-bottom: 1.5em !important;
         box-shadow: var(--ion-shadow-sm) !important;
         transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease !important;
+        color: var(--ion-text) !important;
     }
 
     .archive__item:hover {
@@ -104,34 +212,15 @@
         margin-top: 0 !important;
     }
 
-    /* Dark mode fallback for the specific elements */
-    @media (prefers-color-scheme: dark) {
-        body {
-            background-color: #121212;
-            color: #e3e3e3;
-        }
+    .archive__item a {
+        text-decoration: none !important;
+        color: var(--ion-text) !important;
+        /* Base color for card links */
+        transition: color 0.2s ease;
+    }
 
-        .masthead {
-            background: rgba(18, 18, 30, 0.60) !important;
-            border: 1px solid rgba(255, 255, 255, 0.08) !important;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
-        }
-
-        .masthead__menu-item a,
-        .site-title {
-            color: #e3e3e3 !important;
-        }
-
-        .archive__item {
-            background: rgba(18, 18, 30, 0.65) !important;
-            border: 1px solid rgba(255, 255, 255, 0.1) !important;
-            box-shadow: var(--ion-shadow-md) !important;
-            color: #e3e3e3 !important;
-        }
-
-        .archive__item a {
-            color: var(--ion-accent-hover) !important;
-        }
+    .archive__item a:hover {
+        color: var(--ion-accent) !important;
     }
 
     /* Homepage specific styles */
@@ -219,19 +308,28 @@
         height: 100% !important;
         display: flex;
         flex-direction: column;
+        aspect-ratio: 1 / 1;
+        justify-content: center;
     }
 
     @media (max-width: 768px) {
         .resources-grid {
             grid-template-columns: 1fr;
         }
+
+        .resources-grid .archive__item {
+            aspect-ratio: auto;
+            /* Allow natural height on mobile */
+            padding: 2em !important;
+            justify-content: flex-start;
+        }
     }
 
     .home-glass-card {
-        background: rgba(255, 255, 255, 0.65) !important;
+        background: var(--ion-surface-2) !important;
         backdrop-filter: blur(30px) saturate(180%) !important;
         -webkit-backdrop-filter: blur(30px) saturate(180%) !important;
-        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        border: 1px solid var(--ion-border) !important;
         border-radius: var(--ion-radius) !important;
         padding: 1.5em !important;
         box-shadow: var(--ion-shadow-sm) !important;
@@ -239,11 +337,15 @@
         height: 100%;
         display: flex;
         flex-direction: column;
+        text-decoration: none !important;
+        /* No underlines on cards */
+        color: var(--ion-text) !important;
     }
 
     .home-glass-card:hover {
         transform: translateY(-2px) !important;
         box-shadow: var(--ion-shadow-md) !important;
+        color: var(--ion-accent) !important;
     }
 
     .home-glass-card h3 {
@@ -257,24 +359,220 @@
     .home-glass-card p {
         flex-grow: 1;
         font-size: 0.95rem;
+        color: var(--ion-text);
     }
 
     .home-glass-card a {
         font-weight: 500;
         margin-top: 1rem;
+        text-decoration: none !important;
     }
 
-    @media (prefers-color-scheme: dark) {
-        .home-btn.btn-outline {
-            color: var(--ion-accent-hover) !important;
-            border-color: var(--ion-accent-hover);
+    /* Global subtle link override for body text links */
+    #main p>a:not(.btn):not(.archive__item-title a):not(.home-glass-card) {
+        text-decoration: none !important;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s ease, text-shadow 0.2s ease;
+    }
+
+    #main p>a:not(.btn):not(.archive__item-title a):not(.home-glass-card):hover,
+    #main p>a:not(.btn):not(.archive__item-title a):not(.home-glass-card):focus {
+        border-bottom-color: var(--ion-accent);
+        text-shadow: 0 0 8px rgba(79, 70, 229, 0.3);
+    }
+
+    html.dark-mode .home-btn.btn-outline:hover {
+        background: rgba(129, 140, 248, 0.1);
+    }
+
+    /* Helper for fully clickable cards */
+    .stretched-link::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        content: "";
+    }
+
+    .archive__item {
+        position: relative;
+    }
+
+    /* 5. Sidebar Author Profile Overrides */
+    .sidebar {
+        margin-top: 100px;
+        /* Spacing below the fixed masthead */
+        z-index: 10;
+        position: relative;
+    }
+
+    .author__profile {
+        background: var(--ion-surface-2) !important;
+        backdrop-filter: blur(25px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
+        border: 1px solid var(--ion-border) !important;
+        border-radius: var(--ion-radius) !important;
+        padding: 1.5em !important;
+        box-shadow: var(--ion-shadow-md) !important;
+    }
+
+    .author__avatar img {
+        border-radius: 50% !important;
+        margin-bottom: 1em;
+        border: 2px solid var(--ion-border);
+    }
+
+    .author__urls-wrapper .author__urls {
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
+        margin-top: 1em !important;
+        box-shadow: none !important;
+    }
+
+    .author__urls li a {
+        color: var(--ion-text) !important;
+        transition: color 0.2s ease;
+    }
+
+    .author__urls li a:hover {
+        color: var(--ion-accent) !important;
+    }
+
+    @media (max-width: 1024px) {
+        .sidebar {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    /* 6. CV Specific Overrides */
+    .cv-badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.25em 0.75em;
+        border-radius: 2em;
+        font-size: 0.85em;
+        font-weight: 500;
+        margin: 0.25em;
+        border: 1px solid var(--ion-border);
+        background: var(--ion-surface-2);
+        color: var(--ion-text);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .cv-badge:hover {
+        transform: translateY(-1px);
+        box-shadow: var(--ion-shadow-sm);
+        border-color: var(--ion-accent);
+    }
+
+    .cv-badge i {
+        margin-right: 0.4em;
+        font-size: 1.1em;
+    }
+
+    .cv-timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .cv-timeline-item {
+        display: flex;
+        gap: 1.5rem;
+        background: var(--ion-surface-2);
+        border: 1px solid var(--ion-border);
+        border-radius: var(--ion-radius);
+        padding: 1.5rem;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .cv-timeline-item:hover {
+        box-shadow: var(--ion-shadow-md);
+    }
+
+    .cv-logo {
+        flex-shrink: 0;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: var(--ion-surface);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--ion-border);
+        overflow: hidden;
+        font-weight: bold;
+        color: var(--ion-text-muted);
+        font-size: 1.2rem;
+    }
+
+    .cv-logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .cv-content {
+        flex-grow: 1;
+    }
+
+    .cv-content h3 {
+        margin-top: 0;
+        margin-bottom: 0.25rem;
+        font-size: 1.25rem;
+    }
+
+    .cv-content .meta {
+        color: var(--ion-muted);
+        font-size: 0.9em;
+        margin-bottom: 0.75rem;
+    }
+
+    .cv-content details {
+        border: 1px solid var(--ion-border);
+        border-radius: calc(var(--ion-radius) / 2);
+        padding: 0.5rem 1rem;
+        background: rgba(0, 0, 0, 0.02);
+        cursor: pointer;
+    }
+
+    html.dark-mode .cv-content details {
+        background: rgba(255, 255, 255, 0.02);
+    }
+
+    .cv-content summary {
+        font-weight: 500;
+        color: var(--ion-accent);
+        outline: none;
+    }
+
+    .cv-content details[open] summary {
+        margin-bottom: 0.5rem;
+        border-bottom: 1px solid var(--ion-border);
+        padding-bottom: 0.5rem;
+    }
+
+    .cv-content details ul {
+        margin-bottom: 0;
+        padding-left: 1.2rem;
+    }
+
+    @media (max-width: 600px) {
+        .cv-timeline-item {
+            flex-direction: column;
+            gap: 1rem;
         }
 
-        .home-glass-card {
-            background: rgba(18, 18, 30, 0.65) !important;
-            border: 1px solid rgba(255, 255, 255, 0.1) !important;
-            box-shadow: var(--ion-shadow-md) !important;
-            color: #e3e3e3 !important;
+        .cv-logo {
+            width: 48px;
+            height: 48px;
+            font-size: 1rem;
         }
     }
 </style>
