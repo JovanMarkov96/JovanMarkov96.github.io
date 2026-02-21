@@ -1,0 +1,252 @@
+<style>
+    /*
+ * Ion Landscape Design System
+ * Global overrides for "liquid glass" look and feel.
+ */
+
+    :root,
+    html {
+        --ion-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        --ion-accent: #4f46e5;
+        --ion-accent-hover: #4338ca;
+        --ion-surface: #f8fafc;
+        --ion-surface-dark: #1e1e32;
+        --ion-border: #e2e8f0;
+        --ion-border-dark: #2d2d44;
+        --ion-text-muted: #64748b;
+        --ion-radius: 12px;
+
+        /* Shadows mapped from ionlandscape */
+        --ion-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+        --ion-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
+        --ion-shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);
+
+        /* Re-map Minimal Mistakes base fonts */
+        --global-font-family: var(--ion-font-family);
+        --heading-font-family: var(--ion-font-family);
+    }
+
+    /* 2. Global Typography Overrides */
+    body {
+        font-family: var(--global-font-family) !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--heading-font-family) !important;
+        letter-spacing: -0.01em;
+    }
+
+    /* 3. Navbar (Liquid Glass) Overrides */
+    .masthead {
+        position: fixed !important;
+        top: 16px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 95% !important;
+        max-width: 1400px !important;
+        border-radius: 24px !important;
+
+        /* Liquid Glass Effect */
+        background: rgba(255, 255, 255, 0.65) !important;
+        backdrop-filter: blur(20px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15) !important;
+        transition: all 0.3s ease !important;
+        z-index: 1000 !important;
+        border-bottom: none !important;
+    }
+
+    .masthead__inner-wrap {
+        border-bottom: none !important;
+        padding: 0 1em !important;
+    }
+
+    #main,
+    .page__hero {
+        margin-top: 100px;
+    }
+
+    .masthead__menu-item a {
+        font-weight: 500 !important;
+        transition: color 0.15s ease, opacity 0.15s ease !important;
+    }
+
+    .masthead__menu-item a:hover {
+        opacity: 0.8 !important;
+        color: var(--ion-accent) !important;
+    }
+
+    /* 4. Glass Cards Overrides */
+    .archive__item {
+        background: rgba(255, 255, 255, 0.65) !important;
+        backdrop-filter: blur(30px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(30px) saturate(180%) !important;
+        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        border-radius: var(--ion-radius) !important;
+        padding: 1.5em !important;
+        margin-bottom: 1.5em !important;
+        box-shadow: var(--ion-shadow-sm) !important;
+        transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease !important;
+    }
+
+    .archive__item:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: var(--ion-shadow-md) !important;
+    }
+
+    .archive__item-title {
+        margin-top: 0 !important;
+    }
+
+    /* Dark mode fallback for the specific elements */
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #121212;
+            color: #e3e3e3;
+        }
+
+        .masthead {
+            background: rgba(18, 18, 30, 0.60) !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
+        }
+
+        .masthead__menu-item a,
+        .site-title {
+            color: #e3e3e3 !important;
+        }
+
+        .archive__item {
+            background: rgba(18, 18, 30, 0.65) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            box-shadow: var(--ion-shadow-md) !important;
+            color: #e3e3e3 !important;
+        }
+
+        .archive__item a {
+            color: var(--ion-accent-hover) !important;
+        }
+    }
+
+    /* Homepage specific styles */
+    .home-hero {
+        text-align: center;
+        padding: 2rem 0 3rem;
+    }
+
+    .home-hero h1 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        letter-spacing: -0.03em;
+        background: linear-gradient(135deg, var(--ion-accent), #8b5cf6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .home-hero-subtitle {
+        font-size: 1.25rem;
+        color: var(--ion-text-muted);
+        max-width: 600px;
+        margin: 0 auto 2rem;
+    }
+
+    .home-quick-links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .home-btn {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background: var(--ion-accent);
+        color: white !important;
+        border-radius: var(--ion-radius);
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.2s ease;
+        box-shadow: var(--ion-shadow-sm);
+    }
+
+    .home-btn:hover {
+        background: var(--ion-accent-hover);
+        transform: translateY(-2px);
+        box-shadow: var(--ion-shadow-md);
+        text-decoration: none;
+    }
+
+    .home-btn.btn-outline {
+        background: transparent;
+        color: var(--ion-accent) !important;
+        border: 1px solid var(--ion-accent);
+    }
+
+    .home-btn.btn-outline:hover {
+        background: rgba(79, 70, 229, 0.05);
+    }
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .home-glass-card {
+        background: rgba(255, 255, 255, 0.65) !important;
+        backdrop-filter: blur(30px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(30px) saturate(180%) !important;
+        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        border-radius: var(--ion-radius) !important;
+        padding: 1.5em !important;
+        box-shadow: var(--ion-shadow-sm) !important;
+        transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease !important;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-glass-card:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: var(--ion-shadow-md) !important;
+    }
+
+    .home-glass-card h3 {
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--ion-accent);
+    }
+
+    .home-glass-card p {
+        flex-grow: 1;
+        font-size: 0.95rem;
+    }
+
+    .home-glass-card a {
+        font-weight: 500;
+        margin-top: 1rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .home-btn.btn-outline {
+            color: var(--ion-accent-hover) !important;
+            border-color: var(--ion-accent-hover);
+        }
+
+        .home-glass-card {
+            background: rgba(18, 18, 30, 0.65) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            box-shadow: var(--ion-shadow-md) !important;
+            color: #e3e3e3 !important;
+        }
+    }
+</style>
