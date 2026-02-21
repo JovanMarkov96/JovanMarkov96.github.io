@@ -438,7 +438,9 @@
     }
 
     /* Modern Sleek Hover Effect */
-    .author__urls li a {
+    .author__urls li a,
+    html.dark-mode .author__urls li a,
+    html.dark-mode .author__urls li {
         color: var(--ion-text) !important;
         text-decoration: none !important;
         display: inline-flex !important;
@@ -449,6 +451,7 @@
         width: calc(100% - 24px);
         transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
         background: transparent !important;
+        background-color: transparent !important;
     }
 
     .author__urls li a:hover {
