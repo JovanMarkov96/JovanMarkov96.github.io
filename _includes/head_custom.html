@@ -437,10 +437,17 @@
         height: 120px !important;
     }
 
+    /* Force completely transparent backgrounds on list items to fix the Minimal Mistakes dark-mode gray box */
+    html.dark-mode .sidebar .author__urls li,
+    .sidebar .author__urls li {
+        background: transparent !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+
     /* Modern Sleek Hover Effect */
-    .author__urls li a,
-    html.dark-mode .author__urls li a,
-    html.dark-mode .author__urls li {
+    .author__urls li a {
         color: var(--ion-text) !important;
         text-decoration: none !important;
         display: inline-flex !important;
