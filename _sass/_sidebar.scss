@@ -273,6 +273,12 @@ html.dark-mode {
     background: #1a1a1a !important;
     border-color: #333 !important;
 
+    @include breakpoint($large) {
+      background: transparent !important;
+      border: 0 !important;
+      box-shadow: none !important;
+    }
+
     a {
       color: #fff !important;
     }
