@@ -363,14 +363,14 @@
 
     /* 5. Sidebar Author Profile Overrides */
     .sidebar {
-        margin-top: 100px;
-        /* Spacing below the fixed masthead */
         z-index: 10;
         position: relative !important;
         height: auto !important;
         overflow: visible !important;
         overflow-y: visible !important;
         overflow-x: visible !important;
+        margin-top: 0 !important;
+        padding-top: 0 !important;
     }
 
     .sidebar .author__avatar,
@@ -422,8 +422,11 @@
         background: transparent !important;
     }
 
-    /* The floating glass card around the entire sidebar content */
-    .sidebar>div[itemscope] {
+    /* --------------------------------------------------------------------------
+       Unified Liquid Glass Card Overrides (Light & Dark Mode)
+       -------------------------------------------------------------------------- */
+    .sidebar>div[itemscope],
+    .page__inner-wrap {
         background: rgba(255, 255, 255, 0.7) !important;
         /* Clean white glass for light mode */
         backdrop-filter: blur(25px) saturate(180%) !important;
@@ -434,8 +437,15 @@
         box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05) !important;
     }
 
-    html.dark-mode .sidebar>div[itemscope] {
+    /* Apply the deep blue gradient liquid glass to all content blocks in Dark Mode */
+    html.dark-mode .sidebar>div[itemscope],
+    html.dark-mode .page__inner-wrap,
+    html.dark-mode .archive__item,
+    html.dark-mode .home-glass-card,
+    html.dark-mode .cv-timeline-item {
         background: linear-gradient(145deg, rgba(8, 20, 50, 0.6), rgba(4, 10, 25, 0.8)) !important;
+        backdrop-filter: blur(25px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
         border: 1px solid rgba(129, 140, 248, 0.25) !important;
         box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4) !important;
     }
