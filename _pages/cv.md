@@ -15,48 +15,54 @@ Education
 ======
 <div class="cv-timeline">
 
-  <div class="cv-timeline-item">
+  <div class="cv-timeline-item" onclick="toggleCvEntry(this)">
     <div class="cv-logo">WIS</div>
     <div class="cv-content">
       <h3>Weizmann Institute of Science</h3>
       <div class="meta">2022 – present • PhD in Physics</div>
-      <details>
-        <summary>Details & Advisor</summary>
-        <ul>
-          <li><strong>Focus:</strong> Quantum computing and quantum simulation</li>
-          <li><strong>Advisor:</strong> Prof. Roee Ozeri</li>
-        </ul>
-      </details>
+      <div class="cv-details">
+        <div class="cv-details-inner">
+          <ul>
+            <li><strong>Focus:</strong> Quantum computing and quantum simulation</li>
+            <li><strong>Advisor:</strong> Prof. Roee Ozeri</li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <svg class="cv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
   </div>
 
-  <div class="cv-timeline-item">
+  <div class="cv-timeline-item" onclick="toggleCvEntry(this)">
     <div class="cv-logo">WIS</div>
     <div class="cv-content">
       <h3>Weizmann Institute of Science</h3>
       <div class="meta">2019 – 2021 • MSc in Physics</div>
-      <details>
-        <summary>Details & Advisor</summary>
-        <ul>
-          <li><strong>Advisor:</strong> Prof. Kfir Blum</li>
-        </ul>
-      </details>
+      <div class="cv-details">
+        <div class="cv-details-inner">
+          <ul>
+            <li><strong>Advisor:</strong> Prof. Kfir Blum</li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <svg class="cv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
   </div>
 
-  <div class="cv-timeline-item">
+  <div class="cv-timeline-item" onclick="toggleCvEntry(this)">
     <div class="cv-logo">UoB</div>
     <div class="cv-content">
       <h3>University of Belgrade</h3>
       <div class="meta">2015 – 2019 • BSc in Theoretical and Experimental Physics</div>
-      <details>
-        <summary>Details & Honors</summary>
-        <ul>
-          <li><strong>GPA:</strong> 9.79/10</li>
-          <li>Faculty of Physics</li>
-        </ul>
-      </details>
+      <div class="cv-details">
+        <div class="cv-details-inner">
+          <ul>
+            <li><strong>GPA:</strong> 9.79/10</li>
+            <li>Faculty of Physics</li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <svg class="cv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
   </div>
 
 </div>
@@ -116,11 +122,95 @@ Conferences, Seminars, Talks, Posters
 
 Projects, Internships
 ======
-* 2021: MSc thesis, Project: Ultralight dark matter: Ground state solutions in the presence of two fields, Advisor: Prof. Kfir Blum.
-* 2019: Summer Student Program, CERN, Geneva, Switzerland. Project: [Top quarks in the lepton + jets channel in PbPb collisions](https://cds.cern.ch/record/2687408/files/Jovan_Markov_CERN_Summer_School_2019_project_report%20final.pdf). Mentors (CMS): Pedro Ferreira daSilva, Émilien Chapon.
-* 2017: Summer Research Student, Weizmann Institute of Science, Rehovot, Israel. Kupcinet-Getz International Summer School, Mentor (ATLAS) Prof. Alexander Milov. Studied the production of Z bosons in the di-electron decay channel in proton-proton (pp) collisions which was measured in the ATLAS detector. The results from pp collisions were compared to the previously measured data in the proton-lead (p-Pb) collisions system at the same energy. Information on the nuclear modification factor {% raw %}$RpPb${% endraw %}, for Z bosons in p-Pb collisions was extracted from the comparison. The whole data analysis was done by writing C++ scripts using ROOT. [Booklet](http://www.weizmann.ac.il/particle/atlas/sites/particle.atlas/files/uploads/heavy-ion-physics.pdf) with our projects.
-* 2014 – 2015: High school Physics program, Petnica Science Center, Valjevo, Serbia. Project: Determining the mass of the {% raw %}$K_S^0$, $\pi^+$, and $\pi^-${% endraw %} mesons using the Theil index. Mentors (LHCb): Vladimir Gligorov, Miriam Lucio Martinez, Diego Martinez Santos.
-* 2013: High school Physics program, Petnica Science Center, Valjevo, Serbia. Project: Examination of properties of hydraulic jumps. Mentors: Vladan Pavlović, Marija Janković.
+<div class="cv-timeline">
+
+  <div class="cv-timeline-item" onclick="toggleCvEntry(this)">
+    <div class="cv-logo">WIS</div>
+    <div class="cv-content">
+      <h3>MSc Thesis</h3>
+      <div class="meta">2021 • Weizmann Institute of Science</div>
+      <div class="cv-details">
+        <div class="cv-details-inner">
+          <ul>
+            <li><strong>Project:</strong> Ultralight dark matter: Ground state solutions in the presence of two fields</li>
+            <li><strong>Advisor:</strong> Prof. Kfir Blum</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <svg class="cv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+  </div>
+
+  <div class="cv-timeline-item" onclick="toggleCvEntry(this)">
+    <div class="cv-logo">CERN</div>
+    <div class="cv-content">
+      <h3>CERN Summer Student Program</h3>
+      <div class="meta">2019 • CERN, Geneva, Switzerland</div>
+      <div class="cv-details">
+        <div class="cv-details-inner">
+          <ul>
+            <li><strong>Project:</strong> <a href="https://cds.cern.ch/record/2687408/files/Jovan_Markov_CERN_Summer_School_2019_project_report%20final.pdf">Top quarks in the lepton + jets channel in PbPb collisions</a></li>
+            <li><strong>Mentors (CMS):</strong> Pedro Ferreira daSilva, Émilien Chapon</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <svg class="cv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+  </div>
+
+  <div class="cv-timeline-item" onclick="toggleCvEntry(this)">
+    <div class="cv-logo">WIS</div>
+    <div class="cv-content">
+      <h3>Kupcinet-Getz Summer School</h3>
+      <div class="meta">2017 • Weizmann Institute of Science, Rehovot, Israel</div>
+      <div class="cv-details">
+        <div class="cv-details-inner">
+          <ul>
+            <li><strong>Mentor (ATLAS):</strong> Prof. Alexander Milov</li>
+            <li>Studied the production of Z bosons in the di-electron decay channel in proton-proton (pp) collisions measured in the ATLAS detector. Compared results from pp to proton-lead (p-Pb) collisions to extract the nuclear modification factor {% raw %}$R_{pPb}${% endraw %}.</li>
+            <li>Data analysis performed using C++ scripts with ROOT. <a href="http://www.weizmann.ac.il/particle/atlas/sites/particle.atlas/files/uploads/heavy-ion-physics.pdf">Project booklet</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <svg class="cv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+  </div>
+
+  <div class="cv-timeline-item" onclick="toggleCvEntry(this)">
+    <div class="cv-logo">PSC</div>
+    <div class="cv-content">
+      <h3>Petnica Science Center – Physics Program</h3>
+      <div class="meta">2014 – 2015 • Valjevo, Serbia</div>
+      <div class="cv-details">
+        <div class="cv-details-inner">
+          <ul>
+            <li><strong>Project:</strong> Determining the mass of the {% raw %}$K_S^0$, $\pi^+$, and $\pi^-${% endraw %} mesons using the Theil index</li>
+            <li><strong>Mentors (LHCb):</strong> Vladimir Gligorov, Miriam Lucio Martinez, Diego Martinez Santos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <svg class="cv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+  </div>
+
+  <div class="cv-timeline-item" onclick="toggleCvEntry(this)">
+    <div class="cv-logo">PSC</div>
+    <div class="cv-content">
+      <h3>Petnica Science Center – Physics Program</h3>
+      <div class="meta">2013 • Valjevo, Serbia</div>
+      <div class="cv-details">
+        <div class="cv-details-inner">
+          <ul>
+            <li><strong>Project:</strong> Examination of properties of hydraulic jumps</li>
+            <li><strong>Mentors:</strong> Vladan Pavlović, Marija Janković</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <svg class="cv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+  </div>
+
+</div>
 
 Training/Courses
 ======
@@ -154,10 +244,10 @@ Other engagements
 * 2024: Reviewer of 4th Grade problem sets, High School Physics Competitions (academic year 2023/24), organized by the Serbian Physical Society.
 * 2017 – 2018: Member of committee at the National Physics Competition, organized by the Serbian Physical Society.
 * 2015 – 2019: Engaged in science promotion activities with Faculty of Physics, University of Belgrade, demonstrating physics experiments at schools all across Serbia.
-* 2014 – 2019: Journalist and speaker for "Step towards science" radio show, at the national radio station Radio Belgrade 1, with my own segment “And that's physics”, where I talk about a certain topic from physics.
+* 2014 – 2019: Journalist and speaker for "Step towards science" radio show, at the national radio station Radio Belgrade 1, with my own segment "And that's physics", where I talk about a certain topic from physics.
 * 2013 – 2019: Science Demonstrator, Center for the Promotion of Science, Belgrade, Serbia.
 * 2012 – 2017: Researchers Night (part of European Researchers Night project), Belgrade, Serbia. Organized several exhibits over the years. Also participated in demonstrating popular science experiments since 2012.
-* 2012 – 2018: Serbian Science Festival, Belgrade, Serbia. Organized for several years the “Experteenager zone”, part of the Festival where high schools participate. Organized several exhibits. Also participated in demonstrating popular science experiments since 2012.
+* 2012 – 2018: Serbian Science Festival, Belgrade, Serbia. Organized for several years the "Experteenager zone", part of the Festival where high schools participate. Organized several exhibits. Also participated in demonstrating popular science experiments since 2012.
 * 2012 – 2017: Initiated and organized a School Science Festival, at my former Elementary school, which has been held for five consecutive years and has been seen by several thousand visitors. It has more than 80 exhibits which I made myself.
 * 2010 – 2017: Writer at Viva fizika (Viva physics), a science popularization web portal in physics and astronomy.
 
@@ -189,3 +279,30 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 -->
+
+<script>
+function toggleCvEntry(el) {
+  var details = el.querySelector('.cv-details');
+  if (!details) return;
+  
+  if (el.classList.contains('is-open')) {
+    // Close
+    details.style.maxHeight = details.scrollHeight + 'px';
+    // Force reflow
+    details.offsetHeight;
+    details.style.maxHeight = '0';
+    el.classList.remove('is-open');
+  } else {
+    // Open
+    el.classList.add('is-open');
+    details.style.maxHeight = details.scrollHeight + 'px';
+    // After transition, set to auto for dynamic content
+    details.addEventListener('transitionend', function handler() {
+      if (el.classList.contains('is-open')) {
+        details.style.maxHeight = 'none';
+      }
+      details.removeEventListener('transitionend', handler);
+    });
+  }
+}
+</script>
