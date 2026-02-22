@@ -43,7 +43,7 @@
 
     /* Deep-Blue Dark Mode overrides */
     html.dark-mode {
-        --ion-bg: #0b1220;
+        --ion-bg: linear-gradient(145deg, rgba(8, 20, 50, 1), rgba(4, 10, 25, 1));
         --ion-surface: #121a2b;
         --ion-surface-2: rgba(18, 26, 43, 0.65);
         --ion-border: rgba(255, 255, 255, 0.08);
@@ -57,8 +57,10 @@
         --ion-shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.4);
     }
 
-    /* 2. Global Typography Overrides */
+    /* Set global background logic */
     body {
+        background: var(--ion-bg) !important;
+        background-attachment: fixed !important;
         font-family: var(--global-font-family) !important;
     }
 
@@ -106,15 +108,21 @@
 
     .masthead__menu-item a {
         font-weight: 500 !important;
-        transition: color 0.15s ease, opacity 0.15s ease !important;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
         text-decoration: none !important;
         /* Remove cheap underlines */
         color: var(--ion-text) !important;
+        display: inline-block;
+        padding: 4px 10px !important;
+        border-radius: 8px !important;
     }
 
     .masthead__menu-item a:hover {
-        opacity: 0.8 !important;
+        opacity: 1 !important;
+        background: rgba(129, 140, 248, 0.1) !important;
+        transform: translateY(-2px) scale(1.03) !important;
         color: var(--ion-accent) !important;
+        text-shadow: 0 0 8px rgba(129, 140, 248, 0.3);
     }
 
     /* Glass Theme Toggle UI */
