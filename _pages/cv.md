@@ -214,42 +214,176 @@ Projects, Internships
 
 Training/Courses
 ======
-* 2015: IPPOG CMS Masterclass in Belgrade, Serbia
-* 2015: Introduction to programming with MATLAB, Vanderbilt University (Coursera)
-* 2014: LHCb Masterclass, Petnica Science Center, held by Vladimir Gligorov (LHCb collaboration)
+<div class="cv-text-entry">
+  <div class="cv-text-year">2015</div>
+  <div class="cv-text-content">
+    <strong>IPPOG CMS Masterclass</strong><br>
+    <span class="cv-text-meta">Belgrade, Serbia</span>
+  </div>
+</div>
+<div class="cv-text-entry">
+  <div class="cv-text-year">2015</div>
+  <div class="cv-text-content">
+    <strong>Introduction to programming with MATLAB</strong><br>
+    <span class="cv-text-meta">Vanderbilt University (Coursera)</span>
+  </div>
+</div>
+<div class="cv-text-entry">
+  <div class="cv-text-year">2014</div>
+  <div class="cv-text-content">
+    <strong>LHCb Masterclass</strong><br>
+    <span class="cv-text-meta">Petnica Science Center, held by Vladimir Gligorov (LHCb collaboration)</span>
+  </div>
+</div>
 
 Memberships
 ======
-* 2015 – present: EMINETER - student organization of the Faculty of Physics, Belgrade University
-* since 2015: Mathematical Grammar School Alumni Society (ALMAGI)
-* 2017, 2018, 2024: Serbian Physical Society
-* 2020 – present: Israel Physical Society
-* 2023: American Physical Society
+<div class="cv-text-entry">
+  <div class="cv-text-year">2023 – present</div>
+  <div class="cv-text-content"><strong>American Physical Society</strong></div>
+</div>
+<div class="cv-text-entry">
+  <div class="cv-text-year">2020 – present</div>
+  <div class="cv-text-content"><strong>Israel Physical Society</strong></div>
+</div>
+<div class="cv-text-entry">
+  <div class="cv-text-year">2017, 2018, 2024</div>
+  <div class="cv-text-content"><strong>Serbian Physical Society</strong></div>
+</div>
+<div class="cv-text-entry">
+  <div class="cv-text-year">2015 – present</div>
+  <div class="cv-text-content">
+    <strong>Mathematical Grammar School Alumni Society (ALMAGI)</strong>
+  </div>
+</div>
+<div class="cv-text-entry">
+  <div class="cv-text-year">2015 – present</div>
+  <div class="cv-text-content">
+    <strong>EMINETER</strong><br>
+    <span class="cv-text-meta">Student organization of the Faculty of Physics, Belgrade University</span>
+  </div>
+</div>
 
 Awards
 ======
-* 2016: 1st place at student research paper competition in physics, at Primatiyada 2016, regional event for students from Natural Science and Mathematics faculties, held in Albena, Bulgaria.
-* 2015: "Vuk Karadi" diploma, Ministry of Education of the Republic of Serbia.
-* 2012 – 2015: Won 3rd prize four years in a row at the national level highschool physics competition, organized by the Serbian Physical Society.
+<div class="cv-text-entry">
+  <div class="cv-text-year">2016</div>
+  <div class="cv-text-content">
+    <strong>1st place at student research paper competition in physics</strong><br>
+    <span class="cv-text-meta">Primatiyada 2016, regional event for students from Natural Science and Mathematics faculties, held in Albena, Bulgaria.</span>
+  </div>
+</div>
+<div class="cv-text-entry">
+  <div class="cv-text-year">2015</div>
+  <div class="cv-text-content">
+    <strong>"Vuk Karadžić" diploma</strong><br>
+    <span class="cv-text-meta">Ministry of Education of the Republic of Serbia</span>
+  </div>
+</div>
+<div class="cv-text-entry">
+  <div class="cv-text-year">2012 – 2015</div>
+  <div class="cv-text-content">
+    <strong>3rd prize (four years in a row)</strong><br>
+    <span class="cv-text-meta">National level high school physics competition, organized by the Serbian Physical Society</span>
+  </div>
+</div>
 
 Scholarships
 ======
-* 2015 - 2019: Scholarship for exceptionally gifted high school and university students, awarded by the Ministry of Education, Science and Technological Development of the Republic of Serbia.
-* 2013 - 2016: Scholarship given to high school students for their achievements on the national and international competitions during the previous calendar year, awarded by the Fund for Young Talents of the Republic of Serbia.
-* 2013: Scholarship given to high school students for their achievements on the renowned competitions at home and abroad during the year 2012, awarded by The City Of Belgrade - City Administration.
+<div class="cv-text-entry">
+  <div class="cv-text-year">2015 – 2019</div>
+  <div class="cv-text-content">
+    <strong>Scholarship for exceptionally gifted high school and university students</strong><br>
+    <span class="cv-text-meta">Awarded by the Ministry of Education, Science and Technological Development of the Republic of Serbia</span>
+  </div>
+</div>
+<div class="cv-text-entry">
+  <div class="cv-text-year">2013 – 2016</div>
+  <div class="cv-text-content">
+    <strong>Scholarship for achievements on national and international competitions</strong><br>
+    <span class="cv-text-meta">Awarded by the Fund for Young Talents of the Republic of Serbia</span>
+  </div>
+</div>
+<div class="cv-text-entry">
+  <div class="cv-text-year">2013</div>
+  <div class="cv-text-content">
+    <strong>Scholarship for achievements on renowned competitions</strong><br>
+    <span class="cv-text-meta">Awarded by The City Of Belgrade - City Administration</span>
+  </div>
+</div>
 
-Other engagements
+Other Engagements
 ======
-* 2016 - present: Assistant at the Physics program, [Petnica Science Center](http://petnica.rs/), Serbia. Giving lectures and helping high school students working on research projects.
-* 2024: Reviewer of 4th Grade problem sets, High School Physics Competitions (academic year 2023/24), organized by the Serbian Physical Society.
-* 2017 – 2018: Member of committee at the National Physics Competition, organized by the Serbian Physical Society.
-* 2015 – 2019: Engaged in science promotion activities with Faculty of Physics, University of Belgrade, demonstrating physics experiments at schools all across Serbia.
-* 2014 – 2019: Journalist and speaker for "Step towards science" radio show, at the national radio station Radio Belgrade 1, with my own segment "And that's physics", where I talk about a certain topic from physics.
-* 2013 – 2019: Science Demonstrator, Center for the Promotion of Science, Belgrade, Serbia.
-* 2012 – 2017: Researchers Night (part of European Researchers Night project), Belgrade, Serbia. Organized several exhibits over the years. Also participated in demonstrating popular science experiments since 2012.
-* 2012 – 2018: Serbian Science Festival, Belgrade, Serbia. Organized for several years the "Experteenager zone", part of the Festival where high schools participate. Organized several exhibits. Also participated in demonstrating popular science experiments since 2012.
-* 2012 – 2017: Initiated and organized a School Science Festival, at my former Elementary school, which has been held for five consecutive years and has been seen by several thousand visitors. It has more than 80 exhibits which I made myself.
-* 2010 – 2017: Writer at Viva fizika (Viva physics), a science popularization web portal in physics and astronomy.
+<div class="cv-text-entry">
+  <div class="cv-text-year">2024</div>
+  <div class="cv-text-content">
+    <strong>Reviewer of 4th Grade problem sets</strong><br>
+    <span class="cv-text-meta">High School Physics Competitions (academic year 2023/24), organized by the Serbian Physical Society</span>
+  </div>
+</div>
+<div class="cv-text-entry">
+  <div class="cv-text-year">2017 – 2018</div>
+  <div class="cv-text-content">
+    <strong>Committee Member</strong><br>
+    <span class="cv-text-meta">National Physics Competition, organized by the Serbian Physical Society</span>
+  </div>
+</div>
+<div class="cv-text-entry">
+  <div class="cv-text-year">2016 – present</div>
+  <div class="cv-text-content">
+    <strong>Assistant at the Physics program</strong><br>
+    <span class="cv-text-meta"><a href="http://petnica.rs/">Petnica Science Center</a>, Serbia. Giving lectures and helping high school students working on research projects</span>
+  </div>
+</div>
+<div class="cv-text-entry">
+  <div class="cv-text-year">2015 – 2019</div>
+  <div class="cv-text-content">
+    <strong>Science Promoter</strong><br>
+    <span class="cv-text-meta">Faculty of Physics, University of Belgrade. Demonstrating physics experiments at schools all across Serbia</span>
+  </div>
+</div>
+<div class="cv-text-entry">
+  <div class="cv-text-year">2014 – 2019</div>
+  <div class="cv-text-content">
+    <strong>Journalist and Speaker</strong><br>
+    <span class="cv-text-meta">"Step towards science" radio show, Radio Belgrade 1. Created the segment "And that's physics"</span>
+  </div>
+</div>
+<div class="cv-text-entry">
+  <div class="cv-text-year">2013 – 2019</div>
+  <div class="cv-text-content">
+    <strong>Science Demonstrator</strong><br>
+    <span class="cv-text-meta">Center for the Promotion of Science, Belgrade, Serbia</span>
+  </div>
+</div>
+<div class="cv-text-entry">
+  <div class="cv-text-year">2012 – 2018</div>
+  <div class="cv-text-content">
+    <strong>Organizer & Demonstrator</strong><br>
+    <span class="cv-text-meta">Serbian Science Festival, Belgrade. Organized the "Experteenager zone" and several exhibits</span>
+  </div>
+</div>
+<div class="cv-text-entry">
+  <div class="cv-text-year">2012 – 2017</div>
+  <div class="cv-text-content">
+    <strong>Organizer & Demonstrator</strong><br>
+    <span class="cv-text-meta">Researchers Night, Belgrade. Organized several exhibits</span>
+  </div>
+</div>
+<div class="cv-text-entry">
+  <div class="cv-text-year">2012 – 2017</div>
+  <div class="cv-text-content">
+    <strong>Founder & Organizer</strong><br>
+    <span class="cv-text-meta">School Science Festival at my elementary school. Held for 5 consecutive years with over 80 custom-made exhibits</span>
+  </div>
+</div>
+<div class="cv-text-entry">
+  <div class="cv-text-year">2010 – 2017</div>
+  <div class="cv-text-content">
+    <strong>Writer</strong><br>
+    <span class="cv-text-meta">Viva fizika (Viva physics), a science popularization web portal in physics and astronomy</span>
+  </div>
+</div>
 
 
 Other Interests

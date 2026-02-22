@@ -767,6 +767,61 @@
         padding-left: 1.2rem;
     }
 
+    .cv-details ul {
+        margin: 0;
+        padding-left: 1.2rem;
+        color: var(--ion-text);
+        font-size: 0.95rem;
+    }
+
+    .cv-details li {
+        margin-bottom: 0.4rem;
+    }
+
+    /* ===== Simple Structured Text Entries (e.g. Awards, Memberships) ===== */
+    .cv-text-entry {
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        gap: 1.5rem;
+        margin-bottom: 1.25rem;
+        align-items: baseline;
+    }
+
+    @media (max-width: 600px) {
+        .cv-text-entry {
+            grid-template-columns: 1fr;
+            gap: 0.25rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .cv-text-year {
+        color: var(--ion-accent);
+        font-weight: 600;
+        font-size: 0.95rem;
+        opacity: 0.9;
+    }
+
+    .cv-text-content {
+        color: var(--ion-text);
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .cv-text-content strong {
+        color: var(--ion-text);
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 0.2rem;
+    }
+
+    .cv-text-meta {
+        color: var(--ion-muted);
+        font-size: 0.85rem;
+        display: block;
+        margin-top: 0.1rem;
+    }
+
     /* ===== 3D Keyboard Button Pills ===== */
     .cv-pill-container {
         display: flex;
