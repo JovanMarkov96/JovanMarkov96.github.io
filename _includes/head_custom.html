@@ -440,6 +440,23 @@
         padding-top: 0 !important;
     }
 
+    /* Set up the Sidebar Glass Panel */
+    .sidebar>div[itemscope] {
+        background: var(--ion-surface-2) !important;
+        backdrop-filter: blur(25px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
+        border: 1px solid var(--ion-border) !important;
+        border-radius: var(--ion-radius) !important;
+        padding: 2em 1.5em !important;
+        box-shadow: var(--ion-shadow-sm) !important;
+        transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease !important;
+    }
+
+    .sidebar>div[itemscope]:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: var(--ion-shadow-md) !important;
+    }
+
     .sidebar .author__avatar,
     .sidebar .author__content,
     .sidebar .author__urls-wrapper {
@@ -492,7 +509,6 @@
     /* --------------------------------------------------------------------------
        Unified Liquid Glass Card Overrides (Light & Dark Mode)
        -------------------------------------------------------------------------- */
-    .sidebar>div[itemscope],
     .page__inner-wrap {
         background: rgba(255, 255, 255, 0.7) !important;
         /* Clean white glass for light mode */

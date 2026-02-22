@@ -80,7 +80,7 @@ Skills
   <a href="https://pandas.pydata.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-pandas"><i class="fab fa-python"></i> Pandas</span></a>
   <a href="https://matplotlib.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-matplotlib"><i class="fab fa-python"></i> Matplotlib</span></a>
   <a href="https://www.riverbankcomputing.com/software/pyqt/" style="text-decoration: none;"><span class="cv-pill cv-pill-pyqt5"><i class="fab fa-python"></i> PyQt5</span></a>
-  <a href="https://www.quantum-machines.co/" style="text-decoration: none;"><span class="cv-pill cv-pill-qua"><i class="fas fa-microchip"></i> QUA (Quantum Machines)</span></a>
+  <a href="https://docs.quantum-machines.co/latest/" style="text-decoration: none;"><span class="cv-pill cv-pill-qua"><i class="fas fa-microchip"></i> QUA</span></a>
   <a href="https://git-scm.com/" style="text-decoration: none;"><span class="cv-pill cv-pill-git"><i class="fab fa-git-alt"></i> Git</span></a>
   <a href="https://github.com/" style="text-decoration: none;"><span class="cv-pill cv-pill-github"><i class="fab fa-github"></i> GitHub</span></a>
   <a href="https://code.visualstudio.com/" style="text-decoration: none;"><span class="cv-pill cv-pill-vscode"><i class="fas fa-code"></i> VS Code</span></a>
@@ -260,6 +260,7 @@ Other Interests
   <span class="cv-pill cv-pill-generic-3"><i class="fas fa-paint-brush"></i> Digital art</span>
   <span class="cv-pill cv-pill-generic-8"><i class="fas fa-landmark"></i> History</span>
   <span class="cv-pill cv-pill-generic-5"><i class="fas fa-language"></i> Language geek</span>
+  <a href="https://mathscinet.ams.org/mathscinet/freetools/collab-dist?source=189017&target=1654480" style="text-decoration: none;"><span class="cv-pill cv-pill-generic-9"><i class="fas fa-project-diagram"></i> Erdős number: 4</span></a>
 </div>
 
 References
