@@ -46,8 +46,8 @@
 
 /* Dark mode masthead */
 html.dark-mode .masthead {
-  background: #181818;
-  border-bottom-color: #333;
+  background: transparent;
+  border-bottom-color: transparent;
 }
 
 .masthead__menu {
@@ -243,8 +243,8 @@ html.dark-mode .site-title {
 }
 
 html.dark-mode .visible-links {
-  background: #1a1a1a;
-  border-color: #333;
+  background: transparent;
+  border-color: transparent;
 
   @include breakpoint($medium) {
     background: transparent;
@@ -255,7 +255,7 @@ html.dark-mode .visible-links {
     color: #fff;
 
     &:hover {
-      background: #333;
+      background: transparent;
 
       @include breakpoint($medium) {
         background: transparent;

@@ -142,22 +142,27 @@ html.dark-mode main {
   color: #fff !important;
 }
 
-html.dark-mode .masthead,
 html.dark-mode .page__footer,
 html.dark-mode .sidebar,
 html.dark-mode .btn,
 html.dark-mode pre,
 html.dark-mode code,
 html.dark-mode table,
-html.dark-mode .greedy-nav,
-html.dark-mode .masthead__menu,
-html.dark-mode .masthead__menu-item,
 html.dark-mode .archive__item,
 html.dark-mode .archive__item-teaser,
 html.dark-mode .author-profile,
 html.dark-mode .comments,
 html.dark-mode blockquote {
   background: #181818 !important;
+  color: #fff !important;
+}
+
+/* Masthead nav elements must be transparent so the glass navbar shows through */
+html.dark-mode .masthead,
+html.dark-mode .greedy-nav,
+html.dark-mode .masthead__menu,
+html.dark-mode .masthead__menu-item {
+  background: transparent !important;
   color: #fff !important;
 }
 
@@ -277,7 +282,7 @@ html.dark-mode table {
 html.dark-mode .greedy-nav,
 html.dark-mode .masthead__menu,
 html.dark-mode .masthead__menu-item {
-  background: #222;
+  background: transparent;
   color: #e0e0e0;
 }
 
@@ -288,7 +293,7 @@ html.dark-mode .masthead__menu-item a {
 html.dark-mode .masthead__menu-item a:hover,
 html.dark-mode .masthead__menu-item--active a {
   color: #80bfff;
-  background: #333;
+  background: transparent;
 }
 
 html.dark-mode .author-profile a,
