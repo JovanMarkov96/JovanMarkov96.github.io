@@ -11,8 +11,7 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
+## <i class="fas fa-graduation-cap cv-section-icon"></i> Education
 <div class="cv-timeline">
 
   <div class="cv-timeline-item">
@@ -69,11 +68,13 @@ Education
 
 </div>
 
-Skills
-======
+## <i class="fas fa-laptop-code cv-section-icon"></i> Skills
 
 <h3>Technical Skills</h3>
 <div class="cv-pill-container">
+  <span class="cv-pill cv-pill-generic-9"><i class="fas fa-microchip"></i> Quantum Computing</span>
+  <span class="cv-pill cv-pill-generic-8"><i class="fas fa-chart-area"></i> Data Analysis</span>
+  <span class="cv-pill cv-pill-generic-3"><i class="fas fa-code"></i> C++</span>
   <a href="https://www.python.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-python"><i class="fab fa-python"></i> Python</span></a>
   <a href="https://numpy.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-numpy"><i class="fab fa-python"></i> NumPy</span></a>
   <a href="https://scipy.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-scipy"><i class="fab fa-python"></i> SciPy</span></a>
@@ -97,6 +98,8 @@ Skills
 
 <h3>Soft Skills</h3>
 <div class="cv-pill-container">
+  <span class="cv-pill cv-pill-generic-9"><i class="fas fa-chalkboard-teacher"></i> Teaching & Mentoring</span>
+  <span class="cv-pill cv-pill-generic-2"><i class="fas fa-file-signature"></i> Scientific Writing</span>
   <span class="cv-pill cv-pill-generic-4"><i class="fas fa-users"></i> Event Planning</span>
   <span class="cv-pill cv-pill-generic-5"><i class="fas fa-hands-helping"></i> Science Communication & Outreach</span>
   <span class="cv-pill cv-pill-generic-6"><i class="fas fa-microphone"></i> Public Speaking</span>
@@ -105,27 +108,23 @@ Skills
   <span class="cv-pill cv-pill-generic-1"><i class="fas fa-calendar-check"></i> Seminar Organization</span>
 </div>
 
-Publications
-======
+## <i class="fas fa-book cv-section-icon"></i> Publications
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-Teaching, Organizing
-======
+## <i class="fas fa-chalkboard-teacher cv-section-icon"></i> Teaching, Organizing
 * 2024 – 2025: Organizer of The AMOS Seminar, Faculty of Physics and Faculty of Chemistry, Weizmann Institute of Science. A weekly seminar for journal clubs, invited speakers, and PhD defenses.
 * 2020 – 2022: Tutor, Faculty of Physics, Weizmann Institute of Science. Helping new MSc students with coursework.
 
-Languages
-======
+## <i class="fas fa-globe cv-section-icon"></i> Languages
 <div class="cv-pill-container">
   <span class="cv-pill cv-pill-generic-1">Serbian (Native)</span>
   <span class="cv-pill cv-pill-generic-2">English (Fluent)</span>
   <span class="cv-pill cv-pill-generic-3">Hebrew (Elementary)</span>
 </div>
 
-Conferences, Seminars, Talks, Posters
-======
+## <i class="fas fa-comments cv-section-icon"></i> Conferences, Seminars, Talks, Posters
 
 * 2025: ECTI 2025, European Conference on Trapped Ions. Poster: Digital predistortion of optical field of a fast and high-fidelity entangling gate for trapped ion qubits. Authors: J. Markov, Y. Shapira, N. Akerman, R. Ozeri. [Conference website](https://www.ecti2025.com/home)
 * 2025: Petnica Science Center, Physics Seminar, Valjevo, Serbia. Workshop: Quantum Computing Workshop (two-day, 8-hour hands-on course based on [Cambridge Quantum Computing syllabus](https://www.cl.cam.ac.uk/teaching/1819/QuantComp/materials.html), plus trapped ion quantum computing and lab tour)
@@ -135,8 +134,7 @@ Conferences, Seminars, Talks, Posters
 * 2023: 25th Annual SQuInT Workshop, Albuquerque, New Mexico. Poster: Programmable quantum simulations on a trapped-ions quantum computer with a global drive. Authors: **JM**, Yotam Shapira, Nitzan Akerman, Ady Stern, Roee Ozeri.
 * 2018: IPPOG CMS Masterclass, Belgrade, Serbia. Helping participants with hands-on data-analysis exercises.
 
-Projects, Internships
-======
+## <i class="fas fa-flask cv-section-icon"></i> Projects, Internships
 <div class="cv-timeline">
 
   <div class="cv-timeline-item">
@@ -212,8 +210,7 @@ Projects, Internships
 
 </div>
 
-Training/Courses
-======
+## <i class="fas fa-certificate cv-section-icon"></i> Training/Courses
 <div class="cv-text-entry">
   <div class="cv-text-year">2015</div>
   <div class="cv-text-content">
@@ -236,8 +233,7 @@ Training/Courses
   </div>
 </div>
 
-Memberships
-======
+## <i class="fas fa-users cv-section-icon"></i> Memberships
 <div class="cv-text-entry">
   <div class="cv-text-year">2023 – present</div>
   <div class="cv-text-content"><strong>American Physical Society</strong></div>
@@ -264,8 +260,7 @@ Memberships
   </div>
 </div>
 
-Awards
-======
+## <i class="fas fa-trophy cv-section-icon"></i> Awards
 <div class="cv-text-entry">
   <div class="cv-text-year">2016</div>
   <div class="cv-text-content">
@@ -288,8 +283,7 @@ Awards
   </div>
 </div>
 
-Scholarships
-======
+## <i class="fas fa-award cv-section-icon"></i> Scholarships
 <div class="cv-text-entry">
   <div class="cv-text-year">2015 – 2019</div>
   <div class="cv-text-content">
@@ -312,8 +306,7 @@ Scholarships
   </div>
 </div>
 
-Other Engagements
-======
+## <i class="fas fa-hands-helping cv-section-icon"></i> Other Engagements
 <div class="cv-pill-container" style="margin-bottom: 2rem;">
   <span class="cv-pill cv-pill-generic-4"><i class="fas fa-bullhorn"></i> Science Promotion</span>
   <span class="cv-pill cv-pill-generic-5"><i class="fas fa-hands-helping"></i> Science Outreach</span>
@@ -392,8 +385,7 @@ Other Engagements
 </div>
 
 
-Other Interests
-======
+## <i class="fas fa-star cv-section-icon"></i> Other Interests
 <div class="cv-pill-container">
   <span class="cv-pill cv-pill-generic-2"><i class="fas fa-hiking"></i> Hiking</span>
   <span class="cv-pill cv-pill-generic-1"><i class="fas fa-camera"></i> Photography</span>
@@ -403,22 +395,19 @@ Other Interests
   <a href="https://mathscinet.ams.org/mathscinet/freetools/collab-dist?source=189017&target=1654480" style="text-decoration: none;"><span class="cv-pill cv-pill-generic-9"><i class="fas fa-project-diagram"></i> Erdős number: 4</span></a>
 </div>
 
-References
-======
+## <i class="fas fa-address-book cv-section-icon"></i> References
 * [Kfir Blum](https://www.weizmann.ac.il/particle/blum/), Professor, Weizmann Institute of Science, Israel
 * [Alexander Milov](https://www.weizmann.ac.il/particle/milov/), Professor, Weizmann Institute of Science, Israel
 * [Vladimir Gligorov](https://lpnhe.in2p3.fr/), research scientist (CRCN grade), CNRS, France
 * [Roee Ozeri](https://www.weizmann.ac.il/complex/ozeri/), Professor, Weizmann Institute of Science, Israel
 
-Talks
-======
+## <i class="fas fa-microphone cv-section-icon"></i> Talks
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
   
 <!--
-Teaching
-======
+## <i class="fas fa-chalkboard-teacher cv-section-icon"></i> Teaching
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
