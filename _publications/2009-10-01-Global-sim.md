@@ -7,6 +7,8 @@ date: 2023-08-30
 venue: 'Journal'
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'http://jovanmarkov96.github.io/files/global_sim.pdf'
+authors: '<strong>J. Markov</strong>, Y. Shapira, N. Akerman, R. Ozeri'
+arxivurl: 'https://arxiv.org/abs/2308.15535'
 citation: 'Phys. Rev. Lett. 134, 010602 – Published 6 January, 2025'
 ---
 

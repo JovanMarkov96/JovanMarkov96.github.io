@@ -126,13 +126,59 @@ redirect_from:
 
 ## <i class="fas fa-comments cv-section-icon"></i> Conferences, Seminars, Talks, Posters
 
-* 2025: ECTI 2025, European Conference on Trapped Ions. Poster: Digital predistortion of optical field of a fast and high-fidelity entangling gate for trapped ion qubits. Authors: J. Markov, Y. Shapira, N. Akerman, R. Ozeri. [Conference website](https://www.ecti2025.com/home)
-* 2025: Petnica Science Center, Physics Seminar, Valjevo, Serbia. Workshop: Quantum Computing Workshop (two-day, 8-hour hands-on course based on [Cambridge Quantum Computing syllabus](https://www.cl.cam.ac.uk/teaching/1819/QuantComp/materials.html), plus trapped ion quantum computing and lab tour)
+<div class="cv-text-entry">
+  <div class="cv-text-year">2025</div>
+  <div class="cv-text-content">
+    <strong>Digital predistortion of optical field of a fast and high-fidelity entangling gate for trapped ion qubits</strong> <span class="cv-pill cv-pill-generic-2" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-chalkboard"></i> Poster</span><br>
+    <span class="cv-text-meta">ECTI 2025, European Conference on Trapped Ions — <a href="https://www.ecti2025.com/home" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Website</a></span>
+    <span class="cv-text-meta" style="margin-top: 0.3rem;"><strong>Authors:</strong> J. Markov, Y. Shapira, N. Akerman, R. Ozeri</span>
+  </div>
+</div>
 
-* 2023: Annual New Year Seminar, Faculty of Physics, University of Belgrade, Serbia. Talk: Quantum computers and what to do with them. (in Serbian)
-* 2023: 54th Annual Meeting of the APS Division of Atomic, Molecular and Optical Physics, Spokane, Washington. Talk: Digital predistortion of optical field of a fast and high-fidelity entangling gate for trapped ions qubits. Authors: **JM**, Yotam Shapira, Nitzan Akerman, Roee Ozeri.
-* 2023: 25th Annual SQuInT Workshop, Albuquerque, New Mexico. Poster: Programmable quantum simulations on a trapped-ions quantum computer with a global drive. Authors: **JM**, Yotam Shapira, Nitzan Akerman, Ady Stern, Roee Ozeri.
-* 2018: IPPOG CMS Masterclass, Belgrade, Serbia. Helping participants with hands-on data-analysis exercises.
+<div class="cv-text-entry">
+  <div class="cv-text-year">2025</div>
+  <div class="cv-text-content">
+    <strong>Quantum Computing Workshop</strong> <span class="cv-pill cv-pill-generic-3" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-laptop-code"></i> Workshop</span><br>
+    <span class="cv-text-meta">Petnica Science Center, Physics Seminar, Valjevo, Serbia</span>
+    <span class="cv-text-meta" style="margin-top: 0.3rem;">Two-day, 8-hour hands-on course based on <a href="https://www.cl.cam.ac.uk/teaching/1819/QuantComp/materials.html" target="_blank" rel="noopener noreferrer">Cambridge Quantum Computing syllabus</a>, plus trapped ion quantum computing and lab tour.</span>
+  </div>
+</div>
+
+<div class="cv-text-entry">
+  <div class="cv-text-year">2023</div>
+  <div class="cv-text-content">
+    <strong>Quantum computers and what to do with them</strong> <span class="cv-pill cv-pill-generic-1" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-microphone"></i> Talk</span><br>
+    <span class="cv-text-meta">Annual New Year Seminar, Faculty of Physics, University of Belgrade, Serbia</span>
+    <span class="cv-text-meta" style="margin-top: 0.3rem;">(Presented in Serbian)</span>
+  </div>
+</div>
+
+<div class="cv-text-entry">
+  <div class="cv-text-year">2023</div>
+  <div class="cv-text-content">
+    <strong>Digital predistortion of optical field of a fast and high-fidelity entangling gate for trapped ions qubits</strong> <span class="cv-pill cv-pill-generic-1" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-microphone"></i> Talk</span><br>
+    <span class="cv-text-meta">54th Annual Meeting of the APS Division of Atomic, Molecular and Optical Physics, Spokane, Washington</span>
+    <span class="cv-text-meta" style="margin-top: 0.3rem;"><strong>Authors:</strong> <strong>J. Markov</strong>, Y. Shapira, N. Akerman, R. Ozeri</span>
+  </div>
+</div>
+
+<div class="cv-text-entry">
+  <div class="cv-text-year">2023</div>
+  <div class="cv-text-content">
+    <strong>Programmable quantum simulations on a trapped-ions quantum computer with a global drive</strong> <span class="cv-pill cv-pill-generic-2" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-chalkboard"></i> Poster</span><br>
+    <span class="cv-text-meta">25th Annual SQuInT Workshop, Albuquerque, New Mexico</span>
+    <span class="cv-text-meta" style="margin-top: 0.3rem;"><strong>Authors:</strong> <strong>J. Markov</strong>, Y. Shapira, N. Akerman, A. Stern, R. Ozeri</span>
+  </div>
+</div>
+
+<div class="cv-text-entry">
+  <div class="cv-text-year">2018</div>
+  <div class="cv-text-content">
+    <strong>IPPOG CMS Masterclass</strong> <span class="cv-pill cv-pill-generic-4" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-hands-helping"></i> Mentoring</span><br>
+    <span class="cv-text-meta">Belgrade, Serbia</span>
+    <span class="cv-text-meta" style="margin-top: 0.3rem;">Helping participants with hands-on data-analysis exercises.</span>
+  </div>
+</div>
 
 ## <i class="fas fa-flask cv-section-icon"></i> Projects, Internships
 <div class="cv-timeline">
@@ -145,7 +191,7 @@ redirect_from:
       <div class="cv-details">
         <div class="cv-details-inner">
           <ul>
-            <li><strong>Project:</strong> <a href="https://cds.cern.ch/record/2687408/files/Jovan_Markov_CERN_Summer_School_2019_project_report%20final.pdf">Top quarks in the lepton + jets channel in PbPb collisions</a></li>
+            <li><strong>Project:</strong> Top quarks in the lepton + jets channel in PbPb collisions <a href="https://cds.cern.ch/record/2687408/files/Jovan_Markov_CERN_Summer_School_2019_project_report%20final.pdf" target="_blank" rel="noopener noreferrer" style="color: var(--ion-accent); margin-left: 0.25rem;"><i class="fas fa-external-link-alt"></i></a></li>
             <li><strong>Mentors (CMS):</strong> Pedro Ferreira daSilva, Émilien Chapon</li>
             <li>Participated in the CERN Summer Student Programme, working within the CMS experiment on analysis of heavy-ion collision data.</li>
           </ul>
@@ -166,7 +212,7 @@ redirect_from:
             <li><strong>Mentor (ATLAS):</strong> Prof. Alexander Milov</li>
             <li>Studied the production of Z bosons in the di-electron decay channel in proton-proton (pp) collisions which was measured in the ATLAS detector. The results from pp collisions were compared to the previously measured data in the proton-lead (p-Pb) collisions system at the same energy. Information on the nuclear modification factor {% raw %}$R_{pPb}${% endraw %}, for Z bosons in p-Pb collisions was extracted from the comparison.</li>
             <li>The whole data analysis was done by writing C++ scripts using ROOT.</li>
-            <li><a href="http://www.weizmann.ac.il/particle/atlas/sites/particle.atlas/files/uploads/heavy-ion-physics.pdf">Booklet</a> with our projects.</li>
+            <li>Booklet with our projects <a href="http://www.weizmann.ac.il/particle/atlas/sites/particle.atlas/files/uploads/heavy-ion-physics.pdf" target="_blank" rel="noopener noreferrer" style="color: var(--ion-accent); margin-left: 0.25rem;"><i class="fas fa-external-link-alt"></i></a></li>
           </ul>
         </div>
       </div>
@@ -214,7 +260,7 @@ redirect_from:
 <div class="cv-text-entry">
   <div class="cv-text-year">2023</div>
   <div class="cv-text-content">
-    <strong><a href="https://phsites.technion.ac.il/quantum-computing-technion-school/">Winter School: Advances and challenges in quantum computing</a></strong><br>
+    <strong>Winter School: Advances and challenges in quantum computing <a href="https://phsites.technion.ac.il/quantum-computing-technion-school/" target="_blank" rel="noopener noreferrer" style="color: var(--ion-accent); margin-left: 0.25rem;"><i class="fas fa-external-link-alt"></i></a></strong><br>
     <span class="cv-text-meta">Sde Boker, Israel — <a href="https://www.youtube.com/playlist?list=PLSq3uqVOc4-mzGTqDbIVB_Ms4a0ftjsbr"><i class="fab fa-youtube"></i> Recorded Lectures</a></span>
   </div>
 </div>
