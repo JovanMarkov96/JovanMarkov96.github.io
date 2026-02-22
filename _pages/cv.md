@@ -15,7 +15,7 @@ Education
 ======
 <div class="cv-timeline">
 
-  <div class="cv-timeline-item" onclick="toggleCvEntry(this)">
+  <div class="cv-timeline-item">
     <div class="cv-logo">WIS</div>
     <div class="cv-content">
       <h3>Weizmann Institute of Science</h3>
@@ -32,7 +32,7 @@ Education
     <svg class="cv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
   </div>
 
-  <div class="cv-timeline-item" onclick="toggleCvEntry(this)">
+  <div class="cv-timeline-item">
     <div class="cv-logo">WIS</div>
     <div class="cv-content">
       <h3>Weizmann Institute of Science</h3>
@@ -48,7 +48,7 @@ Education
     <svg class="cv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
   </div>
 
-  <div class="cv-timeline-item" onclick="toggleCvEntry(this)">
+  <div class="cv-timeline-item">
     <div class="cv-logo">UoB</div>
     <div class="cv-content">
       <h3>University of Belgrade</h3>
@@ -124,7 +124,7 @@ Projects, Internships
 ======
 <div class="cv-timeline">
 
-  <div class="cv-timeline-item" onclick="toggleCvEntry(this)">
+  <div class="cv-timeline-item">
     <div class="cv-logo">WIS</div>
     <div class="cv-content">
       <h3>MSc Thesis</h3>
@@ -141,7 +141,7 @@ Projects, Internships
     <svg class="cv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
   </div>
 
-  <div class="cv-timeline-item" onclick="toggleCvEntry(this)">
+  <div class="cv-timeline-item">
     <div class="cv-logo">CERN</div>
     <div class="cv-content">
       <h3>CERN Summer Student Program</h3>
@@ -158,7 +158,7 @@ Projects, Internships
     <svg class="cv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
   </div>
 
-  <div class="cv-timeline-item" onclick="toggleCvEntry(this)">
+  <div class="cv-timeline-item">
     <div class="cv-logo">WIS</div>
     <div class="cv-content">
       <h3>Kupcinet-Getz Summer School</h3>
@@ -176,7 +176,7 @@ Projects, Internships
     <svg class="cv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
   </div>
 
-  <div class="cv-timeline-item" onclick="toggleCvEntry(this)">
+  <div class="cv-timeline-item">
     <div class="cv-logo">PSC</div>
     <div class="cv-content">
       <h3>Petnica Science Center – Physics Program</h3>
@@ -193,7 +193,7 @@ Projects, Internships
     <svg class="cv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
   </div>
 
-  <div class="cv-timeline-item" onclick="toggleCvEntry(this)">
+  <div class="cv-timeline-item">
     <div class="cv-logo">PSC</div>
     <div class="cv-content">
       <h3>Petnica Science Center – Physics Program</h3>
@@ -281,28 +281,33 @@ Teaching
 -->
 
 <script>
-function toggleCvEntry(el) {
-  var details = el.querySelector('.cv-details');
-  if (!details) return;
-  
-  if (el.classList.contains('is-open')) {
-    // Close
-    details.style.maxHeight = details.scrollHeight + 'px';
-    // Force reflow
-    details.offsetHeight;
-    details.style.maxHeight = '0';
-    el.classList.remove('is-open');
-  } else {
-    // Open
-    el.classList.add('is-open');
-    details.style.maxHeight = details.scrollHeight + 'px';
-    // After transition, set to auto for dynamic content
-    details.addEventListener('transitionend', function handler() {
-      if (el.classList.contains('is-open')) {
-        details.style.maxHeight = 'none';
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.cv-timeline-item').forEach(function(item) {
+    item.addEventListener('click', function(e) {
+      // Don't toggle if they clicked a link inside the details
+      if (e.target.closest('a')) return;
+      
+      var details = item.querySelector('.cv-details');
+      if (!details) return;
+      
+      if (item.classList.contains('is-open')) {
+        // Close
+        details.style.maxHeight = details.scrollHeight + 'px';
+        details.offsetHeight; // Force reflow
+        details.style.maxHeight = '0';
+        item.classList.remove('is-open');
+      } else {
+        // Open
+        item.classList.add('is-open');
+        details.style.maxHeight = details.scrollHeight + 'px';
+        details.addEventListener('transitionend', function handler() {
+          if (item.classList.contains('is-open')) {
+            details.style.maxHeight = 'none';
+          }
+          details.removeEventListener('transitionend', handler);
+        });
       }
-      details.removeEventListener('transitionend', handler);
     });
-  }
-}
+  });
+});
 </script>
