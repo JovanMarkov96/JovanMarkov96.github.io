@@ -58,6 +58,7 @@
     }
 
     /* Set global background logic */
+    html.dark-mode,
     body {
         background: var(--ion-bg) !important;
         background-attachment: fixed !important;
@@ -441,13 +442,41 @@
     html.dark-mode .sidebar>div[itemscope],
     html.dark-mode .page__inner-wrap,
     html.dark-mode .archive__item,
-    html.dark-mode .home-glass-card,
-    html.dark-mode .cv-timeline-item {
+    html.dark-mode body .home-glass-card,
+    html.dark-mode body .cv-timeline-item,
+    html.dark-mode body .masthead,
+    html.dark-mode body .page__footer,
+    html.dark-mode body .greedy-nav .hidden-links,
+    html.dark-mode body .glass-toggle {
         background: linear-gradient(145deg, rgba(8, 20, 50, 0.6), rgba(4, 10, 25, 0.8)) !important;
+        background-color: transparent !important;
+        /* Force transparent color to prevent base theme gray bleed-through */
         backdrop-filter: blur(25px) saturate(180%) !important;
         -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
         border: 1px solid rgba(129, 140, 248, 0.25) !important;
         box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4) !important;
+    }
+
+    /* Buttons and pagers get the glass style, but explicitly support hover effects */
+    html.dark-mode body .pagination--pager,
+    html.dark-mode body .page__share .btn {
+        background: linear-gradient(145deg, rgba(8, 20, 50, 0.6), rgba(4, 10, 25, 0.8)) !important;
+        background-color: transparent !important;
+        backdrop-filter: blur(25px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
+        border: 1px solid rgba(129, 140, 248, 0.25) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+        transition: all 0.2s ease !important;
+        color: var(--ion-text) !important;
+    }
+
+    html.dark-mode body .pagination--pager:hover,
+    html.dark-mode body .page__share .btn:hover {
+        background: rgba(129, 140, 248, 0.15) !important;
+        transform: translateY(-2px) !important;
+        border-color: var(--ion-accent) !important;
+        color: var(--ion-accent) !important;
+        box-shadow: 0 8px 24px rgba(129, 140, 248, 0.2) !important;
     }
 
     .author__avatar img {
