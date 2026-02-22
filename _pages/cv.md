@@ -282,41 +282,28 @@ Teaching
 
 <script>
 (function() {
-  function initCvToggle() {
-    document.querySelectorAll('.cv-timeline-item').forEach(function(item) {
-      item.addEventListener('click', function(e) {
-        // Don't toggle if they clicked a link inside the details
-        if (e.target.closest('a')) return;
-        
-        var details = item.querySelector('.cv-details');
-        if (!details) return;
-        
-        if (item.classList.contains('is-open')) {
-          // Close
-          details.style.maxHeight = details.scrollHeight + 'px';
-          details.offsetHeight; // Force reflow
-          details.style.maxHeight = '0';
-          item.classList.remove('is-open');
-        } else {
-          // Open
-          item.classList.add('is-open');
-          details.style.maxHeight = details.scrollHeight + 'px';
-          details.addEventListener('transitionend', function handler() {
-            if (item.classList.contains('is-open')) {
-              details.style.maxHeight = 'none';
-            }
-            details.removeEventListener('transitionend', handler);
-          });
-        }
-      });
-    });
-  }
+  document.addEventListener('click', function(e) {
+    var item = e.target.closest('.cv-timeline-item');
+    if (!item || e.target.closest('a')) return;
 
-  // Run immediately if DOM already loaded, otherwise wait
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initCvToggle);
-  } else {
-    initCvToggle();
-  }
+    var details = item.querySelector('.cv-details');
+    if (!details) return;
+
+    if (item.classList.contains('is-open')) {
+      details.style.maxHeight = details.scrollHeight + 'px';
+      details.offsetHeight;
+      details.style.maxHeight = '0';
+      item.classList.remove('is-open');
+    } else {
+      item.classList.add('is-open');
+      details.style.maxHeight = details.scrollHeight + 'px';
+      details.addEventListener('transitionend', function handler() {
+        if (item.classList.contains('is-open')) {
+          details.style.maxHeight = 'none';
+        }
+        details.removeEventListener('transitionend', handler);
+      });
+    }
+  });
 })();
 </script>
