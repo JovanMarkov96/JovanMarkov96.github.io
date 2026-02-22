@@ -1,0 +1,31 @@
+<div class="project-card">
+    <!-- 1. Title at the top, Centered -->
+    <h3 class="project-card__title">{{ post.title }}</h3>
+
+    <!-- 2. Icon placeholder (no teaser image for resources) -->
+    <div class="project-card__header"
+        style="display:flex; align-items:center; justify-content:center; background: rgba(129,140,248,0.05);">
+        {% if post.toc_icon == "flask" %}
+        <i class="fas fa-flask" style="font-size: 3rem; opacity: 0.5; color: var(--ion-accent, #818cf8);"></i>
+        {% elsif post.title contains "Math" %}
+        <i class="fas fa-square-root-alt" style="font-size: 3rem; opacity: 0.5; color: var(--ion-accent, #818cf8);"></i>
+        {% elsif post.title contains "Physics" %}
+        <i class="fas fa-atom" style="font-size: 3rem; opacity: 0.5; color: var(--ion-accent, #818cf8);"></i>
+        {% elsif post.title contains "Quantum" %}
+        <i class="fas fa-microchip" style="font-size: 3rem; opacity: 0.5; color: var(--ion-accent, #818cf8);"></i>
+        {% else %}
+        <i class="fas fa-book-open" style="font-size: 3rem; opacity: 0.5; color: var(--ion-accent, #818cf8);"></i>
+        {% endif %}
+    </div>
+
+    <!-- 3. Description -->
+    <div class="project-card__body">
+        <p class="project-card__excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>
+    </div>
+
+    <!-- 4. Footer with Read More button -->
+    <div class="project-card__footer">
+        <a href="{{ post.url | relative_url }}" class="project-card__btn"><i class="fas fa-arrow-right"></i> Read
+            More</a>
+    </div>
+</div>

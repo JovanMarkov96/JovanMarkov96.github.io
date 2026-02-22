@@ -5,11 +5,12 @@ permalink: /resources/
 author_profile: true
 ---
 
+{% include base_path %}
+
 Here are some useful resources:
 
-<div class="resources-grid">
+<div class="project-grid">
 {% for post in site.resources %}
-    {% include archive-single.html type="grid" %}
+  {% include resource-card.html %}
 {% endfor %}
 </div>
-
