@@ -114,8 +114,24 @@ redirect_from:
   {% endfor %}</ul>
 
 ## <i class="fas fa-chalkboard-teacher cv-section-icon"></i> Teaching, Organizing
-* 2024 – 2025: Organizer of The AMOS Seminar, Faculty of Physics and Faculty of Chemistry, Weizmann Institute of Science. A weekly seminar for journal clubs, invited speakers, and PhD defenses.
-* 2020 – 2022: Tutor, Faculty of Physics, Weizmann Institute of Science. Helping new MSc students with coursework.
+
+<div class="cv-text-entry">
+  <div class="cv-text-year">2024 – 2025</div>
+  <div class="cv-text-content">
+    <strong>Organizer of The AMOS Seminar</strong> <span class="cv-pill cv-pill-generic-1" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-calendar-check"></i> Organizing</span><br>
+    <span class="cv-text-meta">Faculty of Physics and Faculty of Chemistry, Weizmann Institute of Science</span>
+    <span class="cv-text-meta" style="margin-top: 0.3rem;">A weekly seminar for journal clubs, invited speakers, and PhD defenses.</span>
+  </div>
+</div>
+
+<div class="cv-text-entry">
+  <div class="cv-text-year">2020 – 2022</div>
+  <div class="cv-text-content">
+    <strong>Tutor</strong> <span class="cv-pill cv-pill-generic-4" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-chalkboard-teacher"></i> Teaching</span><br>
+    <span class="cv-text-meta">Faculty of Physics, Weizmann Institute of Science</span>
+    <span class="cv-text-meta" style="margin-top: 0.3rem;">Helping new MSc students with coursework.</span>
+  </div>
+</div>
 
 ## <i class="fas fa-globe cv-section-icon"></i> Languages
 <div class="cv-pill-container">
