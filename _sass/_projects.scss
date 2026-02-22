@@ -121,42 +121,42 @@
 /* Dark Mode Overrides - using html.dark-mode class toggle */
 html.dark-mode {
   .project-card {
-    border-color: #555;
+    border-color: rgba(129, 140, 248, 0.25);
     color: #fff;
-    background-color: #1a1a1a;
-    /* Darker than page background #181818 */
+    background-color: transparent;
+    border-radius: var(--ion-radius, 12px);
   }
 
   .project-card:hover {
-    box-shadow: 5px 5px 0px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 16px 48px rgba(129, 140, 248, 0.2);
+    transform: translate(-3px, -3px);
   }
 
   .project-card__header {
-    border-color: #555;
+    border-color: rgba(129, 140, 248, 0.15);
   }
 
   .project-card__footer {
-    border-color: #555;
+    border-color: rgba(129, 140, 248, 0.15);
   }
 
   .project-card__btn {
-    background-color: #000;
-    /* Pitch black background */
-    border-color: #444;
+    background-color: transparent;
+    border-color: rgba(129, 140, 248, 0.3);
     color: #fff !important;
   }
 
   .project-card__btn i {
     color: #fff !important;
-    /* White icons */
   }
 
   .project-card__btn:hover {
-    background: #fff;
-    color: #000 !important;
+    background: rgba(129, 140, 248, 0.15);
+    color: var(--ion-accent, #818cf8) !important;
+    border-color: var(--ion-accent, #818cf8);
   }
 
   .project-card__btn:hover i {
-    color: #000 !important;
+    color: var(--ion-accent, #818cf8) !important;
   }
 }
