@@ -19,10 +19,11 @@ Education
     <div class="cv-logo">WIS</div>
     <div class="cv-content">
       <h3>Weizmann Institute of Science</h3>
-      <div class="meta">2022 – present • PhD in Physics</div>
+      <div class="meta">2022 – present • PhD in Physics • Rehovot, Israel</div>
       <div class="cv-details">
         <div class="cv-details-inner">
           <ul>
+            <li><strong>Department:</strong> Complex Systems</li>
             <li><strong>Focus:</strong> Quantum computing and quantum simulation</li>
             <li><strong>Advisor:</strong> Prof. Roee Ozeri</li>
           </ul>
@@ -36,10 +37,12 @@ Education
     <div class="cv-logo">WIS</div>
     <div class="cv-content">
       <h3>Weizmann Institute of Science</h3>
-      <div class="meta">2019 – 2021 • MSc in Physics</div>
+      <div class="meta">2019 – 2021 • MSc in Physics • Rehovot, Israel</div>
       <div class="cv-details">
         <div class="cv-details-inner">
           <ul>
+            <li><strong>Department:</strong> Particle Physics and Astrophysics</li>
+            <li><strong>Thesis:</strong> Ultralight dark matter: Ground state solutions in the presence of two fields</li>
             <li><strong>Advisor:</strong> Prof. Kfir Blum</li>
           </ul>
         </div>
@@ -56,7 +59,6 @@ Education
       <div class="cv-details">
         <div class="cv-details-inner">
           <ul>
-            <li><strong>GPA:</strong> 9.79/10</li>
             <li>Faculty of Physics</li>
           </ul>
         </div>
@@ -116,9 +118,11 @@ Teaching, Organizing
 
 Languages
 ======
-* Serbian, Native.
-* English, Fluent, TOEFL iBT Score:110/120 (Nov 2018).
-* Hebrew, Elementary.
+<div class="cv-pill-container">
+  <span class="cv-pill cv-pill-generic-1">🇷🇸 Serbian (Native)</span>
+  <span class="cv-pill cv-pill-generic-2">🇬🇧 English (Fluent)</span>
+  <span class="cv-pill cv-pill-generic-3">🇮🇱 Hebrew (Elementary)</span>
+</div>
 
 Conferences, Seminars, Talks, Posters
 ======
@@ -134,23 +138,6 @@ Conferences, Seminars, Talks, Posters
 Projects, Internships
 ======
 <div class="cv-timeline">
-
-  <div class="cv-timeline-item">
-    <div class="cv-logo">WIS</div>
-    <div class="cv-content">
-      <h3>MSc Thesis</h3>
-      <div class="meta">2021 • Weizmann Institute of Science</div>
-      <div class="cv-details">
-        <div class="cv-details-inner">
-          <ul>
-            <li><strong>Project:</strong> Ultralight dark matter: Ground state solutions in the presence of two fields</li>
-            <li><strong>Advisor:</strong> Prof. Kfir Blum</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <svg class="cv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-  </div>
 
   <div class="cv-timeline-item">
     <div class="cv-logo">CERN</div>
