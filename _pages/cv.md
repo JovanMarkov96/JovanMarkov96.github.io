@@ -151,6 +151,7 @@ Projects, Internships
           <ul>
             <li><strong>Project:</strong> <a href="https://cds.cern.ch/record/2687408/files/Jovan_Markov_CERN_Summer_School_2019_project_report%20final.pdf">Top quarks in the lepton + jets channel in PbPb collisions</a></li>
             <li><strong>Mentors (CMS):</strong> Pedro Ferreira daSilva, Émilien Chapon</li>
+            <li>Participated in the CERN Summer Student Programme, working within the CMS experiment on analysis of heavy-ion collision data.</li>
           </ul>
         </div>
       </div>
@@ -167,8 +168,9 @@ Projects, Internships
         <div class="cv-details-inner">
           <ul>
             <li><strong>Mentor (ATLAS):</strong> Prof. Alexander Milov</li>
-            <li>Studied the production of Z bosons in the di-electron decay channel in proton-proton (pp) collisions measured in the ATLAS detector. Compared results from pp to proton-lead (p-Pb) collisions to extract the nuclear modification factor {% raw %}$R_{pPb}${% endraw %}.</li>
-            <li>Data analysis performed using C++ scripts with ROOT. <a href="http://www.weizmann.ac.il/particle/atlas/sites/particle.atlas/files/uploads/heavy-ion-physics.pdf">Project booklet</a></li>
+            <li>Studied the production of Z bosons in the di-electron decay channel in proton-proton (pp) collisions which was measured in the ATLAS detector. The results from pp collisions were compared to the previously measured data in the proton-lead (p-Pb) collisions system at the same energy. Information on the nuclear modification factor {% raw %}$R_{pPb}${% endraw %}, for Z bosons in p-Pb collisions was extracted from the comparison.</li>
+            <li>The whole data analysis was done by writing C++ scripts using ROOT.</li>
+            <li><a href="http://www.weizmann.ac.il/particle/atlas/sites/particle.atlas/files/uploads/heavy-ion-physics.pdf">Booklet</a> with our projects.</li>
           </ul>
         </div>
       </div>
