@@ -751,11 +751,12 @@
         padding-left: 1.2rem;
     }
 
-    /* ===== Colored Pill Labels ===== */
+    /* ===== 3D Keyboard Button Pills ===== */
     .cv-pill-container {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.6rem;
+        gap: 0.8rem 0.6rem;
+        /* Extra vertical gap to account for 3D bottom height */
         margin-top: 0.5rem;
         margin-bottom: 2rem;
     }
@@ -764,76 +765,183 @@
         display: inline-flex;
         align-items: center;
         gap: 0.4rem;
-        padding: 0.4rem 0.9rem;
-        border-radius: 20px;
-        font-size: 0.9rem;
+        padding: 0.35rem 0.75rem;
+        border-radius: 6px;
+        /* Squarish with rounded edges like GitHub labels/keyboard keys */
+        font-size: 0.85rem;
         font-weight: 600;
         color: white !important;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(0, 0, 0, 0.4);
+
+        /* Glossy glare effect */
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 40%, rgba(0, 0, 0, 0.1) 100%);
+
+        /* 3D button shadow */
+        box-shadow:
+            inset 0 1px 0 rgba(255, 255, 255, 0.3),
+            /* Top inner glare */
+            inset 0 -1px 0 rgba(0, 0, 0, 0.1),
+            /* Bottom inner shadow */
+            0 3px 0 rgba(0, 0, 0, 0.3),
+            /* 3D depth */
+            0 4px 4px rgba(0, 0, 0, 0.2);
+        /* Soft drop shadow */
+
+        transition: transform 0.1s ease, box-shadow 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: default;
     }
 
     .cv-pill i {
         font-size: 1.05em;
     }
 
+    /* Press down effect on hover */
     .cv-pill:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        transform: translateY(2px);
+        box-shadow:
+            inset 0 1px 0 rgba(255, 255, 255, 0.2),
+            inset 0 -1px 0 rgba(0, 0, 0, 0.1),
+            0 1px 0 rgba(0, 0, 0, 0.3),
+            /* Reduced depth */
+            0 2px 2px rgba(0, 0, 0, 0.2);
+        /* Closer drop shadow */
     }
 
-    /* Vibrant colors for pills */
-    .cv-pill-1 {
+    /* Brand Colors for Tech Pills */
+    .cv-pill-python {
+        background-color: #3776ab;
+    }
+
+    .cv-pill-numpy {
+        background-color: #4DABCF;
+        color: #111 !important;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+    }
+
+    /* Light blue */
+    .cv-pill-scipy {
+        background-color: #0054A6;
+    }
+
+    .cv-pill-pandas {
+        background-color: #150458;
+    }
+
+    .cv-pill-matplotlib {
+        background-color: #11557c;
+    }
+
+    .cv-pill-pyqt5 {
+        background-color: #41cd52;
+        color: #111 !important;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+    }
+
+    .cv-pill-qua {
+        background-color: #00B4D8;
+        color: #111 !important;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+    }
+
+    .cv-pill-git {
+        background-color: #f05032;
+    }
+
+    .cv-pill-github {
+        background-color: #24292f;
+    }
+
+    .cv-pill-vscode {
+        background-color: #007acc;
+    }
+
+    .cv-pill-docusaurus {
+        background-color: #3ecc81;
+        color: #111 !important;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+    }
+
+    .cv-pill-jupyter {
+        background-color: #f37626;
+        color: #111 !important;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+    }
+
+    .cv-pill-latex {
+        background-color: #008080;
+    }
+
+    .cv-pill-linux {
+        background-color: #eaa540;
+        color: #111 !important;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+    }
+
+    .cv-pill-mathematica {
+        background-color: #dd1100;
+    }
+
+    .cv-pill-matlab {
+        background-color: #e16737;
+    }
+
+    .cv-pill-root {
+        background-color: #0b8043;
+    }
+
+    /* Kept ROOT green from before */
+    .cv-pill-canva {
+        background-color: #00c4cc;
+        color: #111 !important;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+    }
+
+    .cv-pill-gimp {
+        background-color: #5c5543;
+    }
+
+    /* Generic Vibrant colors for softer skills/interests */
+    .cv-pill-generic-1 {
         background-color: #3b82f6;
     }
 
     /* Blue */
-    .cv-pill-2 {
+    .cv-pill-generic-2 {
         background-color: #10b981;
     }
 
     /* Emerald */
-    .cv-pill-3 {
+    .cv-pill-generic-3 {
         background-color: #f59e0b;
     }
 
     /* Amber */
-    .cv-pill-4 {
+    .cv-pill-generic-4 {
         background-color: #ec4899;
     }
 
     /* Pink */
-    .cv-pill-5 {
+    .cv-pill-generic-5 {
         background-color: #8b5cf6;
     }
 
     /* Violet */
-    .cv-pill-6 {
+    .cv-pill-generic-6 {
         background-color: #ef4444;
     }
 
     /* Red */
-    .cv-pill-7 {
+    .cv-pill-generic-7 {
         background-color: #0ea5e9;
     }
 
     /* Sky */
-    .cv-pill-8 {
+    .cv-pill-generic-8 {
         background-color: #f97316;
     }
 
     /* Orange */
-    .cv-pill-9 {
-        background-color: #14b8a6;
-    }
-
-    /* Teal */
-    .cv-pill-10 {
-        background-color: #6366f1;
-    }
-
-    /* Indigo */
 
     .cv-details-inner li {
         margin-bottom: 0.3em;

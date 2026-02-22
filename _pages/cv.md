@@ -72,35 +72,35 @@ Skills
 
 <h3>Technical Skills</h3>
 <div class="cv-pill-container">
-  <span class="cv-pill cv-pill-1"><i class="fab fa-python"></i> Python</span>
-  <span class="cv-pill cv-pill-2"><i class="fab fa-python"></i> NumPy</span>
-  <span class="cv-pill cv-pill-3"><i class="fab fa-python"></i> SciPy</span>
-  <span class="cv-pill cv-pill-4"><i class="fab fa-python"></i> Pandas</span>
-  <span class="cv-pill cv-pill-5"><i class="fab fa-python"></i> Matplotlib</span>
-  <span class="cv-pill cv-pill-6"><i class="fab fa-python"></i> PyQt5</span>
-  <span class="cv-pill cv-pill-7"><i class="fas fa-microchip"></i> QUA (Quantum Machines)</span>
-  <span class="cv-pill cv-pill-8"><i class="fab fa-git-alt"></i> Git</span>
-  <span class="cv-pill cv-pill-9"><i class="fab fa-github"></i> GitHub</span>
-  <span class="cv-pill cv-pill-10"><i class="fas fa-code"></i> VS Code</span>
-  <span class="cv-pill cv-pill-1"><i class="fas fa-book-open"></i> Docusaurus</span>
-  <span class="cv-pill cv-pill-2"><i class="fas fa-book"></i> Jupyter Notebook</span>
-  <span class="cv-pill cv-pill-3"><i class="fas fa-superscript"></i> LaTeX</span>
-  <span class="cv-pill cv-pill-4"><i class="fab fa-linux"></i> Linux</span>
-  <span class="cv-pill cv-pill-5"><i class="fas fa-square-root-alt"></i> Mathematica</span>
-  <span class="cv-pill cv-pill-6"><i class="fas fa-chart-line"></i> Matlab</span>
-  <span class="cv-pill cv-pill-7"><i class="fas fa-chart-bar"></i> ROOT</span>
-  <span class="cv-pill cv-pill-8"><i class="fas fa-palette"></i> Canva</span>
-  <span class="cv-pill cv-pill-9"><i class="fas fa-paint-brush"></i> GIMP</span>
+  <span class="cv-pill cv-pill-python"><i class="fab fa-python"></i> Python</span>
+  <span class="cv-pill cv-pill-numpy"><i class="fab fa-python"></i> NumPy</span>
+  <span class="cv-pill cv-pill-scipy"><i class="fab fa-python"></i> SciPy</span>
+  <span class="cv-pill cv-pill-pandas"><i class="fab fa-python"></i> Pandas</span>
+  <span class="cv-pill cv-pill-matplotlib"><i class="fab fa-python"></i> Matplotlib</span>
+  <span class="cv-pill cv-pill-pyqt5"><i class="fab fa-python"></i> PyQt5</span>
+  <span class="cv-pill cv-pill-qua"><i class="fas fa-microchip"></i> QUA (Quantum Machines)</span>
+  <span class="cv-pill cv-pill-git"><i class="fab fa-git-alt"></i> Git</span>
+  <span class="cv-pill cv-pill-github"><i class="fab fa-github"></i> GitHub</span>
+  <span class="cv-pill cv-pill-vscode"><i class="fas fa-code"></i> VS Code</span>
+  <span class="cv-pill cv-pill-docusaurus"><i class="fas fa-book-open"></i> Docusaurus</span>
+  <span class="cv-pill cv-pill-jupyter"><i class="fas fa-book"></i> Jupyter Notebook</span>
+  <span class="cv-pill cv-pill-latex"><i class="fas fa-superscript"></i> LaTeX</span>
+  <span class="cv-pill cv-pill-linux"><i class="fab fa-linux"></i> Linux</span>
+  <span class="cv-pill cv-pill-mathematica"><i class="fas fa-square-root-alt"></i> Mathematica</span>
+  <span class="cv-pill cv-pill-matlab"><i class="fas fa-chart-line"></i> Matlab</span>
+  <span class="cv-pill cv-pill-root"><i class="fas fa-chart-bar"></i> ROOT</span>
+  <span class="cv-pill cv-pill-canva"><i class="fas fa-palette"></i> Canva</span>
+  <span class="cv-pill cv-pill-gimp"><i class="fas fa-paint-brush"></i> GIMP</span>
 </div>
 
 <h3>Soft Skills</h3>
 <div class="cv-pill-container">
-  <span class="cv-pill cv-pill-4"><i class="fas fa-users"></i> Event Planning</span>
-  <span class="cv-pill cv-pill-5"><i class="fas fa-hands-helping"></i> Science Communication & Outreach</span>
-  <span class="cv-pill cv-pill-6"><i class="fas fa-microphone"></i> Public Speaking</span>
-  <span class="cv-pill cv-pill-7"><i class="fas fa-chalkboard-teacher"></i> Presenting</span>
-  <span class="cv-pill cv-pill-8"><i class="fas fa-tasks"></i> Project Management</span>
-  <span class="cv-pill cv-pill-9"><i class="fas fa-calendar-check"></i> Seminar Organization</span>
+  <span class="cv-pill cv-pill-generic-4"><i class="fas fa-users"></i> Event Planning</span>
+  <span class="cv-pill cv-pill-generic-5"><i class="fas fa-hands-helping"></i> Science Communication & Outreach</span>
+  <span class="cv-pill cv-pill-generic-6"><i class="fas fa-microphone"></i> Public Speaking</span>
+  <span class="cv-pill cv-pill-generic-7"><i class="fas fa-chalkboard-teacher"></i> Presenting</span>
+  <span class="cv-pill cv-pill-generic-8"><i class="fas fa-tasks"></i> Project Management</span>
+  <span class="cv-pill cv-pill-generic-1"><i class="fas fa-calendar-check"></i> Seminar Organization</span>
 </div>
 
 Publications
@@ -268,11 +268,11 @@ Other engagements
 Other Interests
 ======
 <div class="cv-pill-container">
-  <span class="cv-pill cv-pill-10"><i class="fas fa-hiking"></i> Hiking</span>
-  <span class="cv-pill cv-pill-1"><i class="fas fa-camera"></i> Photography</span>
-  <span class="cv-pill cv-pill-2"><i class="fas fa-paint-brush"></i> Digital art</span>
-  <span class="cv-pill cv-pill-3"><i class="fas fa-landmark"></i> History</span>
-  <span class="cv-pill cv-pill-4"><i class="fas fa-language"></i> Language geek</span>
+  <span class="cv-pill cv-pill-generic-2"><i class="fas fa-hiking"></i> Hiking</span>
+  <span class="cv-pill cv-pill-generic-1"><i class="fas fa-camera"></i> Photography</span>
+  <span class="cv-pill cv-pill-generic-3"><i class="fas fa-paint-brush"></i> Digital art</span>
+  <span class="cv-pill cv-pill-generic-8"><i class="fas fa-landmark"></i> History</span>
+  <span class="cv-pill cv-pill-generic-5"><i class="fas fa-language"></i> Language geek</span>
 </div>
 
 References
