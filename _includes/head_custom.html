@@ -457,6 +457,13 @@
         box-shadow: var(--ion-shadow-md) !important;
     }
 
+    /* Force deep blue gradient in dark mode to match the rest of the site */
+    html.dark-mode .sidebar>div[itemscope] {
+        background: linear-gradient(145deg, rgba(8, 20, 50, 0.6), rgba(4, 10, 25, 0.8)) !important;
+        border: 1px solid rgba(129, 140, 248, 0.25) !important;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4) !important;
+    }
+
     .sidebar .author__avatar,
     .sidebar .author__content,
     .sidebar .author__urls-wrapper {

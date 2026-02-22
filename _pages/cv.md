@@ -413,6 +413,12 @@ redirect_from:
   {% endfor %}</ul>
 -->
 
+<style>
+.page__content a {
+  text-decoration: none !important;
+}
+</style>
+
 <script>
 (function() {
   document.addEventListener('click', function(e) {
