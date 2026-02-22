@@ -57,6 +57,12 @@
               class="fas fa-globe"></i> Publisher Website</span>
         </a>
         {% endif %}
+        {% if post.pdfurl %}
+        <a href="{{ post.pdfurl }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+          <span class="cv-pill cv-pill-neutral" style="font-size: 0.75em; padding: 0.2em 0.6em;"><i
+              class="fas fa-file-pdf"></i> PDF</span>
+        </a>
+        {% endif %}
         {% if post.slidesurl %}
         <a href="{{ post.slidesurl }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
           <span class="cv-pill cv-pill-neutral" style="font-size: 0.75em; padding: 0.2em 0.6em;"><i
