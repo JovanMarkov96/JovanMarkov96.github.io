@@ -314,6 +314,12 @@ Scholarships
 
 Other Engagements
 ======
+<div class="cv-pill-container" style="margin-bottom: 2rem;">
+  <span class="cv-pill cv-pill-generic-4"><i class="fas fa-bullhorn"></i> Science Promotion</span>
+  <span class="cv-pill cv-pill-generic-5"><i class="fas fa-hands-helping"></i> Science Outreach</span>
+  <span class="cv-pill cv-pill-generic-6"><i class="fas fa-newspaper"></i> Science Journalism</span>
+  <span class="cv-pill cv-pill-generic-1"><i class="fas fa-chalkboard-teacher"></i> Teaching & Mentoring</span>
+</div>
 <div class="cv-text-entry">
   <div class="cv-text-year">2024</div>
   <div class="cv-text-content">
