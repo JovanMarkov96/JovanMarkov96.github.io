@@ -396,10 +396,10 @@ redirect_from:
 </div>
 
 ## <i class="fas fa-address-book cv-section-icon"></i> References
+* [Roee Ozeri](https://www.weizmann.ac.il/complex/ozeri/), Professor, Weizmann Institute of Science, Israel
 * [Kfir Blum](https://www.weizmann.ac.il/particle/blum/), Professor, Weizmann Institute of Science, Israel
 * [Alexander Milov](https://www.weizmann.ac.il/particle/milov/), Professor, Weizmann Institute of Science, Israel
 * [Vladimir Gligorov](https://lpnhe.in2p3.fr/), research scientist (CRCN grade), CNRS, France
-* [Roee Ozeri](https://www.weizmann.ac.il/complex/ozeri/), Professor, Weizmann Institute of Science, Israel
 
 ## <i class="fas fa-microphone cv-section-icon"></i> Talks
   <ul>{% for post in site.talks reversed %}
