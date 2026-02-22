@@ -82,12 +82,13 @@ redirect_from:
   <a href="https://matplotlib.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-matplotlib"><i class="devicon-matplotlib-plain"></i> Matplotlib</span></a>
   <a href="https://www.riverbankcomputing.com/software/pyqt/" style="text-decoration: none;"><span class="cv-pill cv-pill-pyqt5"><i class="devicon-qt-original"></i> PyQt5</span></a>
   <a href="https://docs.quantum-machines.co/latest/" style="text-decoration: none;"><span class="cv-pill cv-pill-qua"><i class="fas fa-microchip"></i> QUA</span></a>
+  <a href="https://www.ibm.com/quantum/qiskit" style="text-decoration: none;"><span class="cv-pill cv-pill-qiskit"><i class="devicon-qiskit-plain"></i> Qiskit</span></a>
   <a href="https://git-scm.com/" style="text-decoration: none;"><span class="cv-pill cv-pill-git"><i class="devicon-git-plain"></i> Git</span></a>
   <a href="https://github.com/" style="text-decoration: none;"><span class="cv-pill cv-pill-github"><i class="devicon-github-original"></i> GitHub</span></a>
   <a href="https://code.visualstudio.com/" style="text-decoration: none;"><span class="cv-pill cv-pill-vscode"><i class="devicon-vscode-plain"></i> VS Code</span></a>
   <a href="https://docusaurus.io/" style="text-decoration: none;"><span class="cv-pill cv-pill-docusaurus"><i class="devicon-docusaurus-plain"></i> Docusaurus</span></a>
   <a href="https://jupyter.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-jupyter"><i class="devicon-jupyter-plain"></i> Jupyter Notebook</span></a>
-  <a href="https://www.latex-project.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-latex"><i class="devicon-latex-original"></i> LaTeX</span></a>
+  <a href="https://www.latex-project.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-latex">LaTeX</span></a>
   <a href="https://www.kernel.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-linux"><i class="devicon-linux-plain"></i> Linux</span></a>
   <a href="https://www.wolfram.com/mathematica/" style="text-decoration: none;"><span class="cv-pill cv-pill-mathematica"><i class="fas fa-square-root-alt"></i> Mathematica</span></a>
   <a href="https://www.mathworks.com/products/matlab.html" style="text-decoration: none;"><span class="cv-pill cv-pill-matlab"><i class="devicon-matlab-plain"></i> Matlab</span></a>
@@ -176,7 +177,7 @@ redirect_from:
   <div class="cv-text-content">
     <strong>Digital predistortion of optical field of a fast and high-fidelity entangling gate for trapped ion qubits</strong><br>
     <span class="cv-text-meta">ECTI 2025, European Conference on Trapped Ions — <a href="https://www.ecti2025.com/home" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Website</a></span>
-    <span class="cv-text-meta" style="margin-top: 0.3rem;"><strong>Authors:</strong> J. Markov, Y. Shapira, N. Akerman, R. Ozeri</span>
+    <span class="cv-text-meta" style="margin-top: 0.3rem;"><strong>Authors:</strong> <strong>Jovan Markov</strong>, Yotam Shapira, Nitzan Akerman, Roee Ozeri</span>
   </div>
 </div>
 
@@ -212,7 +213,7 @@ redirect_from:
   <div class="cv-text-content">
     <strong>Digital predistortion of optical field of a fast and high-fidelity entangling gate for trapped ions qubits</strong><br>
     <span class="cv-text-meta">54th Annual Meeting of the APS Division of Atomic, Molecular and Optical Physics, Spokane, Washington</span>
-    <span class="cv-text-meta" style="margin-top: 0.3rem;"><strong>Authors:</strong> <strong>J. Markov</strong>, Y. Shapira, N. Akerman, R. Ozeri</span>
+    <span class="cv-text-meta" style="margin-top: 0.3rem;"><strong>Authors:</strong> <strong>Jovan Markov</strong>, Yotam Shapira, Nitzan Akerman, Roee Ozeri</span>
   </div>
 </div>
 
@@ -225,6 +226,18 @@ redirect_from:
     <strong>Programmable quantum simulations on a trapped-ions quantum computer with a global drive</strong><br>
     <span class="cv-text-meta">25th Annual SQuInT Workshop, Albuquerque, New Mexico</span>
     <span class="cv-text-meta" style="margin-top: 0.3rem;"><strong>Authors:</strong> Yotam Shapira*, <strong>Jovan Markov</strong>*, Nitzan Akerman, Ady Stern, Roee Ozeri</span>
+  </div>
+</div>
+
+<div class="cv-text-entry has-category">
+  <div class="cv-text-year">2019</div>
+  <div class="cv-text-category">
+    <span class="cv-pill cv-pill-generic-1" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-chalkboard-teacher"></i> Tutorial</span>
+  </div>
+  <div class="cv-text-content">
+    <strong>Tutorial in Theoretical Classical Mechanics</strong><br>
+    <span class="cv-text-meta">Petnica Science Center - Physics Seminar, Petnica, Serbia</span>
+    <span class="cv-text-meta" style="margin-top: 0.3rem;">Lecture on the Lagrangian and variational principle followed by a problem-solving session. <a href="http://fiz.petnica.rs/wp-content/uploads/2013/05/Teorijska-mehanika.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Material (Serbian)</a></span>
   </div>
 </div>
 
@@ -510,14 +523,11 @@ redirect_from:
 
 ## <i class="fas fa-address-book cv-section-icon"></i> References
 * [Roee Ozeri](https://www.weizmann.ac.il/complex/ozeri/), Professor, Weizmann Institute of Science, Israel
-* [Kfir Blum](https://www.weizmann.ac.il/particle/blum/), Professor, Weizmann Institute of Science, Israel
-* [Alexander Milov](https://www.weizmann.ac.il/particle/milov/), Professor, Weizmann Institute of Science, Israel
+* [Kfir Blum](https://www.weizmann.ac.il/particle/Blum/home), Professor, Weizmann Institute of Science, Israel
+* [Alexander Milov](https://www.weizmann.ac.il/particle/atlas/home), Professor, Weizmann Institute of Science, Israel
 * [Vladimir Gligorov](https://lpnhe.in2p3.fr/), research scientist (CRCN grade), CNRS, France
 
-## <i class="fas fa-microphone cv-section-icon"></i> Talks
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
+
   
 <!--
 ## <i class="fas fa-chalkboard-teacher cv-section-icon"></i> Teaching

@@ -445,7 +445,7 @@
 
     /* Set up the Sidebar Glass Panel */
     .sidebar>div[itemscope] {
-        background: var(--ion-surface-2) !important;
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.7), rgba(224, 231, 255, 0.85)) !important;
         backdrop-filter: blur(25px) saturate(180%) !important;
         -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
         border: 1px solid var(--ion-border) !important;
@@ -618,6 +618,11 @@
 
     /* Hide the "Follow" button on desktop since all links are visible */
     @media (min-width: 1024px) {
+        .sidebar {
+            width: 360px !important;
+            max-width: 360px !important;
+        }
+
         .sidebar .author__urls-wrapper button {
             display: none !important;
         }
@@ -957,7 +962,7 @@
 
     /* Brand Colors for Tech Pills */
     .cv-pill-python {
-        background-color: #3776ab;
+        background-color: #3776ab !important;
     }
 
     .cv-pill-numpy {
@@ -968,15 +973,15 @@
 
     /* Light blue */
     .cv-pill-scipy {
-        background-color: #0054A6;
+        background-color: #0054A6 !important;
     }
 
     .cv-pill-pandas {
-        background-color: #150458;
+        background-color: #150458 !important;
     }
 
     .cv-pill-matplotlib {
-        background-color: #11557c;
+        background-color: #11557c !important;
     }
 
     .cv-pill-pyqt5 {
@@ -986,21 +991,25 @@
     }
 
     .cv-pill-qua {
-        background-color: #00B4D8;
+        background-color: #00B4D8 !important;
         color: #111 !important;
         text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
     }
 
+    .cv-pill-qiskit {
+        background-color: #6929C4 !important;
+    }
+
     .cv-pill-git {
-        background-color: #f05032;
+        background-color: #f05032 !important;
     }
 
     .cv-pill-github {
-        background-color: #24292f;
+        background-color: #24292f !important;
     }
 
     .cv-pill-vscode {
-        background-color: #007acc;
+        background-color: #007acc !important;
     }
 
     .cv-pill-docusaurus {
@@ -1016,7 +1025,7 @@
     }
 
     .cv-pill-latex {
-        background-color: #008080;
+        background-color: #008080 !important;
     }
 
     .cv-pill-linux {
@@ -1026,15 +1035,15 @@
     }
 
     .cv-pill-mathematica {
-        background-color: #dd1100;
+        background-color: #dd1100 !important;
     }
 
     .cv-pill-matlab {
-        background-color: #e16737;
+        background-color: #e16737 !important;
     }
 
     .cv-pill-root {
-        background-color: #0b8043;
+        background-color: #0b8043 !important;
     }
 
     /* Kept ROOT green from before */
@@ -1045,61 +1054,72 @@
     }
 
     .cv-pill-gimp {
-        background-color: #5c5543;
+        background-color: #5c5543 !important;
     }
 
     /* Generic Vibrant colors for softer skills/interests */
     .cv-pill-generic-1 {
-        background-color: #3b82f6;
+        background-color: #3b82f6 !important;
     }
 
     /* Blue */
     .cv-pill-generic-2 {
-        background-color: #10b981;
+        background-color: #10b981 !important;
     }
 
     /* Emerald */
     .cv-pill-generic-3 {
-        background-color: #f59e0b;
+        background-color: #f59e0b !important;
     }
 
     /* Amber */
     .cv-pill-generic-4 {
-        background-color: #ec4899;
+        background-color: #ec4899 !important;
     }
 
     /* Pink */
     .cv-pill-generic-5 {
-        background-color: #8b5cf6;
+        background-color: #8b5cf6 !important;
     }
 
     /* Violet */
     .cv-pill-generic-6 {
-        background-color: #ef4444;
+        background-color: #ef4444 !important;
     }
 
     /* Red */
     .cv-pill-generic-7 {
-        background-color: #0ea5e9;
+        background-color: #0ea5e9 !important;
     }
 
     /* Sky */
     .cv-pill-generic-8 {
-        background-color: #f97316;
+        background-color: #f97316 !important;
     }
 
     /* Orange */
 
+    /* Sleek Liquid Glass Publication Buttons */
     .cv-pill-neutral {
-        background-color: #e5e7eb;
-        /* Neutral gray for light mode */
-        color: #374151 !important;
-        /* Dark text for contrast */
-        border: 1px solid #d1d5db;
+        background: var(--ion-surface-2);
+        backdrop-filter: blur(12px) saturate(140%);
+        -webkit-backdrop-filter: blur(12px) saturate(140%);
+        border: 1px solid var(--ion-border);
+        color: var(--ion-text) !important;
+        box-shadow: var(--ion-shadow-sm);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .cv-pill-neutral i {
-        color: #374151 !important;
+        color: var(--ion-accent) !important;
+        transition: color 0.3s ease;
+    }
+
+    .cv-pill-neutral:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--ion-shadow-md);
+        background: var(--ion-surface);
+        border-color: var(--ion-accent);
     }
 
     .cv-details-inner li {
