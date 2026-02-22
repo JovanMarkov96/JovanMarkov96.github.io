@@ -799,10 +799,14 @@
     /* ===== Simple Structured Text Entries (e.g. Awards, Memberships) ===== */
     .cv-text-entry {
         display: grid;
-        grid-template-columns: 140px 100px 1fr;
+        grid-template-columns: 140px 1fr;
         gap: 1.5rem;
         margin-bottom: 1.25rem;
         align-items: baseline;
+    }
+
+    .cv-text-entry.has-category {
+        grid-template-columns: 140px 100px 1fr;
     }
 
     @media (max-width: 600px) {

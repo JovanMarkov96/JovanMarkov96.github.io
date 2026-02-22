@@ -117,7 +117,7 @@ redirect_from:
 
 <div class="cv-text-entry">
   <div class="cv-text-year">2024 – 2025</div>
-  <div class="cv-text-content" style="grid-column: 2 / -1;">
+  <div class="cv-text-content">
     <strong>Organizer of The AMOS Seminar</strong><br>
     <span class="cv-text-meta">Faculty of Physics and Faculty of Chemistry, Weizmann Institute of Science</span>
     <span class="cv-text-meta" style="margin-top: 0.3rem;">A weekly seminar for journal clubs, invited speakers, and PhD defenses.</span>
@@ -126,7 +126,7 @@ redirect_from:
 
 <div class="cv-text-entry">
   <div class="cv-text-year">2020 – 2022</div>
-  <div class="cv-text-content" style="grid-column: 2 / -1;">
+  <div class="cv-text-content">
     <strong>Tutor</strong><br>
     <span class="cv-text-meta">Faculty of Physics, Weizmann Institute of Science</span>
     <span class="cv-text-meta" style="margin-top: 0.3rem;">Helping new MSc students with coursework.</span>
@@ -168,7 +168,7 @@ redirect_from:
 
 ## <i class="fas fa-comments cv-section-icon"></i> Conferences, Seminars, Talks, Posters
 
-<div class="cv-text-entry">
+<div class="cv-text-entry has-category">
   <div class="cv-text-year">2025</div>
   <div class="cv-text-category">
     <span class="cv-pill cv-pill-generic-2" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-chalkboard"></i> Poster</span>
@@ -180,7 +180,7 @@ redirect_from:
   </div>
 </div>
 
-<div class="cv-text-entry">
+<div class="cv-text-entry has-category">
   <div class="cv-text-year">2025</div>
   <div class="cv-text-category">
     <span class="cv-pill cv-pill-generic-3" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-laptop-code"></i> Workshop</span>
@@ -192,7 +192,7 @@ redirect_from:
   </div>
 </div>
 
-<div class="cv-text-entry">
+<div class="cv-text-entry has-category">
   <div class="cv-text-year">2023</div>
   <div class="cv-text-category">
     <span class="cv-pill cv-pill-generic-1" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-microphone"></i> Talk</span>
@@ -204,7 +204,7 @@ redirect_from:
   </div>
 </div>
 
-<div class="cv-text-entry">
+<div class="cv-text-entry has-category">
   <div class="cv-text-year">2023</div>
   <div class="cv-text-category">
     <span class="cv-pill cv-pill-generic-1" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-microphone"></i> Talk</span>
@@ -216,7 +216,7 @@ redirect_from:
   </div>
 </div>
 
-<div class="cv-text-entry">
+<div class="cv-text-entry has-category">
   <div class="cv-text-year">2023</div>
   <div class="cv-text-category">
     <span class="cv-pill cv-pill-generic-2" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-chalkboard"></i> Poster</span>
@@ -228,7 +228,7 @@ redirect_from:
   </div>
 </div>
 
-<div class="cv-text-entry">
+<div class="cv-text-entry has-category">
   <div class="cv-text-year">2018</div>
   <div class="cv-text-category">
     <span class="cv-pill cv-pill-generic-4" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-hands-helping"></i> Mentoring</span>
