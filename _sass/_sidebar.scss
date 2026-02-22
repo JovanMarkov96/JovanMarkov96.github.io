@@ -59,6 +59,63 @@
 
   img {
     width: 100%;
+
+    &.author__avatar-img {
+      width: auto;
+      max-width: 175px;
+    }
+  }
+
+  /* Responsive: when sidebar is at top (below large breakpoint), center everything */
+  @media screen and (max-width: 1023px) {
+    text-align: center;
+
+    .author__avatar {
+      display: block;
+      margin: 0 auto 1rem;
+      width: auto;
+    }
+
+    .author__avatar img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .author__content {
+      display: block;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
+
+    .author__urls-wrapper {
+      display: block;
+      text-align: center;
+
+      button {
+        margin: 0.5rem auto;
+        display: inline-block;
+      }
+    }
+
+    .author__urls {
+      text-align: left;
+      display: inline-block;
+      position: relative;
+      margin: 0 auto;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+
+      &:before,
+      &:after {
+        display: none !important;
+      }
+    }
   }
 }
 
@@ -86,8 +143,6 @@
   display: table-cell;
   vertical-align: top;
   width: 36px;
-  // set width only, for non-square avatars
-  // height: 36px;
 
   @include breakpoint($large) {
     display: block;
@@ -98,6 +153,8 @@
   img {
     max-width: 175px;
     border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
 
     @include breakpoint($large) {
       padding: 5px;
