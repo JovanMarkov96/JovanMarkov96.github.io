@@ -119,9 +119,9 @@ Teaching, Organizing
 Languages
 ======
 <div class="cv-pill-container">
-  <span class="cv-pill cv-pill-generic-1"><i class="fas fa-language"></i> Serbian (Native)</span>
-  <span class="cv-pill cv-pill-generic-2"><i class="fas fa-globe-americas"></i> English (Fluent)</span>
-  <span class="cv-pill cv-pill-generic-3"><i class="fas fa-comment-dots"></i> Hebrew (Elementary)</span>
+  <span class="cv-pill cv-pill-generic-1">Serbian (Native)</span>
+  <span class="cv-pill cv-pill-generic-2">English (Fluent)</span>
+  <span class="cv-pill cv-pill-generic-3">Hebrew (Elementary)</span>
 </div>
 
 Conferences, Seminars, Talks, Posters
