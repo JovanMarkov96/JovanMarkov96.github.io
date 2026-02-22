@@ -396,16 +396,16 @@
         text-decoration: none !important;
     }
 
-    /* Global subtle link override for body text links */
-    #main p>a:not(.btn):not(.archive__item-title a):not(.home-glass-card) {
+    /* Global link override: forcefully remove all underlines and bottom borders */
+    #main a:not(.btn):not(.home-glass-card) {
         text-decoration: none !important;
-        border-bottom: 1px solid transparent;
-        transition: border-color 0.2s ease, text-shadow 0.2s ease;
+        border-bottom: none !important;
+        transition: color 0.2s ease, text-shadow 0.2s ease;
     }
 
-    #main p>a:not(.btn):not(.archive__item-title a):not(.home-glass-card):hover,
-    #main p>a:not(.btn):not(.archive__item-title a):not(.home-glass-card):focus {
-        border-bottom-color: var(--ion-accent);
+    #main a:not(.btn):not(.home-glass-card):hover,
+    #main a:not(.btn):not(.home-glass-card):focus {
+        color: var(--ion-accent) !important;
         text-shadow: 0 0 8px rgba(79, 70, 229, 0.3);
     }
 

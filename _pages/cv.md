@@ -215,7 +215,7 @@ redirect_from:
   <div class="cv-text-year">2023</div>
   <div class="cv-text-content">
     <strong><a href="https://phsites.technion.ac.il/quantum-computing-technion-school/">Winter School: Advances and challenges in quantum computing</a></strong><br>
-    <span class="cv-text-meta">Technion, Israel — <a href="https://www.youtube.com/playlist?list=PLSq3uqVOc4-mzGTqDbIVB_Ms4a0ftjsbr"><i class="fab fa-youtube"></i> Recorded Lectures</a></span>
+    <span class="cv-text-meta">Sde Boker, Israel — <a href="https://www.youtube.com/playlist?list=PLSq3uqVOc4-mzGTqDbIVB_Ms4a0ftjsbr"><i class="fab fa-youtube"></i> Recorded Lectures</a></span>
   </div>
 </div>
 <div class="cv-text-entry">
@@ -419,12 +419,6 @@ redirect_from:
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 -->
-
-<style>
-.page__content a {
-  text-decoration: none !important;
-}
-</style>
 
 <script>
 (function() {
