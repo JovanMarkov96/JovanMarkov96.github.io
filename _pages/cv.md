@@ -224,7 +224,7 @@ redirect_from:
   <div class="cv-text-content">
     <strong>Programmable quantum simulations on a trapped-ions quantum computer with a global drive</strong><br>
     <span class="cv-text-meta">25th Annual SQuInT Workshop, Albuquerque, New Mexico</span>
-    <span class="cv-text-meta" style="margin-top: 0.3rem;"><strong>Authors:</strong> Yotam Shapira, <strong>Jovan Markov</strong>, Nitzan Akerman, Ady Stern, Roee Ozeri</span>
+    <span class="cv-text-meta" style="margin-top: 0.3rem;"><strong>Authors:</strong> Yotam Shapira*, <strong>Jovan Markov</strong>*, Nitzan Akerman, Ady Stern, Roee Ozeri</span>
   </div>
 </div>
 

@@ -6,8 +6,9 @@ excerpt: 'Our method enables quantum simulations of programmable spin-Hamiltonia
 date: 2023-08-30
 venue: 'Journal'
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://jovanmarkov96.github.io/files/global_sim.pdf'
-authors: 'Yotam Shapira, <strong>Jovan Markov</strong>, Nitzan Akerman, Ady Stern, Roee Ozeri'
+paperurl: 'https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.010602'
+pdfurl: 'http://jovanmarkov96.github.io/files/global_sim.pdf'
+authors: 'Yotam Shapira*, <strong>Jovan Markov</strong>*, Nitzan Akerman, Ady Stern, Roee Ozeri'
 arxivurl: 'https://arxiv.org/abs/2308.16036'
 citation: 'Phys. Rev. Lett. 134, 010602 – Published 6 January, 2025'
 ---
