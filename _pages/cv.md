@@ -71,25 +71,36 @@ Skills
 ======
 
 <h3>Technical Skills</h3>
-<div style="margin-bottom: 1.5rem;">
-  <span class="cv-badge tech-badge"><i class="fab fa-git-alt" style="color: #f14e32"></i> Git</span>
-  <span class="cv-badge tech-badge"><i class="fas fa-book" style="color: #f37626"></i> Jupyter Notebook</span>
-  <span class="cv-badge tech-badge"><i class="fas fa-superscript"></i> LaTeX</span>
-  <span class="cv-badge tech-badge"><i class="fab fa-linux"></i> Linux</span>
-  <span class="cv-badge tech-badge"><i class="fas fa-square-root-alt"></i> Mathematica</span>
-  <span class="cv-badge tech-badge"><i class="fas fa-chart-line"></i> Matlab</span>
-  <span class="cv-badge tech-badge"><i class="fab fa-python" style="color: #3776ab"></i> Python</span>
-  <span class="cv-badge tech-badge"><i class="fas fa-chart-bar" style="color: #0b8043"></i> ROOT</span>
+<div class="cv-pill-container">
+  <span class="cv-pill cv-pill-1"><i class="fab fa-python"></i> Python</span>
+  <span class="cv-pill cv-pill-2"><i class="fab fa-python"></i> NumPy</span>
+  <span class="cv-pill cv-pill-3"><i class="fab fa-python"></i> SciPy</span>
+  <span class="cv-pill cv-pill-4"><i class="fab fa-python"></i> Pandas</span>
+  <span class="cv-pill cv-pill-5"><i class="fab fa-python"></i> Matplotlib</span>
+  <span class="cv-pill cv-pill-6"><i class="fab fa-python"></i> PyQt5</span>
+  <span class="cv-pill cv-pill-7"><i class="fas fa-microchip"></i> QUA (Quantum Machines)</span>
+  <span class="cv-pill cv-pill-8"><i class="fab fa-git-alt"></i> Git</span>
+  <span class="cv-pill cv-pill-9"><i class="fab fa-github"></i> GitHub</span>
+  <span class="cv-pill cv-pill-10"><i class="fas fa-code"></i> VS Code</span>
+  <span class="cv-pill cv-pill-1"><i class="fas fa-book-open"></i> Docusaurus</span>
+  <span class="cv-pill cv-pill-2"><i class="fas fa-book"></i> Jupyter Notebook</span>
+  <span class="cv-pill cv-pill-3"><i class="fas fa-superscript"></i> LaTeX</span>
+  <span class="cv-pill cv-pill-4"><i class="fab fa-linux"></i> Linux</span>
+  <span class="cv-pill cv-pill-5"><i class="fas fa-square-root-alt"></i> Mathematica</span>
+  <span class="cv-pill cv-pill-6"><i class="fas fa-chart-line"></i> Matlab</span>
+  <span class="cv-pill cv-pill-7"><i class="fas fa-chart-bar"></i> ROOT</span>
+  <span class="cv-pill cv-pill-8"><i class="fas fa-palette"></i> Canva</span>
+  <span class="cv-pill cv-pill-9"><i class="fas fa-paint-brush"></i> GIMP</span>
 </div>
 
 <h3>Soft Skills</h3>
-<div style="margin-bottom: 1.5rem;">
-  <span class="cv-badge"><i class="fas fa-users"></i> Event Planning</span>
-  <span class="cv-badge"><i class="fas fa-hands-helping"></i> Outreach</span>
-  <span class="cv-badge"><i class="fas fa-microphone"></i> Public Speaking</span>
-  <span class="cv-badge"><i class="fas fa-chalkboard-teacher"></i> Presenting</span>
-  <span class="cv-badge"><i class="fas fa-tasks"></i> Project Management</span>
-  <span class="cv-badge"><i class="fas fa-calendar-check"></i> Seminar Organization</span>
+<div class="cv-pill-container">
+  <span class="cv-pill cv-pill-4"><i class="fas fa-users"></i> Event Planning</span>
+  <span class="cv-pill cv-pill-5"><i class="fas fa-hands-helping"></i> Science Communication & Outreach</span>
+  <span class="cv-pill cv-pill-6"><i class="fas fa-microphone"></i> Public Speaking</span>
+  <span class="cv-pill cv-pill-7"><i class="fas fa-chalkboard-teacher"></i> Presenting</span>
+  <span class="cv-pill cv-pill-8"><i class="fas fa-tasks"></i> Project Management</span>
+  <span class="cv-pill cv-pill-9"><i class="fas fa-calendar-check"></i> Seminar Organization</span>
 </div>
 
 Publications
@@ -256,11 +267,13 @@ Other engagements
 
 Other Interests
 ======
-* Hiking
-* Photography
-* Digital art
-* History
-* Language geek
+<div class="cv-pill-container">
+  <span class="cv-pill cv-pill-10"><i class="fas fa-hiking"></i> Hiking</span>
+  <span class="cv-pill cv-pill-1"><i class="fas fa-camera"></i> Photography</span>
+  <span class="cv-pill cv-pill-2"><i class="fas fa-paint-brush"></i> Digital art</span>
+  <span class="cv-pill cv-pill-3"><i class="fas fa-landmark"></i> History</span>
+  <span class="cv-pill cv-pill-4"><i class="fas fa-language"></i> Language geek</span>
+</div>
 
 References
 ======
