@@ -74,25 +74,25 @@ Skills
 
 <h3>Technical Skills</h3>
 <div class="cv-pill-container">
-  <span class="cv-pill cv-pill-python"><i class="fab fa-python"></i> Python</span>
-  <span class="cv-pill cv-pill-numpy"><i class="fab fa-python"></i> NumPy</span>
-  <span class="cv-pill cv-pill-scipy"><i class="fab fa-python"></i> SciPy</span>
-  <span class="cv-pill cv-pill-pandas"><i class="fab fa-python"></i> Pandas</span>
-  <span class="cv-pill cv-pill-matplotlib"><i class="fab fa-python"></i> Matplotlib</span>
-  <span class="cv-pill cv-pill-pyqt5"><i class="fab fa-python"></i> PyQt5</span>
-  <span class="cv-pill cv-pill-qua"><i class="fas fa-microchip"></i> QUA (Quantum Machines)</span>
-  <span class="cv-pill cv-pill-git"><i class="fab fa-git-alt"></i> Git</span>
-  <span class="cv-pill cv-pill-github"><i class="fab fa-github"></i> GitHub</span>
-  <span class="cv-pill cv-pill-vscode"><i class="fas fa-code"></i> VS Code</span>
-  <span class="cv-pill cv-pill-docusaurus"><i class="fas fa-book-open"></i> Docusaurus</span>
-  <span class="cv-pill cv-pill-jupyter"><i class="fas fa-book"></i> Jupyter Notebook</span>
-  <span class="cv-pill cv-pill-latex"><i class="fas fa-superscript"></i> LaTeX</span>
-  <span class="cv-pill cv-pill-linux"><i class="fab fa-linux"></i> Linux</span>
-  <span class="cv-pill cv-pill-mathematica"><i class="fas fa-square-root-alt"></i> Mathematica</span>
-  <span class="cv-pill cv-pill-matlab"><i class="fas fa-chart-line"></i> Matlab</span>
-  <span class="cv-pill cv-pill-root"><i class="fas fa-chart-bar"></i> ROOT</span>
-  <span class="cv-pill cv-pill-canva"><i class="fas fa-palette"></i> Canva</span>
-  <span class="cv-pill cv-pill-gimp"><i class="fas fa-paint-brush"></i> GIMP</span>
+  <a href="https://www.python.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-python"><i class="fab fa-python"></i> Python</span></a>
+  <a href="https://numpy.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-numpy"><i class="fab fa-python"></i> NumPy</span></a>
+  <a href="https://scipy.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-scipy"><i class="fab fa-python"></i> SciPy</span></a>
+  <a href="https://pandas.pydata.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-pandas"><i class="fab fa-python"></i> Pandas</span></a>
+  <a href="https://matplotlib.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-matplotlib"><i class="fab fa-python"></i> Matplotlib</span></a>
+  <a href="https://www.riverbankcomputing.com/software/pyqt/" style="text-decoration: none;"><span class="cv-pill cv-pill-pyqt5"><i class="fab fa-python"></i> PyQt5</span></a>
+  <a href="https://www.quantum-machines.co/" style="text-decoration: none;"><span class="cv-pill cv-pill-qua"><i class="fas fa-microchip"></i> QUA (Quantum Machines)</span></a>
+  <a href="https://git-scm.com/" style="text-decoration: none;"><span class="cv-pill cv-pill-git"><i class="fab fa-git-alt"></i> Git</span></a>
+  <a href="https://github.com/" style="text-decoration: none;"><span class="cv-pill cv-pill-github"><i class="fab fa-github"></i> GitHub</span></a>
+  <a href="https://code.visualstudio.com/" style="text-decoration: none;"><span class="cv-pill cv-pill-vscode"><i class="fas fa-code"></i> VS Code</span></a>
+  <a href="https://docusaurus.io/" style="text-decoration: none;"><span class="cv-pill cv-pill-docusaurus"><i class="fas fa-book-open"></i> Docusaurus</span></a>
+  <a href="https://jupyter.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-jupyter"><i class="fas fa-book"></i> Jupyter Notebook</span></a>
+  <a href="https://www.latex-project.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-latex"><i class="fas fa-superscript"></i> LaTeX</span></a>
+  <a href="https://www.kernel.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-linux"><i class="fab fa-linux"></i> Linux</span></a>
+  <a href="https://www.wolfram.com/mathematica/" style="text-decoration: none;"><span class="cv-pill cv-pill-mathematica"><i class="fas fa-square-root-alt"></i> Mathematica</span></a>
+  <a href="https://www.mathworks.com/products/matlab.html" style="text-decoration: none;"><span class="cv-pill cv-pill-matlab"><i class="fas fa-chart-line"></i> Matlab</span></a>
+  <a href="https://root.cern/" style="text-decoration: none;"><span class="cv-pill cv-pill-root"><i class="fas fa-chart-bar"></i> ROOT</span></a>
+  <a href="https://www.canva.com/" style="text-decoration: none;"><span class="cv-pill cv-pill-canva"><i class="fas fa-palette"></i> Canva</span></a>
+  <a href="https://www.gimp.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-gimp"><i class="fas fa-paint-brush"></i> GIMP</span></a>
 </div>
 
 <h3>Soft Skills</h3>
@@ -119,9 +119,9 @@ Teaching, Organizing
 Languages
 ======
 <div class="cv-pill-container">
-  <span class="cv-pill cv-pill-generic-1">🇷🇸 Serbian (Native)</span>
-  <span class="cv-pill cv-pill-generic-2">🇬🇧 English (Fluent)</span>
-  <span class="cv-pill cv-pill-generic-3">🇮🇱 Hebrew (Elementary)</span>
+  <span class="cv-pill cv-pill-generic-1"><i class="fas fa-language"></i> Serbian (Native)</span>
+  <span class="cv-pill cv-pill-generic-2"><i class="fas fa-globe-americas"></i> English (Fluent)</span>
+  <span class="cv-pill cv-pill-generic-3"><i class="fas fa-comment-dots"></i> Hebrew (Elementary)</span>
 </div>
 
 Conferences, Seminars, Talks, Posters
@@ -264,9 +264,10 @@ Other Interests
 
 References
 ======
-* Kfir Blum, Professor, Weizmann Institute of Science, Israel
-* Alexander Milov, Professor, Weizmann Institute of Science, Israel
-* Vladimir Gligorov, research scientist (CRCN grade), CNRS, France
+* [Kfir Blum](https://www.weizmann.ac.il/particle/blum/), Professor, Weizmann Institute of Science, Israel
+* [Alexander Milov](https://www.weizmann.ac.il/particle/milov/), Professor, Weizmann Institute of Science, Israel
+* [Vladimir Gligorov](https://lpnhe.in2p3.fr/), research scientist (CRCN grade), CNRS, France
+* [Roee Ozeri](https://www.weizmann.ac.il/complex/ozeri/), Professor, Weizmann Institute of Science, Israel
 
 Talks
 ======
