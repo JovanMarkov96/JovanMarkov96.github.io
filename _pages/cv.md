@@ -74,26 +74,26 @@ redirect_from:
 <div class="cv-pill-container">
   <span class="cv-pill cv-pill-generic-9"><i class="fas fa-microchip"></i> Quantum Computing</span>
   <span class="cv-pill cv-pill-generic-8"><i class="fas fa-chart-area"></i> Data Analysis</span>
-  <span class="cv-pill cv-pill-generic-3"><i class="fas fa-code"></i> C++</span>
-  <a href="https://www.python.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-python"><i class="fab fa-python"></i> Python</span></a>
-  <a href="https://numpy.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-numpy"><i class="fab fa-python"></i> NumPy</span></a>
-  <a href="https://scipy.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-scipy"><i class="fab fa-python"></i> SciPy</span></a>
-  <a href="https://pandas.pydata.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-pandas"><i class="fab fa-python"></i> Pandas</span></a>
-  <a href="https://matplotlib.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-matplotlib"><i class="fab fa-python"></i> Matplotlib</span></a>
-  <a href="https://www.riverbankcomputing.com/software/pyqt/" style="text-decoration: none;"><span class="cv-pill cv-pill-pyqt5"><i class="fab fa-python"></i> PyQt5</span></a>
+  <span class="cv-pill cv-pill-generic-3"><i class="devicon-cplusplus-plain"></i> C++</span>
+  <a href="https://www.python.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-python"><i class="devicon-python-plain"></i> Python</span></a>
+  <a href="https://numpy.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-numpy"><i class="devicon-numpy-plain"></i> NumPy</span></a>
+  <a href="https://scipy.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-scipy"><i class="devicon-python-plain"></i> SciPy</span></a>
+  <a href="https://pandas.pydata.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-pandas"><i class="devicon-pandas-plain"></i> Pandas</span></a>
+  <a href="https://matplotlib.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-matplotlib"><i class="devicon-matplotlib-plain"></i> Matplotlib</span></a>
+  <a href="https://www.riverbankcomputing.com/software/pyqt/" style="text-decoration: none;"><span class="cv-pill cv-pill-pyqt5"><i class="devicon-qt-original"></i> PyQt5</span></a>
   <a href="https://docs.quantum-machines.co/latest/" style="text-decoration: none;"><span class="cv-pill cv-pill-qua"><i class="fas fa-microchip"></i> QUA</span></a>
-  <a href="https://git-scm.com/" style="text-decoration: none;"><span class="cv-pill cv-pill-git"><i class="fab fa-git-alt"></i> Git</span></a>
-  <a href="https://github.com/" style="text-decoration: none;"><span class="cv-pill cv-pill-github"><i class="fab fa-github"></i> GitHub</span></a>
-  <a href="https://code.visualstudio.com/" style="text-decoration: none;"><span class="cv-pill cv-pill-vscode"><i class="fas fa-code"></i> VS Code</span></a>
-  <a href="https://docusaurus.io/" style="text-decoration: none;"><span class="cv-pill cv-pill-docusaurus"><i class="fas fa-book-open"></i> Docusaurus</span></a>
-  <a href="https://jupyter.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-jupyter"><i class="fas fa-book"></i> Jupyter Notebook</span></a>
-  <a href="https://www.latex-project.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-latex"><i class="fas fa-superscript"></i> LaTeX</span></a>
-  <a href="https://www.kernel.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-linux"><i class="fab fa-linux"></i> Linux</span></a>
+  <a href="https://git-scm.com/" style="text-decoration: none;"><span class="cv-pill cv-pill-git"><i class="devicon-git-plain"></i> Git</span></a>
+  <a href="https://github.com/" style="text-decoration: none;"><span class="cv-pill cv-pill-github"><i class="devicon-github-original"></i> GitHub</span></a>
+  <a href="https://code.visualstudio.com/" style="text-decoration: none;"><span class="cv-pill cv-pill-vscode"><i class="devicon-vscode-plain"></i> VS Code</span></a>
+  <a href="https://docusaurus.io/" style="text-decoration: none;"><span class="cv-pill cv-pill-docusaurus"><i class="devicon-docusaurus-plain"></i> Docusaurus</span></a>
+  <a href="https://jupyter.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-jupyter"><i class="devicon-jupyter-plain"></i> Jupyter Notebook</span></a>
+  <a href="https://www.latex-project.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-latex"><i class="devicon-latex-original"></i> LaTeX</span></a>
+  <a href="https://www.kernel.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-linux"><i class="devicon-linux-plain"></i> Linux</span></a>
   <a href="https://www.wolfram.com/mathematica/" style="text-decoration: none;"><span class="cv-pill cv-pill-mathematica"><i class="fas fa-square-root-alt"></i> Mathematica</span></a>
-  <a href="https://www.mathworks.com/products/matlab.html" style="text-decoration: none;"><span class="cv-pill cv-pill-matlab"><i class="fas fa-chart-line"></i> Matlab</span></a>
+  <a href="https://www.mathworks.com/products/matlab.html" style="text-decoration: none;"><span class="cv-pill cv-pill-matlab"><i class="devicon-matlab-plain"></i> Matlab</span></a>
   <a href="https://root.cern/" style="text-decoration: none;"><span class="cv-pill cv-pill-root"><i class="fas fa-chart-bar"></i> ROOT</span></a>
-  <a href="https://www.canva.com/" style="text-decoration: none;"><span class="cv-pill cv-pill-canva"><i class="fas fa-palette"></i> Canva</span></a>
-  <a href="https://www.gimp.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-gimp"><i class="fas fa-paint-brush"></i> GIMP</span></a>
+  <a href="https://www.canva.com/" style="text-decoration: none;"><span class="cv-pill cv-pill-canva"><i class="devicon-canva-original"></i> Canva</span></a>
+  <a href="https://www.gimp.org/" style="text-decoration: none;"><span class="cv-pill cv-pill-gimp"><i class="devicon-gimp-plain"></i> GIMP</span></a>
 </div>
 
 <h3>Soft Skills</h3>
@@ -117,8 +117,8 @@ redirect_from:
 
 <div class="cv-text-entry">
   <div class="cv-text-year">2024 – 2025</div>
-  <div class="cv-text-content">
-    <strong>Organizer of The AMOS Seminar</strong> <span class="cv-pill cv-pill-generic-1" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-calendar-check"></i> Organizing</span><br>
+  <div class="cv-text-content" style="grid-column: 2 / -1;">
+    <strong>Organizer of The AMOS Seminar</strong><br>
     <span class="cv-text-meta">Faculty of Physics and Faculty of Chemistry, Weizmann Institute of Science</span>
     <span class="cv-text-meta" style="margin-top: 0.3rem;">A weekly seminar for journal clubs, invited speakers, and PhD defenses.</span>
   </div>
@@ -126,26 +126,55 @@ redirect_from:
 
 <div class="cv-text-entry">
   <div class="cv-text-year">2020 – 2022</div>
-  <div class="cv-text-content">
-    <strong>Tutor</strong> <span class="cv-pill cv-pill-generic-4" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-chalkboard-teacher"></i> Teaching</span><br>
+  <div class="cv-text-content" style="grid-column: 2 / -1;">
+    <strong>Tutor</strong><br>
     <span class="cv-text-meta">Faculty of Physics, Weizmann Institute of Science</span>
     <span class="cv-text-meta" style="margin-top: 0.3rem;">Helping new MSc students with coursework.</span>
   </div>
 </div>
 
 ## <i class="fas fa-globe cv-section-icon"></i> Languages
-<div class="cv-pill-container">
-  <span class="cv-pill cv-pill-generic-1">Serbian (Native)</span>
-  <span class="cv-pill cv-pill-generic-2">English (Fluent)</span>
-  <span class="cv-pill cv-pill-generic-3">Hebrew (Elementary)</span>
+<div class="cv-language-list">
+  <div class="cv-language-item">
+    <div class="cv-language-info">
+      <span class="cv-language-name">Serbian</span>
+      <span class="cv-language-level">Native</span>
+    </div>
+    <div class="cv-language-bar-bg">
+      <div class="cv-language-bar-fill" style="width: 100%;"></div>
+    </div>
+  </div>
+  
+  <div class="cv-language-item">
+    <div class="cv-language-info">
+      <span class="cv-language-name">English</span>
+      <span class="cv-language-level">Fluent</span>
+    </div>
+    <div class="cv-language-bar-bg">
+      <div class="cv-language-bar-fill" style="width: 90%;"></div>
+    </div>
+  </div>
+  
+  <div class="cv-language-item">
+    <div class="cv-language-info">
+      <span class="cv-language-name">Hebrew</span>
+      <span class="cv-language-level">Elementary</span>
+    </div>
+    <div class="cv-language-bar-bg">
+      <div class="cv-language-bar-fill" style="width: 30%;"></div>
+    </div>
+  </div>
 </div>
 
 ## <i class="fas fa-comments cv-section-icon"></i> Conferences, Seminars, Talks, Posters
 
 <div class="cv-text-entry">
   <div class="cv-text-year">2025</div>
+  <div class="cv-text-category">
+    <span class="cv-pill cv-pill-generic-2" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-chalkboard"></i> Poster</span>
+  </div>
   <div class="cv-text-content">
-    <strong>Digital predistortion of optical field of a fast and high-fidelity entangling gate for trapped ion qubits</strong> <span class="cv-pill cv-pill-generic-2" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-chalkboard"></i> Poster</span><br>
+    <strong>Digital predistortion of optical field of a fast and high-fidelity entangling gate for trapped ion qubits</strong><br>
     <span class="cv-text-meta">ECTI 2025, European Conference on Trapped Ions — <a href="https://www.ecti2025.com/home" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Website</a></span>
     <span class="cv-text-meta" style="margin-top: 0.3rem;"><strong>Authors:</strong> J. Markov, Y. Shapira, N. Akerman, R. Ozeri</span>
   </div>
@@ -153,17 +182,23 @@ redirect_from:
 
 <div class="cv-text-entry">
   <div class="cv-text-year">2025</div>
+  <div class="cv-text-category">
+    <span class="cv-pill cv-pill-generic-3" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-laptop-code"></i> Workshop</span>
+  </div>
   <div class="cv-text-content">
-    <strong>Quantum Computing Workshop</strong> <span class="cv-pill cv-pill-generic-3" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-laptop-code"></i> Workshop</span><br>
-    <span class="cv-text-meta">Petnica Science Center, Physics Seminar, Valjevo, Serbia</span>
-    <span class="cv-text-meta" style="margin-top: 0.3rem;">Two-day, 8-hour hands-on course based on <a href="https://www.cl.cam.ac.uk/teaching/1819/QuantComp/materials.html" target="_blank" rel="noopener noreferrer">Cambridge Quantum Computing syllabus</a>, plus trapped ion quantum computing and lab tour.</span>
+    <strong>Quantum Computing Workshop</strong><br>
+    <span class="cv-text-meta">Remote workshop organized for the Physics Seminar, Petnica Science Center, Serbia</span>
+    <span class="cv-text-meta" style="margin-top: 0.3rem;">Two-day, 8-hour hands-on remote course based on <a href="https://www.cl.cam.ac.uk/teaching/1819/QuantComp/materials.html" target="_blank" rel="noopener noreferrer">Cambridge Quantum Computing syllabus</a>, plus trapped ion quantum computing and lab tour.</span>
   </div>
 </div>
 
 <div class="cv-text-entry">
   <div class="cv-text-year">2023</div>
+  <div class="cv-text-category">
+    <span class="cv-pill cv-pill-generic-1" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-microphone"></i> Talk</span>
+  </div>
   <div class="cv-text-content">
-    <strong>Quantum computers and what to do with them</strong> <span class="cv-pill cv-pill-generic-1" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-microphone"></i> Talk</span><br>
+    <strong>Quantum computers and what to do with them</strong><br>
     <span class="cv-text-meta">Annual New Year Seminar, Faculty of Physics, University of Belgrade, Serbia</span>
     <span class="cv-text-meta" style="margin-top: 0.3rem;">(Presented in Serbian)</span>
   </div>
@@ -171,8 +206,11 @@ redirect_from:
 
 <div class="cv-text-entry">
   <div class="cv-text-year">2023</div>
+  <div class="cv-text-category">
+    <span class="cv-pill cv-pill-generic-1" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-microphone"></i> Talk</span>
+  </div>
   <div class="cv-text-content">
-    <strong>Digital predistortion of optical field of a fast and high-fidelity entangling gate for trapped ions qubits</strong> <span class="cv-pill cv-pill-generic-1" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-microphone"></i> Talk</span><br>
+    <strong>Digital predistortion of optical field of a fast and high-fidelity entangling gate for trapped ions qubits</strong><br>
     <span class="cv-text-meta">54th Annual Meeting of the APS Division of Atomic, Molecular and Optical Physics, Spokane, Washington</span>
     <span class="cv-text-meta" style="margin-top: 0.3rem;"><strong>Authors:</strong> <strong>J. Markov</strong>, Y. Shapira, N. Akerman, R. Ozeri</span>
   </div>
@@ -180,8 +218,11 @@ redirect_from:
 
 <div class="cv-text-entry">
   <div class="cv-text-year">2023</div>
+  <div class="cv-text-category">
+    <span class="cv-pill cv-pill-generic-2" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-chalkboard"></i> Poster</span>
+  </div>
   <div class="cv-text-content">
-    <strong>Programmable quantum simulations on a trapped-ions quantum computer with a global drive</strong> <span class="cv-pill cv-pill-generic-2" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-chalkboard"></i> Poster</span><br>
+    <strong>Programmable quantum simulations on a trapped-ions quantum computer with a global drive</strong><br>
     <span class="cv-text-meta">25th Annual SQuInT Workshop, Albuquerque, New Mexico</span>
     <span class="cv-text-meta" style="margin-top: 0.3rem;"><strong>Authors:</strong> <strong>J. Markov</strong>, Y. Shapira, N. Akerman, A. Stern, R. Ozeri</span>
   </div>
@@ -189,8 +230,11 @@ redirect_from:
 
 <div class="cv-text-entry">
   <div class="cv-text-year">2018</div>
+  <div class="cv-text-category">
+    <span class="cv-pill cv-pill-generic-4" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-hands-helping"></i> Mentoring</span>
+  </div>
   <div class="cv-text-content">
-    <strong>IPPOG CMS Masterclass</strong> <span class="cv-pill cv-pill-generic-4" style="font-size: 0.75em; padding: 0.1em 0.5em;"><i class="fas fa-hands-helping"></i> Mentoring</span><br>
+    <strong>IPPOG CMS Masterclass</strong><br>
     <span class="cv-text-meta">Belgrade, Serbia</span>
     <span class="cv-text-meta" style="margin-top: 0.3rem;">Helping participants with hands-on data-analysis exercises.</span>
   </div>

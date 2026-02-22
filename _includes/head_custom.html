@@ -1,3 +1,6 @@
+<!-- Add Devicon for authentic technology brand logos -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
 <!-- Early Theme Initialization to prevent FOUC -->
 <script>
     (function () {
@@ -796,7 +799,7 @@
     /* ===== Simple Structured Text Entries (e.g. Awards, Memberships) ===== */
     .cv-text-entry {
         display: grid;
-        grid-template-columns: 140px 1fr;
+        grid-template-columns: 140px 100px 1fr;
         gap: 1.5rem;
         margin-bottom: 1.25rem;
         align-items: baseline;
@@ -808,6 +811,12 @@
             gap: 0.25rem;
             margin-bottom: 1.5rem;
         }
+    }
+
+    .cv-text-category {
+        display: flex;
+        /* Helps vertically align the pill if needed */
+        align-items: center;
     }
 
     .cv-text-year {
@@ -835,6 +844,54 @@
         font-size: 0.85rem;
         display: block;
         margin-top: 0.1rem;
+    }
+
+    /* ===== Language Proficiency Bars ===== */
+    .cv-language-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        margin-bottom: 2rem;
+        max-width: 600px;
+    }
+
+    .cv-language-item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .cv-language-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .cv-language-name {
+        color: var(--ion-text);
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .cv-language-level {
+        color: var(--ion-muted);
+        font-size: 0.85rem;
+        font-weight: 500;
+    }
+
+    .cv-language-bar-bg {
+        height: 6px;
+        width: 100%;
+        background-color: var(--ion-border);
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .cv-language-bar-fill {
+        height: 100%;
+        background: linear-gradient(90deg, var(--ion-accent), var(--ion-accent-hover));
+        border-radius: 4px;
+        transition: width 1s ease-out;
     }
 
     /* ===== 3D Keyboard Button Pills ===== */
@@ -1028,6 +1085,14 @@
     }
 
     /* Orange */
+
+    .cv-pill-neutral {
+        background-color: #e5e7eb;
+        /* Neutral gray for light mode */
+        color: #374151 !important;
+        /* Dark text for contrast */
+        border: 1px solid #d1d5db;
+    }
 
     .cv-details-inner li {
         margin-bottom: 0.3em;
