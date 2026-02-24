@@ -1,7 +1,7 @@
 <!-- start custom comments snippet -->
 <!-- Initial theme detection based on html class -->
 <script>
-    (function () {
+    document.addEventListener("DOMContentLoaded", function () {
         let commentsSection = document.getElementById("comments");
         if (!commentsSection) return;
 
@@ -30,6 +30,6 @@
         giscusScript.async = true;
 
         commentsSection.appendChild(giscusScript);
-    })();
+    });
 </script>
 <!-- end custom comments snippet -->
