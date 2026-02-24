@@ -5,17 +5,17 @@
         let commentsSection = document.getElementById("comments");
         if (!commentsSection) return;
 
-        // Check if Giscus is already injected to prevent duplicates
+        /* Check if Giscus is already injected to prevent duplicates */
         if (commentsSection.querySelector(".giscus")) return;
 
-        // Create the container so it renders inside the main text column
+        /* Create the container so it renders inside the main text column */
         let giscusContainer = document.createElement("div");
         giscusContainer.className = "giscus";
         commentsSection.appendChild(giscusContainer);
 
         let giscusTheme = document.documentElement.classList.contains("dark-mode") ? "noborder_dark" : "light";
 
-        // Inject the script dynamically
+        /* Inject the script dynamically */
         let giscusScript = document.createElement("script");
         giscusScript.src = "https://giscus.app/client.js";
         giscusScript.setAttribute("data-repo", "{{ site.comments.giscus.repo }}");
