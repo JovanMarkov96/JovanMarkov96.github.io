@@ -1,9 +1,12 @@
 <!-- start custom comments snippet -->
 <!-- Initial theme detection based on html class -->
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    function injectGiscus() {
         let commentsSection = document.getElementById("comments");
         if (!commentsSection) return;
+
+        // Check if Giscus is already injected to prevent duplicates
+        if (commentsSection.querySelector(".giscus")) return;
 
         // Create the container so it renders inside the main text column
         let giscusContainer = document.createElement("div");
@@ -30,6 +33,12 @@
         giscusScript.async = true;
 
         commentsSection.appendChild(giscusScript);
-    });
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", injectGiscus);
+    } else {
+        injectGiscus();
+    }
 </script>
 <!-- end custom comments snippet -->
