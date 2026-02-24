@@ -84,7 +84,12 @@ future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : true  #change to true to add link to talkmap on talks page
 comments:
-  provider               : "facebook" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "custom" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  giscus:
+    repo                 : "JovanMarkov96/JovanMarkov96.github.io"
+    repo_id              : "R_kgDOMPFlLA"
+    category             : "Announcements"
+    category_id          : "DIC_kwDOMPFlLM4C3Hkq"
   disqus:
     shortname            :
   discourse:

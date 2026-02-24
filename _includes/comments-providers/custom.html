@@ -1,3 +1,34 @@
 <!-- start custom comments snippet -->
+<div class="giscus"></div>
 
+<!-- Initial theme detection based on html class -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let giscusTheme = document.documentElement.classList.contains("dark-mode") ? "noborder_dark" : "light";
+
+        // Inject the script dynamically into the #comments section so it renders in the correct place
+        let giscusScript = document.createElement("script");
+        giscusScript.src = "https://giscus.app/client.js";
+        giscusScript.setAttribute("data-repo", "{{ site.comments.giscus.repo }}");
+        giscusScript.setAttribute("data-repo-id", "{{ site.comments.giscus.repo_id }}");
+        giscusScript.setAttribute("data-category", "{{ site.comments.giscus.category }}");
+        giscusScript.setAttribute("data-category-id", "{{ site.comments.giscus.category_id }}");
+        giscusScript.setAttribute("data-mapping", "pathname");
+        giscusScript.setAttribute("data-strict", "0");
+        giscusScript.setAttribute("data-reactions-enabled", "1");
+        giscusScript.setAttribute("data-emit-metadata", "0");
+        giscusScript.setAttribute("data-input-position", "bottom");
+        giscusScript.setAttribute("data-theme", giscusTheme);
+        giscusScript.setAttribute("data-lang", "en");
+        giscusScript.setAttribute("crossorigin", "anonymous");
+        giscusScript.async = true;
+
+        var commentsSection = document.getElementById("comments");
+        if (commentsSection) {
+            commentsSection.appendChild(giscusScript);
+        } else {
+            document.body.appendChild(giscusScript);
+        }
+    });
+</script>
 <!-- end custom comments snippet -->

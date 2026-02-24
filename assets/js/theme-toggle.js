@@ -24,13 +24,25 @@
     svgIcon.innerHTML = SVGS[mode];
     toggleBtn.title = mode.charAt(0).toUpperCase() + mode.slice(1);
 
+    var isDark = false;
     if (mode === 'system') {
       localStorage.removeItem('theme');
-      var sysDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      document.documentElement.classList.toggle('dark-mode', sysDark);
+      isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.toggle('dark-mode', isDark);
     } else {
       localStorage.setItem('theme', mode);
-      document.documentElement.classList.toggle('dark-mode', mode === 'dark');
+      isDark = (mode === 'dark');
+      document.documentElement.classList.toggle('dark-mode', isDark);
+    }
+
+    // Update Giscus theme if the iframe exists
+    var giscusTheme = isDark ? "noborder_dark" : "light";
+    var iframe = document.querySelector('.giscus-frame');
+    if (iframe) {
+      iframe.contentWindow.postMessage(
+        { giscus: { setConfig: { theme: giscusTheme } } },
+        'https://giscus.app'
+      );
     }
   }
 
