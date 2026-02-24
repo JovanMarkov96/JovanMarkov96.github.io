@@ -1,12 +1,18 @@
 <!-- start custom comments snippet -->
-<div class="giscus"></div>
-
 <!-- Initial theme detection based on html class -->
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    (function () {
+        let commentsSection = document.getElementById("comments");
+        if (!commentsSection) return;
+
+        // Create the container so it renders inside the main text column
+        let giscusContainer = document.createElement("div");
+        giscusContainer.className = "giscus";
+        commentsSection.appendChild(giscusContainer);
+
         let giscusTheme = document.documentElement.classList.contains("dark-mode") ? "noborder_dark" : "light";
 
-        // Inject the script dynamically into the #comments section so it renders in the correct place
+        // Inject the script dynamically
         let giscusScript = document.createElement("script");
         giscusScript.src = "https://giscus.app/client.js";
         giscusScript.setAttribute("data-repo", "{{ site.comments.giscus.repo }}");
@@ -23,12 +29,7 @@
         giscusScript.setAttribute("crossorigin", "anonymous");
         giscusScript.async = true;
 
-        var commentsSection = document.getElementById("comments");
-        if (commentsSection) {
-            commentsSection.appendChild(giscusScript);
-        } else {
-            document.body.appendChild(giscusScript);
-        }
-    });
+        commentsSection.appendChild(giscusScript);
+    })();
 </script>
 <!-- end custom comments snippet -->
