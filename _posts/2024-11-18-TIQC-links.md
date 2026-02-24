@@ -6,6 +6,7 @@ tags:
   - quantum computing
   - trapped ions
   - resources
+comments: true
 ---
 
 Trapped ion quantum computing is a rapidly advancing field with numerous resources available for those interested in learning more. Below are some useful links to tutorials, research papers, and other valuable resources.
