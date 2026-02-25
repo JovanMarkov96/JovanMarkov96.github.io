@@ -361,7 +361,7 @@ redirect_from:
 
 ## <i class="fas fa-users cv-section-icon"></i> Memberships
 <div class="cv-text-entry">
-  <div class="cv-text-year">2023 – present</div>
+  <div class="cv-text-year">2023</div>
   <div class="cv-text-content"><strong>American Physical Society</strong></div>
 </div>
 <div class="cv-text-entry">
