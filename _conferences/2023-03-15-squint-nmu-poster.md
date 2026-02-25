@@ -6,19 +6,17 @@ organizer: "Center for Quantum Information and Control"
 location: "Clyde Hotel, Albuquerque, New Mexico"
 date: 2023-10-26
 end_date: 2023-10-28
-presenting_author: "Jovan Markov, Weizmann Institute of Science"
+presenting_author: "Jovan Markov"
 contributing_authors:
-    - Jovan Markov
-    - Yotam Shapira
-    - Nitzan Akerman
-    - Ady Stern
-    - Roee Ozeri
+    - Jovan Markov (Weizmann Institute of Science)
+    - Yotam Shapira (Weizmann Institute of Science)
+    - Nitzan Akerman (Weizmann Institute of Science)
+    - Ady Stern (Weizmann Institute of Science)
+    - Roee Ozeri (Weizmann Institute of Science)
 layout: conference
 category: "Poster"
 excerpt: "Our method enables quantum simulations of programmable spin-Hamiltonians, using only simple global fields, driving all qubits homogeneously and simultaneously."
-venue: "25th Annual SQuInT Workshop"
-slidesurl: # 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://jovanmarkov96.github.io/files/global_sim.pdf'
+paper_link: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.010602"
 citation: "Phys. Rev. Lett. 134, 010602 – Published 6 January, 2025"
 ---
 

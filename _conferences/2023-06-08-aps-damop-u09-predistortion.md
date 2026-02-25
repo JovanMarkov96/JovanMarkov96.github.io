@@ -3,13 +3,15 @@ title: "Digital predistortion of optical field of a fast and high-fidelity entan
 date: 2023-06-08
 conference: "54th Annual Meeting of the APS Division of Atomic, Molecular and Optical Physics"
 location: "Spokane, Washington"
-presenting_author: "Jovan Markov, Weizmann Institute of Science"
+presenting_author: "Jovan Markov"
 contributing_authors:
   - Jovan Markov (Weizmann Institute of Science)
   - Yotam Shapira (Weizmann Institute of Science)
   - Nitzan Akerman (Weizmann Institute of Science)
   - Roee Ozeri (Weizmann Institute of Science)
 category: "Talk"
+layout: conference
+conference_link: "https://meetings.aps.org/Meeting/DAMOP23/Session/U09.4"
 excerpt: |
     We present a digital pre-distortion technique to improve the fidelity of entangling gates in trapped ion qubits. By characterizing and correcting the non-linear response of an acousto-optic modulator, our method enables accurate modulation of the optical field, allowing for fast and robust multi-tone entanglement gates without fidelity loss. This approach is straightforward to implement and compatible with advanced waveform modulation schemes.
 ---

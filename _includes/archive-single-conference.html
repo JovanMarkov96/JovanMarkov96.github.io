@@ -1,15 +1,15 @@
 {% include base_path %}
 
 {% if post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% capture teaser %}{{ post.header.teaser }}{% endcapture %}
 {% else %}
-  {% assign teaser = site.teaser %}
+{% assign teaser = site.teaser %}
 {% endif %}
 
 {% if post.id %}
-  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
 {% else %}
-  {% assign title = post.title %}
+{% assign title = post.title %}
 {% endif %}
 
 <div class="list__item">
@@ -18,23 +18,29 @@
       <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
     </h2>
     {% if post.date %}
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>
+    <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>
     {% endif %}
     {% if post.conference or post.location or post.category %}
-      <p class="archive__item-excerpt" itemprop="description">
-        {% if post.category %}{{ post.category }}, {% endif %}
-        {% if post.conference %}{{ post.conference }}, {% endif %}
-        {% if post.location %}{{ post.location }}{% endif %}
-      </p>
+    <p class="archive__item-excerpt" itemprop="description">
+      {% if post.category %}{{ post.category }}, {% endif %}
+      {% if post.conference %}{{ post.conference }}, {% endif %}
+      {% if post.location %}{{ post.location }}{% endif %}
+    </p>
     {% endif %}
     {% if post.presenting_author %}
-      <p><strong>Presenter:</strong> {{ post.presenting_author }}</p>
+    <p><strong>Presenter:</strong> {{ post.presenting_author }}</p>
     {% endif %}
     {% if post.contributing_authors %}
-      <p><strong>Contributors:</strong> {{ post.contributing_authors | join: ", " }}</p>
+    <p><strong>Contributors:</strong> {{ post.contributing_authors | join: ", " }}</p>
+    {% endif %}
+    {% if post.conference_link %}
+    <p><strong>Website:</strong> <a href="{{ post.conference_link }}">{{ post.conference_link }}</a></p>
+    {% endif %}
+    {% if post.paper_link %}
+    <p><strong>Paper:</strong> <a href="{{ post.paper_link }}">{{ post.paper_link }}</a></p>
     {% endif %}
     {% if post.excerpt %}
-      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% endif %}
   </article>
 </div>

@@ -4,16 +4,16 @@ conference: "70th Annual Meeting of the Israel Physical Society (IPS)"
 organizer: "Israel Physical Society"
 location: "Technion - Israel Institute of Technology, Haifa, Israel"
 date: 2025-07-15
-presenting_author: "Jovan Markov, Weizmann Institute of Science"
+presenting_author: "Jovan Markov"
 contributing_authors:
-  - Jovan Markov
-  - Yotam Shapira
-  - Nitzan Akerman
-  - Roee Ozeri
+  - Jovan Markov (Weizmann Institute of Science)
+  - Yotam Shapira (Weizmann Institute of Science)
+  - Nitzan Akerman (Weizmann Institute of Science)
+  - Roee Ozeri (Weizmann Institute of Science)
 layout: conference
 category: "Poster"
 excerpt: "Global entangling gates reduce control complexity for quantum simulation, and digital predistortion enables faster gates without sacrificing fidelity."
-venue: "70th Annual Meeting of the Israel Physical Society"
+paper_link: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.010602"
 ---
 
 **Abstract**
