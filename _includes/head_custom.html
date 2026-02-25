@@ -445,12 +445,12 @@
 
     /* Set up the Sidebar Glass Panel */
     .sidebar>div[itemscope] {
-        background: linear-gradient(145deg, rgba(255, 255, 255, 0.7), rgba(224, 231, 255, 0.85)) !important;
+        background: rgba(255, 255, 255, 0.85) !important;
         backdrop-filter: blur(25px) saturate(180%) !important;
         -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
         border: 1px solid var(--ion-border) !important;
         border-radius: var(--ion-radius) !important;
-        padding: 2em 1.5em !important;
+        padding: 2.5em 1.5em !important;
         box-shadow: var(--ion-shadow-sm) !important;
         transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease !important;
     }
@@ -462,8 +462,8 @@
 
     /* Force deep blue gradient in dark mode to match the rest of the site */
     html.dark-mode .sidebar>div[itemscope] {
-        background: linear-gradient(145deg, rgba(8, 20, 50, 0.6), rgba(4, 10, 25, 0.8)) !important;
-        border: 1px solid rgba(129, 140, 248, 0.25) !important;
+        background: var(--ion-surface-2) !important;
+        border: 1px solid var(--ion-border) !important;
         box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4) !important;
     }
 
@@ -576,12 +576,15 @@
     }
 
     .author__avatar img {
+        width: 100% !important;
+        max-width: 200px !important;
+        aspect-ratio: 1 / 1 !important;
+        object-fit: cover !important;
         border-radius: 50% !important;
-        margin-bottom: 1.2em;
-        border: 2px solid rgba(129, 140, 248, 0.3);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        width: 120px !important;
-        height: 120px !important;
+        margin: 0 auto 1.5rem auto !important;
+        display: block !important;
+        border: 3px solid rgba(129, 140, 248, 0.4) !important;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
     }
 
     /* Force completely transparent backgrounds on list items to fix the Minimal Mistakes dark-mode gray box */
@@ -630,8 +633,8 @@
         }
 
         .sidebar {
-            width: 360px !important;
-            max-width: 360px !important;
+            width: 280px !important;
+            max-width: 280px !important;
 
             /* Disconnect from the old float grid */
             float: none !important;
@@ -648,7 +651,7 @@
             /* Take the rest of the available width cleanly */
             float: none !important;
             flex-grow: 1 !important;
-            width: calc(100% - 400px) !important;
+            width: calc(100% - 320px) !important;
             /* Total minus sidebar + gap */
             max-width: 900px !important;
             /* Prevent text chunks from getting too wide to read comfortably */
