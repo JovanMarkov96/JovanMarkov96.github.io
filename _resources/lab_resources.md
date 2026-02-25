@@ -4,6 +4,7 @@ collection: resources
 title: "Lab Resources"
 permalink: /resources/lab-resources/
 author_profile: true
+order: 1
 toc: true
 toc_label: "Contents"
 toc_icon: "flask"

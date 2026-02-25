@@ -4,6 +4,7 @@ collection: resources
 title: "Quantum resources"
 permalink: /resources/quantum-resources/
 author_profile: true
+order: 2
 ---
 
 ## Online Quantum Seminars

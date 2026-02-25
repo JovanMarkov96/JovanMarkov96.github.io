@@ -4,6 +4,7 @@ collection: resources
 title: "Self-Study Resources for Mathematics"
 permalink: /resources/math-resources/
 author_profile: true
+order: 3
 ---
 
 ## Self-Study Resources for Mathematics

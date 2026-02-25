@@ -10,7 +10,8 @@ author_profile: true
 Here are some useful resources:
 
 <div class="project-grid">
-{% for post in site.resources %}
+{% assign sorted_resources = site.resources | sort: 'order' %}
+{% for post in sorted_resources %}
   {% include resource-card.html %}
 {% endfor %}
 </div>
