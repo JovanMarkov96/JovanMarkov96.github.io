@@ -5,28 +5,31 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
 <div class="pub-view-toggle">
-  <button class="pub-toggle-btn active" id="pub-list-btn" aria-label="List view" title="List view">
+  {% if site.author.googlescholar %}
+  <a href="{{site.author.googlescholar}}" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+    <button class="pub-toggle-btn" aria-label="Google Scholar" title="Google Scholar">
+      <i class="ai ai-google-scholar"></i>
+    </button>
+  </a>
+  {% endif %}
+  <button class="pub-toggle-btn" id="pub-list-btn" aria-label="List view" title="List view">
     <i class="fas fa-list"></i>
   </button>
-  <button class="pub-toggle-btn" id="pub-grid-btn" aria-label="Grid view" title="Grid view">
+  <button class="pub-toggle-btn active" id="pub-grid-btn" aria-label="Grid view" title="Grid view">
     <i class="fas fa-th-large"></i>
   </button>
 </div>
 
-<div id="pub-list-view">
+<div id="pub-list-view" style="display: none;">
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %}
 </div>
 
-<div id="pub-grid-view" style="display: none;">
+<div id="pub-grid-view">
   <div class="pub-grid">
     {% for post in site.publications reversed %}
     <a href="{{ base_path }}{{ post.url }}" class="pub-grid-card archive__item">
@@ -88,6 +91,6 @@ author_profile: true
   listBtn.addEventListener('click', showList);
   gridBtn.addEventListener('click', showGrid);
 
-  if (localStorage.getItem('pub-view') === 'grid') showGrid();
+  if (localStorage.getItem('pub-view') === 'list') showList();
 })();
 </script>
