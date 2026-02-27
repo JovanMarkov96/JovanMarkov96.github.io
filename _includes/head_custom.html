@@ -154,6 +154,165 @@
         color: var(--ion-accent);
     }
 
+    /* ===== Share Modal ===== */
+    .share-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        opacity: 0;
+        transition: opacity 0.2s ease;
+    }
+
+    .share-overlay.is-visible {
+        opacity: 1;
+    }
+
+    .share-modal {
+        background: var(--ion-surface-2);
+        backdrop-filter: blur(30px) saturate(180%);
+        -webkit-backdrop-filter: blur(30px) saturate(180%);
+        border: 1px solid var(--ion-border);
+        border-radius: 16px;
+        padding: 1.5rem;
+        width: 90%;
+        max-width: 420px;
+        box-shadow: 0 24px 64px rgba(0, 0, 0, 0.3);
+        transform: scale(0.95);
+        transition: transform 0.2s ease;
+    }
+
+    .share-overlay.is-visible .share-modal {
+        transform: scale(1);
+    }
+
+    html.dark-mode .share-modal {
+        background: linear-gradient(145deg, rgb(8, 20, 50), rgb(4, 10, 25));
+        border: 1px solid rgba(129, 140, 248, 0.25);
+        box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
+    }
+
+    .share-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    .share-header h3 {
+        margin: 0;
+        font-size: 1.1rem;
+        color: var(--ion-text);
+    }
+
+    .share-close {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--ion-muted);
+        padding: 0 0.25rem;
+        line-height: 1;
+        transition: color 0.2s ease;
+    }
+
+    .share-close:hover {
+        color: var(--ion-text);
+    }
+
+    .share-url-bar {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .share-url-bar input {
+        flex: 1;
+        padding: 0.5rem 0.75rem;
+        border-radius: 8px;
+        border: 1px solid var(--ion-border);
+        background: var(--ion-surface);
+        color: var(--ion-text);
+        font-size: 0.85rem;
+        outline: none;
+    }
+
+    html.dark-mode .share-url-bar input {
+        background: rgba(8, 20, 50, 0.6);
+        border-color: rgba(129, 140, 248, 0.2);
+    }
+
+    .share-copy-btn {
+        padding: 0.5rem 0.75rem;
+        border-radius: 8px;
+        border: 1px solid var(--ion-border);
+        background: var(--ion-surface);
+        color: var(--ion-text);
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .share-copy-btn:hover {
+        background: rgba(129, 140, 248, 0.1);
+        border-color: var(--ion-accent);
+        color: var(--ion-accent);
+    }
+
+    html.dark-mode .share-copy-btn {
+        background: rgba(8, 20, 50, 0.6);
+        border-color: rgba(129, 140, 248, 0.2);
+    }
+
+    .share-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+    }
+
+    .share-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.75rem 0.5rem;
+        border-radius: 12px;
+        border: 1px solid var(--ion-border);
+        background: var(--ion-surface);
+        color: var(--ion-text) !important;
+        text-decoration: none !important;
+        font-size: 0.8rem;
+        transition: all 0.2s ease;
+        cursor: pointer;
+    }
+
+    .share-btn i {
+        font-size: 1.25rem;
+        color: var(--ion-accent);
+    }
+
+    .share-btn:hover {
+        transform: translateY(-2px);
+        border-color: var(--ion-accent);
+        background: rgba(129, 140, 248, 0.08);
+        box-shadow: 0 4px 16px rgba(129, 140, 248, 0.15);
+        color: var(--ion-accent) !important;
+    }
+
+    html.dark-mode .share-btn {
+        background: rgba(8, 20, 50, 0.6);
+        border-color: rgba(129, 140, 248, 0.15);
+    }
+
+    html.dark-mode .share-btn:hover {
+        background: rgba(129, 140, 248, 0.1);
+        border-color: rgba(129, 140, 248, 0.4);
+    }
+
     /* ===== Responsive Profile Panel Fix (below 1024px) ===== */
     @media screen and (max-width: 1023px) {
         .sidebar {
@@ -315,7 +474,7 @@
 
     .home-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
         margin-top: 2rem;
     }
@@ -399,6 +558,17 @@
         text-decoration: none !important;
     }
 
+    .home-glass-panel a {
+        color: var(--ion-accent) !important;
+        text-decoration: none !important;
+        font-weight: 500;
+        transition: color 0.2s ease;
+    }
+
+    .home-glass-panel a:hover {
+        color: rgba(129, 140, 248, 1) !important;
+    }
+
     /* Global link override: forcefully remove all underlines and bottom borders */
     #main a:not(.btn):not(.home-glass-card) {
         text-decoration: none !important;
@@ -462,8 +632,11 @@
 
     /* Force deep blue gradient in dark mode to match the rest of the site */
     html.dark-mode .sidebar>div[itemscope] {
-        background: var(--ion-surface-2) !important;
-        border: 1px solid var(--ion-border) !important;
+        background: linear-gradient(145deg, rgb(8, 20, 50), rgb(4, 10, 25)) !important;
+        background-color: rgb(6, 15, 38) !important;
+        backdrop-filter: blur(25px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
+        border: 1px solid rgba(129, 140, 248, 0.25) !important;
         box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4) !important;
     }
 
@@ -530,6 +703,16 @@
         box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05) !important;
     }
 
+    /* Remove outer frame on homepage to avoid double-framing */
+    .home-content ~ .nothing,
+    body:has(.home-content) .page__inner-wrap {
+        background: transparent !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
     /* Apply the deep blue gradient liquid glass to all content blocks in Dark Mode */
     html.dark-mode .sidebar>div[itemscope],
     html.dark-mode .page__inner-wrap,
@@ -583,8 +766,13 @@
         border-radius: 50% !important;
         margin: 0 auto 1.5rem auto !important;
         display: block !important;
-        border: 3px solid rgba(129, 140, 248, 0.4) !important;
+        border: 3px solid var(--ion-border) !important;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    html.dark-mode .author__avatar img {
+        border: 3px solid rgba(129, 140, 248, 0.4) !important;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 0 12px rgba(129, 140, 248, 0.15) !important;
     }
 
     /* Force completely transparent backgrounds on list items to fix the Minimal Mistakes dark-mode gray box */
@@ -742,7 +930,7 @@
         width: 48px;
         height: 48px;
         border-radius: 50%;
-        background: var(--ion-surface);
+        background: #ffffff;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -758,6 +946,17 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    .cv-logo img[alt="Weizmann Institute of Science"] {
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+    }
+
+    html.dark-mode .cv-logo {
+        border: 2px solid rgba(129, 140, 248, 0.25);
+        box-shadow: 0 0 12px rgba(129, 140, 248, 0.15);
     }
 
     /* ===== Entry Content ===== */
@@ -1141,6 +1340,124 @@
     .cv-pill-generic-9 {
         background-color: #6366f1 !important;
         color: white !important;
+    }
+
+    /* ===== Publications Grid/List Toggle ===== */
+    .pub-view-toggle {
+        display: flex;
+        gap: 0.4rem;
+        justify-content: flex-end;
+        margin-bottom: 1.5rem;
+    }
+
+    .pub-toggle-btn {
+        background: var(--ion-surface);
+        border: 1px solid var(--ion-border);
+        border-radius: 8px;
+        padding: 0.45rem 0.7rem;
+        cursor: pointer;
+        color: var(--ion-muted);
+        font-size: 1rem;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pub-toggle-btn:hover {
+        color: var(--ion-accent);
+        border-color: var(--ion-accent);
+    }
+
+    .pub-toggle-btn.active {
+        background: rgba(129, 140, 248, 0.1);
+        color: var(--ion-accent);
+        border-color: var(--ion-accent);
+    }
+
+    html.dark-mode .pub-toggle-btn {
+        background: rgba(8, 20, 50, 0.6);
+        border-color: rgba(129, 140, 248, 0.15);
+    }
+
+    html.dark-mode .pub-toggle-btn.active {
+        background: rgba(129, 140, 248, 0.15);
+        border-color: rgba(129, 140, 248, 0.4);
+    }
+
+    /* ===== Publications Grid View ===== */
+    .pub-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .pub-grid-card {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none !important;
+        color: var(--ion-text) !important;
+        overflow: hidden;
+    }
+
+    .pub-grid-thumb {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+        border-radius: 0;
+        background: var(--ion-surface);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pub-grid-thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .pub-grid-thumb-placeholder {
+        font-size: 3rem;
+        color: var(--ion-muted);
+        opacity: 0.4;
+    }
+
+    .pub-grid-info {
+        padding: 0.75rem 1.25rem;
+    }
+
+    .pub-grid-info-bottom {
+        padding-bottom: 1.25rem;
+    }
+
+    .pub-grid-info h3 {
+        margin: 0;
+        font-size: 1.05rem;
+        color: var(--ion-text);
+    }
+
+    .pub-grid-card:hover h3 {
+        color: var(--ion-accent);
+    }
+
+    .pub-grid-venue {
+        font-size: 0.85rem;
+        color: var(--ion-muted);
+        margin: 0 0 0.5rem;
+    }
+
+    .pub-grid-excerpt {
+        font-size: 0.85rem;
+        color: var(--ion-muted);
+        margin: 0;
+        line-height: 1.4;
+    }
+
+    @media (max-width: 640px) {
+        .pub-grid {
+            grid-template-columns: 1fr;
+        }
     }
 
     /* Sleek Liquid Glass Publication Buttons */

@@ -3,27 +3,23 @@ title: "Programmable quantum simulations on a trapped-ions quantum computer with
 collection: publications
 permalink: /publication/2023-08-30-Global-Sim
 excerpt: 'Our method enables quantum simulations of programmable spin-Hamiltonians, using only simple global fields, driving all qubits homogeneously and simultaneously.'
-date: 2023-08-30
-venue: 'Journal'
+date: 2025-01-06
+venue: 'Physical Review Letters'
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.010602'
 pdfurl: 'http://jovanmarkov96.github.io/files/global_sim.pdf'
 authors: 'Yotam Shapira*, <strong>Jovan Markov</strong>*, Nitzan Akerman, Ady Stern, Roee Ozeri'
 arxivurl: 'https://arxiv.org/abs/2308.16036'
-citation: 'Phys. Rev. Lett. 134, 010602 – Published 6 January, 2025'
+citation: 'Phys. Rev. Lett. 134, 010602 (2025)'
+doi: '10.1103/PhysRevLett.134.010602'
+short_title: 'Global Simulations'
+thumbnail: '/images/pub_thumbnails/global_sim.png'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+Our method enables quantum simulations of programmable spin-Hamiltonians, using only simple global fields, driving all qubits homogeneously and simultaneously. We demonstrate this on a trapped-ion quantum computer, showing that a rich variety of spin models can be realized without the need for individual addressing of qubits.
 
 ## Copyright Notice
 
-This article is published under the terms of the [American Physical Society](https://journals.aps.org/copyrightFAQ.html). The citation for this article is:
-
-Phys. Rev. Lett. 134, 010602 – Published 6 January, 2025  
-Vol. 134, Iss. 1 — 10 January 2025  
-
-DOI: [https://doi.org/10.1103/PhysRevLett.134.010602](https://doi.org/10.1103/PhysRevLett.134.010602)  
+This article is published under the terms of the [American Physical Society](https://journals.aps.org/copyrightFAQ.html).
 
 © 2025 American Physical Society. All rights reserved.
-
-For more information, please visit the [APS website](https://www.aps.org/).

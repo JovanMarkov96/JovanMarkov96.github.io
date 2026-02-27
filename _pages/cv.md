@@ -15,7 +15,7 @@ redirect_from:
 <div class="cv-timeline">
 
   <div class="cv-timeline-item">
-    <div class="cv-logo">WIS</div>
+    <div class="cv-logo"><img src="/images/logos/wis.png" alt="Weizmann Institute of Science"></div>
     <div class="cv-content">
       <h3>Weizmann Institute of Science</h3>
       <div class="meta">2022 – present • PhD in Physics • Rehovot, Israel</div>
@@ -33,7 +33,7 @@ redirect_from:
   </div>
 
   <div class="cv-timeline-item">
-    <div class="cv-logo">WIS</div>
+    <div class="cv-logo"><img src="/images/logos/wis.png" alt="Weizmann Institute of Science"></div>
     <div class="cv-content">
       <h3>Weizmann Institute of Science</h3>
       <div class="meta">2019 – 2021 • MSc in Physics • Rehovot, Israel</div>
@@ -51,7 +51,7 @@ redirect_from:
   </div>
 
   <div class="cv-timeline-item">
-    <div class="cv-logo">UoB</div>
+    <div class="cv-logo"><img src="/images/logos/uob.png" alt="University of Belgrade"></div>
     <div class="cv-content">
       <h3>University of Belgrade</h3>
       <div class="meta">2015 – 2019 • BSc in Theoretical and Experimental Physics</div>
@@ -257,7 +257,7 @@ redirect_from:
 <div class="cv-timeline">
 
   <div class="cv-timeline-item">
-    <div class="cv-logo">CERN</div>
+    <div class="cv-logo"><img src="/images/logos/cern.png" alt="CERN"></div>
     <div class="cv-content">
       <h3>CERN Summer Student Program</h3>
       <div class="meta">2019 • CERN, Geneva, Switzerland</div>
@@ -275,7 +275,7 @@ redirect_from:
   </div>
 
   <div class="cv-timeline-item">
-    <div class="cv-logo">WIS</div>
+    <div class="cv-logo"><img src="/images/logos/wis.png" alt="Weizmann Institute of Science"></div>
     <div class="cv-content">
       <h3>Kupcinet-Getz Summer School</h3>
       <div class="meta">2017 • Weizmann Institute of Science, Rehovot, Israel</div>
@@ -294,7 +294,7 @@ redirect_from:
   </div>
 
   <div class="cv-timeline-item">
-    <div class="cv-logo">PSC</div>
+    <div class="cv-logo"><img src="/images/logos/psc.png" alt="Petnica Science Center"></div>
     <div class="cv-content">
       <h3>Petnica Science Center – Physics Program</h3>
       <div class="meta">2014 – 2015 • Valjevo, Serbia</div>
@@ -311,7 +311,7 @@ redirect_from:
   </div>
 
   <div class="cv-timeline-item">
-    <div class="cv-logo">PSC</div>
+    <div class="cv-logo"><img src="/images/logos/psc.png" alt="Petnica Science Center"></div>
     <div class="cv-content">
       <h3>Petnica Science Center – Physics Program</h3>
       <div class="meta">2013 • Valjevo, Serbia</div>

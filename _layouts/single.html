@@ -45,6 +45,36 @@ layout: default
 
         {% if page.collection == 'teaching' %}
         <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.collection == 'publications' %}
+        {% if page.authors %}<p style="margin-bottom: 0.3rem; color: var(--ion-muted); font-size: 0.95rem;">{{ page.authors }}</p>{% endif %}
+        <p style="margin-bottom: 0.5rem;">
+          {% if page.venue %}<i>{{ page.venue }}</i>{% endif %}{% if page.date %} — {{ page.date | date: "%B %d, %Y" }}{% endif %}
+        </p>
+        {% if page.citation %}<p style="margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--ion-muted);"><i class="fas fa-quote-left" style="font-size: 0.7em; margin-right: 0.3em;"></i>{{ page.citation }}</p>{% endif %}
+        {% if page.arxivurl or page.paperurl or page.pdfurl or page.slidesurl %}
+        <div class="cv-pill-container" style="margin-top: 0.6rem; margin-bottom: 0.5rem;">
+          {% if page.arxivurl %}
+          <a href="{{ page.arxivurl }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+            <span class="cv-pill cv-pill-neutral" style="font-size: 0.8em; padding: 0.25em 0.7em;"><i class="ai ai-arxiv"></i> arXiv</span>
+          </a>
+          {% endif %}
+          {% if page.paperurl %}
+          <a href="{{ page.paperurl }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+            <span class="cv-pill cv-pill-neutral" style="font-size: 0.8em; padding: 0.25em 0.7em;"><i class="fas fa-globe"></i> Journal</span>
+          </a>
+          {% endif %}
+          {% if page.pdfurl %}
+          <a href="{{ page.pdfurl }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+            <span class="cv-pill cv-pill-neutral" style="font-size: 0.8em; padding: 0.25em 0.7em;"><i class="fas fa-file-pdf"></i> PDF</span>
+          </a>
+          {% endif %}
+          {% if page.slidesurl %}
+          <a href="{{ page.slidesurl }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+            <span class="cv-pill cv-pill-neutral" style="font-size: 0.8em; padding: 0.25em 0.7em;"><i class="fas fa-chalkboard-teacher"></i> Slides</span>
+          </a>
+          {% endif %}
+        </div>
+        {% endif %}
         {% elsif page.venue and page.date %}
         <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
@@ -59,20 +89,6 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
 
-        {% if page.citation and page.paperurl and page.slidesurl %}
-        <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a
-            href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
-        {% elsif page.citation and page.paperurl %}
-        <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a
-            href="{{ page.paperurl }}">Download Paper</a></p>
-        {% elsif page.citation and page.slidesurl %}
-        <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a
-            href="{{ page.slidesurl }}">Download Slides</a></p>
-        {% elsif page.citation %}
-        <p style="font-size: smaller">Recommended citation: {{ page.citation }}</p>
-        {% elsif page.slidesurl %}
-        <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a></p>
-        {% endif %}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label |
             default: "Direct Link" }}</a></div>{% endif %}

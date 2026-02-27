@@ -31,6 +31,92 @@ layout: compress
   <!-- Theme toggle logic (loaded after body so button exists) -->
   <script src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
 
+  <!-- Share Modal -->
+  <div id="share-modal-overlay" class="share-overlay" style="display:none;">
+    <div class="share-modal">
+      <div class="share-header">
+        <h3>Share this page</h3>
+        <button class="share-close" id="share-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="share-url-bar">
+        <input type="text" id="share-url-input" readonly>
+        <button id="share-copy-btn" class="share-copy-btn" title="Copy link">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+      <div class="share-grid">
+        <a id="share-twitter" target="_blank" rel="noopener noreferrer" class="share-btn">
+          <i class="fab fa-x-twitter"></i><span>X</span>
+        </a>
+        <a id="share-linkedin" target="_blank" rel="noopener noreferrer" class="share-btn">
+          <i class="fab fa-linkedin-in"></i><span>LinkedIn</span>
+        </a>
+        <a id="share-facebook" target="_blank" rel="noopener noreferrer" class="share-btn">
+          <i class="fab fa-facebook-f"></i><span>Facebook</span>
+        </a>
+        <a id="share-reddit" target="_blank" rel="noopener noreferrer" class="share-btn">
+          <i class="fab fa-reddit-alien"></i><span>Reddit</span>
+        </a>
+        <a id="share-email" class="share-btn">
+          <i class="fas fa-envelope"></i><span>Email</span>
+        </a>
+        <a id="share-whatsapp" target="_blank" rel="noopener noreferrer" class="share-btn">
+          <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  (function() {
+    var btn = document.getElementById('share-toggle');
+    var overlay = document.getElementById('share-modal-overlay');
+    var closeBtn = document.getElementById('share-close');
+    var copyBtn = document.getElementById('share-copy-btn');
+    var urlInput = document.getElementById('share-url-input');
+
+    function openModal() {
+      var url = window.location.href;
+      var title = document.title;
+      urlInput.value = url;
+      document.getElementById('share-twitter').href = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(title);
+      document.getElementById('share-linkedin').href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url);
+      document.getElementById('share-facebook').href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url);
+      document.getElementById('share-reddit').href = 'https://www.reddit.com/submit?url=' + encodeURIComponent(url) + '&title=' + encodeURIComponent(title);
+      document.getElementById('share-email').href = 'mailto:?subject=' + encodeURIComponent(title) + '&body=' + encodeURIComponent(url);
+      document.getElementById('share-whatsapp').href = 'https://wa.me/?text=' + encodeURIComponent(title + ' ' + url);
+      overlay.style.display = 'flex';
+      requestAnimationFrame(function() { overlay.classList.add('is-visible'); });
+    }
+
+    function closeModal() {
+      overlay.classList.remove('is-visible');
+      setTimeout(function() { overlay.style.display = 'none'; }, 200);
+    }
+
+    btn.addEventListener('click', openModal);
+    closeBtn.addEventListener('click', closeModal);
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeModal();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.style.display !== 'none') closeModal();
+    });
+
+    copyBtn.addEventListener('click', function() {
+      urlInput.select();
+      navigator.clipboard.writeText(urlInput.value).then(function() {
+        copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+        copyBtn.style.color = '#22c55e';
+        setTimeout(function() {
+          copyBtn.innerHTML = '<i class="fas fa-copy"></i>';
+          copyBtn.style.color = '';
+        }, 1500);
+      });
+    });
+  })();
+  </script>
+
 </body>
 
 </html>
