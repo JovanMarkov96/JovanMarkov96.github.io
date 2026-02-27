@@ -7,14 +7,15 @@ author_profile: true
 
 {% include base_path %}
 
-<div class="pub-view-toggle">
-  {% if site.author.googlescholar %}
+{% if site.author.googlescholar %}
+<p style="font-size: 1.05rem; margin-bottom: 1.5rem;">You can find all of my publications at
   <a href="{{site.author.googlescholar}}" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-    <button class="pub-toggle-btn" aria-label="Google Scholar" title="Google Scholar">
-      <i class="ai ai-google-scholar"></i>
-    </button>
+    <span class="cv-pill cv-pill-neutral" style="font-size: 0.8em; padding: 0.2em 0.6em; cursor: pointer;"><i class="ai ai-google-scholar"></i> Google Scholar</span>
   </a>
-  {% endif %}
+</p>
+{% endif %}
+
+<div class="pub-view-toggle">
   <button class="pub-toggle-btn" id="pub-list-btn" aria-label="List view" title="List view">
     <i class="fas fa-list"></i>
   </button>
