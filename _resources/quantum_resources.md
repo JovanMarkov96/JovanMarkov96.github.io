@@ -48,6 +48,7 @@ A curated list of resources can be found here:
 - [Awesome Quantum Computing](https://github.com/desireevl/awesome-quantum-computing)
 - [Quantum Open Source Foundation - Learning Resources on Quantum Computing](https://www.qosf.org/learn_quantum/)
 - [IonQ Quantum Resources](https://ionq.com/resources)
+- [Quirk — Quantum Circuit Simulator](https://algassert.com/quirk)
 
 ## Lecture Notes and Courses
 - [John Watrous — Understanding Quantum Information and Computation: A Course on the Theory of Quantum Computing (arXiv:2507.11536)](https://arxiv.org/abs/2507.11536) — [PDF](https://arxiv.org/pdf/2507.11536) — [YouTube lecture series (follows this book)](https://youtube.com/playlist?list=PLOFEBzvs-VvqKKMXX4vbi4EB1uaErFMSO&si=OunACJUdcOOu6MTz)
