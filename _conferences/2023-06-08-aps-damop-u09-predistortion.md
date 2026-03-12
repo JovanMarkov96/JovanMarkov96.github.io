@@ -11,7 +11,7 @@ contributing_authors:
   - Roee Ozeri (Weizmann Institute of Science)
 category: "Talk"
 layout: conference
-conference_link: "https://meetings.aps.org/Meeting/DAMOP23/Session/U09.4"
+conference_link: "https://meetings.aps.org/Meeting/DAMOP23/Session/U09.2"
 excerpt: |
     We present a digital pre-distortion technique to improve the fidelity of entangling gates in trapped ion qubits. By characterizing and correcting the non-linear response of an acousto-optic modulator, our method enables accurate modulation of the optical field, allowing for fast and robust multi-tone entanglement gates without fidelity loss. This approach is straightforward to implement and compatible with advanced waveform modulation schemes.
 ---
