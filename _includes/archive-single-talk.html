@@ -48,7 +48,31 @@
     
     {% if post.excerpt %}
       <p class="archive__item-excerpt" itemprop="description">
-        {% if post.type %}<strong>{{ post.type }}</strong><br>{% endif %}
+        {% if post.type %}
+          {% assign p_type = post.type | downcase %}
+          {% assign pill_class = "cv-pill-generic-1" %}
+          {% assign pill_icon = "fas fa-microphone" %}
+          
+          {% if p_type contains "workshop" %}
+            {% assign pill_class = "cv-pill-generic-3" %}
+            {% assign pill_icon = "fas fa-laptop-code" %}
+          {% elsif p_type contains "poster" %}
+            {% assign pill_class = "cv-pill-generic-2" %}
+            {% assign pill_icon = "fas fa-chalkboard" %}
+          {% elsif p_type contains "tutorial" %}
+            {% assign pill_class = "cv-pill-generic-4" %}
+            {% assign pill_icon = "fas fa-chalkboard-teacher" %}
+          {% elsif p_type contains "proceedings" %}
+            {% assign pill_class = "cv-pill-generic-5" %}
+            {% assign pill_icon = "fas fa-file-alt" %}
+          {% endif %}
+          
+          <div style="margin-bottom: 0.6rem;">
+            <span class="cv-pill {{ pill_class }}" style="font-size: 0.8em; padding: 0.2em 0.6em;">
+              <i class="{{ pill_icon }}"></i> {{ post.type }}
+            </span>
+          </div>
+        {% endif %}
         {{ post.excerpt | markdownify | strip_html | truncatewords: 40 }}
       </p>
     {% endif %}

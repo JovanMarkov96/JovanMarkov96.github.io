@@ -8,6 +8,7 @@ date: 2025-09-05
 modified: 2025-09-06
 location: "Valjevo, Serbia"
 talk_type: "Workshop"
+type: "Workshop"
 tags: ["quantum computing", "workshop", "education"]
 # Optional extras you can fill in:
 # slides: 
