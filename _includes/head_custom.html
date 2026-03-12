@@ -1535,6 +1535,13 @@
         }
     }
 
+    /* Hide the mobile nav-toggle on desktop */
+    @media (min-width: 1024px) {
+        button#nav-toggle {
+            display: none !important;
+        }
+    }
+
     /* ===== Native Mobile Navbar Overlay ===== */
     @media (max-width: 1023px) {
         .masthead {
@@ -1544,6 +1551,12 @@
         button#nav-toggle {
             position: relative;
             z-index: 10001 !important; /* Always above the overlay */
+        }
+        
+        button#nav-toggle .navicon,
+        button#nav-toggle .navicon:before,
+        button#nav-toggle .navicon:after {
+            background: currentColor !important;
         }
         
         .visible-links {
