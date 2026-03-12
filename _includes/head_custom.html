@@ -479,6 +479,12 @@
         margin-top: 2rem;
     }
 
+    @media (max-width: 768px) {
+        .home-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
     .resources-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -701,6 +707,12 @@
         border-radius: var(--ion-radius) !important;
         padding: 2em !important;
         box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05) !important;
+    }
+
+    @media (max-width: 768px) {
+        .page__inner-wrap {
+            padding: 1.25em !important;
+        }
     }
 
     /* Remove outer frame on homepage to avoid double-framing */
@@ -1056,7 +1068,8 @@
     }
 
     @media (max-width: 600px) {
-        .cv-text-entry {
+        .cv-text-entry,
+        .cv-text-entry.has-category {
             grid-template-columns: 1fr;
             gap: 0.25rem;
             margin-bottom: 1.5rem;
@@ -1520,5 +1533,95 @@
             opacity: 0.5;
             transform: translateX(0);
         }
+    }
+
+    /* ===== Native Mobile Navbar Overlay ===== */
+    @media (max-width: 1023px) {
+        .masthead {
+            z-index: 1000 !important;
+        }
+        
+        button#nav-toggle {
+            position: relative;
+            z-index: 10001 !important; /* Always above the overlay */
+        }
+        
+        .visible-links {
+            /* Full-screen overlay overriding the standard dropdown */
+            position: fixed !important;
+            top: -16px !important; /* Negates masthead 16px top offset */
+            left: 50% !important; /* Centered relative to view */
+            transform: translateX(-50%) !important;
+            width: 100vw !important;
+            height: 100vh !important;
+            max-width: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            background: rgba(255, 255, 255, 0.85) !important;
+            backdrop-filter: blur(20px) saturate(180%) !important;
+            -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+            align-items: center !important;
+            z-index: 9999 !important;
+            
+            /* Hidden state with transitions */
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+
+        .visible-links.is-visible {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        html.dark-mode .visible-links {
+            background: rgba(8, 20, 50, 0.85) !important;
+            border: none !important;
+        }
+
+        .visible-links .masthead__menu-item {
+            display: block;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            transition-delay: 0s;
+        }
+        
+        .visible-links.is-visible .masthead__menu-item {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .visible-links .masthead__menu-item a {
+            display: block;
+            padding: 1.25rem 2rem !important;
+            font-size: 1.75rem !important;
+            font-weight: 700 !important;
+            color: var(--ion-text) !important;
+            text-decoration: none !important;
+        }
+        
+        .visible-links .masthead__menu-item a:active {
+            background: transparent !important;
+            transform: scale(0.95);
+            transition: transform 0.1s;
+        }
+        
+        /* Staggered animation for menu items up to 6 items */
+        .visible-links.is-visible .masthead__menu-item:nth-child(1) { transition-delay: 0.1s; }
+        .visible-links.is-visible .masthead__menu-item:nth-child(2) { transition-delay: 0.15s; }
+        .visible-links.is-visible .masthead__menu-item:nth-child(3) { transition-delay: 0.2s; }
+        .visible-links.is-visible .masthead__menu-item:nth-child(4) { transition-delay: 0.25s; }
+        .visible-links.is-visible .masthead__menu-item:nth-child(5) { transition-delay: 0.3s; }
+        .visible-links.is-visible .masthead__menu-item:nth-child(6) { transition-delay: 0.35s; }
     }
 </style>

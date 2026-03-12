@@ -55,3 +55,26 @@
     </div>
   </div>
 </div>
+
+<script>
+  (function() {
+    var navToggle = document.getElementById('nav-toggle');
+    var navLinks = document.getElementById('nav-links');
+    
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', function() {
+        var isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', !isExpanded);
+        navToggle.classList.toggle('is-active');
+        navLinks.classList.toggle('is-visible');
+        
+        // Prevent body scrolling when menu is open
+        if (navLinks.classList.contains('is-visible')) {
+          document.body.style.overflow = 'hidden';
+        } else {
+          document.body.style.overflow = '';
+        }
+      });
+    }
+  })();
+</script>
