@@ -17,30 +17,60 @@
     <h2 class="archive__item-title" itemprop="headline">
       <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
     </h2>
+    
     {% if post.date %}
-    <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>
+      <p class="page__meta"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>
     {% endif %}
-    {% if post.conference or post.location or post.category %}
-    <p class="archive__item-excerpt" itemprop="description">
-      {% if post.category %}{{ post.category }}, {% endif %}
-      {% if post.conference %}{{ post.conference }}, {% endif %}
-      {% if post.location %}{{ post.location }}{% endif %}
-    </p>
+    
+    {% if post.conference or post.location %}
+      <p class="page__meta"><i class="fa fa-map-marker" aria-hidden="true"></i> 
+        {% if post.conference %}{{ post.conference }}{% endif %}{% if post.conference and post.location %}, {% endif %}{% if post.location %}{{ post.location }}{% endif %}
+      </p>
     {% endif %}
-    {% if post.presenting_author %}
-    <p><strong>Presenter:</strong> {{ post.presenting_author }}</p>
+
+    {% if post.category %}
+      {% assign c_type = post.category | downcase %}
+      {% assign pill_class = "cv-pill-neutral" %}
+      {% assign pill_icon = "fas fa-bullhorn" %}
+      
+      {% if c_type contains "talk" %}
+        {% assign pill_class = "cv-pill-generic-1" %}
+        {% assign pill_icon = "fas fa-microphone" %}
+      {% elsif c_type contains "poster" %}
+        {% assign pill_class = "cv-pill-generic-2" %}
+        {% assign pill_icon = "fas fa-chalkboard" %}
+      {% endif %}
+      
+      <div style="margin-bottom: 0.6rem;">
+        <span class="cv-pill {{ pill_class }}" style="font-size: 0.8em; padding: 0.2em 0.6em;">
+          <i class="{{ pill_icon }}"></i> {{ post.category }}
+        </span>
+      </div>
     {% endif %}
-    {% if post.contributing_authors %}
-    <p><strong>Contributors:</strong> {{ post.contributing_authors | join: ", " }}</p>
-    {% endif %}
-    {% if post.conference_link %}
-    <p><strong>Website:</strong> <a href="{{ post.conference_link }}">{{ post.conference_link }}</a></p>
-    {% endif %}
-    {% if post.paper_link %}
-    <p><strong>Paper:</strong> <a href="{{ post.paper_link }}">{{ post.paper_link }}</a></p>
-    {% endif %}
+
     {% if post.excerpt %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+      <p class="archive__item-excerpt" itemprop="description">
+        {{ post.excerpt | markdownify | strip_html | truncatewords: 40 }}
+      </p>
     {% endif %}
+
+    <div class="cv-pill-container" style="margin-top: 0.6rem; margin-bottom: 0.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+      {% if post.conference_link %}
+        <a href="{{ post.conference_link }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+          <span class="cv-pill cv-pill-neutral" style="font-size: 0.75em; padding: 0.2em 0.6em;"><i class="fas fa-globe"></i> Conference Website</span>
+        </a>
+      {% endif %}
+      {% if post.paper_link %}
+        <a href="{{ post.paper_link }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+          <span class="cv-pill cv-pill-neutral" style="font-size: 0.75em; padding: 0.2em 0.6em;"><i class="fas fa-file-alt"></i> Paper / Abstract</span>
+        </a>
+      {% endif %}
+      {% if post.pdfurl %}
+        <a href="{{ post.pdfurl }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+          <span class="cv-pill cv-pill-neutral" style="font-size: 0.75em; padding: 0.2em 0.6em;"><i class="fas fa-file-pdf"></i> PDF</span>
+        </a>
+      {% endif %}
+    </div>
+
   </article>
 </div>
