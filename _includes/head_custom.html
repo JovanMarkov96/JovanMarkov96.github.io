@@ -712,6 +712,41 @@
         box-shadow: 0 8px 24px rgba(129, 140, 248, 0.2) !important;
     }
 
+    /* ===== Notice Boxes (Resource TOC) ===== */
+    .notice {
+        background: rgba(241, 245, 249, 0.85) !important;
+        border: 1px solid rgba(0, 0, 0, 0.08) !important;
+        border-radius: var(--ion-radius) !important;
+        color: #1e293b !important;
+        box-shadow: var(--ion-shadow-sm) !important;
+        margin: 0.75em 0 !important;
+        padding: 0.8em 1em !important;
+    }
+
+    .notice a {
+        color: var(--ion-accent) !important;
+        font-weight: 500;
+    }
+
+    .notice a:hover {
+        color: var(--ion-accent-hover) !important;
+    }
+
+    html.dark-mode .notice {
+        background: linear-gradient(145deg, rgba(8, 20, 50, 0.6), rgba(4, 10, 25, 0.8)) !important;
+        border: 1px solid rgba(129, 140, 248, 0.25) !important;
+        color: #f1f5f9 !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    html.dark-mode .notice a {
+        color: #818cf8 !important;
+    }
+
+    html.dark-mode .notice a:hover {
+        color: #a5b4fc !important;
+    }
+
     .author__avatar img {
         width: 100% !important;
         max-width: 200px !important;
