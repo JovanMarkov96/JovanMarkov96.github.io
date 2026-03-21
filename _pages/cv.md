@@ -362,26 +362,26 @@ redirect_from:
 ## <i class="fas fa-users cv-section-icon"></i> Memberships
 <div class="cv-text-entry">
   <div class="cv-text-year">2023</div>
-  <div class="cv-text-content"><strong>American Physical Society</strong></div>
+  <div class="cv-text-content"><strong><a href="https://www.aps.org/" target="_blank" rel="noopener noreferrer">American Physical Society</a></strong></div>
 </div>
 <div class="cv-text-entry">
   <div class="cv-text-year">2020 – present</div>
-  <div class="cv-text-content"><strong>Israel Physical Society</strong></div>
+  <div class="cv-text-content"><strong><a href="https://www.israelphysicalsociety.org/" target="_blank" rel="noopener noreferrer">Israel Physical Society</a></strong></div>
 </div>
 <div class="cv-text-entry">
   <div class="cv-text-year">2017, 2018, 2024</div>
-  <div class="cv-text-content"><strong>Serbian Physical Society</strong></div>
+  <div class="cv-text-content"><strong><a href="https://dfs.rs/" target="_blank" rel="noopener noreferrer">Serbian Physical Society</a></strong></div>
 </div>
 <div class="cv-text-entry">
   <div class="cv-text-year">2015 – present</div>
   <div class="cv-text-content">
-    <strong>Mathematical Grammar School Alumni Society (ALMAGI)</strong>
+    <strong><a href="https://almagi.mg.edu.rs/" target="_blank" rel="noopener noreferrer">Mathematical Grammar School Alumni Society (ALMAGI)</a></strong>
   </div>
 </div>
 <div class="cv-text-entry">
   <div class="cv-text-year">2015 – present</div>
   <div class="cv-text-content">
-    <strong>EMINETER</strong><br>
+    <strong><a href="https://emineter.wordpress.com/" target="_blank" rel="noopener noreferrer">EMINETER</a></strong><br>
     <span class="cv-text-meta">Student organization of the Faculty of Physics, Belgrade University</span>
   </div>
 </div>
