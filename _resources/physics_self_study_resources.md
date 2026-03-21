@@ -13,7 +13,19 @@ toc_sticky: true
 
 Embarking on a journey to learn physics can be both exciting and challenging. This guide provides a curated list of resources to help you get started, even if you only have a high school level of math. These resources include books, YouTube channels, lecture series, and online courses, divided by specific topics.
 
-> **💡 Quick Search Tip:** You can quickly find a specific topic or book by pressing `Ctrl + F` (or `Cmd + F` on Mac) and typing the name!
+**Foundations:** [🌌 General Physics](#-general-physics) · [🧱 Classical Mechanics](#-classical-mechanics) · [⚡ Electromagnetism](#-electromagnetism) · [🌡️ Thermodynamics & Stat Mech](#️-thermodynamics--statistical-mechanics) · [🔍 Optics](#-optics)
+{: .notice}
+
+**Quantum & Modern:** [⚛️ Quantum Mechanics](#️-quantum-mechanics) · [🌌 Quantum Field Theory](#-quantum-field-theory) · [💡 Quantum Optics](#-quantum-optics) · [💻 Quantum Computing](#-quantum-computing)
+{: .notice}
+
+**Relativity & Fields:** [🚀 Special Relativity](#-special-relativity) · [🌏 General Relativity](#-general-relativity) · [🌿 Classical Field Theory](#-classical-field-theory)
+{: .notice}
+
+**Specialized:** [⚛️ Atomic Physics](#️-atomic-physics) · [☢️ Nuclear Physics](#️-nuclear-physics) · [💠 Condensed Matter](#-condensed-matter-physics) · [🧪 Particle Physics](#-particle-physics) · [🔭 Astrophysics & Cosmology](#-astrophysics--cosmology)
+{: .notice}
+
+> **💡 Quick Search Tip:** Press `Ctrl + F` (or `Cmd + F` on Mac) to quickly find a specific topic or book!
 
 ## 🌌 General Physics
 
