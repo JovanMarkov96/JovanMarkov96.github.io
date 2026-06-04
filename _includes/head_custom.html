@@ -106,9 +106,14 @@
         transition: all 0.3s ease !important;
         z-index: 1000 !important;
         border-bottom: none !important;
+        min-height: 0 !important; /* hug the content; no extra space below the row */
+        height: auto !important;
+        display: flex !important;
+        align-items: center !important;
     }
 
     .masthead__inner-wrap {
+        width: 100% !important;
         border-bottom: none !important;
         padding: 0.4rem 1.1rem !important;
         display: grid !important;
@@ -789,7 +794,11 @@
         -webkit-backdrop-filter: none !important;
         border: none !important;
         box-shadow: none !important;
+        padding: 0 !important; /* so the About Me card starts level with the profile card */
     }
+    /* the homepage has an empty title — drop it so content starts at the top */
+    body:has(.home-content) .page__title { display: none !important; }
+    body:has(.home-content) .page > .page__inner-wrap > header:empty { display: none !important; }
 
     /* Apply the deep blue gradient liquid glass to all content blocks in Dark Mode */
     html.dark-mode .sidebar>div[itemscope],
@@ -1712,11 +1721,12 @@
         .visible-links.is-visible .masthead__menu-item:nth-child(6) { transition-delay: 0.24s; }
         .visible-links.is-visible .masthead__menu-item:nth-child(7) { transition-delay: 0.28s; }
 
-        /* Dimmed backdrop */
+        /* Dimmed backdrop — must sit BELOW the masthead (z 1000) so the menu,
+           which lives inside the masthead's stacking context, stays crisp & clickable. */
         .nav-backdrop {
             position: fixed;
             inset: 0;
-            z-index: 9998;
+            z-index: 900;
             background: rgba(8, 12, 24, 0.45);
             -webkit-backdrop-filter: blur(2px);
             backdrop-filter: blur(2px);
