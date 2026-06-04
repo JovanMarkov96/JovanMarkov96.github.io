@@ -33,33 +33,38 @@ author_profile: true
 <div id="pub-grid-view">
   <div class="pub-grid">
     {% for post in site.publications reversed %}
-    <a href="{{ base_path }}{{ post.url }}" class="pub-grid-card archive__item">
-      <div class="pub-grid-thumb">
-        {% if post.thumbnail %}
-        <img src="{{ post.thumbnail }}" alt="{{ post.short_title | default: post.title }}">
+    <div class="project-card">
+      <div class="project-card__media">
+        {% if post.thumbnail_light or post.thumbnail_dark %}
+        <img class="project-card__image pc-img--light" src="{{ post.thumbnail_light | default: post.thumbnail_dark | relative_url }}" alt="{{ post.short_title | default: post.title }}" loading="lazy">
+        <img class="project-card__image pc-img--dark" src="{{ post.thumbnail_dark | default: post.thumbnail_light | relative_url }}" alt="{{ post.short_title | default: post.title }}" loading="lazy">
+        {% elsif post.thumbnail %}
+        <img class="project-card__image" src="{{ post.thumbnail | relative_url }}" alt="{{ post.short_title | default: post.title }}" loading="lazy">
         {% else %}
-        <div class="pub-grid-thumb-placeholder"><i class="fas fa-file-alt"></i></div>
+        <div class="project-card__image-placeholder"><i class="fas fa-file-alt"></i></div>
         {% endif %}
       </div>
-      <div class="pub-grid-body">
-        <h3 class="pub-grid-title">{{ post.short_title | default: post.title }}</h3>
-        <p class="pub-grid-venue"><i>{{ post.venue }}</i> — {{ post.date | date: "%Y" }}</p>
-        {% if post.excerpt %}<p class="pub-grid-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>{% endif %}
-        {% if post.arxivurl or post.paperurl or post.pdfurl %}
-        <div class="cv-pill-container pub-grid-pills">
-          {% if post.arxivurl %}
-          <span class="cv-pill cv-pill-neutral" onclick="event.preventDefault(); window.open('{{ post.arxivurl }}', '_blank');"><i class="ai ai-arxiv"></i> arXiv</span>
-          {% endif %}
-          {% if post.paperurl %}
-          <span class="cv-pill cv-pill-neutral" onclick="event.preventDefault(); window.open('{{ post.paperurl }}', '_blank');"><i class="fas fa-globe"></i> Journal</span>
-          {% endif %}
-          {% if post.pdfurl %}
-          <span class="cv-pill cv-pill-neutral" onclick="event.preventDefault(); window.open('{{ post.pdfurl }}', '_blank');"><i class="fas fa-file-pdf"></i> PDF</span>
-          {% endif %}
-        </div>
+      <div class="project-card__content">
+        <h3 class="project-card__title">
+          <a class="project-card__primary" href="{{ post.url | relative_url }}">{{ post.short_title | default: post.title }}</a>
+        </h3>
+        <p class="pub-venue"><i>{{ post.venue }}</i> &middot; {{ post.date | date: "%Y" }}</p>
+        {% if post.excerpt %}<p class="project-card__excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>{% endif %}
+      </div>
+      {% if post.arxivurl or post.paperurl or post.pdfurl %}
+      <div class="project-card__footer project-card__footer--links">
+        {% if post.arxivurl %}
+        <a class="project-card__code" href="{{ post.arxivurl }}" target="_blank" rel="noopener noreferrer"><i class="ai ai-arxiv"></i> arXiv</a>
+        {% endif %}
+        {% if post.paperurl %}
+        <a class="project-card__code" href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Journal</a>
+        {% endif %}
+        {% if post.pdfurl %}
+        <a class="project-card__code" href="{{ post.pdfurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> PDF</a>
         {% endif %}
       </div>
-    </a>
+      {% endif %}
+    </div>
     {% endfor %}
   </div>
 </div>

@@ -1380,100 +1380,41 @@
         border-color: rgba(var(--ion-accent-rgb), 0.4);
     }
 
-    /* ===== Publications Grid View (modern full-bleed cards) ===== */
+    /* ===== Publications grid — reuses the .project-card component ===== */
     .pub-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
+        gap: 1.75rem;
+        margin: 2.5rem 0 3rem;
+        align-items: stretch;
     }
-
-    .pub-grid-card {
-        display: flex;
-        flex-direction: column;
-        padding: 0 !important;          /* full-bleed thumbnail */
-        overflow: hidden;               /* clip image to the card radius */
-        text-decoration: none !important;
-        color: var(--ion-text) !important;
-        animation: shineRise 0.55s var(--shine-ease) backwards;
-    }
+    .pub-grid > * { animation: shineRise 0.55s var(--shine-ease) backwards; }
     .pub-grid > *:nth-child(2) { animation-delay: 0.07s; }
     .pub-grid > *:nth-child(3) { animation-delay: 0.13s; }
     .pub-grid > *:nth-child(4) { animation-delay: 0.19s; }
     .pub-grid > *:nth-child(n+5) { animation-delay: 0.25s; }
 
-    .pub-grid-thumb {
-        width: 100%;
-        aspect-ratio: 16 / 9;
-        overflow: hidden;
-        background: var(--ion-surface);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-bottom: 1px solid var(--ion-border);
-    }
-
-    .pub-grid-thumb img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.45s var(--shine-ease);
-    }
-    .pub-grid-card:hover .pub-grid-thumb img { transform: scale(1.045); }
-
-    .pub-grid-thumb-placeholder {
-        font-size: 3rem;
-        color: var(--ion-muted);
-        opacity: 0.4;
-    }
-
-    .pub-grid-body {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 auto;
-        padding: 1.1rem 1.25rem 1.25rem;
-    }
-
-    .pub-grid-title {
-        margin: 0 0 0.5rem;
-        font-size: 1.15rem;
-        font-weight: 700;
-        line-height: 1.3;
-        color: var(--ion-text);
-        text-align: left;
-        transition: color 0.2s ease;
-    }
-    .pub-grid-card:hover .pub-grid-title { color: var(--ion-accent); }
-
-    .pub-grid-venue {
+    /* publication-specific bits layered on top of .project-card */
+    .pub-venue {
+        margin: 0 0 0.6rem;
         font-size: 0.82rem;
         color: var(--ion-muted);
-        margin: 0 0 0.5rem;
     }
+    .pub-venue i { color: var(--ion-muted); }
 
-    .pub-grid-excerpt {
-        font-size: 0.85rem;
-        color: var(--ion-muted);
-        margin: 0;
-        line-height: 1.5;
-        text-align: left;
-    }
-
-    /* buttons pinned to the bottom of every card, with breathing room */
-    .pub-grid-pills {
-        margin-top: auto !important;
-        padding-top: 0.95rem;
-        margin-bottom: 0 !important;
+    /* footer holding several discrete link buttons (arXiv / Journal / PDF) */
+    .project-card__footer--links {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 0.5rem;
     }
 
     @media (prefers-reduced-motion: reduce) {
-        .pub-grid-card { animation: none !important; }
-        .pub-grid-card:hover .pub-grid-thumb img { transform: none; }
+        .pub-grid > * { animation: none !important; }
     }
 
     @media (max-width: 640px) {
-        .pub-grid {
-            grid-template-columns: 1fr;
-        }
+        .pub-grid { grid-template-columns: 1fr; }
     }
 
     /* Modern accent chips for publication / resource links */

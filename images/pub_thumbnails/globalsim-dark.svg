@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-label="Ising ring of four trapped ions with a global drive">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#041025"/><stop offset="1" stop-color="#020a18"/></linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.45" r="0.62"><stop offset="0" stop-color="#2E7CFF" stop-opacity="0.18"/><stop offset="1" stop-color="#2E7CFF" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0 H0 V40" fill="none" stroke="#7c8cff" stroke-opacity="0.08" stroke-width="1"/></pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="0" stdDeviation="2.6" flood-color="#15D5FF" flood-opacity="0.55"/></filter>
+    <filter id="glowV" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="0" stdDeviation="2.6" flood-color="#8A5CF6" flood-opacity="0.6"/></filter>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+  <rect width="640" height="400" fill="url(#grid)"/>
+  <rect width="640" height="400" fill="url(#halo)"/>
+
+  <!-- global drive (one field driving all ions) -->
+  <path d="M150 64 Q 180 40 210 64 T 270 64 T 330 64 T 390 64 T 450 64 T 490 64" fill="none" stroke="#6E8CFF" stroke-width="2.4" stroke-opacity="0.7"/>
+  <text x="498" y="70" fill="#6E8CFF" font-family="Inter, 'Segoe UI', sans-serif" font-size="18" font-weight="700">global drive</text>
+
+  <!-- couplings (ring edges): three equal (cyan), one pi-phase (violet, dashed, minus) -->
+  <g fill="none" stroke-width="3" stroke-linecap="round">
+    <line x1="320" y1="138" x2="446" y2="212" stroke="#15D5FF" filter="url(#glow)"/>
+    <line x1="446" y1="212" x2="320" y2="300" stroke="#15D5FF" filter="url(#glow)"/>
+    <line x1="320" y1="300" x2="194" y2="212" stroke="#15D5FF" filter="url(#glow)"/>
+    <line x1="194" y1="212" x2="320" y2="138" stroke="#8A5CF6" stroke-dasharray="8 7" filter="url(#glowV)"/>
+  </g>
+  <circle cx="257" cy="175" r="13" fill="#020a18" stroke="#8A5CF6" stroke-width="2"/>
+  <line x1="251" y1="175" x2="263" y2="175" stroke="#8A5CF6" stroke-width="2.6"/>
+
+  <!-- four ions in a ring, each with a transverse field arrow -->
+  <g>
+    <g><circle cx="320" cy="138" r="24" fill="#06122a" stroke="#9fb0ff" stroke-width="2.4" filter="url(#glow)"/><circle cx="320" cy="138" r="6" fill="#15D5FF"/></g>
+    <g><circle cx="446" cy="212" r="24" fill="#06122a" stroke="#9fb0ff" stroke-width="2.4" filter="url(#glow)"/><circle cx="446" cy="212" r="6" fill="#15D5FF"/></g>
+    <g><circle cx="320" cy="300" r="24" fill="#06122a" stroke="#9fb0ff" stroke-width="2.4" filter="url(#glow)"/><circle cx="320" cy="300" r="6" fill="#15D5FF"/></g>
+    <g><circle cx="194" cy="212" r="24" fill="#06122a" stroke="#9fb0ff" stroke-width="2.4" filter="url(#glow)"/><circle cx="194" cy="212" r="6" fill="#15D5FF"/></g>
+  </g>
+  <!-- transverse field arrows on each ion -->
+  <g stroke="#62f0ff" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.85">
+    <path d="M320 138 m 30 14 l 0 -28 m -5 7 l 5 -7 l 5 7"/>
+    <path d="M446 212 m 30 14 l 0 -28 m -5 7 l 5 -7 l 5 7"/>
+    <path d="M320 300 m 30 14 l 0 -28 m -5 7 l 5 -7 l 5 7"/>
+    <path d="M194 212 m 30 14 l 0 -28 m -5 7 l 5 -7 l 5 7"/>
+  </g>
+</svg>

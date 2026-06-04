@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-label="Quantum Mpemba effect on a qubit">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eaf1fb"/><stop offset="1" stop-color="#f7fbff"/></linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.42" r="0.62"><stop offset="0" stop-color="#2E7CFF" stop-opacity="0.10"/><stop offset="1" stop-color="#2E7CFF" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0 H0 V40" fill="none" stroke="#2E7CFF" stroke-opacity="0.07" stroke-width="1"/></pattern>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#2E7CFF" flood-opacity="0.2"/></filter>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+  <rect width="640" height="400" fill="url(#grid)"/>
+  <rect width="640" height="400" fill="url(#halo)"/>
+
+  <g fill="none" stroke="#3a55d8" stroke-width="2" filter="url(#soft)">
+    <circle cx="170" cy="208" r="78"/>
+    <ellipse cx="170" cy="208" rx="78" ry="26" stroke-opacity="0.5"/>
+    <line x1="170" y1="124" x2="170" y2="292" stroke-opacity="0.5"/>
+    <line x1="92" y1="208" x2="248" y2="208" stroke-opacity="0.5"/>
+    <line x1="170" y1="208" x2="220" y2="150" stroke="#0aa7c9" stroke-width="3.2"/>
+  </g>
+  <circle cx="220" cy="150" r="6" fill="#0aa7c9"/>
+  <circle cx="170" cy="124" r="4" fill="#8A5CF6"/>
+  <circle cx="170" cy="292" r="4" fill="#0aa7c9"/>
+
+  <g fill="none" stroke-width="2.6" stroke-linecap="round">
+    <path d="M352 312 V104 M352 312 H600" stroke="#3a55d8" stroke-opacity="0.4" stroke-width="2"/>
+    <path d="M352 150 C 410 178, 470 268, 600 280" stroke="#8A5CF6" filter="url(#soft)"/>
+    <path d="M352 292 C 410 262, 446 150, 600 132" stroke="#0aa7c9" filter="url(#soft)"/>
+  </g>
+  <circle cx="441" cy="214" r="6" fill="#071225"/>
+  <circle cx="441" cy="214" r="11" fill="none" stroke="#071225" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="372" y="128" fill="#8A5CF6" font-family="Inter, 'Segoe UI', sans-serif" font-size="20" font-weight="700">hot</text>
+  <text x="372" y="300" fill="#0aa7c9" font-family="Inter, 'Segoe UI', sans-serif" font-size="20" font-weight="700">cold</text>
+</svg>
