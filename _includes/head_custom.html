@@ -1384,7 +1384,7 @@
         border-color: rgba(var(--ion-accent-rgb), 0.4);
     }
 
-    /* ===== Publications Grid View ===== */
+    /* ===== Publications Grid View (modern full-bleed cards) ===== */
     .pub-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1394,27 +1394,35 @@
     .pub-grid-card {
         display: flex;
         flex-direction: column;
+        padding: 0 !important;          /* full-bleed thumbnail */
+        overflow: hidden;               /* clip image to the card radius */
         text-decoration: none !important;
         color: var(--ion-text) !important;
-        overflow: hidden;
+        animation: shineRise 0.55s var(--shine-ease) backwards;
     }
+    .pub-grid > *:nth-child(2) { animation-delay: 0.07s; }
+    .pub-grid > *:nth-child(3) { animation-delay: 0.13s; }
+    .pub-grid > *:nth-child(4) { animation-delay: 0.19s; }
+    .pub-grid > *:nth-child(n+5) { animation-delay: 0.25s; }
 
     .pub-grid-thumb {
         width: 100%;
         aspect-ratio: 16 / 9;
         overflow: hidden;
-        border-radius: 0;
         background: var(--ion-surface);
         display: flex;
         align-items: center;
         justify-content: center;
+        border-bottom: 1px solid var(--ion-border);
     }
 
     .pub-grid-thumb img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: transform 0.45s var(--shine-ease);
     }
+    .pub-grid-card:hover .pub-grid-thumb img { transform: scale(1.045); }
 
     .pub-grid-thumb-placeholder {
         font-size: 3rem;
@@ -1422,27 +1430,26 @@
         opacity: 0.4;
     }
 
-    .pub-grid-info {
-        padding: 0.75rem 1.25rem;
+    .pub-grid-body {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        padding: 1.1rem 1.25rem 1.25rem;
     }
 
-    .pub-grid-info-bottom {
-        padding-bottom: 1.25rem;
-    }
-
-    .pub-grid-info h3 {
-        margin: 0;
+    .pub-grid-title {
+        margin: 0 0 0.5rem;
         font-size: 1.15rem;
+        font-weight: 700;
+        line-height: 1.3;
         color: var(--ion-text);
-        text-align: center;
+        text-align: left;
+        transition: color 0.2s ease;
     }
-
-    .pub-grid-card:hover h3 {
-        color: var(--ion-accent);
-    }
+    .pub-grid-card:hover .pub-grid-title { color: var(--ion-accent); }
 
     .pub-grid-venue {
-        font-size: 0.85rem;
+        font-size: 0.82rem;
         color: var(--ion-muted);
         margin: 0 0 0.5rem;
     }
@@ -1451,8 +1458,20 @@
         font-size: 0.85rem;
         color: var(--ion-muted);
         margin: 0;
-        line-height: 1.4;
-        text-align: justify;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    /* buttons pinned to the bottom of every card, with breathing room */
+    .pub-grid-pills {
+        margin-top: auto !important;
+        padding-top: 0.95rem;
+        margin-bottom: 0 !important;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .pub-grid-card { animation: none !important; }
+        .pub-grid-card:hover .pub-grid-thumb img { transform: none; }
     }
 
     @media (max-width: 640px) {
@@ -1461,27 +1480,36 @@
         }
     }
 
-    /* Sleek Liquid Glass Publication Buttons */
+    /* Modern accent chips for publication / resource links */
     .cv-pill-neutral {
-        background: var(--ion-surface-2);
-        backdrop-filter: blur(12px) saturate(140%);
-        -webkit-backdrop-filter: blur(12px) saturate(140%);
-        border: 1px solid var(--ion-border);
+        padding: 0.4rem 0.85rem;
+        background: rgba(var(--ion-accent-rgb), 0.07);
+        background-image: none;
+        border: 1px solid rgba(var(--ion-accent-rgb), 0.28);
+        border-radius: 999px;
         color: var(--ion-text) !important;
-        box-shadow: var(--ion-shadow-sm);
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        text-shadow: none;
+        box-shadow: none;
+        font-size: 0.8rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.25s var(--shine-ease),
+                    box-shadow 0.25s var(--shine-ease),
+                    background-color 0.25s ease,
+                    border-color 0.25s ease,
+                    color 0.25s ease;
     }
 
     .cv-pill-neutral i {
         color: var(--ion-accent) !important;
-        transition: color 0.3s ease;
     }
 
     .cv-pill-neutral:hover {
         transform: translateY(-2px);
-        box-shadow: var(--ion-shadow-md);
-        background: var(--ion-surface);
-        border-color: var(--ion-accent);
+        background: rgba(var(--ion-accent-rgb), 0.14);
+        border-color: rgba(var(--ion-accent-rgb), 0.55);
+        box-shadow: 0 7px 18px rgba(var(--ion-accent-rgb), 0.28);
+        color: var(--ion-accent) !important;
     }
 
     .cv-details-inner li {

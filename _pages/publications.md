@@ -34,9 +34,6 @@ author_profile: true
   <div class="pub-grid">
     {% for post in site.publications reversed %}
     <a href="{{ base_path }}{{ post.url }}" class="pub-grid-card archive__item">
-      <div class="pub-grid-info">
-        <h3>{{ post.short_title | default: post.title }}</h3>
-      </div>
       <div class="pub-grid-thumb">
         {% if post.thumbnail %}
         <img src="{{ post.thumbnail }}" alt="{{ post.short_title | default: post.title }}">
@@ -44,19 +41,20 @@ author_profile: true
         <div class="pub-grid-thumb-placeholder"><i class="fas fa-file-alt"></i></div>
         {% endif %}
       </div>
-      <div class="pub-grid-info pub-grid-info-bottom">
+      <div class="pub-grid-body">
+        <h3 class="pub-grid-title">{{ post.short_title | default: post.title }}</h3>
         <p class="pub-grid-venue"><i>{{ post.venue }}</i> — {{ post.date | date: "%Y" }}</p>
         {% if post.excerpt %}<p class="pub-grid-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>{% endif %}
         {% if post.arxivurl or post.paperurl or post.pdfurl %}
-        <div class="cv-pill-container" style="margin-top: 0.5rem; margin-bottom: 0;">
+        <div class="cv-pill-container pub-grid-pills">
           {% if post.arxivurl %}
-          <span class="cv-pill cv-pill-neutral" style="font-size: 0.7em; padding: 0.15em 0.5em;" onclick="event.preventDefault(); window.open('{{ post.arxivurl }}', '_blank');"><i class="ai ai-arxiv"></i> arXiv</span>
+          <span class="cv-pill cv-pill-neutral" onclick="event.preventDefault(); window.open('{{ post.arxivurl }}', '_blank');"><i class="ai ai-arxiv"></i> arXiv</span>
           {% endif %}
           {% if post.paperurl %}
-          <span class="cv-pill cv-pill-neutral" style="font-size: 0.7em; padding: 0.15em 0.5em;" onclick="event.preventDefault(); window.open('{{ post.paperurl }}', '_blank');"><i class="fas fa-globe"></i> Journal</span>
+          <span class="cv-pill cv-pill-neutral" onclick="event.preventDefault(); window.open('{{ post.paperurl }}', '_blank');"><i class="fas fa-globe"></i> Journal</span>
           {% endif %}
           {% if post.pdfurl %}
-          <span class="cv-pill cv-pill-neutral" style="font-size: 0.7em; padding: 0.15em 0.5em;" onclick="event.preventDefault(); window.open('{{ post.pdfurl }}', '_blank');"><i class="fas fa-file-pdf"></i> PDF</span>
+          <span class="cv-pill cv-pill-neutral" onclick="event.preventDefault(); window.open('{{ post.pdfurl }}', '_blank');"><i class="fas fa-file-pdf"></i> PDF</span>
           {% endif %}
         </div>
         {% endif %}
