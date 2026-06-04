@@ -2,7 +2,7 @@
 layout: archive
 title: "Publications"
 permalink: /publications/
-author_profile: true
+side_panel: none
 ---
 
 {% include base_path %}

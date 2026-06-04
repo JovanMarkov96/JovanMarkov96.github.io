@@ -2,7 +2,7 @@
 layout: archive
 title: "Conferences"
 permalink: /conferences/
-author_profile: true
+side_panel: none
 ---
 
 {% for post in site.conferences reversed %}

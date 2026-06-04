@@ -2,7 +2,7 @@
 layout: archive
 title: "Resources"
 permalink: /resources/
-author_profile: true
+side_panel: none
 ---
 
 {% include base_path %}

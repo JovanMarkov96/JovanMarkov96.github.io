@@ -14,7 +14,10 @@ layout: default
   {% endunless %}
 {% endif %}
 
-<div id="main" role="main">
+{% assign _has_panel = false %}
+{% if page.side_panel %}{% if page.side_panel != 'none' %}{% assign _has_panel = true %}{% endif %}
+{% elsif page.author_profile or layout.author_profile %}{% assign _has_panel = true %}{% endif %}
+<div id="main" role="main"{% unless _has_panel %} class="main--full"{% endunless %}>
   {% include sidebar.html %}
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">

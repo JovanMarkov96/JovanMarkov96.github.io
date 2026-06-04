@@ -1757,4 +1757,283 @@
         .archive__item:hover,
         .home-glass-card:hover { transform: none !important; }
     }
+
+    /* =================================================================
+       ADAPTIVE SIDE RAIL  (2026-06)
+       Profile (landing/CV) · Blog navigator · Post TOC · full-width reflow.
+       Reuses the --ion-* tokens so light/dark just work.
+       ================================================================= */
+
+    /* ---- Layout: full width when there is no rail; archive matches .page beside a rail ---- */
+    @media (min-width: 1024px) {
+        #main.main--full { display: block !important; }
+        #main.main--full > .archive,
+        #main.main--full > .page {
+            width: 100% !important;
+            max-width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            float: none !important;
+        }
+        #main:not(.main--full) > .archive {
+            flex-grow: 1 !important;
+            width: calc(100% - 320px) !important;
+            max-width: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            float: none !important;
+        }
+    }
+
+    /* ---- Shared glass card for the blog-nav & toc rails ---- */
+    .side-panel--blog-nav .side-collapse,
+    .side-panel--toc .toc-panel {
+        background: var(--ion-surface-2);
+        backdrop-filter: blur(25px) saturate(180%);
+        -webkit-backdrop-filter: blur(25px) saturate(180%);
+        border: 1px solid var(--ion-border);
+        border-radius: var(--ion-radius);
+        box-shadow: var(--ion-shadow-sm);
+        overflow: hidden;
+    }
+    html.dark-mode .side-panel--blog-nav .side-collapse,
+    html.dark-mode .side-panel--toc .toc-panel {
+        background: var(--ion-dark-solid);
+        border-color: rgba(var(--ion-accent-rgb), 0.25);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    /* ---- Collapsible wrapper: a toggle on mobile, always-open on desktop ---- */
+    .side-collapse__summary {
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.85rem 1rem;
+        font-weight: 600;
+        color: var(--ion-text);
+    }
+    .side-collapse__summary::-webkit-details-marker { display: none; }
+    .side-collapse__summary i { color: var(--ion-accent); }
+    .side-collapse__body { padding: 0 1rem 1.1rem; }
+    @media (min-width: 1024px) {
+        .side-collapse__summary { display: none; }
+        .side-collapse__body { padding: 1.1rem; }
+        .side-panel--toc .side-collapse__body { padding-top: 0.9rem; }
+    }
+
+    /* ---- Profile card (landing + CV) ---- */
+    .profile-card { text-align: center; }
+    .profile-card__avatar img {
+        width: 100%;
+        max-width: 190px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 0 auto 1.25rem;
+        display: block;
+        border: 3px solid var(--ion-border);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+    html.dark-mode .profile-card__avatar img {
+        border-color: rgba(var(--ion-accent-rgb), 0.4);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 0 12px rgba(var(--ion-accent-rgb), 0.15);
+    }
+    .profile-card__name {
+        margin: 0 0 0.35rem;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--ion-text);
+    }
+    .profile-card__pronouns { margin: 0 0 0.5rem; font-size: 0.85rem; color: var(--ion-muted); }
+    .profile-card__bio {
+        margin: 0 0 1.2rem;
+        font-size: 0.92rem;
+        line-height: 1.55;
+        color: var(--ion-muted);
+    }
+    .profile-links {
+        list-style: none;
+        margin: 0;
+        padding: 1.1rem 0 0;
+        text-align: left;
+        border-top: 1px solid var(--ion-border);
+        display: flex;
+        flex-direction: column;
+        gap: 0.12rem;
+    }
+    .profile-links li { margin: 0; white-space: normal; }
+    .profile-links a,
+    .profile-links__static {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        padding: 0.5rem 0.6rem;
+        border-radius: 10px;
+        color: var(--ion-text) !important;
+        text-decoration: none !important;
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: background-color 0.25s ease, transform 0.25s var(--shine-ease), color 0.25s ease;
+    }
+    .profile-links a:hover {
+        background: rgba(var(--ion-accent-rgb), 0.12) !important;
+        color: var(--ion-accent) !important;
+        transform: translateX(4px);
+    }
+    .profile-links__ic {
+        width: 1.25rem;
+        text-align: center;
+        font-size: 1rem;
+        color: var(--ion-accent);
+        flex-shrink: 0;
+    }
+    .profile-links__static { cursor: default; }
+
+    /* ---- Blog navigator ---- */
+    .blog-nav { display: flex; flex-direction: column; gap: 1.1rem; }
+    .blog-nav__search { position: relative; }
+    .blog-nav__search-ic {
+        position: absolute;
+        left: 0.8rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--ion-muted);
+        font-size: 0.85rem;
+        pointer-events: none;
+    }
+    .blog-nav__input {
+        width: 100%;
+        padding: 0.55rem 0.75rem 0.55rem 2.15rem;
+        border: 1px solid var(--ion-border);
+        border-radius: 10px;
+        background: var(--ion-surface);
+        color: var(--ion-text);
+        font-size: 0.9rem;
+        font-family: inherit;
+        outline: none;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .blog-nav__input:focus {
+        border-color: var(--ion-accent);
+        box-shadow: 0 0 0 3px rgba(var(--ion-accent-rgb), 0.18);
+    }
+    html.dark-mode .blog-nav__input { background: rgba(var(--ion-dark-bg-rgb), 0.6); }
+    .blog-nav__title {
+        margin: 0 0 0.55rem;
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        color: var(--ion-muted);
+    }
+    .blog-nav__cats { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.3rem; }
+    .blog-nav__tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .blog-chip {
+        font-family: inherit;
+        cursor: pointer;
+        border: 1px solid var(--ion-border);
+        background: rgba(var(--ion-accent-rgb), 0.05);
+        color: var(--ion-text);
+        transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+    .blog-chip:hover {
+        border-color: var(--ion-accent);
+        color: var(--ion-accent);
+        background: rgba(var(--ion-accent-rgb), 0.12);
+        transform: translateY(-1px);
+    }
+    .blog-chip.is-active {
+        background: var(--ion-accent);
+        color: #fff;
+        border-color: var(--ion-accent);
+    }
+    .blog-chip--cat {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+        width: 100%;
+        padding: 0.42rem 0.85rem;
+        border-radius: 10px;
+        font-size: 0.88rem;
+        font-weight: 500;
+    }
+    .blog-chip__count {
+        font-size: 0.72rem;
+        font-weight: 600;
+        color: var(--ion-muted);
+        background: var(--ion-border);
+        border-radius: 999px;
+        padding: 0.05rem 0.45rem;
+    }
+    .blog-chip--cat.is-active .blog-chip__count { color: var(--ion-accent); background: #fff; }
+    .blog-chip--tag {
+        padding: 0.25rem 0.65rem;
+        border-radius: 999px;
+        font-size: 0.78rem;
+        font-weight: 500;
+    }
+    .blog-nav__clear {
+        font-family: inherit;
+        cursor: pointer;
+        margin-top: 0.2rem;
+        border: 1px solid var(--ion-border);
+        border-radius: 10px;
+        background: transparent;
+        color: var(--ion-muted);
+        padding: 0.45rem 0.75rem;
+        font-size: 0.82rem;
+        font-weight: 500;
+        transition: color 0.2s ease, border-color 0.2s ease;
+    }
+    .blog-nav__clear:hover { color: var(--ion-accent); border-color: var(--ion-accent); }
+    .blog-no-results { text-align: center; color: var(--ion-muted); padding: 2.5rem 0; font-style: italic; }
+    .post-item[hidden], .blog-year[hidden] { display: none !important; }
+
+    /* ---- Post TOC + reading progress ---- */
+    .toc-panel__progress { height: 4px; width: 100%; background: var(--ion-border); }
+    .toc-panel__progress > span {
+        display: block;
+        height: 100%;
+        width: 0;
+        background: linear-gradient(90deg, var(--ion-accent), var(--ion-accent-hover));
+        transition: width 0.1s linear;
+    }
+    .toc-panel__list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.1rem; }
+    .toc-panel__item { margin: 0; }
+    .toc-panel__item a {
+        display: block;
+        padding: 0.35rem 0.6rem;
+        border-radius: 8px;
+        border-left: 2px solid transparent;
+        color: var(--ion-muted) !important;
+        text-decoration: none !important;
+        font-size: 0.86rem;
+        line-height: 1.4;
+        transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+    }
+    .toc-panel__item--h3 a { padding-left: 1.4rem; font-size: 0.82rem; }
+    .toc-panel__item a:hover {
+        color: var(--ion-accent) !important;
+        background: rgba(var(--ion-accent-rgb), 0.08);
+    }
+    .toc-panel__item a.is-active {
+        color: var(--ion-accent) !important;
+        font-weight: 600;
+        border-left-color: var(--ion-accent);
+        background: rgba(var(--ion-accent-rgb), 0.1);
+    }
+    /* keep heading anchors clear of the fixed navbar */
+    .page__content h1,
+    .page__content h2,
+    .page__content h3,
+    .page__content h4 { scroll-margin-top: 120px; }
+
+    /* ---- Mobile: rails sit above the content, comfortably spaced ---- */
+    @media (max-width: 1023px) {
+        .side-panel--blog-nav,
+        .side-panel--toc { margin-bottom: 2rem; }
+    }
 </style>

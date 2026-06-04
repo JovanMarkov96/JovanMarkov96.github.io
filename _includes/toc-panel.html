@@ -1,0 +1,11 @@
+{% comment %} Post table of contents + reading progress. Built client-side from the
+   rendered headings by assets/js/toc.js (hides itself if the post has no headings). {% endcomment %}
+<div class="toc-panel" id="toc-panel" hidden>
+  <div class="toc-panel__progress" aria-hidden="true"><span id="toc-progress-bar"></span></div>
+  <details class="side-collapse" open>
+    <summary class="side-collapse__summary"><i class="fas fa-list-ul"></i> On this page</summary>
+    <div class="side-collapse__body">
+      <nav class="toc-panel__nav" id="toc-nav" aria-label="Table of contents"></nav>
+    </div>
+  </details>
+</div>

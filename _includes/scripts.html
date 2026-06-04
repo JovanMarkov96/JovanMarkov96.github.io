@@ -1,4 +1,7 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 
+{% if page.side_panel == 'blog-nav' %}<script src="{{ base_path }}/assets/js/blog-filter.js"></script>{% endif %}
+{% if page.side_panel == 'toc' %}<script src="{{ base_path }}/assets/js/toc.js"></script>{% endif %}
+
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
