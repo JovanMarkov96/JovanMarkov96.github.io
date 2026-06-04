@@ -9,470 +9,129 @@ excerpt: "A curated path through physics — books, lectures, and online courses
 teaser_light: '/images/resource_thumbnails/physics-light.svg'
 teaser_dark: '/images/resource_thumbnails/physics-dark.svg'
 cta_label: "Open resources"
-toc: true
-toc_sticky: true
 ---
 
-## Self-Study Resources for Physics
-
-Embarking on a journey to learn physics can be both exciting and challenging. This guide provides a curated list of resources to help you get started, even if you only have a high school level of math. These resources include books, YouTube channels, lecture series, and online courses, divided by specific topics.
-
-**Foundations:** [🌌 General Physics](#-general-physics) · [🧱 Classical Mechanics](#-classical-mechanics) · [⚡ Electromagnetism](#-electromagnetism) · [🌡️ Thermodynamics & Stat Mech](#️-thermodynamics--statistical-mechanics) · [🔍 Optics](#-optics)
-{: .notice}
-
-**Quantum & Modern:** [⚛️ Quantum Mechanics](#️-quantum-mechanics) · [🌌 Quantum Field Theory](#-quantum-field-theory) · [💡 Quantum Optics](#-quantum-optics) · [💻 Quantum Computing](#-quantum-computing)
-{: .notice}
-
-**Relativity & Fields:** [🚀 Special Relativity](#-special-relativity) · [🌏 General Relativity](#-general-relativity) · [🌿 Classical Field Theory](#-classical-field-theory)
-{: .notice}
-
-**Specialized:** [⚛️ Atomic Physics](#️-atomic-physics) · [☢️ Nuclear Physics](#️-nuclear-physics) · [💠 Condensed Matter](#-condensed-matter-physics) · [🧪 Particle Physics](#-particle-physics) · [🔭 Astrophysics & Cosmology](#-astrophysics--cosmology)
-{: .notice}
-
-> **💡 Quick Search Tip:** Press `Ctrl + F` (or `Cmd + F` on Mac) to quickly find a specific topic or book!
-
-## 🌌 General Physics
-
-### 📚 Books
-
-1. **"The Feynman Lectures on Physics" by Richard P. Feynman, Robert B. Leighton, and Matthew Sands**
-   - A comprehensive and engaging introduction to physics, covering a wide range of topics.
-   - [📚 Caltech (Free)](https://www.feynmanlectures.caltech.edu/) \| [🛒 Amazon](https://www.amazon.com/Feynman-Lectures-Physics-Set-boxed/dp/0465023827)
-
-2. **"Fundamentals of Physics" by David Halliday, Robert Resnick, and Jearl Walker**
-   - A widely used introductory textbook that covers a broad range of physics topics with clear explanations and examples.
-   - [🛒 Amazon](https://www.amazon.com/Fundamentals-Physics-10th-David-Halliday/dp/111823071X)
-
-3. **"University Physics with Modern Physics" by Hugh D. Young and Roger A. Freedman**
-   - A comprehensive textbook that provides a thorough introduction to physics, including modern physics topics.
-   - [🛒 Amazon](https://www.amazon.com/University-Physics-Modern-14th-Edition/dp/0321973615)
-
-### 📺 YouTube Channels
-
-1. **[Physics Girl](https://www.youtube.com/user/physicswoman)**
-   - Engaging videos that explain various physics concepts in an accessible way.
-
-2. **[MinutePhysics](https://www.youtube.com/user/minutephysics)**
-   - Short and informative videos on a wide range of physics topics.
-
-3. **[Khan Academy Physics](https://www.youtube.com/@khanacademyphysics7609)**
-   - Offers a wide range of physics tutorials and explanations, suitable for learners at all levels.
-
-4. **[Veritasium](https://www.youtube.com/user/1veritasium)**
-   - Engaging and well-produced videos that explore various physics concepts and phenomena.
-
-5. **[Sixty Symbols](https://www.youtube.com/@sixtysymbols)**
-   - Professors from Nottingham University discuss fascinating developments in physics research and concepts through engaging videos.
-
-6. **[Your Daily Equation with Brian Greene](https://youtube.com/playlist?list=PLKy-B3Qf_RDVL6Z_CmgKf0tAbpXTua9mV&si=RQh11c1RCFvTJMOM)**
-   - Brian Greene breaks down the most important equations in physics.
-
-7. **[Pretty Much Physics](https://youtube.com/@prettymuchphysics?si=TaE6YvfB1eTCQZBd)**
-   - Short videos that cover a wide range of physics topics in an accessible manner.
-
-### 👨‍🏫 Lecture Series
-
-1. **[MIT OpenCourseWare: Physics Courses](https://ocw.mit.edu/search/?d=Physics&s=department_course_numbers.sort_coursenum)**
-   - A collection of free lecture series on various physics topics from MIT.
-
-### 📄 Physics Research Papers
-
-1. **[arXiv: Physics](https://arxiv.org/archive/physics)**
-   - A repository of open-access research papers in physics, covering a wide range of topics. Note that these papers are not peer-reviewed.
-
-2. **[Physical Review X](https://journals.aps.org/prx/)**
-   - An open-access journal that publishes original research in all areas of physics.
-
-3. **[New Journal of Physics](https://iopscience.iop.org/journal/1367-2630)**
-   - An open-access journal that covers all areas of physics.
-
-4. **[Journal of High Energy Physics](https://link.springer.com/journal/13130)**
-   - An open-access journal focusing on high energy physics, including particle physics, field theory, and quantum mechanics.
-
-5. **[Advances in Physics: X](https://www.tandfonline.com/toc/tapx20/current)**
-   - An open-access journal that publishes high-quality research across all areas of physics.
-
-6. **[Scientific Reports - Physics](https://www.nature.com/srep/physics)**
-   - An open-access journal that publishes research in all areas of physics.
-
-7. **[Frontiers in Physics](https://www.frontiersin.org/journals/physics)**
-   - An open-access journal that covers a wide range of topics in physics.
-
-8. **[EPJ Open](https://epjopen.epj.org/)**
-   - A series of open-access journals covering various fields of physics, including EPJ C (Particles and Fields) and EPJ D (Atomic, Molecular, Optical and Plasma Physics).
-
-9. **[Physics Open](https://www.journals.elsevier.com/physics-open)**
-   - An open-access journal that publishes research in all areas of physics.
-
-10. **[npj Quantum Information](https://www.nature.com/npjqi/)**
-    - An open-access journal focusing on quantum information science and technology.
-
-11. **[Journal of Physics: Communications](https://iopscience.iop.org/journal/2399-6528)**
-    - An open-access journal that publishes high-quality research across all areas of physics.
-
-## 🧱 Classical Mechanics
-
-### 📚 Books
-
-1. **"Classical Mechanics" by Herbert Goldstein**
-   - A comprehensive textbook on classical mechanics, suitable for advanced undergraduates and graduate students.
-   - [🛒 Amazon](https://www.amazon.com/Classical-Mechanics-3rd-Herbert-Goldstein/dp/0201657023)
-
-2. **"Classical Mechanics" by John R. Taylor**
-   - A well-written and accessible textbook on classical mechanics, suitable for beginners.
-   - [🛒 Amazon](https://www.amazon.com/Classical-Mechanics-John-R-Taylor/dp/189138922X)
-
-### 📺 YouTube Channels
-
-1. **[Lectures by Walter Lewin](https://www.youtube.com/playlist?list=PLyQSN7X0ro203puVhQsmCj9qhlFQ-As8e)**
-   - A series of classical mechanics lectures by MIT professor Walter Lewin.
-
-### 💻 Online Courses
-
-1. **[MIT OpenCourseWare: Classical Mechanics](https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/)**
-   - A comprehensive course on classical mechanics from MIT.
-
-## ⚛️ Quantum Mechanics
-
-### 📚 Books
-
-1. **"Principles of Quantum Mechanics" by R. Shankar**
-   - A comprehensive and accessible textbook on quantum mechanics.
-   - [🛒 Amazon](https://www.amazon.com/Principles-Quantum-Mechanics-2nd-Shankar/dp/0306447908)
-
-2. **"Introduction to Quantum Mechanics" by David J. Griffiths**
-   - A widely used textbook for learning quantum mechanics, suitable for beginners.
-   - [🛒 Amazon](https://www.amazon.com/Introduction-Quantum-Mechanics-David-Griffiths/dp/1107189632)
-
-3. **"Quantum Mechanics" by Claude Cohen-Tannoudji, Bernard Diu, and Frank Laloë**
-   - A comprehensive and detailed textbook on quantum mechanics, suitable for advanced undergraduates and graduate students.
-   - [🛒 Amazon](https://www.amazon.com/Quantum-Mechanics-Vol-2-Claude-Cohen-Tannoudji/dp/047116433X)
-
-### 📺 YouTube Channels
-
-1. **[Professor M does Science](https://www.youtube.com/@ProfessorMdoesScience)** 
-   - Cambridge academics simplify university-level quantum mechanics with rigorous, concise, and transparent explanations.
-
-### 💻 Online Courses
-
-1. **[edX: Quantum Mechanics for Scientists and Engineers](https://www.edx.org/course/quantum-mechanics-for-scientists-and-engineers-1)**
-   - A course that provides a solid foundation in quantum mechanics.
-
-2. **[Coursera: Quantum Mechanics](https://www.coursera.org/learn/quantum-mechanics)**
-   - An introductory course on quantum mechanics.
-
-## 🚀 Special Relativity
-
-### 📚 Books
-
-1. **"Spacetime Physics" by Edwin F. Taylor and John Archibald Wheeler**
-   - A great introduction to special relativity, with clear explanations and plenty of examples.
-   - [🛒 Amazon](https://www.amazon.com/Spacetime-Physics-Edwin-F-Taylor/dp/0716723271)
-
-2. **"Introduction to Special Relativity" by James H. Smith**
-   - A concise and accessible textbook on special relativity.
-   - [🛒 Amazon](https://www.amazon.com/Introduction-Special-Relativity-James-Smith/dp/0486645516)
-
-3. **"Introduction to Special Relativity" by Robert Resnick**
-   - A classic and accessible textbook on special relativity.
-   - [🛒 Amazon](https://www.amazon.com/Introduction-Special-Relativity-Robert-Resnick/dp/0471717258)
-
-### 📺 YouTube Channels
-
-1. **[MinutePhysics - Relativity Series](https://www.youtube.com/playlist?list=PLoaVOjvkzQtyjhV55wZcdicAz5KexgKvm)**
-   - Short and informative videos on special relativity topics.
-
-## 🌏 General Relativity
-
-### 📚 Books
-
-1. **"A First Course in General Relativity" by Bernard Schutz**
-   - A well-written and accessible textbook on general relativity.
-   - [🛒 Amazon](https://www.amazon.com/First-Course-General-Relativity/dp/0521887054)
-
-2. **"Gravitation" by Charles W. Misner, Kip S. Thorne, and John Archibald Wheeler**
-   - A comprehensive and advanced textbook on general relativity.
-   - [🛒 Amazon](https://www.amazon.com/Gravitation-Charles-W-Misner/dp/0691177791)
-
-3. **"Einstein Gravity in a Nutshell" by A. Zee**
-   - A comprehensive and accessible textbook on general relativity.
-   - [🛒 Amazon](https://www.amazon.com/Einstein-Gravity-Nutshell-Anthony-Zee/dp/069114558X)
-
-### 📺 YouTube Channels
-
-1. **[PBS Space Time](https://www.youtube.com/channel/UC7_gcs09iThXybpVgjHZ_7g)**
-   - Explores various topics in general relativity and theoretical physics.
-
-### 💻 Online Courses
-
-1. **[edX: General Relativity](https://www.edx.org/course/general-relativity)**
-   - A course that provides a solid foundation in general relativity.
-
-2. **[Coursera: Introduction to General Relativity](https://www.coursera.org/learn/general-relativity)**
-   - An introductory course on general relativity.
-
-## 🌿 Classical Field Theory
-
-### 📚 Books
-
-1. **"Classical Field Theory" by Francis E. Low**
-   - A comprehensive textbook on classical field theory.
-   - [🛒 Amazon](https://www.amazon.com/Classical-Field-Theory-International-Monographs/dp/0471017008)
-
-2. **"The Classical Theory of Fields" by Lev D. Landau and Evgeny M. Lifshitz**
-   - A classic textbook on classical field theory.
-   - [🛒 Amazon](https://www.amazon.com/Classical-Theory-Fields-Course-Theoretical/dp/0750627689)
-
-### 📺 YouTube Channels
-
-1. **[Physics Explained - Classical Field Theory](https://www.youtube.com/playlist?list=PLD08N-u68p_W1L-yXlD_vLdZJ_RE6v0h_)**
-   - Provides clear explanations of classical field theory concepts.
-
-## 🌌 Quantum Field Theory
-
-### 📚 Books
-
-1. **"An Introduction to Quantum Field Theory" by Michael E. Peskin and Daniel V. Schroeder**
-   - A widely used textbook for learning quantum field theory.
-   - [🛒 Amazon](https://www.amazon.com/Introduction-Quantum-Theory-Frontiers-Physics/dp/0201503972)
-
-2. **"Quantum Field Theory for the Gifted Amateur" by Tom Lancaster and Stephen J. Blundell**
-   - An accessible introduction to quantum field theory.
-   - [🛒 Amazon](https://www.amazon.com/Quantum-Field-Theory-Gifted-Amateur/dp/019969933X)
-
-3. **"Quantum Field Theory in a Nutshell" by A. Zee**
-   - An accessible and comprehensive introduction to quantum field theory.
-   - [🛒 Amazon](https://www.amazon.com/Quantum-Field-Theory-Nutshell-Second/dp/0691140340)
-
-### 📺 YouTube Channels
-
-1. **[Physics Explained - QFT Series](https://www.youtube.com/playlist?list=PLD08N-u68p_VZ7zP6O0P8kS2Gwa_D_Z_k)**
-   - Provides clear explanations of quantum field theory concepts.
-
-### 💻 Online Courses
-
-1. **[edX: Quantum Field Theory](https://www.edx.org/course/quantum-field-theory)**
-   - A course that provides a solid foundation in quantum field theory.
-
-2. **[Coursera: Introduction to Quantum Field Theory](https://www.coursera.org/learn/quantum-field-theory)**
-   - An introductory course on quantum field theory.
-
-## ⚛️ Atomic Physics
-
-### 📚 Books
-
-1. **"Introduction to Atomic Spectra" by Harvey Elliott White**
-   - A comprehensive textbook on atomic spectra and atomic physics.
-   - [🛒 Amazon](https://www.amazon.com/Introduction-Atomic-Spectra-Harvey-White/dp/0070041705)
-
-2. **"The Physics of Atoms and Quanta" by Hermann Haken and Hans Christoph Wolf**
-   - An accessible introduction to atomic physics.
-   - [🛒 Amazon](https://www.amazon.com/Physics-Atoms-Quanta-Introduction-Students/dp/3540580240)
-
-3. **"Atomic Physics" by Christopher J. Foot**
-   - A comprehensive textbook on atomic physics, suitable for advanced undergraduates and graduate students.
-   - [🛒 Amazon](https://www.amazon.com/Atomic-Physics-Christopher-J-Foot/dp/0198506961)
-
-### 📺 YouTube Channels
-
-1. **[MIT OpenCourseWare - Atomic Physics](https://www.youtube.com/user/MIT)**
-   - Provides lectures on atomic physics.
-
-## ⚡ Electromagnetism
-
-### 📚 Books
-
-1. **"Introduction to Electrodynamics" by David J. Griffiths**
-   - A widely used textbook for learning electromagnetism.
-   - [🛒 Amazon](https://www.amazon.com/Introduction-Electrodynamics-4th-David-Griffiths/dp/0321856562)
-
-2. **"Classical Electrodynamics" by John David Jackson**
-   - A comprehensive and advanced textbook on electromagnetism.
-   - [🛒 Amazon](https://www.amazon.com/Classical-Electrodynamics-Third-David-Jackson/dp/047130932X)
-
-### 📺 YouTube Channels
-
-1. **[Lectures by Walter Lewin - 8.02 Electricity and Magnetism](https://www.youtube.com/playlist?list=PLyQSN7X0ro203puVhQsmCj9qhlFQ-As8e)**
-   - A series of electromagnetism lectures by MIT professor Walter Lewin.
-
-## 🌡️ Thermodynamics & Statistical Mechanics
-
-### 📚 Books
-
-1. **"Thermodynamics and an Introduction to Thermostatistics" by Herbert B. Callen**
-   - A comprehensive textbook on thermodynamics and statistical mechanics.
-   - [🛒 Amazon](https://www.amazon.com/Thermodynamics-Introduction-Thermostatistics-Herbert-Callen/dp/0471862568)
-
-2. **"Statistical Mechanics" by R. K. Pathria and Paul D. Beale**
-   - A widely used textbook for learning statistical mechanics.
-   - [🛒 Amazon](https://www.amazon.com/Statistical-Mechanics-Third-R-Pathria/dp/0123821886)
-
-### 📺 YouTube Channels
-
-1. **[MIT OpenCourseWare - Thermodynamics](https://www.youtube.com/user/MIT)**
-   - Provides lectures on thermodynamics and statistical mechanics.
-
-## 🔍 Optics
-
-### 📚 Books
-
-1. **"Optics" by Eugene Hecht**
-   - A comprehensive textbook on optics.
-   - [🛒 Amazon](https://www.amazon.com/Optics-5th-Eugene-Hecht/dp/0133977226)
-
-2. **"Introduction to Modern Optics" by Grant R. Fowles**
-   - An accessible introduction to modern optics.
-   - [🛒 Amazon](https://www.amazon.com/Introduction-Modern-Optics-Dover-Physics/dp/0486659577)
-
-### 📺 YouTube Channels
-
-1. **[MinutePhysics - Optics](https://www.youtube.com/user/minutephysics)**
-   - Short and informative videos on optics topics.
-
-## ☢️ Nuclear Physics
-
-### 📚 Books
-
-1. **"Introductory Nuclear Physics" by Kenneth S. Krane**
-   - A comprehensive textbook on nuclear physics.
-   - [🛒 Amazon](https://www.amazon.com/Introductory-Nuclear-Physics-Kenneth-Krane/dp/047180553X)
-
-2. **"Theoretical Nuclear Physics" by John M. Blatt and Victor F. Weisskopf**
-   - A classic textbook on theoretical nuclear physics.
-   - [🛒 Amazon](https://www.amazon.com/Theoretical-Nuclear-Physics-John-Blatt/dp/0486645583)
-
-3. **"Introduction to Nuclear Particle Physics" by A. Das and T. Ferbel**
-   - A comprehensive textbook on nuclear and particle physics.
-   - [🛒 Amazon](https://www.amazon.com/Introduction-Nuclear-Particle-Physics-Das/dp/9812387447)
-
-### 📺 YouTube Channels
-
-1. **[MIT OpenCourseWare - Nuclear Engineering](https://www.youtube.com/user/MIT)**
-   - Provides lectures on nuclear physics.
-
-## 💠 Condensed Matter Physics
-
-### 📚 Books
-
-1. **"Introduction to Solid State Physics" by Charles Kittel**
-   - A widely used textbook for learning condensed matter physics.
-   - [🛒 Amazon](https://www.amazon.com/Introduction-Solid-Physics-Charles-Kittel/dp/047141526X)
-
-2. **"Principles of Condensed Matter Physics" by Paul M. Chaikin and T. C. Lubensky**
-   - A comprehensive textbook on condensed matter physics.
-   - [🛒 Amazon](https://www.amazon.com/Principles-Condensed-Matter-Physics-Chaikin/dp/0521794501)
-
-3. **"The Oxford Solid State Basics" by Steven H. Simon**
-   - An accessible introduction to solid state physics.
-   - [🛒 Amazon](https://www.amazon.com/Oxford-Solid-State-Basics/dp/0199680779)
-
-### 📺 YouTube Channels
-
-1. **[Physics Explained - Condensed Matter](https://www.youtube.com/channel/UCtOgKmAM4MeFu-jd-HB3_cg)**
-   - Provides clear explanations of condensed matter physics concepts.
-
-## 🔭 Astrophysics & Cosmology
-
-### 📚 Books
-
-1. **"An Introduction to Modern Astrophysics" by Bradley W. Carroll and Dale A. Ostlie**
-   - A comprehensive textbook on astrophysics.
-   - [🛒 Amazon](https://www.amazon.com/Introduction-Modern-Astrophysics-2nd/dp/0805304029)
-
-2. **"Cosmology" by Steven Weinberg**
-   - A comprehensive textbook on cosmology.
-   - [🛒 Amazon](https://www.amazon.com/Cosmology-Steven-Weinberg/dp/0198526822)
-
-### 📺 YouTube Channels
-
-1. **[PBS Space Time - Astrophysics](https://www.youtube.com/channel/UC7_gcs09iThXybpVgjHZ_7g)**
-   - Explores various topics in astrophysics and cosmology.
-
-## 💻 Quantum Computing
-
-### 📚 Books
-
-1. **"Quantum Computation and Quantum Information" by Michael A. Nielsen and Isaac L. Chuang**
-   - A comprehensive textbook on quantum computing and quantum information.
-   - [🛒 Amazon](https://www.amazon.com/Quantum-Computation-Information-10th-Anniversary/dp/1107002176)
-
-2. **"Quantum Computing: A Gentle Introduction" by Eleanor G. Rieffel and Wolfgang H. Polak**
-   - An accessible introduction to quantum computing for beginners.
-   - [🛒 Amazon](https://www.amazon.com/Quantum-Computing-Gentle-Introduction-Scientific/dp/0262526670)
-
-### 📺 YouTube Channels
-
-1. **[Qiskit](https://www.youtube.com/channel/UClBNq7mCMf5xm8baE_VMl3A)**
-   - Provides tutorials and explanations on quantum computing using the Qiskit framework.
-
-2. **[Quantum Computing UK](https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw)**
-   - Offers videos on various quantum computing topics and concepts.
-
-### 💻 Online Courses
-
-1. **[edX: Quantum Computing](https://www.edx.org/course/quantum-computing)**
-   - A course that provides a solid foundation in quantum computing.
-
-2. **[Coursera: Introduction to Quantum Computing](https://www.coursera.org/learn/quantum-computing)**
-   - An introductory course on quantum computing.
-
-### 🔗 Additional Quantum Computing Resources
-
-1. **[IBM Quantum Experience](https://quantum-computing.ibm.com/)**
-   - An online platform to learn and experiment with quantum computing.
-
-2. **[Qiskit Documentation](https://qiskit.org/documentation/)**
-   - Comprehensive documentation and tutorials for learning quantum computing with Qiskit.
-
-## 🧪 Particle Physics
-
-### 📚 Books
-
-1. **"Introduction to Elementary Particles" by David Griffiths**
-   - A widely used textbook for learning particle physics.
-   - [🛒 Amazon](https://www.amazon.com/Introduction-Elementary-Particles-David-Griffiths/dp/3527406018)
-
-2. **"Quarks and Leptons: An Introductory Course in Modern Particle Physics" by Francis Halzen and Alan D. Martin**
-   - A comprehensive introduction to particle physics.
-   - [🛒 Amazon](https://www.amazon.com/Quarks-Leptons-Introductory-Modern-Physics/dp/0471887412)
-
-### 📺 YouTube Channels
-
-1. **[Fermilab](https://www.youtube.com/user/fermilab)**
-   - Provides educational videos on particle physics and related topics.
-
-2. **[CERN](https://www.youtube.com/user/CERNTV)**
-   - Offers videos on particle physics research and experiments conducted at CERN.
-
-## 💡 Quantum Optics
-
-### 📚 Books
-
-1. **"Quantum Optics" by Marlan O. Scully and M. Suhail Zubairy**
-   - A comprehensive textbook on quantum optics.
-   - [🛒 Amazon](https://www.amazon.com/Quantum-Optics-Marlan-Scully/dp/0521435951)
-
-2. **"Introduction to Quantum Optics: From the Semi-Classical Approach to Quantized Light" by Gilbert Grynberg, Alain Aspect, and Claude Fabre**
-   - An accessible introduction to quantum optics.
-   - [🛒 Amazon](https://www.amazon.com/Introduction-Quantum-Optics-Semi-Classical-Quantized/dp/0521551129)
-
-### 📺 YouTube Channels
-
-1. **[Quantum Optics Lab](https://www.youtube.com/channel/UC5J6Zzj6k4J5p5k5Z5Z5Z5Q)**
-   - Provides educational videos on quantum optics experiments and concepts.
-
-2. **[Physics Explained - Quantum Optics](https://www.youtube.com/channel/UCtOgKmAM4MeFu-jd-HB3_cg)**
-   - Offers clear explanations of quantum optics concepts.
-
-## 🎨 Additional Resources
-
-1. **[HyperPhysics](http://hyperphysics.phy-astr.gsu.edu/)**
-   - A comprehensive resource for learning various physics topics.
-
-2. **[Wolfram Alpha](https://www.wolframalpha.com/)**
-   - A powerful computational engine that can help with solving physics problems and visualizing concepts.
-
-3. **[Physics Forums](https://www.physicsforums.com/)**
-   - A community and resource hub for students and enthusiasts interested in physics.
-
-These resources should provide a solid foundation for anyone interested in learning physics, regardless of their current level of expertise. Happy learning!
+{%- assign phys = site.data.physics_resources -%}
+
+<p class="phys-lead">Physics rewards patience and good materials. Below is a curated path — the textbooks, lecture series, and online courses I'd point a motivated self-learner to, organized by topic and roughly ordered from the classical core to the quantum frontier. You don't need more than high-school math to begin; pick a tile to jump straight to a subject. Every book links to a neutral catalogue page so you can track it down at a library or wherever you prefer.</p>
+
+<p class="phys-tip"><i class="fas fa-magnifying-glass" aria-hidden="true"></i> Tip: press <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>F</kbd> to find a specific book or topic.</p>
+
+<nav class="phys-index" id="phys-top" aria-label="Physics topics">
+  {%- for group in phys.groups -%}
+  <div class="phys-index__group">
+    <div class="phys-index__grouphead">
+      <span class="phys-index__grouplabel">{{ group.name }}</span>
+      <span class="phys-index__groupblurb">{{ group.blurb }}</span>
+    </div>
+    <div class="phys-tilegrid">
+      {%- for t in group.topics -%}
+      {%- assign nb = t.books | size -%}{%- assign nv = t.videos | size -%}{%- assign nc = t.courses | size -%}{%- assign nm = t.more | size -%}
+      <a class="phys-tile" href="#{{ t.id }}">
+        <span class="phys-tile__icon">{% include physics-topic-icon.html icon=t.icon %}</span>
+        <span class="phys-tile__body">
+          <span class="phys-tile__name">{{ t.short | default: t.name }}</span>
+          <span class="phys-tile__meta">
+            {%- assign sep = "" -%}
+            {%- if nb > 0 %}{{ nb }} book{% if nb != 1 %}s{% endif %}{% assign sep = " &middot; " %}{% endif -%}
+            {%- if nv > 0 %}{{ sep }}{{ nv }} video{% if nv != 1 %}s{% endif %}{% assign sep = " &middot; " %}{% endif -%}
+            {%- if nc > 0 %}{{ sep }}{{ nc }} course{% if nc != 1 %}s{% endif %}{% assign sep = " &middot; " %}{% endif -%}
+            {%- if nm > 0 %}{{ sep }}{{ nm }} link{% if nm != 1 %}s{% endif %}{% endif -%}
+          </span>
+        </span>
+        <span class="phys-tile__arrow" aria-hidden="true">&rarr;</span>
+      </a>
+      {%- endfor -%}
+    </div>
+  </div>
+  {%- endfor -%}
+
+  <div class="phys-index__group">
+    <div class="phys-index__grouphead">
+      <span class="phys-index__grouplabel">Go deeper</span>
+      <span class="phys-index__groupblurb">Primary literature and handy tools.</span>
+    </div>
+    <div class="phys-tilegrid">
+      <a class="phys-tile" href="#journals">
+        <span class="phys-tile__icon">{% include physics-topic-icon.html icon="journals" %}</span>
+        <span class="phys-tile__body">
+          <span class="phys-tile__name">Journals &amp; Papers</span>
+          <span class="phys-tile__meta">{{ phys.journals | size }} open-access sources</span>
+        </span>
+        <span class="phys-tile__arrow" aria-hidden="true">&rarr;</span>
+      </a>
+      <a class="phys-tile" href="#tools">
+        <span class="phys-tile__icon">{% include physics-topic-icon.html icon="tools" %}</span>
+        <span class="phys-tile__body">
+          <span class="phys-tile__name">Tools &amp; References</span>
+          <span class="phys-tile__meta">{{ phys.tools | size }} reference hubs</span>
+        </span>
+        <span class="phys-tile__arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+{%- for group in phys.groups -%}
+{%- for t in group.topics -%}
+<section class="phys-section" id="{{ t.id }}">
+  <header class="phys-section__head">
+    <span class="phys-section__icon">{% include physics-topic-icon.html icon=t.icon %}</span>
+    <div class="phys-section__heading">
+      <h2 class="phys-section__title">{{ t.name }}</h2>
+      {%- if t.tagline %}<p class="phys-section__tagline">{{ t.tagline }}</p>{% endif -%}
+    </div>
+    <a class="phys-section__top" href="#phys-top"><i class="fas fa-arrow-up" aria-hidden="true"></i> Topics</a>
+  </header>
+
+  {%- if t.books and t.books != empty -%}
+  <div class="phys-block">
+    <h3 class="phys-block__label"><i class="fas fa-book-open" aria-hidden="true"></i> Books</h3>
+    <ul class="phys-booklist">
+      {%- for b in t.books -%}
+      {%- if b.details -%}{%- assign bookurl = b.details -%}{%- else -%}{%- capture q -%}{{ b.title }} {{ b.by }}{%- endcapture -%}{%- assign qenc = q | url_encode -%}{%- assign bookurl = "https://www.google.com/search?tbm=bks&q=" | append: qenc -%}{%- endif -%}
+      <li class="phys-book">
+        <p class="phys-book__title">{{ b.title }}{% if b.by %} <span class="phys-book__by">&mdash; {{ b.by }}</span>{% endif %}</p>
+        {%- if b.desc %}<p class="phys-book__desc">{{ b.desc }}</p>{% endif -%}
+        <span class="phys-chips">
+          <a class="cv-pill cv-pill-neutral phys-chip" href="{{ bookurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-book" aria-hidden="true"></i> Details</a>
+          {%- if b.free %}<a class="cv-pill cv-pill-neutral phys-chip" href="{{ b.free }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-unlock" aria-hidden="true"></i> Read free</a>{% endif -%}
+        </span>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+  {%- endif -%}
+
+  {% include phys-linklist.html items=t.videos label="Lectures & videos" fa="fa-circle-play" %}
+  {% include phys-linklist.html items=t.courses label="Online courses" fa="fa-graduation-cap" %}
+  {% include phys-linklist.html items=t.more label="More resources" fa="fa-link" %}
+</section>
+{%- endfor -%}
+{%- endfor -%}
+
+<section class="phys-section" id="journals">
+  <header class="phys-section__head">
+    <span class="phys-section__icon">{% include physics-topic-icon.html icon="journals" %}</span>
+    <div class="phys-section__heading">
+      <h2 class="phys-section__title">Journals &amp; Papers</h2>
+      <p class="phys-section__tagline">Open-access journals and repositories to read and follow current research.</p>
+    </div>
+    <a class="phys-section__top" href="#phys-top"><i class="fas fa-arrow-up" aria-hidden="true"></i> Topics</a>
+  </header>
+  {% include phys-linklist.html items=phys.journals label="Open-access journals & repositories" fa="fa-file-lines" two=true %}
+</section>
+
+<section class="phys-section" id="tools">
+  <header class="phys-section__head">
+    <span class="phys-section__icon">{% include physics-topic-icon.html icon="tools" %}</span>
+    <div class="phys-section__heading">
+      <h2 class="phys-section__title">Tools &amp; References</h2>
+      <p class="phys-section__tagline">Calculators, concept maps, and communities to lean on along the way.</p>
+    </div>
+    <a class="phys-section__top" href="#phys-top"><i class="fas fa-arrow-up" aria-hidden="true"></i> Topics</a>
+  </header>
+  {% include phys-linklist.html items=phys.tools label="Reference hubs" fa="fa-screwdriver-wrench" two=true %}
+</section>
+
+<p class="phys-outro">These should give you a solid foundation for learning physics, whatever your starting point. Happy learning!</p>

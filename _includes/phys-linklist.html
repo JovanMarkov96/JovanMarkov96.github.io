@@ -1,0 +1,18 @@
+{%- comment -%}
+  A labelled block of external resource links (videos / courses / journals / tools).
+  Params: items (array of {name,url,desc}), label (string), fa (FontAwesome class),
+          two (truthy -> two-column grid on wide screens).
+{%- endcomment -%}
+{%- if include.items and include.items != empty -%}
+<div class="phys-block">
+  <h3 class="phys-block__label"><i class="fas {{ include.fa }}" aria-hidden="true"></i> {{ include.label }}</h3>
+  <ul class="phys-linklist{% if include.two %} phys-linklist--two{% endif %}">
+    {%- for i in include.items -%}
+    <li class="phys-link">
+      <a class="phys-link__name" href="{{ i.url }}" target="_blank" rel="noopener noreferrer">{{ i.name }}<span class="phys-link__ext" aria-hidden="true">&#8599;</span></a>
+      {%- if i.desc %}<span class="phys-link__desc">{{ i.desc }}</span>{% endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>
+{%- endif -%}

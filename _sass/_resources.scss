@@ -1,0 +1,404 @@
+/* ==========================================================================
+   PHYSICS SELF-STUDY RESOURCES  —  interactive topic index + sleek sections
+   Reuses the --ion-* design tokens so light & dark just work. Drives
+   /resources/physics-resources/ (see _resources/physics_self_study_resources.md).
+   ========================================================================== */
+
+/* ---- Intro ---- */
+.phys-lead {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--ion-text);
+  margin: 0 0 1rem;
+}
+
+.phys-tip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 2rem;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.85rem;
+  color: var(--ion-muted);
+  background: rgba(var(--ion-accent-rgb), 0.06);
+  border: 1px solid var(--ion-border);
+  border-radius: 999px;
+}
+.phys-tip i { color: var(--ion-accent); }
+.phys-tip kbd {
+  font-family: var(--ion-font-family);
+  font-size: 0.78em;
+  font-weight: 600;
+  padding: 0.05em 0.45em;
+  border: 1px solid var(--ion-border);
+  border-bottom-width: 2px;
+  border-radius: 5px;
+  background: var(--ion-surface);
+  color: var(--ion-text);
+}
+
+/* ==========================================================================
+   The interactive index (visual table of contents)
+   ========================================================================== */
+.phys-index {
+  margin: 0 0 2.5rem;
+  scroll-margin-top: 120px;
+}
+
+.phys-index__group { margin-bottom: 1.6rem; }
+.phys-index__group:last-child { margin-bottom: 0; }
+
+.phys-index__grouphead {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.75rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.9rem;
+  border-bottom: 1px solid var(--ion-border);
+}
+
+.phys-index__grouplabel {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ion-accent);
+}
+
+.phys-index__groupblurb {
+  font-size: 0.82rem;
+  color: var(--ion-muted);
+}
+
+.phys-tilegrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(216px, 1fr));
+  gap: 0.8rem;
+}
+
+/* ---- A topic tile (the clickable "figure" that jumps to a section) ---- */
+.phys-tile {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.8rem 0.85rem;
+  border: 1px solid var(--ion-border);
+  border-radius: 14px;
+  background: var(--ion-surface-2);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  backdrop-filter: blur(16px) saturate(160%);
+  box-shadow: var(--ion-shadow-sm);
+  color: var(--ion-text) !important;
+  text-decoration: none !important;
+  overflow: hidden;
+  transition: transform 0.3s var(--shine-ease, ease),
+              box-shadow 0.3s var(--shine-ease, ease),
+              border-color 0.3s ease;
+}
+
+.phys-tile:hover,
+.phys-tile:focus-visible {
+  transform: translateY(-4px);
+  border-color: rgba(var(--ion-accent-rgb), 0.7);
+  box-shadow:
+    0 0 0 1px rgba(var(--ion-accent-rgb), 0.4),
+    0 14px 32px rgba(var(--ion-accent-rgb), 0.2),
+    0 0 36px rgba(var(--ion-accent-rgb), 0.12);
+  text-shadow: none !important;
+}
+
+/* glyph holder with a soft accent halo */
+.phys-tile__icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  color: var(--ion-accent);
+  border-radius: 10px;
+  background: rgba(var(--ion-accent-rgb), 0.08);
+  transition: background-color 0.3s ease, transform 0.3s var(--shine-ease, ease);
+}
+.phys-tile__icon .phys-glyph { width: 25px; height: 25px; }
+.phys-tile:hover .phys-tile__icon {
+  background: rgba(var(--ion-accent-rgb), 0.16);
+  transform: scale(1.06);
+}
+
+.phys-tile__body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0; /* let the 1fr grid column govern wrapping */
+}
+
+.phys-tile__name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  color: var(--ion-text);
+  overflow-wrap: break-word;
+  transition: color 0.25s ease;
+}
+.phys-tile:hover .phys-tile__name { color: var(--ion-accent); }
+
+.phys-tile__meta {
+  margin-top: 2px;
+  font-size: 0.72rem;
+  color: var(--ion-muted);
+}
+
+.phys-tile__arrow {
+  align-self: center;
+  color: var(--ion-accent);
+  font-size: 1rem;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: opacity 0.25s ease, transform 0.25s var(--shine-ease, ease);
+}
+.phys-tile:hover .phys-tile__arrow { opacity: 1; transform: translateX(0); }
+
+/* staggered entrance for tiles within each group */
+.phys-tilegrid > * { animation: shineRise 0.5s var(--shine-ease) backwards; }
+.phys-tilegrid > *:nth-child(2) { animation-delay: 0.04s; }
+.phys-tilegrid > *:nth-child(3) { animation-delay: 0.08s; }
+.phys-tilegrid > *:nth-child(4) { animation-delay: 0.12s; }
+.phys-tilegrid > *:nth-child(5) { animation-delay: 0.16s; }
+.phys-tilegrid > *:nth-child(n+6) { animation-delay: 0.2s; }
+
+/* ==========================================================================
+   Resource sections
+   ========================================================================== */
+.phys-section {
+  margin: 2.25rem 0;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--ion-border);
+  scroll-margin-top: 110px; /* clears the fixed glass navbar when jumped to */
+}
+
+.phys-section__head {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.4rem;
+}
+
+.phys-section__icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  color: var(--ion-accent);
+  border: 1px solid var(--ion-border);
+  border-radius: 13px;
+  background: rgba(var(--ion-accent-rgb), 0.07);
+  box-shadow: var(--ion-shadow-sm);
+}
+.phys-section__icon .phys-glyph { width: 30px; height: 30px; }
+
+.phys-section__heading { min-width: 0; }
+
+.phys-section__title {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important; /* override theme's .page__content h2 underline */
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--ion-text);
+}
+
+.phys-section__tagline {
+  margin: 0.2rem 0 0 !important;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--ion-muted);
+}
+
+.phys-section__top {
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.32rem 0.7rem;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--ion-muted) !important;
+  text-decoration: none !important;
+  border: 1px solid var(--ion-border);
+  border-radius: 999px;
+  background: var(--ion-surface);
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+.phys-section__top:hover {
+  color: var(--ion-accent) !important;
+  border-color: rgba(var(--ion-accent-rgb), 0.5);
+  background: rgba(var(--ion-accent-rgb), 0.1);
+  transform: translateY(-1px);
+  text-shadow: none !important;
+}
+
+/* ---- A labelled sub-block (Books / Lectures / Courses / More) ---- */
+.phys-block { margin-top: 1.2rem; }
+
+.phys-block__label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.65rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ion-muted);
+}
+.phys-block__label i { color: var(--ion-accent); font-size: 0.95em; }
+
+/* ---- Books ---- */
+.phys-booklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.phys-book {
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--ion-border);
+  border-radius: 12px;
+  background: var(--ion-surface);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s var(--shine-ease, ease);
+}
+.phys-book:hover {
+  border-color: rgba(var(--ion-accent-rgb), 0.45);
+  box-shadow: var(--ion-shadow-sm);
+  transform: translateY(-2px);
+}
+
+.phys-book__title {
+  margin: 0 !important;
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--ion-text);
+}
+.phys-book__by {
+  font-weight: 500;
+  color: var(--ion-muted);
+}
+.phys-book__desc {
+  margin: 0.35rem 0 0.6rem !important;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--ion-muted);
+}
+
+.phys-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+/* the chips reuse .cv-pill .cv-pill-neutral; keep them compact + un-underlined */
+.phys-chip {
+  text-decoration: none !important;
+  font-size: 0.74rem !important;
+  padding: 0.32rem 0.7rem !important;
+}
+.phys-chip i { margin-right: 0.1rem; }
+
+/* ---- Link rows (videos / courses / journals / tools) ---- */
+.phys-linklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+@media (min-width: 620px) {
+  .phys-linklist--two { grid-template-columns: repeat(2, 1fr); }
+}
+
+.phys-link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.6rem 0.8rem 0.6rem 0.95rem;
+  border: 1px solid var(--ion-border);
+  border-radius: 11px;
+  background: var(--ion-surface);
+  overflow: hidden;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s var(--shine-ease, ease);
+}
+/* accent rail on the left edge */
+.phys-link::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--ion-accent), var(--ion-accent-hover));
+  opacity: 0.35;
+  transition: opacity 0.25s ease;
+}
+.phys-link:hover {
+  border-color: rgba(var(--ion-accent-rgb), 0.45);
+  box-shadow: var(--ion-shadow-sm);
+  transform: translateY(-2px);
+}
+.phys-link:hover::before { opacity: 1; }
+
+.phys-link__name {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ion-text) !important;
+  text-decoration: none !important;
+}
+.phys-link__name:hover { color: var(--ion-accent) !important; text-shadow: none !important; }
+.phys-link__ext {
+  margin-left: 0.3rem;
+  font-size: 0.78em;
+  color: var(--ion-accent);
+  opacity: 0.75;
+}
+.phys-link__desc {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--ion-muted);
+}
+
+.phys-outro {
+  margin-top: 2rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--ion-border);
+  font-size: 0.95rem;
+  color: var(--ion-muted);
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 600px) {
+  .phys-section__head { flex-wrap: wrap; }
+  .phys-section__top { order: 3; margin-left: 0; }
+  .phys-section__icon { width: 42px; height: 42px; }
+  .phys-section__icon .phys-glyph { width: 26px; height: 26px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .phys-tile,
+  .phys-tile__icon,
+  .phys-tile__arrow,
+  .phys-book,
+  .phys-link { transition: none !important; }
+  .phys-tilegrid > * { animation: none !important; }
+  .phys-tile:hover,
+  .phys-book:hover,
+  .phys-link:hover { transform: none !important; }
+}
