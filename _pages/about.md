@@ -12,8 +12,6 @@ redirect_from:
     <h2>About Me</h2>
     <p>Hi, I'm Jovan, a PhD student at the Weizmann Institute of Science in the <a href="https://www.weizmann.ac.il/physics/">Faculty of Physics</a>, Department of Complex Systems. I conduct my research in the Trapped Ion Quantum Computing Lab under the guidance of Professor Roee Ozeri. You can learn more about our lab <a href="https://www.weizmann.ac.il/complex/ozeri/welcome-weizmann-trapped-ions-lab">here</a>.</p>
 
-    <p>In addition to my research, I help organize the <a href="https://www.weizmann.ac.il/AMOS/seminars">AMOS seminar</a>. If you have exciting developments in the field of AMO Physics, please feel free to reach out and share them with us.</p>
-
     <p>My research focuses on using the theoretical knowhow from our lab to engineer the spectrum of gates that are robust, and to use this to execute quantum simulations on our trapped ion quantum computer.</p>
   </div>
 
