@@ -11,25 +11,31 @@
 
   <!-- constellation links -->
   <g stroke="#6E8CFF" stroke-width="1.4" stroke-opacity="0.3">
-    <line x1="150" y1="210" x2="300" y2="120"/><line x1="300" y1="120" x2="470" y2="170"/>
-    <line x1="150" y1="210" x2="250" y2="300"/><line x1="250" y1="300" x2="430" y2="300"/>
-    <line x1="470" y1="170" x2="430" y2="300"/><line x1="300" y1="120" x2="250" y2="300"/>
+    <line x1="150" y1="214" x2="300" y2="120"/><line x1="300" y1="120" x2="470" y2="176"/>
+    <line x1="150" y1="214" x2="250" y2="300"/><line x1="250" y1="300" x2="430" y2="300"/>
+    <line x1="470" y1="176" x2="430" y2="300"/><line x1="300" y1="120" x2="250" y2="300"/>
   </g>
 
+  <!-- decorative glyph constellation -->
   <g font-family="Inter, 'Segoe UI', sans-serif" font-weight="700" filter="url(#glow)">
-    <text x="120" y="232" fill="#15D5FF" font-size="84">&#8747;</text>
+    <text x="120" y="236" fill="#15D5FF" font-size="84">&#8747;</text>
     <text x="276" y="138" fill="#6E8CFF" font-size="54">&#8721;</text>
-    <text x="442" y="186" fill="#8A5CF6" font-size="46">&#960;</text>
+    <text x="448" y="194" fill="#8A5CF6" font-size="46">&#960;</text>
     <text x="224" y="318" fill="#62f0ff" font-size="46">&#8730;</text>
     <text x="406" y="316" fill="#6E8CFF" font-size="44">&#8734;</text>
-    <text x="338" y="246" fill="#15D5FF" font-size="34">&#8706;</text>
-    <text x="486" y="288" fill="#8A5CF6" font-size="30" font-style="italic">d&#119909;</text>
-    <text x="150" y="150" fill="#9fb0ff" font-size="26" font-style="italic">e&#8305;&#960;+1=0</text>
-    <text x="360" y="120" fill="#9fb0ff" font-size="28">&#955;</text>
-    <text x="520" y="232" fill="#62f0ff" font-size="30">&#952;</text>
+    <text x="338" y="250" fill="#15D5FF" font-size="34">&#8706;</text>
+    <text x="516" y="270" fill="#8A5CF6" font-size="30" font-style="italic">dx</text>
+    <text x="520" y="210" fill="#62f0ff" font-size="30">&#952;</text>
   </g>
+
+  <!-- Euler's identity (exponent iπ properly raised) -->
+  <text x="118" y="150" font-family="Inter, 'Segoe UI', sans-serif" font-weight="700" font-style="italic" font-size="27" fill="#9fb0ff" filter="url(#glow)">e<tspan dy="-11" font-size="18">i&#960;</tspan><tspan dy="11" font-size="27">&#8201;+&#8201;1&#8201;=&#8201;0</tspan></text>
+
+  <!-- eigenvalue equation (linear algebra) -->
+  <text x="352" y="116" font-family="Inter, 'Segoe UI', sans-serif" font-weight="700" font-style="italic" font-size="27" fill="#9fb0ff" filter="url(#glow)">A<tspan fill="#15D5FF">v</tspan>&#8201;=&#8201;&#955;<tspan fill="#15D5FF">v</tspan></text>
+
   <g fill="#15D5FF">
-    <circle cx="150" cy="210" r="3.5"/><circle cx="300" cy="120" r="3.5"/><circle cx="470" cy="170" r="3.5"/>
+    <circle cx="150" cy="214" r="3.5"/><circle cx="300" cy="120" r="3.5"/><circle cx="470" cy="176" r="3.5"/>
     <circle cx="250" cy="300" r="3.5"/><circle cx="430" cy="300" r="3.5"/>
   </g>
 </svg>

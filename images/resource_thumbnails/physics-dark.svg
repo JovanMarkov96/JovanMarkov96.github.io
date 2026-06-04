@@ -9,23 +9,29 @@
   <rect width="640" height="400" fill="url(#grid)"/>
   <rect width="640" height="400" fill="url(#halo)"/>
 
-  <!-- central atom -->
+  <!-- central atom: three electron orbits + nucleus -->
   <g filter="url(#glow)" fill="none" stroke-width="2.4">
-    <ellipse cx="250" cy="210" rx="92" ry="34" stroke="#15D5FF" transform="rotate(28 250 210)"/>
-    <ellipse cx="250" cy="210" rx="92" ry="34" stroke="#6E8CFF" transform="rotate(-28 250 210)"/>
-    <ellipse cx="250" cy="210" rx="92" ry="34" stroke="#8A5CF6" transform="rotate(90 250 210)"/>
+    <ellipse cx="232" cy="214" rx="92" ry="34" stroke="#15D5FF" transform="rotate(28 232 214)"/>
+    <ellipse cx="232" cy="214" rx="92" ry="34" stroke="#6E8CFF" transform="rotate(-28 232 214)"/>
+    <ellipse cx="232" cy="214" rx="92" ry="34" stroke="#8A5CF6" transform="rotate(90 232 214)"/>
   </g>
-  <circle cx="250" cy="210" r="11" fill="#15D5FF" filter="url(#glow)"/>
-  <circle cx="332" cy="186" r="6" fill="#8A5CF6"/>
-  <circle cx="174" cy="246" r="6" fill="#62f0ff"/>
+  <circle cx="232" cy="214" r="11" fill="#15D5FF" filter="url(#glow)"/>
+  <circle cx="314" cy="190" r="6" fill="#8A5CF6"/>
+  <circle cx="156" cy="250" r="6" fill="#62f0ff"/>
 
-  <!-- de Broglie wave -->
-  <path d="M396 322 Q 422 290 448 322 T 500 322 T 552 322 T 604 322" fill="none" stroke="#62f0ff" stroke-width="2.4" stroke-opacity="0.8"/>
+  <!-- de Broglie / EM wave -->
+  <path d="M392 328 Q 418 296 444 328 T 496 328 T 548 328 T 600 328" fill="none" stroke="#62f0ff" stroke-width="2.4" stroke-opacity="0.8"/>
 
-  <g font-family="Inter, 'Segoe UI', sans-serif" font-weight="700" filter="url(#glow)">
-    <text x="368" y="130" fill="#9fb0ff" font-size="30" font-style="italic">i&#8463;&#8706;&#968; = &#292;&#968;</text>
-    <text x="430" y="196" fill="#15D5FF" font-size="34" font-style="italic">E=mc&#178;</text>
-    <text x="402" y="250" fill="#6E8CFF" font-size="26" font-style="italic">&#8711;&#183;E = &#961;/&#949;&#8320;</text>
-    <text x="150" y="120" fill="#8A5CF6" font-size="28" font-style="italic">F = ma</text>
+  <g font-family="Inter, 'Segoe UI', sans-serif" font-weight="700" font-style="italic">
+    <!-- Newton's 2nd law (classical mechanics) -->
+    <text x="138" y="116" fill="#8A5CF6" font-size="28" filter="url(#glow)">F = ma</text>
+    <!-- Schrodinger equation (quantum mechanics) -->
+    <text x="356" y="120" fill="#9fb0ff" font-size="27" filter="url(#glow)">i&#8463; &#8706;&#968;/&#8706;t = &#292;&#968;</text>
+    <!-- relativistic energy-momentum relation -->
+    <text x="406" y="190" fill="#15D5FF" font-size="27" filter="url(#glow)">E&#178; = (pc)&#178; + (mc&#178;)&#178;</text>
+    <!-- Gauss's law (electromagnetism) -->
+    <text x="404" y="248" fill="#6E8CFF" font-size="25" filter="url(#glow)">&#8711;&#183;E = &#961;/&#949;&#8320;</text>
+    <!-- Boltzmann entropy (statistical mechanics) -->
+    <text x="120" y="332" fill="#62f0ff" font-size="26" filter="url(#glow)">S = k<tspan dy="6" font-size="17" font-style="normal">B</tspan><tspan dy="-6"> ln &#937;</tspan></text>
   </g>
 </svg>
