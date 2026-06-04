@@ -30,7 +30,7 @@ redirect_from:
 
     <a href="/portfolio/" class="archive__item home-glass-card">
       <h3><i class="fas fa-project-diagram"></i> Open Source</h3>
-      <p>Data visualization tools like <b>IonLandscape</b> and other research software.</p>
+      <p>Data visualization tools like <b>Quantum Landscape</b> and other research software.</p>
     </a>
 
     <a href="/resources/" class="archive__item home-glass-card">
