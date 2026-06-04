@@ -39,6 +39,9 @@ groups:
         icon: "calculus"
         tagline: "Limits, derivatives, integrals, and the language of change."
         books:
+          - title: "Calculus for the Practical Man"
+            by: "J. E. Thompson"
+            desc: "The book a teenage Richard Feynman famously used to teach himself calculus. A gentle, example-driven introduction written for self-learners rather than classroom courses."
           - title: "Calculus"
             by: "James Stewart"
             desc: "A widely used textbook for learning calculus, suitable for beginners and advanced students alike."
