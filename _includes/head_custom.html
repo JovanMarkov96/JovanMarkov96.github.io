@@ -110,7 +110,11 @@
 
     .masthead__inner-wrap {
         border-bottom: none !important;
-        padding: 0 1em !important;
+        padding: 0.4rem 1.1rem !important;
+        display: grid !important;
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        align-items: center !important;
+        gap: 1rem;
     }
 
     #main,
@@ -120,9 +124,20 @@
 
     /* Brand wordmark — gradient display title */
     .site-title {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-self: start !important;
+        width: auto !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        white-space: nowrap !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-weight: 800 !important;
         letter-spacing: -0.025em !important;
-        font-size: 1.25rem !important;
+        font-size: 1.2rem !important;
+        line-height: 1.1 !important;
         background: linear-gradient(95deg, var(--ion-accent) 0%, #8A5CF6 100%);
         -webkit-background-clip: text !important;
         background-clip: text !important;
@@ -159,38 +174,109 @@
         font-weight: 700 !important;
     }
 
-    /* Sleek glass icon buttons (share / theme / hamburger) */
-    .glass-toggle {
-        width: 40px;
-        height: 40px;
+    /* Sleek, borderless icon buttons (share / theme / hamburger):
+       blend into the glass, light up only on hover. */
+    .nav-btn {
+        width: 38px;
+        height: 38px;
         padding: 0;
-        margin-left: 0.55em;
+        margin: 0;
         display: grid;
         place-items: center;
-        background: rgba(var(--ion-accent-rgb), 0.06);
-        backdrop-filter: blur(10px) saturate(180%);
-        -webkit-backdrop-filter: blur(10px) saturate(180%);
-        border: 1px solid var(--ion-border);
-        border-radius: 12px;
-        box-shadow: var(--ion-shadow-sm);
+        background: transparent;
+        border: none;
+        border-radius: 10px;
+        box-shadow: none;
         cursor: pointer;
         color: var(--ion-muted);
+        -webkit-appearance: none;
+        appearance: none;
         transition: color 0.25s var(--shine-ease),
-                    border-color 0.25s ease,
                     background-color 0.25s ease,
-                    transform 0.25s var(--shine-ease),
-                    box-shadow 0.25s var(--shine-ease);
+                    transform 0.2s var(--shine-ease);
     }
 
-    .glass-toggle:hover {
+    .nav-btn:hover,
+    .nav-btn:focus-visible {
         color: var(--ion-accent);
-        border-color: rgba(var(--ion-accent-rgb), 0.6);
         background: rgba(var(--ion-accent-rgb), 0.12);
-        transform: translateY(-2px);
-        box-shadow: 0 8px 20px rgba(var(--ion-accent-rgb), 0.28);
+        outline: none;
     }
 
-    .glass-toggle:active { transform: translateY(0) scale(0.94); }
+    .nav-btn:active { transform: scale(0.92); }
+
+    /* keep buttons flat in every theme/state until hover (no inherited glass box) */
+    .nav-btn,
+    html.dark-mode .nav-btn {
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+    }
+    .nav-btn:hover,
+    .nav-btn:focus-visible,
+    html.dark-mode .nav-btn:hover,
+    html.dark-mode .nav-btn:focus-visible {
+        background: rgba(var(--ion-accent-rgb), 0.14) !important;
+        color: var(--ion-accent) !important;
+    }
+
+    /* ----- Single-row navbar layout ----- */
+    /* The nav wrapper must never paint over the glass panel. */
+    .greedy-nav {
+        background: transparent !important;
+        min-width: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .greedy-nav > button { display: none !important; } /* hide the theme's overflow toggle */
+
+    .masthead__actions {
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+        justify-self: end;
+    }
+    .masthead__actions .nav-toggle { display: none; } /* desktop: no hamburger */
+
+    @media (min-width: 1024px) {
+        /* horizontal, centered link row — fully transparent */
+        #nav-links.visible-links {
+            display: flex !important;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 0.15rem;
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        #nav-links .masthead__menu-item { display: inline-flex !important; }
+        #nav-links .masthead__menu-item a { margin: 0 !important; white-space: nowrap; }
+        /* remove the theme's underline-grow bar (we use the accent pill instead) */
+        #nav-links .masthead__menu-item a::before { display: none !important; content: none !important; }
+    }
+
+    @media (max-width: 1023px) {
+        .masthead__actions .nav-toggle { display: grid; }
+        .masthead__inner-wrap {
+            gap: 0.3rem;
+            padding: 0.35rem 0.7rem !important;
+            grid-template-columns: 1fr 0 auto !important; /* brand | (overlay nav) | actions */
+        }
+        .masthead__actions { gap: 0.05rem; }
+        .nav-btn { width: 34px; height: 34px; }
+        /* responsive brand keeps to one tidy line across phone widths */
+        .site-title {
+            white-space: nowrap !important;
+            font-size: clamp(0.72rem, 3.5vw, 0.92rem) !important;
+            line-height: 1.15 !important;
+        }
+    }
 
     /* ===== Share Modal ===== */
     .share-overlay {
@@ -1538,83 +1624,111 @@
             background: currentColor !important;
         }
         
+        /* Elegant glass dropdown card under the floating navbar */
         .visible-links {
-            /* Full-screen overlay overriding the standard dropdown */
-            position: fixed !important;
-            top: -16px !important; /* Negates masthead 16px top offset */
-            left: 50% !important; /* Centered relative to view */
-            transform: translateX(-50%) !important;
-            width: 100vw !important;
-            height: 100vh !important;
-            max-width: none !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            background: rgba(255, 255, 255, 0.85) !important;
-            backdrop-filter: blur(20px) saturate(180%) !important;
-            -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
             display: flex !important;
-            flex-direction: column !important;
-            justify-content: center !important;
-            align-items: center !important;
+            flex-direction: column;
+            gap: 0.15rem;
+            position: fixed !important;
+            top: 4.7rem !important;
+            left: 50% !important;
+            transform: translateX(-50%) translateY(-12px) scale(0.97) !important;
+            width: calc(100% - 1.5rem) !important;
+            max-width: 460px !important;
+            margin: 0 !important;
+            padding: 0.5rem !important;
+            background: rgba(255, 255, 255, 0.92) !important;
+            backdrop-filter: blur(24px) saturate(180%) !important;
+            -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+            border: 1px solid var(--ion-border) !important;
+            border-radius: 20px !important;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22) !important;
             z-index: 9999 !important;
-            
-            /* Hidden state with transitions */
+
             opacity: 0;
             visibility: hidden;
             pointer-events: none;
-            transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
-            border: none !important;
-            box-shadow: none !important;
+            transition: opacity 0.3s var(--shine-ease),
+                        transform 0.35s var(--shine-ease),
+                        visibility 0.35s var(--shine-ease) !important;
         }
 
         .visible-links.is-visible {
             opacity: 1;
             visibility: visible;
             pointer-events: auto;
+            transform: translateX(-50%) translateY(0) scale(1) !important;
         }
 
         html.dark-mode .visible-links {
-            background: rgba(var(--ion-dark-bg-rgb), 0.85) !important;
-            border: none !important;
+            background: var(--ion-dark-solid) !important;
+            border: 1px solid rgba(var(--ion-accent-rgb), 0.25) !important;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5) !important;
         }
 
         .visible-links .masthead__menu-item {
             display: block;
             width: 100%;
-            text-align: center;
             opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            transition-delay: 0s;
+            transform: translateY(8px);
+            transition: opacity 0.35s ease, transform 0.35s var(--shine-ease);
         }
-        
+
         .visible-links.is-visible .masthead__menu-item {
             opacity: 1;
             transform: translateY(0);
         }
 
         .visible-links .masthead__menu-item a {
-            display: block;
-            padding: 1.25rem 2rem !important;
-            font-size: 1.75rem !important;
-            font-weight: 700 !important;
+            display: flex !important;
+            align-items: center;
+            padding: 0.85rem 1rem !important;
+            border-radius: 12px !important;
+            font-size: 1.05rem !important;
+            font-weight: 600 !important;
             color: var(--ion-text) !important;
             text-decoration: none !important;
+            transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease !important;
         }
-        
+
+        .visible-links .masthead__menu-item a::before { display: none !important; content: none !important; }
+
+        .visible-links .masthead__menu-item a:hover,
+        .visible-links .masthead__menu-item a.active {
+            background: rgba(var(--ion-accent-rgb), 0.12) !important;
+            color: var(--ion-accent) !important;
+        }
+
         .visible-links .masthead__menu-item a:active {
-            background: transparent !important;
-            transform: scale(0.95);
-            transition: transform 0.1s;
+            transform: scale(0.98);
         }
-        
-        /* Staggered animation for menu items up to 6 items */
-        .visible-links.is-visible .masthead__menu-item:nth-child(1) { transition-delay: 0.1s; }
-        .visible-links.is-visible .masthead__menu-item:nth-child(2) { transition-delay: 0.15s; }
-        .visible-links.is-visible .masthead__menu-item:nth-child(3) { transition-delay: 0.2s; }
-        .visible-links.is-visible .masthead__menu-item:nth-child(4) { transition-delay: 0.25s; }
-        .visible-links.is-visible .masthead__menu-item:nth-child(5) { transition-delay: 0.3s; }
-        .visible-links.is-visible .masthead__menu-item:nth-child(6) { transition-delay: 0.35s; }
+
+        /* Staggered reveal */
+        .visible-links.is-visible .masthead__menu-item:nth-child(1) { transition-delay: 0.04s; }
+        .visible-links.is-visible .masthead__menu-item:nth-child(2) { transition-delay: 0.08s; }
+        .visible-links.is-visible .masthead__menu-item:nth-child(3) { transition-delay: 0.12s; }
+        .visible-links.is-visible .masthead__menu-item:nth-child(4) { transition-delay: 0.16s; }
+        .visible-links.is-visible .masthead__menu-item:nth-child(5) { transition-delay: 0.20s; }
+        .visible-links.is-visible .masthead__menu-item:nth-child(6) { transition-delay: 0.24s; }
+        .visible-links.is-visible .masthead__menu-item:nth-child(7) { transition-delay: 0.28s; }
+
+        /* Dimmed backdrop */
+        .nav-backdrop {
+            position: fixed;
+            inset: 0;
+            z-index: 9998;
+            background: rgba(8, 12, 24, 0.45);
+            -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .nav-backdrop.is-visible { opacity: 1; }
+    }
+
+    /* backdrop only exists for the mobile menu */
+    @media (min-width: 1024px) {
+        .nav-backdrop { display: none !important; }
     }
 
     /* =================================================================
