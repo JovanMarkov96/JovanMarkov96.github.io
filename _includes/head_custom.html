@@ -684,11 +684,7 @@
     html.dark-mode body .masthead,
     html.dark-mode body .page__footer,
     html.dark-mode body .greedy-nav .hidden-links,
-    html.dark-mode body .glass-toggle,
-    html.dark-mode body .project-card,
-    html.dark-mode body .project-card__title,
-    html.dark-mode body .project-card__body,
-    html.dark-mode body .project-card__footer {
+    html.dark-mode body .glass-toggle {
         background: linear-gradient(145deg, rgba(var(--ion-dark-bg-rgb), 0.6), rgba(var(--ion-dark-bg2-rgb), 0.8)) !important;
         background-color: transparent !important;
         /* Force transparent color to prevent base theme gray bleed-through */
@@ -1718,15 +1714,13 @@
 
     /* ---- Cards: unified device-page hover (lift + accent glow) ---- */
     .archive__item,
-    .home-glass-card,
-    .project-card {
+    .home-glass-card {
         transition: transform 0.3s var(--shine-ease),
                     box-shadow 0.3s var(--shine-ease),
                     border-color 0.3s ease !important;
     }
     .archive__item:hover,
-    .home-glass-card:hover,
-    .project-card:hover {
+    .home-glass-card:hover {
         transform: translateY(-5px) !important;
         border-color: rgba(var(--ion-accent-rgb), 0.7) !important;
         box-shadow:
@@ -1805,7 +1799,6 @@
         .btn::after, .home-btn::after { display: none !important; }
         .btn:hover,
         .archive__item:hover,
-        .home-glass-card:hover,
-        .project-card:hover { transform: none !important; }
+        .home-glass-card:hover { transform: none !important; }
     }
 </style>

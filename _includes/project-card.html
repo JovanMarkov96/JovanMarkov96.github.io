@@ -1,39 +1,31 @@
 <div class="project-card">
-    <!-- 1. Title at the top, Centered -->
-    <h3 class="project-card__title">{{ post.title }}</h3>
-
-    <!-- 2. Image in the middle -->
-    <div class="project-card__header">
-        {% if post.header.teaser %}
-        <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}" class="project-card__image">
+    <!-- Media: full-bleed, theme-aware preview -->
+    <div class="project-card__media">
+        {% if post.teaser_light or post.teaser_dark %}
+        <img class="project-card__image pc-img--light" src="{{ post.teaser_light | default: post.teaser_dark | relative_url }}" alt="{{ post.title }}" loading="lazy">
+        <img class="project-card__image pc-img--dark" src="{{ post.teaser_dark | default: post.teaser_light | relative_url }}" alt="{{ post.title }}" loading="lazy">
+        {% elsif post.header.teaser %}
+        <img class="project-card__image" src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}" loading="lazy">
         {% else %}
-        <div class="project-card__image-placeholder">
-            <i class="fas fa-image"></i>
-        </div>
+        <div class="project-card__image-placeholder"><i class="fas fa-image"></i></div>
         {% endif %}
     </div>
 
-    <!-- 3. Description (Left aligned as requested) -->
-    <div class="project-card__body">
+    <!-- Content: title is the primary link; its ::after stretches over the whole card -->
+    <div class="project-card__content">
+        <h3 class="project-card__title">
+            <a class="project-card__primary" href="{{ post.link | default: post.url | relative_url }}">{{ post.title }}</a>
+        </h3>
         <p class="project-card__excerpt">{{ post.excerpt | strip_html }}</p>
     </div>
 
-    <!-- 4. Footer with Link Boxes -->
+    <!-- Inline actions -->
     <div class="project-card__footer">
-        {% if post.link %}
-        <a href="{{ post.link }}" class="project-card__btn"><i class="fas fa-globe"></i> Website</a>
-        {% endif %}
-
+        <span class="project-card__cta">{{ post.cta_label | default: "Explore" }} <span class="pc-arrow">&rarr;</span></span>
         {% if post.github %}
-        <a href="{{ post.github }}" class="project-card__btn"><i class="fab fa-github"></i> Code</a>
-        {% endif %}
-
-        {% if post.paperurl %}
-        <a href="{{ post.paperurl }}" class="project-card__btn"><i class="fas fa-file-alt"></i> Paper</a>
-        {% endif %}
-
-        {% if post.slidesurl %}
-        <a href="{{ post.slidesurl }}" class="project-card__btn"><i class="fas fa-file-powerpoint"></i> Slides</a>
+        <a class="project-card__code" href="{{ post.github }}" target="_blank" rel="noopener noreferrer" aria-label="View {{ post.title }} source on GitHub">
+            <i class="fab fa-github"></i> View code
+        </a>
         {% endif %}
     </div>
 </div>

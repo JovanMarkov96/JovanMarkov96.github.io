@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-label="Lab instrument controllers">
+  <defs>
+    <linearGradient id="bgL" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef3fb"/>
+      <stop offset="1" stop-color="#f8fbff"/>
+    </linearGradient>
+    <radialGradient id="haloL" cx="0.5" cy="0.4" r="0.62">
+      <stop offset="0" stop-color="#2E7CFF" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#2E7CFF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="gridL" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#2E7CFF" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+    <filter id="glowL" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#2E7CFF" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="400" fill="url(#bgL)"/>
+  <rect width="640" height="400" fill="url(#gridL)"/>
+  <rect width="640" height="400" fill="url(#haloL)"/>
+
+  <g fill="none" stroke="#3a55d8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowL)">
+    <!-- Oscilloscope -->
+    <g transform="translate(40,136)">
+      <rect x="0" y="0" width="168" height="128" rx="12"/>
+      <rect x="16" y="16" width="104" height="82" rx="4" stroke-opacity="0.5"/>
+      <path d="M16 57 C 30 24, 44 90, 58 57 S 90 24, 104 57 S 116 90, 120 57" stroke="#2E7CFF"/>
+      <circle cx="144" cy="38" r="14"/><line x1="144" y1="38" x2="144" y2="26"/>
+      <circle cx="144" cy="84" r="9"/>
+    </g>
+    <!-- Spectrum analyzer -->
+    <g transform="translate(236,136)">
+      <rect x="0" y="0" width="168" height="128" rx="12"/>
+      <rect x="16" y="14" width="116" height="86" rx="4" stroke-opacity="0.5"/>
+      <line x1="20" y1="92" x2="128" y2="92" stroke-opacity="0.45"/>
+      <path d="M20 90 L46 84 L62 86 L80 56 L88 38 L96 56 L114 84 L128 88" stroke="#2E7CFF"/>
+      <circle cx="150" cy="40" r="13"/><line x1="150" y1="40" x2="150" y2="29"/>
+      <circle cx="150" cy="84" r="8"/>
+    </g>
+    <!-- Modular mainframe -->
+    <g transform="translate(432,136)">
+      <rect x="0" y="0" width="168" height="128" rx="12"/>
+      <rect x="14" y="16" width="24" height="96" rx="3" stroke-opacity="0.65"/>
+      <rect x="46" y="16" width="24" height="96" rx="3" stroke-opacity="0.65"/>
+      <rect x="78" y="16" width="24" height="96" rx="3" stroke-opacity="0.65"/>
+      <rect x="110" y="16" width="24" height="96" rx="3" stroke-opacity="0.65"/>
+      <line x1="20" y1="30" x2="32" y2="30" stroke-opacity="0.55"/>
+      <line x1="52" y1="30" x2="64" y2="30" stroke-opacity="0.55"/>
+      <line x1="84" y1="30" x2="96" y2="30" stroke-opacity="0.55"/>
+      <line x1="116" y1="30" x2="128" y2="30" stroke-opacity="0.55"/>
+      <circle cx="26" cy="96" r="6"/><circle cx="58" cy="96" r="6"/>
+      <circle cx="90" cy="96" r="6"/><circle cx="122" cy="96" r="6"/>
+      <circle cx="150" cy="40" r="13" stroke="#2E7CFF"/>
+    </g>
+  </g>
+</svg>
