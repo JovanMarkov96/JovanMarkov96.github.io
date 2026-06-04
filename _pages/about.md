@@ -18,22 +18,26 @@ redirect_from:
   <div class="home-grid">
     <a href="/publications/" class="archive__item home-glass-card">
       <h3><i class="fas fa-file-alt"></i> Selected Publications</h3>
-      <p>Explore recent research in trapped ion quantum computing and robust gate engineering.</p>
+      <p>Recent work on trapped-ion quantum computing and robust gate engineering.</p>
+      <span class="home-card-highlight"><strong>Latest</strong> — Digital Predistortion of Optical Fields for fast, high-fidelity entangling gates (2026)</span>
     </a>
 
     <a href="/talks/" class="archive__item home-glass-card">
       <h3><i class="fas fa-microphone"></i> Recent Talks</h3>
-      <p>Presentations on quantum simulations and AMO physics at various conferences.</p>
+      <p>Talks and workshops on quantum computing and AMO physics.</p>
+      <span class="home-card-highlight"><strong>Recent</strong> — Quantum Computing Workshop, Petnica Science Center (2025)</span>
     </a>
 
     <a href="/portfolio/" class="archive__item home-glass-card">
-      <h3><i class="fas fa-project-diagram"></i> Open Source</h3>
-      <p>Data visualization tools like <b>Quantum Landscape</b> and other research software.</p>
+      <h3><i class="fas fa-project-diagram"></i> Projects</h3>
+      <p>Open-source research software and data-visualization tools.</p>
+      <span class="home-card-highlight"><strong>Quantum Landscape</strong> · Lab Instrument Controllers</span>
     </a>
 
     <a href="/resources/" class="archive__item home-glass-card">
       <h3><i class="fas fa-book"></i> Resources</h3>
-      <p>Notes, guides, and tools useful for the atomic physics community.</p>
+      <p>Self-study guides for physics, mathematics, and quantum computing, plus practical lab notes.</p>
+      <span class="home-card-highlight">Physics · Mathematics · Quantum · Lab</span>
     </a>
   </div>
 </div>
