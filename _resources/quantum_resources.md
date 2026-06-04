@@ -5,6 +5,10 @@ title: "Quantum resources"
 permalink: /resources/quantum-resources/
 author_profile: true
 order: 2
+excerpt: "Everything quantum in one place — online seminars, lecture series, courses, tutorials, and company resources spanning quantum computing, information, and science."
+teaser_light: '/images/resource_thumbnails/quantum-light.svg'
+teaser_dark: '/images/resource_thumbnails/quantum-dark.svg'
+cta_label: "Open resources"
 ---
 
 ## Online Quantum Seminars

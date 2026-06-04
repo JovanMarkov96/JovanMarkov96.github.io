@@ -5,6 +5,10 @@ title: "Self-Study Resources for Mathematics"
 permalink: /resources/math-resources/
 author_profile: true
 order: 3
+excerpt: "A curated path through mathematics — books, lecture series, and online courses organized by topic, from high-school foundations up to advanced material."
+teaser_light: '/images/resource_thumbnails/math-light.svg'
+teaser_dark: '/images/resource_thumbnails/math-dark.svg'
+cta_label: "Open resources"
 toc: true
 toc_sticky: true
 ---

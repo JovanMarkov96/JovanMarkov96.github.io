@@ -5,6 +5,10 @@ title: "Lab Resources"
 permalink: /resources/lab-resources/
 author_profile: true
 order: 1
+excerpt: "Open-source references for AMO / quantum lab work — practical guides and tutorials on optics, lasers, electronics, and lab automation for getting a setup running."
+teaser_light: '/images/resource_thumbnails/lab-light.svg'
+teaser_dark: '/images/resource_thumbnails/lab-dark.svg'
+cta_label: "Open resources"
 toc: true
 toc_label: "Contents"
 toc_icon: "flask"

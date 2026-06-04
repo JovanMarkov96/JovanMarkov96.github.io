@@ -5,6 +5,10 @@ title: "Self-Study Resources for Physics"
 permalink: /resources/physics-resources/
 author_profile: true
 order: 4
+excerpt: "A curated path through physics — books, lectures, and online courses by topic, from classical mechanics and E&M to quantum mechanics and beyond."
+teaser_light: '/images/resource_thumbnails/physics-light.svg'
+teaser_dark: '/images/resource_thumbnails/physics-dark.svg'
+cta_label: "Open resources"
 toc: true
 toc_sticky: true
 ---

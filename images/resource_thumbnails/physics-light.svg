@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-label="Physics">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eaf1fb"/><stop offset="1" stop-color="#f7fbff"/></linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.45" r="0.62"><stop offset="0" stop-color="#2E7CFF" stop-opacity="0.10"/><stop offset="1" stop-color="#2E7CFF" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0 H0 V40" fill="none" stroke="#2E7CFF" stroke-opacity="0.07" stroke-width="1"/></pattern>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.4" flood-color="#2E7CFF" flood-opacity="0.18"/></filter>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+  <rect width="640" height="400" fill="url(#grid)"/>
+  <rect width="640" height="400" fill="url(#halo)"/>
+
+  <g filter="url(#soft)" fill="none" stroke-width="2.4">
+    <ellipse cx="250" cy="210" rx="92" ry="34" stroke="#2E7CFF" transform="rotate(28 250 210)"/>
+    <ellipse cx="250" cy="210" rx="92" ry="34" stroke="#4a5fd0" transform="rotate(-28 250 210)"/>
+    <ellipse cx="250" cy="210" rx="92" ry="34" stroke="#8A5CF6" transform="rotate(90 250 210)"/>
+  </g>
+  <circle cx="250" cy="210" r="11" fill="#2E7CFF" filter="url(#soft)"/>
+  <circle cx="332" cy="186" r="6" fill="#8A5CF6"/>
+  <circle cx="174" cy="246" r="6" fill="#0aa7c9"/>
+
+  <path d="M396 322 Q 422 290 448 322 T 500 322 T 552 322 T 604 322" fill="none" stroke="#0aa7c9" stroke-width="2.4" stroke-opacity="0.85"/>
+
+  <g font-family="Inter, 'Segoe UI', sans-serif" font-weight="700" filter="url(#soft)">
+    <text x="368" y="130" fill="#3a55d8" font-size="30" font-style="italic">i&#8463;&#8706;&#968; = &#292;&#968;</text>
+    <text x="430" y="196" fill="#2E7CFF" font-size="34" font-style="italic">E=mc&#178;</text>
+    <text x="402" y="250" fill="#4a5fd0" font-size="26" font-style="italic">&#8711;&#183;E = &#961;/&#949;&#8320;</text>
+    <text x="150" y="120" fill="#8A5CF6" font-size="28" font-style="italic">F = ma</text>
+  </g>
+</svg>
