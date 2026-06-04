@@ -9,139 +9,109 @@ excerpt: "A curated path through mathematics — books, lecture series, and onli
 teaser_light: '/images/resource_thumbnails/math-light.svg'
 teaser_dark: '/images/resource_thumbnails/math-dark.svg'
 cta_label: "Open resources"
-toc: true
-toc_sticky: true
 ---
 
-## Self-Study Resources for Mathematics
+{%- assign math = site.data.math_resources -%}
 
-Embarking on a journey to learn mathematics can be both exciting and challenging. This guide provides a curated list of resources to help you get started, even if you only have a high school level of math. These resources include books, YouTube channels, lecture series, and online courses, divided by specific topics.
+<p class="phys-lead">Mathematics is best learned actively, with the right book and a good explainer at your side. Below is a curated path — the textbooks, lecture series, and online courses I'd point a motivated self-learner to, organized by topic and roughly ordered from high-school foundations toward more advanced material. Pick a tile to jump straight to a subject; every book links to a neutral catalogue page so you can track it down at a library or wherever you prefer.</p>
 
-**Foundations:** [📐 General Mathematics](#-general-mathematics) · [📈 Calculus](#-calculus) · [🔢 Linear Algebra](#-linear-algebra)
-{: .notice}
+<p class="phys-tip"><i class="fas fa-magnifying-glass" aria-hidden="true"></i> Tip: press <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>F</kbd> to find a specific book or topic.</p>
 
-**Advanced:** [🌊 Differential Equations](#-differential-equations) · [🎲 Probability & Statistics](#-probability--statistics)
-{: .notice}
+<nav class="phys-index" id="phys-top" aria-label="Mathematics topics">
+  {%- for group in math.groups -%}
+  <div class="phys-index__group">
+    <div class="phys-index__grouphead">
+      <span class="phys-index__grouplabel">{{ group.name }}</span>
+      <span class="phys-index__groupblurb">{{ group.blurb }}</span>
+    </div>
+    <div class="phys-tilegrid">
+      {%- for t in group.topics -%}
+      {%- assign nb = t.books | size -%}{%- assign nv = t.videos | size -%}{%- assign nc = t.courses | size -%}{%- assign nm = t.more | size -%}
+      <a class="phys-tile" href="#{{ t.id }}">
+        <span class="phys-tile__icon">{% include math-topic-icon.html icon=t.icon %}</span>
+        <span class="phys-tile__body">
+          <span class="phys-tile__name">{{ t.short | default: t.name }}</span>
+          <span class="phys-tile__meta">
+            {%- assign sep = "" -%}
+            {%- if nb > 0 %}{{ nb }} book{% if nb != 1 %}s{% endif %}{% assign sep = " &middot; " %}{% endif -%}
+            {%- if nv > 0 %}{{ sep }}{{ nv }} video{% if nv != 1 %}s{% endif %}{% assign sep = " &middot; " %}{% endif -%}
+            {%- if nc > 0 %}{{ sep }}{{ nc }} course{% if nc != 1 %}s{% endif %}{% assign sep = " &middot; " %}{% endif -%}
+            {%- if nm > 0 %}{{ sep }}{{ nm }} link{% if nm != 1 %}s{% endif %}{% endif -%}
+          </span>
+        </span>
+        <span class="phys-tile__arrow" aria-hidden="true">&rarr;</span>
+      </a>
+      {%- endfor -%}
+    </div>
+  </div>
+  {%- endfor -%}
 
-> **💡 Quick Search Tip:** Press `Ctrl + F` (or `Cmd + F` on Mac) to quickly find a specific topic or book!
+  <div class="phys-index__group">
+    <div class="phys-index__grouphead">
+      <span class="phys-index__grouplabel">Go deeper</span>
+      <span class="phys-index__groupblurb">Notes, calculators, and problem-solving communities.</span>
+    </div>
+    <div class="phys-tilegrid">
+      <a class="phys-tile" href="#tools">
+        <span class="phys-tile__icon">{% include math-topic-icon.html icon="tools" %}</span>
+        <span class="phys-tile__body">
+          <span class="phys-tile__name">Tools &amp; References</span>
+          <span class="phys-tile__meta">{{ math.tools | size }} reference hubs</span>
+        </span>
+        <span class="phys-tile__arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</nav>
 
-## 📐 General Mathematics
+{%- for group in math.groups -%}
+{%- for t in group.topics -%}
+<section class="phys-section" id="{{ t.id }}">
+  <header class="phys-section__head">
+    <span class="phys-section__icon">{% include math-topic-icon.html icon=t.icon %}</span>
+    <div class="phys-section__heading">
+      <h2 class="phys-section__title">{{ t.name }}</h2>
+      {%- if t.tagline %}<p class="phys-section__tagline">{{ t.tagline }}</p>{% endif -%}
+    </div>
+    <a class="phys-section__top" href="#phys-top"><i class="fas fa-arrow-up" aria-hidden="true"></i> Topics</a>
+  </header>
 
-### 📚 Books
+  {%- if t.books and t.books != empty -%}
+  <div class="phys-block">
+    <h3 class="phys-block__label"><i class="fas fa-book-open" aria-hidden="true"></i> Books</h3>
+    <ul class="phys-booklist">
+      {%- for b in t.books -%}
+      {%- if b.details -%}{%- assign bookurl = b.details -%}{%- else -%}{%- capture q -%}{{ b.title }} {{ b.by }}{%- endcapture -%}{%- assign qenc = q | url_encode -%}{%- assign bookurl = "https://www.google.com/search?tbm=bks&q=" | append: qenc -%}{%- endif -%}
+      <li class="phys-book">
+        <p class="phys-book__title">{{ b.title }}{% if b.by %} <span class="phys-book__by">&mdash; {{ b.by }}</span>{% endif %}</p>
+        {%- if b.desc %}<p class="phys-book__desc">{{ b.desc }}</p>{% endif -%}
+        <span class="phys-chips">
+          <a class="cv-pill cv-pill-neutral phys-chip" href="{{ bookurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-book" aria-hidden="true"></i> Details</a>
+          {%- if b.free %}<a class="cv-pill cv-pill-neutral phys-chip" href="{{ b.free }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-unlock" aria-hidden="true"></i> Read free</a>{% endif -%}
+        </span>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+  {%- endif -%}
 
-1. **"The Art of Problem Solving" by Richard Rusczyk**
-   - A comprehensive series of books that cover a wide range of mathematical topics, perfect for high school students and beyond.
-   - [🛒 Amazon](https://www.amazon.com/Art-Problem-Solving-Introduction-Textbook/dp/1934124141)
+  {% include phys-linklist.html items=t.videos label="Lectures & videos" fa="fa-circle-play" %}
+  {% include phys-linklist.html items=t.courses label="Online courses" fa="fa-graduation-cap" %}
+  {% include phys-linklist.html items=t.more label="More resources" fa="fa-link" %}
+</section>
+{%- endfor -%}
+{%- endfor -%}
 
-2. **"Precalculus" by Michael Sullivan**
-   - A great book to bridge the gap between high school math and college-level calculus.
-   - [🛒 Amazon](https://www.amazon.com/Precalculus-Michael-Sullivan/dp/0321979070)
+<section class="phys-section" id="tools">
+  <header class="phys-section__head">
+    <span class="phys-section__icon">{% include math-topic-icon.html icon="tools" %}</span>
+    <div class="phys-section__heading">
+      <h2 class="phys-section__title">Tools &amp; References</h2>
+      <p class="phys-section__tagline">Calculators, lecture notes, and communities to lean on along the way.</p>
+    </div>
+    <a class="phys-section__top" href="#phys-top"><i class="fas fa-arrow-up" aria-hidden="true"></i> Topics</a>
+  </header>
+  {% include phys-linklist.html items=math.tools label="Reference hubs" fa="fa-screwdriver-wrench" two=true %}
+</section>
 
-3. **"How to Prove It: A Structured Approach" by Daniel J. Velleman**
-   - An excellent introduction to mathematical proofs, providing a clear and structured approach to understanding and constructing proofs.
-   - [🛒 Amazon](https://www.amazon.com/How-Prove-Structured-Approach-2nd/dp/0521675995)
-
-### 📺 YouTube Channels
-
-1. **[Khan Academy](https://www.youtube.com/user/khanacademy)**
-   - Offers a wide range of math tutorials, from basic arithmetic to advanced calculus and beyond.
-
-2. **[PatrickJMT](https://www.youtube.com/user/patrickJMT)**
-   - Covers a variety of math topics, including calculus, algebra, and statistics.
-
-## 📈 Calculus
-
-### 📚 Books
-
-1. **"Calculus" by James Stewart**
-   - A widely used textbook for learning calculus, suitable for beginners and advanced students alike.
-   - [🛒 Amazon](https://www.amazon.com/Calculus-James-Stewart/dp/1285740629)
-
-### 📺 YouTube Channels
-
-1. **[Essence of Calculus by 3Blue1Brown](https://youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&si=r34r07KFBjzA4c0M)**
-   - A visually intuitive series that explains the fundamental concepts of calculus.
-
-2. **[Khan Academy](https://www.youtube.com/user/khanacademy)**
-   - Offers comprehensive tutorials on calculus topics.
-
-3. **[Professor Leonard](https://www.youtube.com/user/professorleonard57)**
-   - Provides detailed lectures on calculus and other math subjects.
-
-### 💻 Online Courses
-
-1. **[Coursera: Calculus: Single Variable Part 1 - Functions](https://www.coursera.org/learn/calculus1)**
-   - An introductory course on single-variable calculus.
-
-2. **[edX: Calculus 1A: Differentiation](https://www.edx.org/course/calculus-1a-differentiation)**
-   - A course that covers the basics of differentiation.
-
-## 🔢 Linear Algebra
-
-### 📚 Books
-
-1. **"Linear Algebra Done Right" by Sheldon Axler**
-   - An excellent introduction to linear algebra, focusing on understanding the concepts rather than just computational techniques.
-   - [🛒 Amazon](https://www.amazon.com/Linear-Algebra-Right-Undergraduate-Mathematics/dp/3319110799)
-
-### 📺 YouTube Channels
-
-1. **[3Blue1Brown: Essence of Linear Algebra](https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&si=TN5lqOrSi360XupN)**
-   - A visually intuitive series that explains the fundamental concepts of linear algebra.
-
-2. **[MIT OpenCourseWare: Linear Algebra](https://www.youtube.com/playlist?list=PL221E2BBF13BECF6C)**
-   - A complete lecture series on linear algebra by MIT.
-
-### 💻 Online Courses
-
-1. **[Coursera: Linear Algebra](https://www.coursera.org/learn/linear-algebra)**
-   - A comprehensive course on linear algebra.
-
-2. **[edX: Linear Algebra - Foundations to Frontiers](https://www.edx.org/course/linear-algebra-foundations-to-frontiers)**
-   - A course that covers the foundations of linear algebra.
-
-## 🌊 Differential Equations
-
-### 📺 YouTube Channels
-
-1. **[Differential Equations by 3Blue1Brown](https://youtube.com/playlist?list=PLZHQObOWTQDNPOjrT6KVlfJuKtYTftqH6&si=4Xwv_sRQK2Y8gmH0)**
-   - A visually intuitive series that explains the fundamental concepts of differential equations.
-
-## 🎲 Probability & Statistics
-
-### 📚 Books
-
-1. **"Introduction to Probability" by Joseph K. Blitzstein and Jessica Hwang**
-   - A great resource for learning probability, with clear explanations and plenty of examples.
-   - [🛒 Amazon](https://www.amazon.com/Introduction-Probability-Chapman-Statistical-Science/dp/1138369918)
-
-### 📺 YouTube Channels
-
-1. **[StatQuest with Josh Starmer](https://www.youtube.com/user/joshstarmer)**
-   - Provides clear and engaging explanations of statistics and probability concepts.
-
-2. **[Khan Academy](https://www.youtube.com/user/khanacademy)**
-   - Offers tutorials on probability and statistics topics.
-
-### 💻 Online Courses
-
-1. **[Coursera: Introduction to Probability and Data](https://www.coursera.org/learn/probability-statistics-data-analysis)**
-   - An introductory course on probability and data analysis.
-
-2. **[edX: Introduction to Probability](https://www.edx.org/course/introduction-to-probability)**
-   - A course that covers the basics of probability.
-
-## 🎨 Additional Resources
-
-1. **[Paul's Online Math Notes](http://tutorial.math.lamar.edu/)**
-   - A comprehensive set of math notes and tutorials covering algebra, calculus, and differential equations.
-
-2. **[Wolfram Alpha](https://www.wolframalpha.com/)**
-   - A powerful computational engine that can help with solving math problems and visualizing concepts.
-
-3. **[Art of Problem Solving](https://artofproblemsolving.com/)**
-   - A community and resource hub for students interested in math competitions and advanced problem-solving.
-
----
-
-These resources should provide a solid foundation for anyone interested in learning mathematics, regardless of their current level of expertise. Happy learning!
+<p class="phys-outro">These should give you a solid foundation for learning mathematics, whatever your starting point. Happy learning!</p>

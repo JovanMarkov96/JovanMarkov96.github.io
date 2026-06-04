@@ -1,0 +1,131 @@
+# ---------------------------------------------------------------------------
+# Self-Study Resources for Mathematics — structured content.
+# Drives /resources/math-resources/ (see _resources/math_self_study_resources.md).
+# Content is preserved from the original page; only the presentation is new.
+#
+# Book links are intentionally neutral: each "Details" chip points to a Google
+# Books search for the title + author so readers can find the book anywhere.
+# Add an explicit `details:` to override, or `free:` for a legitimate free copy.
+# ---------------------------------------------------------------------------
+
+groups:
+  - name: "Foundations"
+    blurb: "The bedrock: problem-solving, calculus, and the algebra of vectors."
+    topics:
+      - id: "general-mathematics"
+        name: "General Mathematics"
+        icon: "general-math"
+        tagline: "Problem-solving, proof, and the bridge into college math."
+        books:
+          - title: "The Art of Problem Solving"
+            by: "Richard Rusczyk"
+            desc: "A comprehensive series of books that cover a wide range of mathematical topics, perfect for high school students and beyond."
+          - title: "Precalculus"
+            by: "Michael Sullivan"
+            desc: "A great book to bridge the gap between high school math and college-level calculus."
+          - title: "How to Prove It: A Structured Approach"
+            by: "Daniel J. Velleman"
+            desc: "An excellent introduction to mathematical proofs, providing a clear and structured approach to understanding and constructing proofs."
+        videos:
+          - name: "Khan Academy"
+            url: "https://www.youtube.com/user/khanacademy"
+            desc: "A wide range of math tutorials, from basic arithmetic to advanced calculus and beyond."
+          - name: "PatrickJMT"
+            url: "https://www.youtube.com/user/patrickJMT"
+            desc: "Covers a variety of math topics, including calculus, algebra, and statistics."
+
+      - id: "calculus"
+        name: "Calculus"
+        icon: "calculus"
+        tagline: "Limits, derivatives, integrals, and the language of change."
+        books:
+          - title: "Calculus"
+            by: "James Stewart"
+            desc: "A widely used textbook for learning calculus, suitable for beginners and advanced students alike."
+        videos:
+          - name: "Essence of Calculus (3Blue1Brown)"
+            url: "https://youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr"
+            desc: "A visually intuitive series that explains the fundamental concepts of calculus."
+          - name: "Khan Academy"
+            url: "https://www.youtube.com/user/khanacademy"
+            desc: "Comprehensive tutorials on calculus topics."
+          - name: "Professor Leonard"
+            url: "https://www.youtube.com/user/professorleonard57"
+            desc: "Detailed lectures on calculus and other math subjects."
+        courses:
+          - name: "Coursera: Calculus: Single Variable Part 1 - Functions"
+            url: "https://www.coursera.org/learn/calculus1"
+            desc: "An introductory course on single-variable calculus."
+          - name: "edX: Calculus 1A: Differentiation"
+            url: "https://www.edx.org/course/calculus-1a-differentiation"
+            desc: "A course that covers the basics of differentiation."
+
+      - id: "linear-algebra"
+        name: "Linear Algebra"
+        icon: "linear-algebra"
+        tagline: "Vectors, matrices, and linear transformations."
+        books:
+          - title: "Linear Algebra Done Right"
+            by: "Sheldon Axler"
+            desc: "An excellent introduction to linear algebra, focusing on understanding the concepts rather than just computational techniques."
+        videos:
+          - name: "Essence of Linear Algebra (3Blue1Brown)"
+            url: "https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab"
+            desc: "A visually intuitive series that explains the fundamental concepts of linear algebra."
+          - name: "MIT OpenCourseWare: Linear Algebra"
+            url: "https://www.youtube.com/playlist?list=PL221E2BBF13BECF6C"
+            desc: "A complete lecture series on linear algebra by MIT."
+        courses:
+          - name: "Coursera: Linear Algebra"
+            url: "https://www.coursera.org/learn/linear-algebra"
+            desc: "A comprehensive course on linear algebra."
+          - name: "edX: Linear Algebra - Foundations to Frontiers"
+            url: "https://www.edx.org/course/linear-algebra-foundations-to-frontiers"
+            desc: "A course that covers the foundations of linear algebra."
+
+  - name: "Advanced"
+    blurb: "Building on the core toward modeling and uncertainty."
+    topics:
+      - id: "differential-equations"
+        name: "Differential Equations"
+        icon: "differential-equations"
+        tagline: "Modeling change with equations for rates."
+        videos:
+          - name: "Differential Equations (3Blue1Brown)"
+            url: "https://youtube.com/playlist?list=PLZHQObOWTQDNPOjrT6KVlfJuKtYTftqH6"
+            desc: "A visually intuitive series that explains the fundamental concepts of differential equations."
+
+      - id: "probability-statistics"
+        name: "Probability & Statistics"
+        icon: "probability"
+        tagline: "Reasoning about chance, data, and uncertainty."
+        books:
+          - title: "Introduction to Probability"
+            by: "Joseph K. Blitzstein & Jessica Hwang"
+            desc: "A great resource for learning probability, with clear explanations and plenty of examples."
+        videos:
+          - name: "StatQuest with Josh Starmer"
+            url: "https://www.youtube.com/user/joshstarmer"
+            desc: "Clear and engaging explanations of statistics and probability concepts."
+          - name: "Khan Academy"
+            url: "https://www.youtube.com/user/khanacademy"
+            desc: "Tutorials on probability and statistics topics."
+        courses:
+          - name: "Coursera: Introduction to Probability and Data"
+            url: "https://www.coursera.org/learn/probability-statistics-data-analysis"
+            desc: "An introductory course on probability and data analysis."
+          - name: "edX: Introduction to Probability"
+            url: "https://www.edx.org/course/introduction-to-probability"
+            desc: "A course that covers the basics of probability."
+
+# Handy tools & reference hubs.
+tools:
+  - name: "Paul's Online Math Notes"
+    url: "http://tutorial.math.lamar.edu/"
+    desc: "A comprehensive set of math notes and tutorials covering algebra, calculus, and differential equations."
+  - name: "Wolfram Alpha"
+    url: "https://www.wolframalpha.com/"
+    desc: "A powerful computational engine that helps with solving math problems and visualizing concepts."
+  - name: "Art of Problem Solving"
+    url: "https://artofproblemsolving.com/"
+    desc: "A community and resource hub for students interested in math competitions and advanced problem-solving."
