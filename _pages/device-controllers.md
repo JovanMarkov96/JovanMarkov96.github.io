@@ -166,12 +166,45 @@ classes: wide
     <p class="dc-hero__hint"><i class="fas fa-bolt"></i> Tap any module to open its code on GitHub</p>
   </header>
 
+  <!-- ============================================================= -->
+  <!-- Filter bar — sort the displayed list by device type / vendor  -->
+  <!-- ============================================================= -->
+  <div class="dc-filter" role="region" aria-label="Filter instruments">
+    <div class="dc-filter__row">
+      <span class="dc-filter__label"><i class="fas fa-microchip"></i> Device type</span>
+      <div class="dc-filter__chips" data-group="type">
+        <button type="button" class="dc-chip is-active" data-value="all">All</button>
+        <button type="button" class="dc-chip" data-value="scope">Oscilloscopes</button>
+        <button type="button" class="dc-chip" data-value="awg">Waveform Generators</button>
+        <button type="button" class="dc-chip" data-value="spectrum">Spectrum Analyzers</button>
+        <button type="button" class="dc-chip" data-value="laser">Laser &amp; Locking</button>
+        <button type="button" class="dc-chip" data-value="motion">Piezo &amp; Motion</button>
+        <button type="button" class="dc-chip" data-value="mainframe">Mainframes</button>
+      </div>
+    </div>
+    <div class="dc-filter__row">
+      <span class="dc-filter__label"><i class="fas fa-industry"></i> Vendor</span>
+      <div class="dc-filter__chips" data-group="vendor">
+        <button type="button" class="dc-chip is-active" data-value="all">All</button>
+        <button type="button" class="dc-chip" data-value="keysight">Keysight</button>
+        <button type="button" class="dc-chip" data-value="tektronix">Tektronix</button>
+        <button type="button" class="dc-chip" data-value="rigol">Rigol</button>
+        <button type="button" class="dc-chip" data-value="srs">Stanford Research</button>
+        <button type="button" class="dc-chip" data-value="toptica">Toptica</button>
+        <button type="button" class="dc-chip" data-value="thorlabs">Thorlabs</button>
+        <button type="button" class="dc-chip" data-value="newport">Newport / New Focus</button>
+      </div>
+    </div>
+  </div>
+
+  <p class="dc-noresults" hidden><i class="fas fa-filter"></i> No instruments match this filter. <button type="button" class="dc-noresults__reset">Reset filters</button></p>
+
   <!-- ========================= KEYSIGHT ========================= -->
-  <section class="dc-vendor">
+  <section class="dc-vendor" data-vendor="keysight">
     <h2 class="dc-vendor__name"><span>Keysight</span></h2>
     <div class="dc-grid">
 
-      <a class="dc-card" href="https://github.com/JovanMarkov96/keysight-33600a-control" target="_blank" rel="noopener noreferrer">
+      <a class="dc-card" data-vendor="keysight" data-type="awg" href="https://github.com/JovanMarkov96/keysight-33600a-control" target="_blank" rel="noopener noreferrer">
         <svg class="dc-card__art" viewBox="0 0 240 140" aria-hidden="true"><use href="#dc-icon-awg"/></svg>
         <span class="dc-card__model">33600A</span>
         <span class="dc-card__class">Arbitrary Waveform Generator</span>
@@ -179,7 +212,7 @@ classes: wide
         <span class="dc-card__cta"><i class="fab fa-github"></i> View code</span>
       </a>
 
-      <a class="dc-card" href="https://github.com/JovanMarkov96/keysight-dsox1200-control" target="_blank" rel="noopener noreferrer">
+      <a class="dc-card" data-vendor="keysight" data-type="scope" href="https://github.com/JovanMarkov96/keysight-dsox1200-control" target="_blank" rel="noopener noreferrer">
         <svg class="dc-card__art" viewBox="0 0 240 140" aria-hidden="true"><use href="#dc-icon-oscilloscope"/></svg>
         <span class="dc-card__model">DSOX1200</span>
         <span class="dc-card__class">Oscilloscope</span>
@@ -191,11 +224,11 @@ classes: wide
   </section>
 
   <!-- ========================= TEKTRONIX ========================= -->
-  <section class="dc-vendor">
+  <section class="dc-vendor" data-vendor="tektronix">
     <h2 class="dc-vendor__name"><span>Tektronix</span></h2>
     <div class="dc-grid">
 
-      <a class="dc-card" href="https://github.com/JovanMarkov96/tektronix-tds2024c-control" target="_blank" rel="noopener noreferrer">
+      <a class="dc-card" data-vendor="tektronix" data-type="scope" href="https://github.com/JovanMarkov96/tektronix-tds2024c-control" target="_blank" rel="noopener noreferrer">
         <svg class="dc-card__art" viewBox="0 0 240 140" aria-hidden="true"><use href="#dc-icon-oscilloscope"/></svg>
         <span class="dc-card__model">TDS2024C</span>
         <span class="dc-card__class">Oscilloscope</span>
@@ -207,11 +240,11 @@ classes: wide
   </section>
 
   <!-- ========================= RIGOL ========================= -->
-  <section class="dc-vendor">
+  <section class="dc-vendor" data-vendor="rigol">
     <h2 class="dc-vendor__name"><span>Rigol</span></h2>
     <div class="dc-grid">
 
-      <a class="dc-card" href="https://github.com/JovanMarkov96/rigol-dg4162-control" target="_blank" rel="noopener noreferrer">
+      <a class="dc-card" data-vendor="rigol" data-type="awg" href="https://github.com/JovanMarkov96/rigol-dg4162-control" target="_blank" rel="noopener noreferrer">
         <svg class="dc-card__art" viewBox="0 0 240 140" aria-hidden="true"><use href="#dc-icon-awg"/></svg>
         <span class="dc-card__model">DG4162</span>
         <span class="dc-card__class">Arbitrary Waveform Generator</span>
@@ -219,7 +252,7 @@ classes: wide
         <span class="dc-card__cta"><i class="fab fa-github"></i> View code</span>
       </a>
 
-      <a class="dc-card" href="https://github.com/JovanMarkov96/rigol-dsa815-python" target="_blank" rel="noopener noreferrer">
+      <a class="dc-card" data-vendor="rigol" data-type="spectrum" href="https://github.com/JovanMarkov96/rigol-dsa815-python" target="_blank" rel="noopener noreferrer">
         <svg class="dc-card__art" viewBox="0 0 240 140" aria-hidden="true"><use href="#dc-icon-spectrum"/></svg>
         <span class="dc-card__model">DSA815</span>
         <span class="dc-card__class">Spectrum Analyzer</span>
@@ -231,11 +264,11 @@ classes: wide
   </section>
 
   <!-- ============ STANFORD RESEARCH SYSTEMS ============ -->
-  <section class="dc-vendor">
+  <section class="dc-vendor" data-vendor="srs">
     <h2 class="dc-vendor__name"><span>Stanford Research Systems</span></h2>
     <div class="dc-grid">
 
-      <a class="dc-card" href="https://github.com/JovanMarkov96/srs-ldc500-control" target="_blank" rel="noopener noreferrer">
+      <a class="dc-card" data-vendor="srs" data-type="laser" href="https://github.com/JovanMarkov96/srs-ldc500-control" target="_blank" rel="noopener noreferrer">
         <svg class="dc-card__art" viewBox="0 0 240 140" aria-hidden="true"><use href="#dc-icon-laser"/></svg>
         <span class="dc-card__model">LDC500</span>
         <span class="dc-card__class">Laser Diode Controller</span>
@@ -243,7 +276,7 @@ classes: wide
         <span class="dc-card__cta"><i class="fab fa-github"></i> View code</span>
       </a>
 
-      <a class="dc-card" href="https://github.com/JovanMarkov96/srs-sim900-control" target="_blank" rel="noopener noreferrer">
+      <a class="dc-card" data-vendor="srs" data-type="mainframe" href="https://github.com/JovanMarkov96/srs-sim900-control" target="_blank" rel="noopener noreferrer">
         <svg class="dc-card__art" viewBox="0 0 240 140" aria-hidden="true"><use href="#dc-icon-mainframe"/></svg>
         <span class="dc-card__model">SIM900</span>
         <span class="dc-card__class">Modular Mainframe</span>
@@ -255,11 +288,11 @@ classes: wide
   </section>
 
   <!-- ========================= TOPTICA ========================= -->
-  <section class="dc-vendor">
+  <section class="dc-vendor" data-vendor="toptica">
     <h2 class="dc-vendor__name"><span>Toptica</span></h2>
     <div class="dc-grid">
 
-      <a class="dc-card" href="https://github.com/JovanMarkov96/toptica-dlcpro-control" target="_blank" rel="noopener noreferrer">
+      <a class="dc-card" data-vendor="toptica" data-type="laser" href="https://github.com/JovanMarkov96/toptica-dlcpro-control" target="_blank" rel="noopener noreferrer">
         <svg class="dc-card__art" viewBox="0 0 240 140" aria-hidden="true"><use href="#dc-icon-laser"/></svg>
         <span class="dc-card__model">DLC pro</span>
         <span class="dc-card__class">Laser Controller</span>
@@ -267,7 +300,7 @@ classes: wide
         <span class="dc-card__cta"><i class="fab fa-github"></i> View code</span>
       </a>
 
-      <a class="dc-card" href="https://github.com/JovanMarkov96/toptica-digilock-110-control" target="_blank" rel="noopener noreferrer">
+      <a class="dc-card" data-vendor="toptica" data-type="laser" href="https://github.com/JovanMarkov96/toptica-digilock-110-control" target="_blank" rel="noopener noreferrer">
         <svg class="dc-card__art" viewBox="0 0 240 140" aria-hidden="true"><use href="#dc-icon-laserlock"/></svg>
         <span class="dc-card__model">DigiLock 110</span>
         <span class="dc-card__class">Laser Lock</span>
@@ -279,11 +312,11 @@ classes: wide
   </section>
 
   <!-- ========================= THORLABS ========================= -->
-  <section class="dc-vendor">
+  <section class="dc-vendor" data-vendor="thorlabs">
     <h2 class="dc-vendor__name"><span>Thorlabs</span></h2>
     <div class="dc-grid">
 
-      <a class="dc-card" href="https://github.com/JovanMarkov96/Thorlabs_MDT" target="_blank" rel="noopener noreferrer">
+      <a class="dc-card" data-vendor="thorlabs" data-type="motion" href="https://github.com/JovanMarkov96/Thorlabs_MDT" target="_blank" rel="noopener noreferrer">
         <svg class="dc-card__art" viewBox="0 0 240 140" aria-hidden="true"><use href="#dc-icon-piezo"/></svg>
         <span class="dc-card__model">MDT693 / 694</span>
         <span class="dc-card__class">Piezo Controller</span>
@@ -291,7 +324,7 @@ classes: wide
         <span class="dc-card__cta"><i class="fab fa-github"></i> View code</span>
       </a>
 
-      <a class="dc-card" href="https://github.com/JovanMarkov96/Thorlabs_Motion_Control" target="_blank" rel="noopener noreferrer">
+      <a class="dc-card" data-vendor="thorlabs" data-type="motion" href="https://github.com/JovanMarkov96/Thorlabs_Motion_Control" target="_blank" rel="noopener noreferrer">
         <svg class="dc-card__art" viewBox="0 0 240 140" aria-hidden="true"><use href="#dc-icon-motion"/></svg>
         <span class="dc-card__model">Motion Control</span>
         <span class="dc-card__class">Motion Controller</span>
@@ -303,11 +336,11 @@ classes: wide
   </section>
 
   <!-- ==================== NEWPORT / NEW FOCUS ==================== -->
-  <section class="dc-vendor">
+  <section class="dc-vendor" data-vendor="newport">
     <h2 class="dc-vendor__name"><span>Newport / New Focus</span></h2>
     <div class="dc-grid">
 
-      <a class="dc-card" href="https://github.com/JovanMarkov96/newport-8742-picomotor" target="_blank" rel="noopener noreferrer">
+      <a class="dc-card" data-vendor="newport" data-type="motion" href="https://github.com/JovanMarkov96/newport-8742-picomotor" target="_blank" rel="noopener noreferrer">
         <svg class="dc-card__art" viewBox="0 0 240 140" aria-hidden="true"><use href="#dc-icon-motion"/></svg>
         <span class="dc-card__model">8742</span>
         <span class="dc-card__class">Picomotor Controller</span>
@@ -542,8 +575,168 @@ html.dark-mode .device-controllers .dc-card__art { opacity: 0.22; }
 html.dark-mode .device-controllers .dc-card:hover .dc-card__art,
 html.dark-mode .device-controllers .dc-card:focus-visible .dc-card__art { opacity: 0.6; }
 
+/* ---------- Filter bar ---------- */
+.dc-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin: 0 0 2.4rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid rgba(var(--dc-accent-rgb), 0.22);
+  border-radius: var(--ion-radius, 14px);
+  background:
+    radial-gradient(120% 160% at 0% -40%, rgba(var(--dc-accent-rgb), 0.10), transparent 55%),
+    var(--ion-surface, #f8fafc);
+  box-shadow: var(--ion-shadow-sm);
+}
+.dc-filter__row {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.dc-filter__label {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-width: 9.5rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ion-muted, #64748b);
+}
+.dc-filter__label i { color: var(--dc-accent); opacity: 0.8; }
+.dc-filter__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.dc-chip {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  padding: 0.32rem 0.82rem;
+  border: 1px solid rgba(var(--dc-accent-rgb), 0.32);
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--ion-text, #1e293b);
+  background: rgba(var(--dc-accent-rgb), 0.04);
+  transition: color .2s ease, background-color .2s ease, border-color .2s ease, box-shadow .2s ease, transform .15s ease;
+}
+.dc-chip:hover {
+  border-color: rgba(var(--dc-accent-rgb), 0.6);
+  background: rgba(var(--dc-accent-rgb), 0.10);
+}
+.dc-chip:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(var(--dc-accent-rgb), 0.30);
+}
+.dc-chip.is-active {
+  color: #fff;
+  border-color: transparent;
+  background: var(--dc-accent);
+  box-shadow: 0 4px 14px rgba(var(--dc-accent-rgb), 0.32);
+}
+.dc-chip.is-active:hover { background: var(--dc-accent); }
+
+/* ---------- Filtering states ---------- */
+.dc-card[hidden],
+.dc-vendor[hidden] { display: none !important; }
+
+.dc-noresults {
+  margin: 0 0 2.4rem;
+  padding: 1rem 1.25rem;
+  border: 1px dashed rgba(var(--dc-accent-rgb), 0.4);
+  border-radius: var(--ion-radius, 14px);
+  color: var(--ion-muted, #64748b);
+  font-size: 0.92rem;
+}
+.dc-noresults i { color: var(--dc-accent); margin-right: 0.4rem; }
+.dc-noresults__reset {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  margin-left: 0.35rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-weight: 700;
+  color: var(--dc-accent);
+  text-decoration: underline;
+}
+
+/* ---------- Dark mode ---------- */
+html.dark-mode .device-controllers .dc-filter { background-color: rgba(255, 255, 255, 0.02); }
+html.dark-mode .device-controllers .dc-chip { color: var(--ion-text, #e2e8f0); }
+html.dark-mode .device-controllers .dc-chip.is-active { color: #fff; }
+
 @media (max-width: 560px) {
   .dc-grid { grid-template-columns: 1fr; }
   .dc-card__desc { max-width: none; }
+  .dc-filter__label { min-width: 0; flex-basis: 100%; }
 }
 </style>
+
+<script>
+(function () {
+  var root = document.querySelector('.device-controllers');
+  if (!root) return;
+
+  var cards    = Array.prototype.slice.call(root.querySelectorAll('.dc-card'));
+  var sections = Array.prototype.slice.call(root.querySelectorAll('.dc-vendor'));
+  var noResults = root.querySelector('.dc-noresults');
+  var active = { type: 'all', vendor: 'all' };
+
+  function apply() {
+    var visible = 0;
+    cards.forEach(function (card) {
+      var okType   = active.type === 'all'   || card.getAttribute('data-type')   === active.type;
+      var okVendor = active.vendor === 'all' || card.getAttribute('data-vendor') === active.vendor;
+      var show = okType && okVendor;
+      card.hidden = !show;
+      if (show) visible++;
+    });
+    // Collapse vendor sections that have no visible cards
+    sections.forEach(function (section) {
+      var hasVisible = section.querySelector('.dc-card:not([hidden])');
+      section.hidden = !hasVisible;
+    });
+    if (noResults) noResults.hidden = visible !== 0;
+  }
+
+  root.querySelectorAll('.dc-filter__chips').forEach(function (group) {
+    var key = group.getAttribute('data-group'); // 'type' | 'vendor'
+    group.addEventListener('click', function (e) {
+      var chip = e.target.closest('.dc-chip');
+      if (!chip || !group.contains(chip)) return;
+      active[key] = chip.getAttribute('data-value');
+      group.querySelectorAll('.dc-chip').forEach(function (c) {
+        c.classList.toggle('is-active', c === chip);
+      });
+      apply();
+    });
+  });
+
+  if (noResults) {
+    var resetBtn = noResults.querySelector('.dc-noresults__reset');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', function () {
+        active.type = 'all';
+        active.vendor = 'all';
+        root.querySelectorAll('.dc-filter__chips').forEach(function (group) {
+          group.querySelectorAll('.dc-chip').forEach(function (c) {
+            c.classList.toggle('is-active', c.getAttribute('data-value') === 'all');
+          });
+        });
+        apply();
+      });
+    }
+  }
+})();
+</script>
