@@ -2200,4 +2200,184 @@
         .side-panel--blog-nav,
         .side-panel--toc { margin-bottom: 2rem; }
     }
+
+    /* =================================================================
+       QUANTUM RESOURCE HUB  (2026-06)
+       Scoped styling for the long link-list resource pages: icon-led
+       section headers + a scannable responsive card grid for each list.
+       Reuses the --ion-* tokens so light/dark just work.
+       ================================================================= */
+    .q-hub { margin-top: 0.25rem; }
+
+    .q-intro {
+        font-size: 1.08rem;
+        line-height: 1.65;
+        color: var(--ion-text);
+        margin: 0 0 1.5rem;
+        max-width: 72ch;
+    }
+
+    /* Quick-jump chips under the intro */
+    .q-jump {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin: 0 0 2.4rem;
+    }
+    .q-jump a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        padding: 0.45rem 0.85rem;
+        border-radius: 999px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--ion-text) !important;
+        background: rgba(var(--ion-accent-rgb), 0.07);
+        border: 1px solid rgba(var(--ion-accent-rgb), 0.28);
+        transition: transform 0.25s var(--shine-ease),
+                    background-color 0.25s ease,
+                    border-color 0.25s ease,
+                    box-shadow 0.25s var(--shine-ease),
+                    color 0.25s ease;
+    }
+    .q-jump a i { color: var(--ion-accent); }
+    .q-jump a:hover {
+        transform: translateY(-2px);
+        background: rgba(var(--ion-accent-rgb), 0.14);
+        border-color: rgba(var(--ion-accent-rgb), 0.55);
+        box-shadow: 0 7px 18px rgba(var(--ion-accent-rgb), 0.22);
+        color: var(--ion-accent) !important;
+    }
+
+    /* ---- Top-level group header ---- */
+    .q-h2 {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin: 2.8rem 0 0.5rem !important;
+        padding-bottom: 0.65rem;
+        border-bottom: 1px solid var(--ion-border);
+        font-size: 1.55rem;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        scroll-margin-top: 120px;
+    }
+    .q-h2__ic {
+        display: grid;
+        place-items: center;
+        width: 2.4rem;
+        height: 2.4rem;
+        flex-shrink: 0;
+        border-radius: 12px;
+        font-size: 1.05rem;
+        color: #fff;
+        background: linear-gradient(135deg, var(--ion-accent), #8A5CF6);
+        box-shadow: 0 6px 16px rgba(var(--ion-accent-rgb), 0.35);
+    }
+
+    .q-lead {
+        color: var(--ion-muted);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin: 0 0 1.2rem !important;
+        max-width: 72ch;
+    }
+
+    /* ---- Sub-section header ---- */
+    .q-h3 {
+        display: flex;
+        align-items: center;
+        gap: 0.55rem;
+        margin: 1.9rem 0 0.9rem !important;
+        font-size: 1.06rem;
+        font-weight: 700;
+        color: var(--ion-text);
+        scroll-margin-top: 120px;
+    }
+    .q-h3 > i { color: var(--ion-accent); font-size: 0.95em; flex-shrink: 0; }
+    .q-count {
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: var(--ion-muted);
+        background: rgba(var(--ion-accent-rgb), 0.1);
+        border-radius: 999px;
+        padding: 0.12rem 0.55rem;
+    }
+
+    /* ---- Link lists -> responsive card grid ---- */
+    .q-hub ul {
+        list-style: none !important;
+        margin: 0 0 1.5rem !important;
+        padding: 0 !important;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 0.7rem;
+    }
+    .q-hub li {
+        position: relative;
+        margin: 0 !important;
+        padding: 0.78rem 1rem;
+        background: var(--ion-surface-2);
+        border: 1px solid var(--ion-border);
+        border-radius: 11px;
+        font-size: 0.89rem;
+        line-height: 1.5;
+        color: var(--ion-muted);
+        box-shadow: var(--ion-shadow-sm);
+        transition: transform 0.25s var(--shine-ease),
+                    border-color 0.25s ease,
+                    box-shadow 0.25s var(--shine-ease),
+                    background-color 0.25s ease;
+    }
+    .q-hub li:hover {
+        transform: translateY(-3px);
+        border-color: rgba(var(--ion-accent-rgb), 0.6);
+        box-shadow: 0 12px 28px rgba(var(--ion-accent-rgb), 0.16);
+    }
+    .q-hub li > a:first-child {
+        font-weight: 600;
+        color: var(--ion-text) !important;
+    }
+    .q-hub li:hover > a:first-child { color: var(--ion-accent) !important; }
+    /* secondary links inside a row (PDF / YouTube / etc.) read as accent */
+    .q-hub li a:not(:first-child) {
+        color: var(--ion-accent) !important;
+        font-weight: 500;
+    }
+
+    html.dark-mode .q-hub li {
+        background: var(--ion-dark-solid);
+        border-color: rgba(var(--ion-accent-rgb), 0.18);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+    html.dark-mode .q-hub li:hover { border-color: rgba(var(--ion-accent-rgb), 0.5); }
+
+    /* Books read better as full-width rows (no links) */
+    .q-books ul { grid-template-columns: 1fr !important; }
+    .q-books li { color: var(--ion-text); }
+
+    /* ---- Closing "why" callout ---- */
+    .q-why {
+        display: flex;
+        gap: 1.6rem;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 1rem 0 0;
+    }
+    .q-why__art {
+        flex: 0 0 260px;
+        max-width: 260px;
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: var(--ion-shadow-md);
+    }
+    .q-why__text { flex: 1 1 320px; color: var(--ion-text); }
+    .q-why__text p { margin-top: 0; }
+
+    @media (max-width: 600px) {
+        .q-h2 { font-size: 1.3rem; }
+        .q-hub ul { grid-template-columns: 1fr; }
+        .q-why__art { flex-basis: 100%; max-width: 100%; }
+    }
 </style>
