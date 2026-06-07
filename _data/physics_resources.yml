@@ -62,6 +62,10 @@ groups:
           - title: "Group Theory in a Nutshell for Physicists"
             by: "A. Zee"
             desc: "Group theory taught with a physicist's instincts — finite and continuous groups, Lie groups and algebras, and representations — covering the symmetry tools that recur throughout quantum mechanics, particle physics, and field theory."
+        notes:
+          - name: "Vector Calculus"
+            url: "https://davidtong.org/teaching/vector-calculus/"
+            desc: "Grad, div, and curl; line, surface, and volume integrals; and the theorems of Green, Stokes, and Gauss — the calculus that electromagnetism and fluid dynamics are written in."
 
       - id: "classical-mechanics"
         name: "Classical Mechanics"
