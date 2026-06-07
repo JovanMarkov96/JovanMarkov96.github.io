@@ -57,11 +57,11 @@ groups:
             desc: "Detailed lectures on calculus and other math subjects."
         courses:
           - name: "Coursera: Calculus: Single Variable Part 1 - Functions"
-            url: "https://www.coursera.org/learn/calculus1"
-            desc: "An introductory course on single-variable calculus."
-          - name: "edX: Calculus 1A: Differentiation"
-            url: "https://www.edx.org/course/calculus-1a-differentiation"
-            desc: "A course that covers the basics of differentiation."
+            url: "https://www.coursera.org/learn/single-variable-calculus"
+            desc: "An introductory course on single-variable calculus, from the University of Pennsylvania."
+          - name: "edX: Calculus I — From Functions to Differential Equations"
+            url: "https://www.edx.org/learn/calculus/delft-university-of-technology-calculus-i-from-functions-to-differential-equations"
+            desc: "A single-variable calculus course from TU Delft, from differentiation through to differential equations."
 
       - id: "linear-algebra"
         name: "Linear Algebra"
@@ -79,12 +79,12 @@ groups:
             url: "https://www.youtube.com/playlist?list=PL221E2BBF13BECF6C"
             desc: "A complete lecture series on linear algebra by MIT."
         courses:
-          - name: "Coursera: Linear Algebra"
-            url: "https://www.coursera.org/learn/linear-algebra"
-            desc: "A comprehensive course on linear algebra."
+          - name: "Coursera: Mathematics for Machine Learning — Linear Algebra"
+            url: "https://www.coursera.org/learn/linear-algebra-machine-learning"
+            desc: "An applied introduction to linear algebra, from Imperial College London."
           - name: "edX: Linear Algebra - Foundations to Frontiers"
-            url: "https://www.edx.org/course/linear-algebra-foundations-to-frontiers"
-            desc: "A course that covers the foundations of linear algebra."
+            url: "https://www.edx.org/learn/linear-algebra/the-university-of-texas-at-austin-linear-algebra-foundations-to-frontiers"
+            desc: "A course that covers the foundations of linear algebra, from UT Austin."
 
   - name: "Advanced"
     blurb: "Building on the core toward modeling and uncertainty."
@@ -114,12 +114,12 @@ groups:
             url: "https://www.youtube.com/user/khanacademy"
             desc: "Tutorials on probability and statistics topics."
         courses:
-          - name: "Coursera: Introduction to Probability and Data"
-            url: "https://www.coursera.org/learn/probability-statistics-data-analysis"
-            desc: "An introductory course on probability and data analysis."
+          - name: "Coursera: Introduction to Probability and Data with R"
+            url: "https://www.coursera.org/learn/probability-intro"
+            desc: "An introductory course on probability and data analysis, from Duke University."
           - name: "edX: Introduction to Probability"
-            url: "https://www.edx.org/course/introduction-to-probability"
-            desc: "A course that covers the basics of probability."
+            url: "https://www.edx.org/learn/probability/harvard-university-introduction-to-probability"
+            desc: "A course that covers the basics of probability, from Harvard University."
 
 # Handy tools & reference hubs.
 tools:

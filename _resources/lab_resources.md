@@ -38,7 +38,7 @@ cta_label: "Open resources"
 
 - [Thorlabs Photonics Lab How-To Videos](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=14062) — Practical topics like aligning a laser beam parallel to the table, aligning optical isolators, fiber coupling, polarizer orientation, and using waveplates.
 - [Newport Tutorials](https://www.newport.com/resourceListing/tutorials) — Fundamentals including fiber-optic basics, polarizers & waveplates, vibration isolation, opto-mechanical design, and positioning equipment.
-- [Edmund Optics Knowledge Center](https://www.edmundoptics.com/knowledge-center/?Query=&CategoryId=&) — Tutorials and application notes across imaging, laser optics, microscopy, optomechanics, and testing & detection (including mirror configurations and beam-alignment best practices).
+- [Edmund Optics Knowledge Center](https://www.edmundoptics.com/knowledge-center/) — Tutorials and application notes across imaging, laser optics, microscopy, optomechanics, and testing & detection (including mirror configurations and beam-alignment best practices).
 
 <h3 id="laser-locking" class="q-h3"><i class="fas fa-bullseye"></i> Laser locking &amp; control</h3>
 
@@ -94,7 +94,7 @@ cta_label: "Open resources"
 <h3 id="distributed" class="q-h3"><i class="fas fa-network-wired"></i> Distributed control &amp; lab management</h3>
 
 - [LabRAD](https://github.com/labrad) — Laboratory Remote Automation and Distribution (NIST/JQI): a networked server-client architecture for scalable, multi-PC control systems.
-- [Entropy (Quantum Machines)](https://archive.aps.org/damop/2022/z03/5/) — Free, open-source web-based lab-management software for complex experimental workflows, calibrations, data logging, and electronic lab notebooks (see the [Entropy GitHub README](https://github.com/entropy-lab/entropy?tab=readme-ov-file)).
+- [Entropy (Quantum Machines)](https://github.com/entropy-lab/entropy) — Free, open-source web-based lab-management software for complex experimental workflows, calibrations, data logging, and electronic lab notebooks.
 
 <h3 id="automation" class="q-h3"><i class="fas fa-robot"></i> Automation &amp; optimization</h3>
 
@@ -107,7 +107,7 @@ cta_label: "Open resources"
 
 <h3 id="trapped-ion" class="q-h3"><i class="fas fa-atom"></i> Trapped-ion control systems</h3>
 
-- [Oxford Ion Trap Group](https://github.com/OxfordIonTrapGroupOxford) — Open-source projects from the Ion Trap Quantum Computing group at the University of Oxford.
+- [Oxford Ion Trap Group](https://github.com/OxfordIonTrapGroup) — Open-source projects from the Ion Trap Quantum Computing group at the University of Oxford.
 - [Haeffner Lab (Berkeley Ions)](https://github.com/HaeffnerLab) — The Haeffner Lab at UC Berkeley, trapping ions to study quantum physics and quantum information.
 - [Quantum Information with Trapped Ions (QITI)](https://github.com/QITI) — Resources and projects for quantum information with trapped ions.
 - [IonTrap-WIPM (MangFeng Ion Trap Group, WIPM, CAS)](https://github.com/Hanros94/IonTrap-WIPM) — A control system for ion-trap quantum information processing: spin-echo operations (CPMG, UDD), a GUI for single-qubit operations, Rabi/Zeeman scans, and pulse-shaping for DDS/AWG.
