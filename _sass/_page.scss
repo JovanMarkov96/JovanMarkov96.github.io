@@ -232,6 +232,14 @@
     }
   }
 
+  /* Icons sit on saturated brand-color circles, so they must stay white.
+     Scoped under .share-buttons (specificity beats head_custom's
+     `.share-btn i { color: var(--ion-accent) }`, which styles the flat
+     .share-grid variant in default.html instead). */
+  .share-buttons .share-btn i {
+    color: #fff;
+  }
+
   /* Network Colors */
   .share-twitter {
     background-color: #000;
