@@ -54,6 +54,15 @@ groups:
             url: "https://ocw.mit.edu/search/?d=Physics&s=department_course_numbers.sort_coursenum"
             desc: "A collection of free lecture series on various physics topics from MIT."
 
+      - id: "mathematical-methods"
+        name: "Mathematical Methods"
+        icon: "math-methods"
+        tagline: "The mathematical toolkit of the working physicist."
+        books:
+          - title: "Group Theory in a Nutshell for Physicists"
+            by: "A. Zee"
+            desc: "Group theory taught with a physicist's instincts — finite and continuous groups, Lie groups and algebras, and representations — covering the symmetry tools that recur throughout quantum mechanics, particle physics, and field theory."
+
       - id: "classical-mechanics"
         name: "Classical Mechanics"
         icon: "mechanics"
