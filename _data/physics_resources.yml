@@ -65,6 +65,13 @@ groups:
           - title: "Classical Mechanics"
             by: "John R. Taylor"
             desc: "A well-written and accessible textbook on classical mechanics, suitable for beginners."
+        notes:
+          - name: "Classical Dynamics"
+            url: "https://davidtong.org/teaching/classical-dynamics/"
+            desc: "Lagrangian and Hamiltonian mechanics built up from Newton's laws, with rigid bodies and a first taste of chaos."
+          - name: "Dynamics and Relativity"
+            url: "https://davidtong.org/teaching/dynamics-and-relativity/"
+            desc: "A gentle first course on Newtonian dynamics and gravitation, ending with the basics of special relativity."
         videos:
           - name: "Lectures by Walter Lewin"
             url: "https://www.youtube.com/playlist?list=PLyQSN7X0ro203puVhQsmCj9qhlFQ-As8e"
@@ -85,6 +92,10 @@ groups:
           - title: "Classical Electrodynamics"
             by: "John David Jackson"
             desc: "A comprehensive and advanced textbook on electromagnetism."
+        notes:
+          - name: "Electromagnetism"
+            url: "https://davidtong.org/teaching/electromagnetism/"
+            desc: "Maxwell's equations developed from scratch — electrostatics, magnetostatics, and electromagnetic waves, including a relativistic treatment."
         videos:
           - name: "Walter Lewin: 8.02 Electricity & Magnetism"
             url: "https://www.youtube.com/playlist?list=PLyQSN7X0ro203puVhQsmCj9qhlFQ-As8e"
@@ -102,6 +113,13 @@ groups:
           - title: "Statistical Mechanics"
             by: "R. K. Pathria & Paul D. Beale"
             desc: "A widely used textbook for learning statistical mechanics."
+        notes:
+          - name: "Statistical Physics"
+            url: "https://davidtong.org/teaching/statistical-physics/"
+            desc: "Ensembles, entropy, and the laws of thermodynamics derived from statistical mechanics, through to phase transitions."
+          - name: "Kinetic Theory"
+            url: "https://davidtong.org/teaching/kinetic-theory/"
+            desc: "Non-equilibrium statistical mechanics: the Boltzmann equation, transport phenomena, and the approach to equilibrium."
         videos:
           - name: "MIT OpenCourseWare: Thermodynamics"
             url: "https://www.youtube.com/user/MIT"
@@ -140,6 +158,13 @@ groups:
           - title: "Quantum Mechanics"
             by: "Claude Cohen-Tannoudji, Bernard Diu & Frank Laloe"
             desc: "A comprehensive and detailed textbook, suitable for advanced undergraduates and graduate students."
+        notes:
+          - name: "Quantum Mechanics"
+            url: "https://davidtong.org/teaching/quantum-mechanics/"
+            desc: "A first course: the Schrodinger equation, Hilbert space, the harmonic oscillator, angular momentum, and the hydrogen atom."
+          - name: "Topics in Quantum Mechanics"
+            url: "https://davidtong.org/teaching/topics-in-quantum-mechanics/"
+            desc: "A second course: scattering theory, perturbation theory, atomic physics, and the foundations of quantum mechanics."
         videos:
           - name: "Professor M does Science"
             url: "https://www.youtube.com/@ProfessorMdoesScience"
@@ -166,6 +191,13 @@ groups:
           - title: "Quantum Field Theory in a Nutshell"
             by: "A. Zee"
             desc: "An accessible and comprehensive introduction to quantum field theory."
+        notes:
+          - name: "Quantum Field Theory"
+            url: "https://davidtong.org/teaching/quantum-field-theory/"
+            desc: "The canonical introduction: classical field theory, canonical quantization, Feynman diagrams, and quantum electrodynamics."
+          - name: "Gauge Theory"
+            url: "https://davidtong.org/teaching/gauge-theory/"
+            desc: "Yang-Mills theory, instantons, anomalies, and the field-theoretic backbone of the Standard Model."
         videos:
           - name: "Physics Explained: QFT Series"
             url: "https://www.youtube.com/playlist?list=PLD08N-u68p_VZ7zP6O0P8kS2Gwa_D_Z_k"
@@ -247,6 +279,10 @@ groups:
           - title: "Introduction to Special Relativity"
             by: "Robert Resnick"
             desc: "A classic and accessible textbook on special relativity."
+        notes:
+          - name: "Dynamics and Relativity"
+            url: "https://davidtong.org/teaching/dynamics-and-relativity/"
+            desc: "Special relativity from first principles — Lorentz transformations, spacetime, and relativistic dynamics — built alongside Newtonian mechanics."
         videos:
           - name: "MinutePhysics: Relativity Series"
             url: "https://www.youtube.com/playlist?list=PLoaVOjvkzQtyjhV55wZcdicAz5KexgKvm"
@@ -266,6 +302,10 @@ groups:
           - title: "Einstein Gravity in a Nutshell"
             by: "A. Zee"
             desc: "A comprehensive and accessible textbook on general relativity."
+        notes:
+          - name: "General Relativity"
+            url: "https://davidtong.org/teaching/general-relativity/"
+            desc: "Differential geometry, the Einstein field equations, black holes, and gravitational waves."
         videos:
           - name: "PBS Space Time"
             url: "https://www.youtube.com/channel/UC7_gcs09iThXybpVgjHZ_7g"
@@ -311,6 +351,10 @@ groups:
           - title: "Atomic Physics"
             by: "Christopher J. Foot"
             desc: "A comprehensive textbook, suitable for advanced undergraduates and graduate students."
+        notes:
+          - name: "Topics in Quantum Mechanics"
+            url: "https://davidtong.org/teaching/topics-in-quantum-mechanics/"
+            desc: "Includes a thorough chapter on atomic physics — fine and hyperfine structure, the Zeeman effect, and selection rules — alongside scattering and perturbation theory."
         videos:
           - name: "MIT OpenCourseWare: Atomic Physics"
             url: "https://www.youtube.com/user/MIT"
@@ -349,6 +393,13 @@ groups:
           - title: "The Oxford Solid State Basics"
             by: "Steven H. Simon"
             desc: "An accessible introduction to solid state physics."
+        notes:
+          - name: "Solid State Physics"
+            url: "https://davidtong.org/teaching/solid-state-physics/"
+            desc: "Crystal lattices, band structure, electrons and phonons in solids, and the quantum theory of materials."
+          - name: "The Quantum Hall Effect"
+            url: "https://davidtong.org/teaching/quantum-hall-effect/"
+            desc: "The integer and fractional quantum Hall effects, and an accessible doorway into topological phases of matter."
         videos:
           - name: "Physics Explained: Condensed Matter"
             url: "https://www.youtube.com/channel/UCtOgKmAM4MeFu-jd-HB3_cg"
@@ -365,6 +416,13 @@ groups:
           - title: "Quarks and Leptons: An Introductory Course in Modern Particle Physics"
             by: "Francis Halzen & Alan D. Martin"
             desc: "A comprehensive introduction to particle physics."
+        notes:
+          - name: "Particle Physics"
+            url: "https://davidtong.org/teaching/particle-physics/"
+            desc: "An introduction to the particles and symmetries of the subatomic world, building intuition before the full field theory."
+          - name: "The Standard Model"
+            url: "https://davidtong.org/teaching/standard-model/"
+            desc: "Constructing the Standard Model: gauge symmetry, electroweak unification, and the Higgs mechanism."
         videos:
           - name: "Fermilab"
             url: "https://www.youtube.com/user/fermilab"
@@ -384,6 +442,10 @@ groups:
           - title: "Cosmology"
             by: "Steven Weinberg"
             desc: "A comprehensive textbook on cosmology."
+        notes:
+          - name: "Cosmology"
+            url: "https://davidtong.org/teaching/cosmology/"
+            desc: "The expanding universe, the thermal history of the Big Bang, and the growth of cosmic structure."
         videos:
           - name: "PBS Space Time: Astrophysics"
             url: "https://www.youtube.com/channel/UC7_gcs09iThXybpVgjHZ_7g"

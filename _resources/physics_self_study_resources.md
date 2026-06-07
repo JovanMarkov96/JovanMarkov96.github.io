@@ -26,7 +26,7 @@ cta_label: "Open resources"
     </div>
     <div class="phys-tilegrid">
       {%- for t in group.topics -%}
-      {%- assign nb = t.books | size -%}{%- assign nv = t.videos | size -%}{%- assign nc = t.courses | size -%}{%- assign nm = t.more | size -%}
+      {%- assign nb = t.books | size -%}{%- assign nn = t.notes | size -%}{%- assign nv = t.videos | size -%}{%- assign nc = t.courses | size -%}{%- assign nm = t.more | size -%}
       <a class="phys-tile" href="#{{ t.id }}">
         <span class="phys-tile__icon">{% include physics-topic-icon.html icon=t.icon %}</span>
         <span class="phys-tile__body">
@@ -34,6 +34,7 @@ cta_label: "Open resources"
           <span class="phys-tile__meta">
             {%- assign sep = "" -%}
             {%- if nb > 0 %}{{ nb }} book{% if nb != 1 %}s{% endif %}{% assign sep = " &middot; " %}{% endif -%}
+            {%- if nn > 0 %}{{ sep }}{{ nn }} note{% if nn != 1 %}s{% endif %}{% assign sep = " &middot; " %}{% endif -%}
             {%- if nv > 0 %}{{ sep }}{{ nv }} video{% if nv != 1 %}s{% endif %}{% assign sep = " &middot; " %}{% endif -%}
             {%- if nc > 0 %}{{ sep }}{{ nc }} course{% if nc != 1 %}s{% endif %}{% assign sep = " &middot; " %}{% endif -%}
             {%- if nm > 0 %}{{ sep }}{{ nm }} link{% if nm != 1 %}s{% endif %}{% endif -%}
@@ -103,6 +104,7 @@ cta_label: "Open resources"
   </div>
   {%- endif -%}
 
+  {% include phys-linklist.html items=t.notes label="Lecture notes (David Tong)" fa="fa-file-pdf" %}
   {% include phys-linklist.html items=t.videos label="Lectures & videos" fa="fa-circle-play" %}
   {% include phys-linklist.html items=t.courses label="Online courses" fa="fa-graduation-cap" %}
   {% include phys-linklist.html items=t.more label="More resources" fa="fa-link" %}
