@@ -33,6 +33,14 @@ cta_label: "Open resources"
 - [Alignment of Optical Systems Using Lasers — A Guide for the Uninitiated (David M. Benton, 2021)](https://spie.org/samples/SL61.pdf) — Step-by-step advice on aligning laser-based optical setups, covering laser safety, basic alignment pitfalls, and tricks for new researchers.
 - [Basics of Optical Alignment (Florian Ströhl)](https://www.youtube.com/playlist?list=PLh5cDpn282vaCtqzjg6laUaR-CtzghltB) — Short YouTube tutorials that visually demonstrate how to align optical components. Supported by an EU education grant and very beginner-friendly.
 - [Liao Lab Resource Page](https://sites.google.com/view/chentingliao/resource) — A comprehensive list of optics notes, vendor links, books, calculators, and more.
+- [RP Photonics Encyclopedia (Rüdiger Paschotta)](https://www.rp-photonics.com/encyclopedia.html) — A free, authoritative encyclopedia of laser physics, optics, and photonics: hundreds of cross-linked articles on cavities, beam quality, noise, and nonlinear optics. The first place to look up an unfamiliar term.
+- [Lecture notes (Daniel Steck)](https://steck.us/teaching/) — Free, polished graduate-level notes on *Classical and Modern Optics* and *Quantum and Atom Optics*, widely used as reference texts in AMO labs.
+
+<h3 id="video-lectures" class="q-h3"><i class="fas fa-clapperboard"></i> Video lecture courses</h3>
+
+- [MIT: Understanding Lasers and Fiberoptics (Shaoul Ezekiel)](https://www.youtube.com/playlist?list=PL6F914D0CF944737A) — A classic, intuition-first MIT video course on how lasers and fiber optics actually work, with the math kept to a minimum. An ideal first exposure to laser theory.
+- [MIT: Video Demonstrations in Lasers and Optics (Shaoul Ezekiel)](https://www.youtube.com/playlist?list=PL4E7FAAD67B171EBC) — Filmed bench demonstrations of laser and optics phenomena — coherence, interference, polarization, and fiber modes — the experimental companion to the course above.
+- [MIT 8.421: Atomic and Optical Physics I (Wolfgang Ketterle)](https://www.youtube.com/playlist?list=PLUl4u3cNGP62FPGcyFJkzhqq9c5cHCK32) — Graduate AMO lectures on resonance, atom–light interaction, and coherence: the theory underpinning laser spectroscopy and laser cooling.
 
 <h3 id="vendor-tutorials" class="q-h3"><i class="fas fa-building"></i> Vendor tutorials</h3>
 
@@ -43,6 +51,7 @@ cta_label: "Open resources"
 <h3 id="laser-locking" class="q-h3"><i class="fas fa-bullseye"></i> Laser locking &amp; control</h3>
 
 - [A Practical Guide to Feedback Control for PDH Laser Linewidth Narrowing (Wang et al., 2024)](https://arxiv.org/html/2412.04635v1) — Introduces "just enough" control theory and systematically explains how to design and optimize a PDH lock for the first time, including component choices and loop tuning.
+- [Principles of Lock-in Detection (Zurich Instruments)](https://www.zhinst.com/sites/default/files/li_primer/zi_whitepaper_principles_of_lock-in_detection.pdf) — A clear white-paper introduction to lock-in amplifiers and homodyne detection — the measurement technique behind most laser-locking error signals.
 - [MOGLabs Application Note: PDH Locking](https://www.moglabs.com/support/appnotes/AN002-PDH-R2b.pdf) — Setting up a Pound–Drever–Hall lock.
 - [PDH Locking Step-by-Step (Liquid Instruments)](https://www.youtube.com/watch?v=MjEKF1VKMPM) — Video demonstration of a PDH locking setup.
 - [PDH servo v2](https://github.com/vuthalab/pdh_servo_v2) — A servo controller for locking lasers to high-finesse optical cavities using the Pound–Drever–Hall technique.
@@ -54,6 +63,8 @@ cta_label: "Open resources"
 - **Building Electro-Optical Systems: Making It All Work** — P. Hobbs. A pragmatic guide full of real-world insight.
 - **Building Scientific Apparatus** — Moore, Davis & Coplan. Covers the optical, mechanical, and electronic design of lab instruments.
 - **Optical Measurements for Scientists and Engineers: A Practical Guide** — Arthur McClelland & Max Mankin. A compact crash-course for newcomers to optics labs: common measurement techniques (spectroscopy, microscopy), typical components, and how to build and collect data from simple setups — filled with hands-on tips for aligning, characterizing, and troubleshooting optical experiments.
+- **Lasers** — A. E. Siegman. The definitive graduate reference on laser physics — optical resonators, Gaussian beams, and laser dynamics.
+- **Fundamentals of Photonics** — B. E. A. Saleh & M. C. Teich. A broad, well-illustrated standard text covering optics, beams, fibers, and laser physics from the ground up.
 
 </div>
 
@@ -73,6 +84,7 @@ cta_label: "Open resources"
 - [Linien](https://github.com/linien-org/linien) — User-friendly laser locking on the RedPitaya (STEMlab 125-14) that just works. Built with Python and Migen and based on `red_pid`; developed for spectroscopy signals but also supports PDH, other lock-in techniques, and simple PID.
 - [RedPitaya Lockbox (TU Darmstadt APQ)](https://github.com/TU-Darmstadt-APQ/RedPitaya-Lockbox) — A digital controller for laser frequency stabilization on the RedPitaya STEMlab 125-14, with schematics and PCB layouts for an analog interface suitable for 19-inch rack units. Pairs with the `lockbox` feature of PyRPL.
 - [PDH photodiode (TU Darmstadt APQ)](https://github.com/TU-Darmstadt-APQ/PDH_photodiode) — A wideband photodetector (Hamamatsu S9055-01 Si-PIN photodiode + transimpedance amplifier) with an AC-coupled non-inverting stage designed for Pound–Drever–Hall laser locking.
+- [PyRPL](https://pyrpl.readthedocs.io/en/latest/) — Turns a Red Pitaya (STEMlab 125-14) into a versatile lock-in amplifier, PID controller, and network/spectrum analyzer for laser locking, with both a GUI and a full Python scripting API ([source](https://github.com/lneuhaus/pyrpl)).
 
 <h2 id="software" class="q-h2"><span class="q-h2__ic"><i class="fas fa-code"></i></span>Experiment control &amp; automation</h2>
 
@@ -100,6 +112,11 @@ cta_label: "Open resources"
 
 - [M-LOOP (Machine-Learning Online Optimization Package)](https://m-loop.readthedocs.io/) — Automated experiment tuning that uses machine-learning algorithms to adjust parameters in real time.
 - [analysislib-mloop](https://github.com/rpanderson/analysislib-mloop) — Integration of M-LOOP with the labscript suite for self-optimizing sequences.
+
+<h3 id="control-theory" class="q-h3"><i class="fas fa-wave-square"></i> Control theory background</h3>
+
+- [Steve Brunton — Control Bootcamp](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR20Mz-VpzgfQs5zrYi085m) — A concise YouTube course on classical and modern control (PID, state space, LQR, Kalman filtering) — the theory you need to design a stable feedback loop.
+- [Brian Douglas — Classical Control Theory](https://www.youtube.com/playlist?list=PLUMWjy5jgHK1NC52DXXrriwihVrYZKqjk) — Intuitive, animated explanations of Bode plots, loop shaping, and stability margins for building real engineering intuition when tuning servo loops.
 
 <h2 id="community" class="q-h2"><span class="q-h2__ic"><i class="fas fa-users"></i></span>Communities &amp; vendor SDKs</h2>
 
