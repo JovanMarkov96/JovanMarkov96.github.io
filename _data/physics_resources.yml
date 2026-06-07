@@ -111,8 +111,8 @@ groups:
             desc: "Maxwell's equations developed from scratch — electrostatics, magnetostatics, and electromagnetic waves, including a relativistic treatment."
         videos:
           - name: "Walter Lewin: 8.02 Electricity & Magnetism"
-            url: "https://www.youtube.com/playlist?list=PLyQSN7X0ro203puVhQsmCj9qhlFQ-As8e"
-            desc: "A series of electromagnetism lectures by MIT professor Walter Lewin."
+            url: "https://www.youtube.com/playlist?list=PLUdYlQf0_sSsfcNOPSNPQKHDhSjTJATPu"
+            desc: "The complete 8.02 electricity and magnetism lectures by MIT professor Walter Lewin."
 
       - id: "thermodynamics"
         name: "Thermodynamics & Statistical Mechanics"
@@ -182,6 +182,9 @@ groups:
           - name: "Professor M does Science"
             url: "https://www.youtube.com/@ProfessorMdoesScience"
             desc: "Cambridge academics simplify university-level quantum mechanics with rigorous, concise, transparent explanations."
+          - name: "Quantum Village"
+            url: "https://www.youtube.com/@quantumvillage4888"
+            desc: "Accessible deep-dives into quantum mechanics and quantum information."
         courses:
           - name: "edX: Quantum Mechanics for Scientists and Engineers"
             url: "https://www.edx.org/course/quantum-mechanics-for-scientists-and-engineers-1"
@@ -212,16 +215,9 @@ groups:
             url: "https://davidtong.org/teaching/gauge-theory/"
             desc: "Yang-Mills theory, instantons, anomalies, and the field-theoretic backbone of the Standard Model."
         videos:
-          - name: "Physics Explained: QFT Series"
-            url: "https://www.youtube.com/playlist?list=PLD08N-u68p_VZ7zP6O0P8kS2Gwa_D_Z_k"
-            desc: "Clear explanations of quantum field theory concepts."
-        courses:
-          - name: "edX: Quantum Field Theory"
-            url: "https://www.edx.org/course/quantum-field-theory"
-            desc: "A course that provides a solid foundation in quantum field theory."
-          - name: "Coursera: Introduction to Quantum Field Theory"
-            url: "https://www.coursera.org/learn/quantum-field-theory"
-            desc: "An introductory course on quantum field theory."
+          - name: "Physics Explained"
+            url: "https://www.youtube.com/@PhysicsExplainedVideos"
+            desc: "Long-form, carefully built explanations that include quantum field theory and the path integral."
 
       - id: "quantum-optics"
         name: "Quantum Optics"
@@ -235,12 +231,12 @@ groups:
             by: "Gilbert Grynberg, Alain Aspect & Claude Fabre"
             desc: "An accessible introduction to quantum optics."
         videos:
-          - name: "Quantum Optics Lab"
-            url: "https://www.youtube.com/channel/UC5J6Zzj6k4J5p5k5Z5Z5Z5Q"
-            desc: "Educational videos on quantum optics experiments and concepts."
-          - name: "Physics Explained: Quantum Optics"
-            url: "https://www.youtube.com/channel/UCtOgKmAM4MeFu-jd-HB3_cg"
-            desc: "Clear explanations of quantum optics concepts."
+          - name: "Professor M does Science"
+            url: "https://www.youtube.com/@ProfessorMdoesScience"
+            desc: "Rigorous, transparent lectures on quantized light, the harmonic oscillator, and second quantization."
+          - name: "Physics Explained"
+            url: "https://www.youtube.com/@PhysicsExplainedVideos"
+            desc: "Long-form explanations of the quantum physics underpinning light-matter interaction."
 
       - id: "quantum-computing"
         name: "Quantum Computing"
@@ -255,18 +251,12 @@ groups:
             desc: "An accessible introduction to quantum computing for beginners."
         videos:
           - name: "Qiskit"
-            url: "https://www.youtube.com/channel/UClBNq7mCMf5xm8baE_VMl3A"
+            url: "https://www.youtube.com/qiskit"
             desc: "Tutorials and explanations on quantum computing using the Qiskit framework."
-          - name: "Quantum Computing UK"
-            url: "https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw"
-            desc: "Videos on various quantum computing topics and concepts."
         courses:
-          - name: "edX: Quantum Computing"
-            url: "https://www.edx.org/course/quantum-computing"
-            desc: "A course that provides a solid foundation in quantum computing."
-          - name: "Coursera: Introduction to Quantum Computing"
-            url: "https://www.coursera.org/learn/quantum-computing"
-            desc: "An introductory course on quantum computing."
+          - name: "edX: Introduction to Quantum Computing for Everyone"
+            url: "https://www.edx.org/learn/quantum-computing/university-of-chicago-introduction-to-quantum-computing-for-everyone"
+            desc: "A beginner-friendly introduction to quantum computing from the University of Chicago."
         more:
           - name: "IBM Quantum"
             url: "https://quantum-computing.ibm.com/"
@@ -324,12 +314,9 @@ groups:
             url: "https://www.youtube.com/channel/UC7_gcs09iThXybpVgjHZ_7g"
             desc: "Explores various topics in general relativity and theoretical physics."
         courses:
-          - name: "edX: General Relativity"
-            url: "https://www.edx.org/course/general-relativity"
-            desc: "A course that provides a solid foundation in general relativity."
-          - name: "Coursera: Introduction to General Relativity"
-            url: "https://www.coursera.org/learn/general-relativity"
-            desc: "An introductory course on general relativity."
+          - name: "Coursera: General Relativity I — Theoretical Foundations"
+            url: "https://www.coursera.org/learn/general-relativity-i"
+            desc: "An introduction to curved spacetime and the Einstein field equations, from HKUST."
 
       - id: "classical-field-theory"
         name: "Classical Field Theory"
@@ -343,9 +330,9 @@ groups:
             by: "Lev D. Landau & Evgeny M. Lifshitz"
             desc: "A classic textbook on classical field theory."
         videos:
-          - name: "Physics Explained: Classical Field Theory"
-            url: "https://www.youtube.com/playlist?list=PLD08N-u68p_W1L-yXlD_vLdZJ_RE6v0h_"
-            desc: "Clear explanations of classical field theory concepts."
+          - name: "Physics Explained"
+            url: "https://www.youtube.com/@PhysicsExplainedVideos"
+            desc: "Long-form explanations covering Lagrangians, fields, and the principle of least action."
 
   - name: "Specialized"
     blurb: "Deep dives into matter, nuclei, particles, and the cosmos."
@@ -414,9 +401,9 @@ groups:
             url: "https://davidtong.org/teaching/quantum-hall-effect/"
             desc: "The integer and fractional quantum Hall effects, and an accessible doorway into topological phases of matter."
         videos:
-          - name: "Physics Explained: Condensed Matter"
-            url: "https://www.youtube.com/channel/UCtOgKmAM4MeFu-jd-HB3_cg"
-            desc: "Clear explanations of condensed matter physics concepts."
+          - name: "Physics Explained"
+            url: "https://www.youtube.com/@PhysicsExplainedVideos"
+            desc: "Long-form explanations covering superconductivity and the quantum physics of solids."
 
       - id: "particle-physics"
         name: "Particle Physics"
@@ -488,7 +475,7 @@ journals:
     url: "https://www.frontiersin.org/journals/physics"
     desc: "An open-access journal that covers a wide range of topics in physics."
   - name: "EPJ Open"
-    url: "https://epjopen.epj.org/"
+    url: "https://www.epj.org/open-access"
     desc: "A series of open-access journals covering various fields of physics, including EPJ C (Particles and Fields) and EPJ D (Atomic, Molecular, Optical and Plasma Physics)."
   - name: "Physics Open"
     url: "https://www.journals.elsevier.com/physics-open"
