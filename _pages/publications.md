@@ -25,9 +25,11 @@ side_panel: none
 </div>
 
 <div id="pub-list-view" style="display: none;">
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+  <div class="pub-list">
+  {% for post in site.publications reversed %}
+    {% include archive-single-publication.html %}
+  {% endfor %}
+  </div>
 </div>
 
 <div id="pub-grid-view">

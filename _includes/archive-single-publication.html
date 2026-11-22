@@ -1,0 +1,23 @@
+<article class="pub-row" itemscope itemtype="http://schema.org/ScholarlyArticle">
+  <a class="pub-row__thumb" href="{{ post.url | relative_url }}" tabindex="-1" aria-hidden="true">
+    {% if post.thumbnail_light or post.thumbnail_dark %}
+    <img class="pc-img--light" src="{{ post.thumbnail_light | default: post.thumbnail_dark | relative_url }}" alt="" loading="lazy">
+    <img class="pc-img--dark" src="{{ post.thumbnail_dark | default: post.thumbnail_light | relative_url }}" alt="" loading="lazy">
+    {% elsif post.thumbnail %}
+    <img src="{{ post.thumbnail | relative_url }}" alt="" loading="lazy">
+    {% else %}
+    <i class="fas fa-file-alt"></i>
+    {% endif %}
+  </a>
+  <div class="pub-row__body">
+    <h2 class="pub-row__title" itemprop="headline"><a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a></h2>
+    {% if post.authors %}<p class="pub-row__authors">{{ post.authors }}</p>{% endif %}
+    <div class="pub-row__meta">
+      <span class="pub-chip">{{ post.venue }} &middot; {{ post.date | date: "%Y" }}</span>
+      {% if post.arxivurl %}<a class="cv-pill cv-pill-neutral" href="{{ post.arxivurl }}" target="_blank" rel="noopener noreferrer"><i class="ai ai-arxiv"></i> arXiv</a>{% endif %}
+      {% if post.paperurl %}<a class="cv-pill cv-pill-neutral" href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Journal</a>{% endif %}
+      {% if post.pdfurl %}<a class="cv-pill cv-pill-neutral" href="{{ post.pdfurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> PDF</a>{% endif %}
+      {% if post.slidesurl %}<a class="cv-pill cv-pill-neutral" href="{{ post.slidesurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-chalkboard-teacher"></i> Slides</a>{% endif %}
+    </div>
+  </div>
+</article>
