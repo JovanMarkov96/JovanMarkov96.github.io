@@ -1,4 +1,4 @@
-# Welcome to Jekyll!
+﻿# Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Jovan Markov"
   pronouns         : # example: "she/her"  
-  bio              : "Spending my time lowering entropy around me. I also like coffee ☕."
+  bio              : "Spending my time lowering entropy around me. I also like coffee ג˜•."
   location         : ""
   employer         : "Weizmann Institute of Science"
   weizmann_profile : "https://www.weizmann.ac.il/complex/jovan-markov"
@@ -155,6 +155,7 @@ include:
   - _pages
   - files
 exclude:
+  - docs
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
