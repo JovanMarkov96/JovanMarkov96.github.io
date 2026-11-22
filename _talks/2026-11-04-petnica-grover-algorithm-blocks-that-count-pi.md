@@ -1,9 +1,9 @@
 ---
-title: "Grover's Algorithm and the Blocks That Count π — Petnica Science Center (Physics 2 Autumn Seminar)"
+title: "Grover's Algorithm and the Blocks That Count π — Petnica Science Center (Physics 2 Autumn Seminar 2026)"
 collection: talks
 layout: talk
 permalink: /talks/2026-petnica-grover-algorithm
-venue: "Petnica Science Center — Physics 2 Autumn Seminar"
+venue: "Petnica Science Center — Physics 2 Autumn Seminar 2026"
 date: 2026-11-04
 location: "Valjevo, Serbia"
 talk_type: "Workshop"

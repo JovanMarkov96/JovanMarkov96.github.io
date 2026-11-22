@@ -1,9 +1,9 @@
 ---
-title: "Quantum Computing Workshop — Petnica Science Center (Physics Seminar)"
+title: "Quantum Computing Workshop — Petnica Science Center (Physics 2 Summer Seminar 2025)"
 collection: talks
 layout: talk
 permalink: /talks/2025-petnica-science-center-quantum-computing-workshop
-venue: "Petnica Science Center — Physics Seminar"
+venue: "Petnica Science Center — Physics 2 Summer Seminar 2025"
 date: 2025-09-05
 modified: 2025-09-06
 location: "Valjevo, Serbia"
@@ -16,7 +16,7 @@ tags: ["quantum computing", "workshop", "education"]
 # abstract: 
 ---
 
-I delivered a two-day, 8-hour hands-on workshop (4 hours per day) on quantum computing for the Physics Seminar at Petnica Science Center, held on September 5th and 6th, 2025. The course was based on the University of Cambridge's Quantum Computing course ([materials here](https://www.cl.cam.ac.uk/teaching/1819/QuantComp/materials.html)), originally taught by Prof. Anuj Dawar.
+I delivered a two-day, 8-hour hands-on workshop (4 hours per day) on quantum computing for the Physics 2 Summer Seminar at Petnica Science Center, held on September 5th and 6th, 2025. The course was based on the University of Cambridge's Quantum Computing course ([materials here](https://www.cl.cam.ac.uk/teaching/1819/QuantComp/materials.html)), originally taught by Prof. Anuj Dawar.
 
 **Structure:**
 - Covered the first 7 lectures from the Cambridge syllabus:
