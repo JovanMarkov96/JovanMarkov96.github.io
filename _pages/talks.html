@@ -11,6 +11,11 @@ side_panel: none
 
 {% endif %}
 
+<div class="tl">
+{% assign tl_prev_year = "" %}
 {% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+  {% assign tl_year = post.date | date: "%Y" %}
+  {% if tl_year != tl_prev_year %}<div class="tl__year"><span>{{ tl_year }}</span></div>{% assign tl_prev_year = tl_year %}{% endif %}
+  {% include archive-single-timeline.html %}
 {% endfor %}
+</div>

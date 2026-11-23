@@ -1657,6 +1657,132 @@
         .pub-chip { white-space: normal; }
     }
 
+    /* ===== Talks & Conferences — vertical timeline ===== */
+    .tl {
+        --tl-pad: 2.25rem;  /* space left of the cards */
+        --tl-x: 0.75rem;    /* x of the vertical line */
+        --tl-dot: 12px;
+        position: relative;
+        padding-left: var(--tl-pad);
+        margin: 1.5rem 0 3rem;
+    }
+    .tl::before {
+        content: "";
+        position: absolute;
+        left: calc(var(--tl-x) - 1px);
+        top: 0.6rem;
+        bottom: 0.6rem;
+        width: 2px;
+        border-radius: 2px;
+        background: linear-gradient(to bottom, rgba(var(--ion-accent-rgb), 0.5), rgba(var(--ion-accent-rgb), 0.08));
+    }
+    .tl__year {
+        position: relative;
+        margin: 1.4rem 0 0.6rem calc(-1 * var(--tl-pad));
+    }
+    .tl__year:first-child { margin-top: 0; }
+    .tl__year span {
+        position: relative;
+        display: inline-block;
+        padding: 0.15rem 0.65rem;
+        border-radius: 999px;
+        background: var(--ion-accent);
+        color: #fff;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        box-shadow: 0 2px 8px rgba(var(--ion-accent-rgb), 0.35);
+    }
+    .tl-item {
+        --tl-c: 124, 58, 237;
+        position: relative;
+        margin-bottom: 0.6rem;
+        padding: 0.7rem 0.9rem;
+        background: var(--ion-surface);
+        border: 1px solid var(--ion-border);
+        border-radius: var(--ion-radius);
+        transition: box-shadow 0.25s var(--shine-ease, ease), border-color 0.25s ease;
+    }
+    .tl-item:hover {
+        box-shadow: var(--ion-shadow-md);
+        border-color: rgba(var(--tl-c), 0.45);
+    }
+    .tl-item::before {  /* dot on the line */
+        content: "";
+        position: absolute;
+        left: calc(var(--tl-x) - var(--tl-pad) - var(--tl-dot) / 2);
+        top: calc(1.05rem - var(--tl-dot) / 2 + 6px);
+        width: var(--tl-dot);
+        height: var(--tl-dot);
+        border-radius: 50%;
+        background: rgb(var(--tl-c));
+        box-shadow: 0 0 0 3px rgba(var(--tl-c), 0.2);
+    }
+    .tl-item::after {  /* connector from dot to card */
+        content: "";
+        position: absolute;
+        left: calc(var(--tl-x) - var(--tl-pad) + var(--tl-dot) / 2 + 3px);
+        width: calc(var(--tl-pad) - var(--tl-x) - var(--tl-dot) / 2 - 3px);
+        top: calc(1.05rem + 5px);
+        height: 2px;
+        background: rgba(var(--tl-c), 0.35);
+    }
+    .tl--talk     { --tl-c: 37, 99, 235; }
+    .tl--workshop { --tl-c: 180, 83, 9; }
+    .tl--poster   { --tl-c: 4, 120, 87; }
+    .tl--tutorial { --tl-c: 190, 24, 93; }
+    html.dark-mode .tl-item       { --tl-c: 167, 139, 250; }
+    html.dark-mode .tl--talk      { --tl-c: 96, 165, 250; }
+    html.dark-mode .tl--workshop  { --tl-c: 251, 191, 36; }
+    html.dark-mode .tl--poster    { --tl-c: 52, 211, 153; }
+    html.dark-mode .tl--tutorial  { --tl-c: 244, 114, 182; }
+    .tl-item .tl-item__title {
+        margin: 0 0 0.15rem;
+        font-size: 1rem;
+        font-weight: 650;
+        line-height: 1.35;
+    }
+    .tl-item__title a { color: var(--ion-text) !important; text-decoration: none; }
+    .tl-item__title a:hover { color: var(--ion-accent) !important; }
+    .tl-item__venue {
+        margin-bottom: 0.45rem;
+        font-size: 0.82rem;
+        line-height: 1.4;
+        color: var(--ion-muted);
+    }
+    .tl-item__meta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.4rem;
+    }
+    .tl-item__date {
+        font-size: 0.78rem;
+        font-weight: 650;
+        color: var(--ion-text);
+        font-variant-numeric: tabular-nums;
+        margin-right: 0.15rem;
+    }
+    .tl-chip {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.15rem 0.6rem;
+        border-radius: 999px;
+        background: rgba(var(--tl-c), 0.13);
+        color: rgb(var(--tl-c));
+        font-size: 0.75rem;
+        font-weight: 650;
+    }
+    .tl-item__meta .cv-pill-neutral {
+        padding: 0.15rem 0.6rem;
+        font-size: 0.75rem;
+        text-decoration: none;
+    }
+    @media (max-width: 600px) {
+        .tl { --tl-pad: 1.6rem; --tl-x: 0.5rem; --tl-dot: 10px; }
+        .tl-item { padding: 0.6rem 0.7rem; }
+    }
+
     /* footer holding several discrete link buttons (arXiv / Journal / PDF) */
     .project-card__footer--links {
         justify-content: flex-start;

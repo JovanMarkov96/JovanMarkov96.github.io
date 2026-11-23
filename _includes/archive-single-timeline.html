@@ -1,0 +1,22 @@
+{% assign tl_type = post.type | default: post.talk_type | default: post.category | default: "" %}
+{% assign tl_t = tl_type | downcase %}
+{% if tl_t contains "workshop" %}{% assign tl_kind = "workshop" %}
+{% elsif tl_t contains "poster" %}{% assign tl_kind = "poster" %}
+{% elsif tl_t contains "tutorial" %}{% assign tl_kind = "tutorial" %}
+{% elsif tl_t contains "proceedings" %}{% assign tl_kind = "other" %}
+{% elsif tl_t contains "talk" %}{% assign tl_kind = "talk" %}
+{% else %}{% assign tl_kind = "other" %}{% endif %}
+{% assign tl_venue = post.venue | default: post.conference %}
+<article class="tl-item tl--{{ tl_kind }}" itemscope itemtype="http://schema.org/Event">
+  <h2 class="tl-item__title" itemprop="name"><a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a></h2>
+  {% if tl_venue or post.location %}<div class="tl-item__venue">{{ tl_venue }}{% if tl_venue and post.location %} &middot; {% endif %}{{ post.location }}</div>{% endif %}
+  <div class="tl-item__meta">
+    <time class="tl-item__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d" }}{% if post.end_date %}{% assign tl_sm = post.date | date: "%Y%m" %}{% assign tl_em = post.end_date | date: "%Y%m" %}&ndash;{% if tl_sm == tl_em %}{{ post.end_date | date: "%-d" }}{% else %}{{ post.end_date | date: "%b %-d" }}{% endif %}{% endif %}</time>
+    {% if tl_type != "" %}<span class="tl-chip">{{ tl_type }}</span>{% endif %}
+    {% if post.conference_link %}<a class="cv-pill cv-pill-neutral" href="{{ post.conference_link }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Website</a>{% endif %}
+    {% if post.paper_link %}<a class="cv-pill cv-pill-neutral" href="{{ post.paper_link }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Paper / Abstract</a>{% endif %}
+    {% if post.pdfurl %}<a class="cv-pill cv-pill-neutral" href="{{ post.pdfurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> PDF</a>{% endif %}
+    {% if post.link %}<a class="cv-pill cv-pill-neutral" href="{{ post.link }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i> Link</a>{% endif %}
+    {% if post.slides %}<a class="cv-pill cv-pill-neutral" href="{{ post.slides }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-chalkboard-teacher"></i> Slides</a>{% endif %}
+  </div>
+</article>
